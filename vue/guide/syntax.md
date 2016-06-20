@@ -69,7 +69,7 @@ Mustache 标签也可以用在 HTML 特性 (Attributes) 内：
 {{ var a = 1 }}
 
 <!-- 流程控制也不可以，可改用三元表达式 -->
-{{ if (ok) { return message } }}
+{{ if (ok) { return message }     }}
 ```
 
 ### 过滤器
