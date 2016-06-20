@@ -1,0 +1,761 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>React v0.13.1 · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="2015-03-10-react-v0.13.html" />
+    
+    
+    <link rel="prev" href="../docs/flux-overview.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../docs/getting-started.html">
+            
+                <a href="../docs/getting-started.html">
+            
+                    
+                    快速开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../docs/tutorial.html">
+            
+                <a href="../docs/tutorial.html">
+            
+                    
+                    教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../docs/thinking-in-react.html">
+            
+                <a href="../docs/thinking-in-react.html">
+            
+                    
+                    深入理解React
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">指南</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../docs/01-why-react.html">
+            
+                <a href="../docs/01-why-react.html">
+            
+                    
+                    为什么使用React
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../docs/02-displaying-data.html">
+            
+                <a href="../docs/02-displaying-data.html">
+            
+                    
+                    数据呈现
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../docs/02.1-jsx-in-depth.html">
+            
+                <a href="../docs/02.1-jsx-in-depth.html">
+            
+                    
+                    深入理解JSX
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../docs/02.2-jsx-spread.html">
+            
+                <a href="../docs/02.2-jsx-spread.html">
+            
+                    
+                    JSX的延展属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../docs/02.3-jsx-gotchas.html">
+            
+                <a href="../docs/02.3-jsx-gotchas.html">
+            
+                    
+                    JSX陷阱
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../docs/03-interactivity-and-dynamic-uis.html">
+            
+                <a href="../docs/03-interactivity-and-dynamic-uis.html">
+            
+                    
+                    富交互性的动态用户界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../docs/04-multiple-components.html">
+            
+                <a href="../docs/04-multiple-components.html">
+            
+                    
+                    复合组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../docs/05-reusable-components.html">
+            
+                <a href="../docs/05-reusable-components.html">
+            
+                    
+                    可复用组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../docs/06-transferring-props.html">
+            
+                <a href="../docs/06-transferring-props.html">
+            
+                    
+                    传递Props
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../docs/07-forms.html">
+            
+                <a href="../docs/07-forms.html">
+            
+                    
+                    表单组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../docs/08-working-with-the-browser.html">
+            
+                <a href="../docs/08-working-with-the-browser.html">
+            
+                    
+                    浏览器中的工作原理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.8.1" data-path="../docs/08.1-more-about-refs.html">
+            
+                <a href="../docs/08.1-more-about-refs.html">
+            
+                    
+                    关于Refs的更多内容
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../docs/09-tooling-integration.html">
+            
+                <a href="../docs/09-tooling-integration.html">
+            
+                    
+                    工具集成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="../docs/10-addons.html">
+            
+                <a href="../docs/10-addons.html">
+            
+                    
+                    插件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.10.1" data-path="../docs/10.1-animation.html">
+            
+                <a href="../docs/10.1-animation.html">
+            
+                    
+                    动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10.2" data-path="../docs/10.2-form-input-binding-sugar.html">
+            
+                <a href="../docs/10.2-form-input-binding-sugar.html">
+            
+                    
+                    双向绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10.3" data-path="../docs/10.3-class-name-manipulation.html">
+            
+                <a href="../docs/10.3-class-name-manipulation.html">
+            
+                    
+                    类名操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10.4" data-path="../docs/10.4-test-utils.html">
+            
+                <a href="../docs/10.4-test-utils.html">
+            
+                    
+                    测试工具集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10.5" data-path="../docs/10.5-clone-with-props.html">
+            
+                <a href="../docs/10.5-clone-with-props.html">
+            
+                    
+                    克隆组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10.6" data-path="../docs/10.6-update.html">
+            
+                <a href="../docs/10.6-update.html">
+            
+                    
+                    Immutability Helpers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10.7" data-path="../docs/10.7-pure-render-mixin.html">
+            
+                <a href="../docs/10.7-pure-render-mixin.html">
+            
+                    
+                    PureRenderMixin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10.8" data-path="../docs/10.8-perf.html">
+            
+                <a href="../docs/10.8-perf.html">
+            
+                    
+                    性能分析工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">参考</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../docs/ref-01-top-level-api.html">
+            
+                <a href="../docs/ref-01-top-level-api.html">
+            
+                    
+                    顶层 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../docs/ref-02-component-api.html">
+            
+                <a href="../docs/ref-02-component-api.html">
+            
+                    
+                    组件 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../docs/ref-03-component-specs.html">
+            
+                <a href="../docs/ref-03-component-specs.html">
+            
+                    
+                    组件的详细说明和生命周期
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../docs/ref-04-tags-and-attributes.html">
+            
+                <a href="../docs/ref-04-tags-and-attributes.html">
+            
+                    
+                    标签和属性支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../docs/ref-05-events.html">
+            
+                <a href="../docs/ref-05-events.html">
+            
+                    
+                    事件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../docs/ref-06-dom-differences.html">
+            
+                <a href="../docs/ref-06-dom-differences.html">
+            
+                    
+                    与 DOM 的差异
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../docs/ref-07-special-non-dom-attributes.html">
+            
+                <a href="../docs/ref-07-special-non-dom-attributes.html">
+            
+                    
+                    特殊的非 DOM 属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="../docs/ref-08-reconciliation.html">
+            
+                <a href="../docs/ref-08-reconciliation.html">
+            
+                    
+                    Reconciliation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="../docs/ref-09-glossary.html">
+            
+                <a href="../docs/ref-09-glossary.html">
+            
+                    
+                    React （虚拟）DOM 术语
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Flux</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../docs/flux-overview.html">
+            
+                <a href="../docs/flux-overview.html">
+            
+                    
+                    Flux
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Blog</li>
+        
+        
+    
+        <li class="chapter active" data-level="5.1" data-path="2015-03-16-react-v0.13.1.html">
+            
+                <a href="2015-03-16-react-v0.13.1.html">
+            
+                    
+                    React v0.13.1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="2015-03-10-react-v0.13.html">
+            
+                <a href="2015-03-10-react-v0.13.html">
+            
+                    
+                    React v0.13
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >React v0.13.1</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="react-v0131">React v0.13.1</h1>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../docs/flux-overview.html" class="navigation navigation-prev " aria-label="Previous page: Flux">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="2015-03-10-react-v0.13.html" class="navigation navigation-next " aria-label="Next page: React v0.13">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"React v0.13.1","level":"5.1","depth":1,"next":{"title":"React v0.13","level":"5.2","depth":1,"path":"zh/_posts/2015-03-10-react-v0.13.md","ref":"zh/_posts/2015-03-10-react-v0.13.md","articles":[]},"previous":{"title":"Flux","level":"4.1","depth":1,"path":"zh/docs/flux-overview.md","ref":"zh/docs/flux-overview.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"zh/_posts/2015-03-16-react-v0.13.1.md","mtime":"2016-06-20T12:02:49.000Z","type":"markdown"},"gitbook":{"version":"3.1.0","time":"2016-06-20T12:06:43.801Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
