@@ -51,14 +51,14 @@
         <li><a href="javascript:void(0)" folder="fis3">fis3文档</a></li>
     </ul>
 </nav>
-<iframe id="main" src="es6/_book/index.html"></iframe>
+<iframe id="main" src="./es6/_book/index.html"></iframe>
 <script>
     (function () {
         var nav = document.querySelector('nav');
         nav.addEventListener('click', function (e) {
             var folder = e.target.getAttribute('folder');
             if (folder) {
-                document.getElementById('main').src = folder + '/_book/index.html';
+                document.getElementById('main').src = './' + folder + '/_book/index.html';
                 if (e.preventDefault) {
                     e.preventDefault();
                 }
