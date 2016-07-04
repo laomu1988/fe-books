@@ -1,0 +1,20 @@
+{
+  "title": "fe-books",
+  "author": "laomu1988@qq.com",
+  "language": "zh-hans",
+  "output": "book",
+  "styles": {
+    "website": "styles/website.css"
+  },
+  "plugins": [
+    "advanced-emoji",
+    "github",
+    "splitter",
+    "toggle-chapters"
+  ],
+  "pluginsConfig": {
+    "github": {
+      "url": "https://github.com/laomu1988/fe-books"
+    }
+  }
+}
