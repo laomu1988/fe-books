@@ -1,0 +1,421 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>使用 · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="context.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="use.html">
+            
+                <a href="use.html">
+            
+                    
+                    使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="context.html">
+            
+                <a href="context.html">
+            
+                    
+                    上下文content
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="request.html">
+            
+                <a href="request.html">
+            
+                    
+                    请求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="response.html">
+            
+                <a href="response.html">
+            
+                    
+                    响应
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="guide.html">
+            
+                <a href="guide.html">
+            
+                    
+                    实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="links.html">
+            
+                <a href="links.html">
+            
+                    
+                    相关资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >使用</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5B89;&#x88C5;">&#x5B89;&#x88C5;</h1>
+<p>  Koa &#x76EE;&#x524D;&#x9700;&#x8981; &gt;=0.11.x&#x7248;&#x672C;&#x7684; node &#x73AF;&#x5883;&#x3002;&#x5E76;&#x9700;&#x8981;&#x5728;&#x6267;&#x884C; node &#x7684;&#x65F6;&#x5019;&#x9644;&#x5E26; --harmony &#x6765;&#x5F15;&#x5165; generators &#x3002; &#x5982;&#x679C;&#x60A8;&#x5B89;&#x88C5;&#x4E86;&#x8F83;&#x65E7;&#x7248;&#x672C;&#x7684; node &#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x5B89;&#x88C5; <a href="https://github.com/visionmedia/n" _target="blank">n</a> (node&#x7248;&#x672C;&#x63A7;&#x5236;&#x5668;)&#xFF0C;&#x6765;&#x5FEB;&#x901F;&#x5B89;&#x88C5; 0.11.x</p>
+<pre><code>$ npm install -g n
+$ n 0.11.12
+$ node --harmony my-koa-app.js
+</code></pre><h1 id="&#x5E94;&#x7528;">&#x5E94;&#x7528;</h1>
+<p>  Koa &#x5E94;&#x7528;&#x662F;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x4E00;&#x7CFB;&#x5217;&#x4E2D;&#x95F4;&#x4EF6; generator &#x51FD;&#x6570;&#x7684;&#x5BF9;&#x8C61;&#x3002;
+  &#x8FD9;&#x4E9B;&#x4E2D;&#x95F4;&#x4EF6;&#x51FD;&#x6570;&#x57FA;&#x4E8E; request &#x8BF7;&#x6C42;&#x4EE5;&#x4E00;&#x4E2A;&#x7C7B;&#x4F3C;&#x4E8E;&#x6808;&#x7684;&#x7ED3;&#x6784;&#x7EC4;&#x6210;&#x5E76;&#x4F9D;&#x6B21;&#x6267;&#x884C;&#x3002;
+  Koa &#x7C7B;&#x4F3C;&#x4E8E;&#x5176;&#x4ED6;&#x4E2D;&#x95F4;&#x4EF6;&#x7CFB;&#x7EDF;&#xFF08;&#x6BD4;&#x5982; Ruby&apos;s Rack &#x3001;Connect &#x7B49;&#xFF09;&#xFF0C;
+  &#x7136;&#x800C; Koa &#x7684;&#x6838;&#x5FC3;&#x8BBE;&#x8BA1;&#x601D;&#x8DEF;&#x662F;&#x4E3A;&#x4E2D;&#x95F4;&#x4EF6;&#x5C42;&#x63D0;&#x4F9B;&#x9AD8;&#x7EA7;&#x8BED;&#x6CD5;&#x7CD6;&#x5C01;&#x88C5;&#xFF0C;&#x4EE5;&#x589E;&#x5F3A;&#x5176;&#x4E92;&#x7528;&#x6027;&#x548C;&#x5065;&#x58EE;&#x6027;&#xFF0C;&#x5E76;&#x4F7F;&#x5F97;&#x7F16;&#x5199;&#x4E2D;&#x95F4;&#x4EF6;&#x53D8;&#x5F97;&#x76F8;&#x5F53;&#x6709;&#x8DA3;&#x3002;</p>
+<p>  Koa &#x5305;&#x542B;&#x4E86;&#x50CF; content-negotiation&#xFF08;&#x5185;&#x5BB9;&#x534F;&#x5546;&#xFF09;&#x3001;cache freshness&#xFF08;&#x7F13;&#x5B58;&#x5237;&#x65B0;&#xFF09;&#x3001;proxy support&#xFF08;&#x4EE3;&#x7406;&#x652F;&#x6301;&#xFF09;&#x548C; redirection&#xFF08;&#x91CD;&#x5B9A;&#x5411;&#xFF09;&#x7B49;&#x5E38;&#x7528;&#x4EFB;&#x52A1;&#x65B9;&#x6CD5;&#x3002;
+  &#x4E0E;&#x63D0;&#x4F9B;&#x5E9E;&#x5927;&#x7684;&#x51FD;&#x6570;&#x652F;&#x6301;&#x4E0D;&#x540C;&#xFF0C;Koa&#x53EA;&#x5305;&#x542B;&#x5F88;&#x5C0F;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x56E0;&#x4E3A;Koa&#x5E76;&#x4E0D;&#x7ED1;&#x5B9A;&#x4EFB;&#x4F55;&#x4E2D;&#x95F4;&#x4EF6;&#x3002;</p>
+<p>  &#x4EFB;&#x4F55;&#x6559;&#x7A0B;&#x90FD;&#x662F;&#x4ECE; hello world &#x5F00;&#x59CB;&#x7684;&#xFF0C;Koa&#x4E5F;&#x4E0D;&#x4F8B;&#x5916;^_^  </p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> koa = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;koa&apos;</span>);
+<span class="hljs-keyword">var</span> app = koa();
+
+app.use(<span class="hljs-function"><span class="hljs-keyword">function</span> *(<span class="hljs-params"></span>)</span>{
+  <span class="hljs-keyword">this</span>.body = <span class="hljs-string">&apos;Hello World&apos;</span>;
+});
+
+app.listen(<span class="hljs-number">3000</span>);
+</code></pre>
+<h2 id="&#x4E2D;&#x95F4;&#x4EF6;&#x7EA7;&#x8054;">&#x4E2D;&#x95F4;&#x4EF6;&#x7EA7;&#x8054;</h2>
+<p>  Koa &#x7684;&#x4E2D;&#x95F4;&#x4EF6;&#x901A;&#x8FC7;&#x4E00;&#x79CD;&#x66F4;&#x52A0;&#x4F20;&#x7EDF;&#xFF08;&#x60A8;&#x4E5F;&#x8BB8;&#x4F1A;&#x5F88;&#x719F;&#x6089;&#xFF09;&#x7684;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x7EA7;&#x8054;&#xFF0C;&#x6452;&#x5F03;&#x4E86;&#x4EE5;&#x5F80; node &#x9891;&#x7E41;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x9020;&#x6210;&#x7684;&#x590D;&#x6742;&#x4EE3;&#x7801;&#x903B;&#x8F91;&#x3002;
+  &#x6211;&#x4EEC;&#x901A;&#x8FC7; generators &#x6765;&#x5B9E;&#x73B0;&#x201C;&#x771F;&#x6B63;&#x201D;&#x7684;&#x4E2D;&#x95F4;&#x4EF6;&#x3002;
+  Connect &#x7B80;&#x5355;&#x5730;&#x5C06;&#x63A7;&#x5236;&#x6743;&#x4EA4;&#x7ED9;&#x4E00;&#x7CFB;&#x5217;&#x51FD;&#x6570;&#x6765;&#x5904;&#x7406;&#xFF0C;&#x76F4;&#x5230;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x3002;
+  &#x4E0E;&#x4E4B;&#x4E0D;&#x540C;&#xFF0C;&#x5F53;&#x6267;&#x884C;&#x5230; <code>yield next</code> &#x8BED;&#x53E5;&#x65F6;&#xFF0C;Koa &#x6682;&#x505C;&#x4E86;&#x8BE5;&#x4E2D;&#x95F4;&#x4EF6;&#xFF0C;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#x4E0B;&#x4E00;&#x4E2A;&#x7B26;&#x5408;&#x8BF7;&#x6C42;&#x7684;&#x4E2D;&#x95F4;&#x4EF6;(&apos;downstrem&apos;)&#xFF0C;&#x7136;&#x540E;&#x63A7;&#x5236;&#x6743;&#x518D;&#x9010;&#x7EA7;&#x8FD4;&#x56DE;&#x7ED9;&#x4E0A;&#x5C42;&#x4E2D;&#x95F4;&#x4EF6;(&apos;upstream&apos;)&#x3002;</p>
+<p>  &#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x5728;&#x9875;&#x9762;&#x4E2D;&#x8FD4;&#x56DE; &quot;Hello World&quot;&#xFF0C;&#x7136;&#x800C;&#x5F53;&#x8BF7;&#x6C42;&#x5F00;&#x59CB;&#x65F6;&#xFF0C;&#x8BF7;&#x6C42;&#x5148;&#x7ECF;&#x8FC7; <code>x-response-time</code> &#x548C; <code>logging</code> &#x4E2D;&#x95F4;&#x4EF6;&#xFF0C;&#x5E76;&#x8BB0;&#x5F55;&#x4E2D;&#x95F4;&#x4EF6;&#x6267;&#x884C;&#x8D77;&#x59CB;&#x65F6;&#x95F4;&#x3002;
+  &#x7136;&#x540E;&#x5C06;&#x63A7;&#x5236;&#x6743;&#x4EA4;&#x7ED9; <code>reponse</code> &#x4E2D;&#x95F4;&#x4EF6;&#x3002;&#x5F53;&#x4E2D;&#x95F4;&#x4EF6;&#x8FD0;&#x884C;&#x5230; <code>yield next</code> &#x65F6;&#xFF0C;&#x51FD;&#x6570;&#x6302;&#x8D77;&#x5E76;&#x5C06;&#x63A7;&#x5236;&#x524D;&#x4EA4;&#x7ED9;&#x4E0B;&#x4E00;&#x4E2A;&#x4E2D;&#x95F4;&#x4EF6;&#x3002;&#x5F53;&#x6CA1;&#x6709;&#x4E2D;&#x95F4;&#x4EF6;&#x6267;&#x884C; <code>yield next</code> &#x65F6;&#xFF0C;&#x7A0B;&#x5E8F;&#x6808;&#x4F1A;&#x9006;&#x5E8F;&#x5524;&#x8D77;&#x88AB;&#x6302;&#x8D77;&#x7684;&#x4E2D;&#x95F4;&#x4EF6;&#x6765;&#x6267;&#x884C;&#x63A5;&#x4E0B;&#x6765;&#x7684;&#x4EE3;&#x7801;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> koa = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;koa&apos;</span>);
+<span class="hljs-keyword">var</span> app = koa();
+
+<span class="hljs-comment">// x-response-time</span>
+
+app.use(<span class="hljs-function"><span class="hljs-keyword">function</span> *(<span class="hljs-params">next</span>)</span>{
+  <span class="hljs-keyword">var</span> start = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>;
+  <span class="hljs-keyword">yield</span> next;
+  <span class="hljs-keyword">var</span> ms = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span> - start;
+  <span class="hljs-keyword">this</span>.set(<span class="hljs-string">&apos;X-Response-Time&apos;</span>, ms + <span class="hljs-string">&apos;ms&apos;</span>);
+});
+
+<span class="hljs-comment">// logger</span>
+
+app.use(<span class="hljs-function"><span class="hljs-keyword">function</span> *(<span class="hljs-params">next</span>)</span>{
+  <span class="hljs-keyword">var</span> start = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>;
+  <span class="hljs-keyword">yield</span> next;
+  <span class="hljs-keyword">var</span> ms = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span> - start;
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;%s %s - %s&apos;</span>, <span class="hljs-keyword">this</span>.method, <span class="hljs-keyword">this</span>.url, ms);
+});
+
+<span class="hljs-comment">// response</span>
+
+app.use(<span class="hljs-function"><span class="hljs-keyword">function</span> *(<span class="hljs-params"></span>)</span>{
+  <span class="hljs-keyword">this</span>.body = <span class="hljs-string">&apos;Hello World&apos;</span>;
+});
+
+app.listen(<span class="hljs-number">3000</span>);
+</code></pre>
+<h2 id="&#x914D;&#x7F6E;">&#x914D;&#x7F6E;</h2>
+<p>  &#x5E94;&#x7528;&#x914D;&#x7F6E;&#x662F; <code>app</code> &#x5B9E;&#x4F8B;&#x5C5E;&#x6027;&#xFF0C;&#x76EE;&#x524D;&#x652F;&#x6301;&#x7684;&#x914D;&#x7F6E;&#x9879;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li><code>app.name</code> &#x5E94;&#x7528;&#x540D;&#x79F0;&#xFF08;&#x53EF;&#x9009;&#x9879;&#xFF09;</li>
+<li><code>app.env</code> &#x9ED8;&#x8BA4;&#x4E3A; <strong>NODE_ENV</strong> &#x6216;&#x8005; <code>development</code></li>
+<li><code>app.proxy</code> &#x5982;&#x679C;&#x4E3A; <code>true</code>&#xFF0C;&#x5219;&#x89E3;&#x6790; &quot;Host&quot; &#x7684; header &#x57DF;&#xFF0C;&#x5E76;&#x652F;&#x6301; <code>X-Forwarded-Host</code></li>
+<li><code>app.subdomainOffset</code> &#x9ED8;&#x8BA4;&#x4E3A;2&#xFF0C;&#x8868;&#x793A; <code>.subdomains</code> &#x6240;&#x5FFD;&#x7565;&#x7684;&#x5B57;&#x7B26;&#x504F;&#x79FB;&#x91CF;&#x3002;</li>
+</ul>
+<h2 id="applisten">app.listen(...)</h2>
+<p>  Koa &#x5E94;&#x7528;&#x5E76;&#x975E;&#x662F;&#x4E00;&#x4E2A; 1-to-1 &#x8868;&#x5F81;&#x5173;&#x7CFB;&#x7684; HTTP &#x670D;&#x52A1;&#x5668;&#x3002;
+  &#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;Koa&#x5E94;&#x7528;&#x53EF;&#x4EE5;&#x88AB;&#x6302;&#x8F7D;&#x5230;&#x4E00;&#x8D77;&#x7EC4;&#x6210;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x5355;&#x4E00; HTTP &#x670D;&#x52A1;&#x5668;&#x7684;&#x5927;&#x578B;&#x5E94;&#x7528;&#x7FA4;&#x3002;</p>
+<p>  &#x5982;&#x4E0B;&#x4E3A;&#x4E00;&#x4E2A;&#x7ED1;&#x5B9A;3000&#x7AEF;&#x53E3;&#x7684;&#x7B80;&#x5355; Koa &#x5E94;&#x7528;&#xFF0C;&#x5176;&#x521B;&#x5EFA;&#x5E76;&#x8FD4;&#x56DE;&#x4E86;&#x4E00;&#x4E2A; HTTP &#x670D;&#x52A1;&#x5668;&#xFF0C;&#x4E3A; <code>Server#listen()</code> &#x4F20;&#x9012;&#x6307;&#x5B9A;&#x53C2;&#x6570;&#xFF08;&#x53C2;&#x6570;&#x7684;&#x8BE6;&#x7EC6;&#x6587;&#x6863;&#x8BF7;&#x67E5;&#x770B;<a href="http://nodejs.org/api/http.html#http_server_listen_port_hostname_backlog_callback" _target="blank">nodejs.org</a>&#xFF09;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> koa = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;koa&apos;</span>);
+<span class="hljs-keyword">var</span> app = koa();
+app.listen(<span class="hljs-number">3000</span>);
+</code></pre>
+<p>  <code>app.listen(...)</code> &#x5B9E;&#x9645;&#x4E0A;&#x662F;&#x4EE5;&#x4E0B;&#x4EE3;&#x7801;&#x7684;&#x8BED;&#x6CD5;&#x7CD6;:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;http&apos;</span>);
+<span class="hljs-keyword">var</span> koa = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;koa&apos;</span>);
+<span class="hljs-keyword">var</span> app = koa();
+http.createServer(app.callback()).listen(<span class="hljs-number">3000</span>);
+</code></pre>
+<p>  &#x8FD9;&#x610F;&#x5473;&#x7740;&#x60A8;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x652F;&#x6301; HTTPS &#x548C; HTTPS&#xFF0C;&#x6216;&#x8005;&#x5728;&#x591A;&#x4E2A;&#x7AEF;&#x53E3;&#x76D1;&#x542C;&#x540C;&#x4E00;&#x4E2A;&#x5E94;&#x7528;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;http&apos;</span>);
+<span class="hljs-keyword">var</span> koa = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;koa&apos;</span>);
+<span class="hljs-keyword">var</span> app = koa();
+http.createServer(app.callback()).listen(<span class="hljs-number">3000</span>);
+http.createServer(app.callback()).listen(<span class="hljs-number">3001</span>);
+</code></pre>
+<h2 id="appcallback">app.callback()</h2>
+<p>  &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x9002;&#x5408; <code>http.createServer()</code> &#x65B9;&#x6CD5;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x7528;&#x6765;&#x5904;&#x7406;&#x8BF7;&#x6C42;&#x3002;
+  &#x60A8;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x5C06;&#x60A8;&#x7684;app&#x6302;&#x8F7D;&#x5728; Connect/Express &#x5E94;&#x7528;&#x4E0A;&#x3002;</p>
+<h2 id="appusefunction">app.use(function)</h2>
+<p>  &#x4E3A;&#x5E94;&#x7528;&#x6DFB;&#x52A0;&#x6307;&#x5B9A;&#x7684;&#x4E2D;&#x95F4;&#x4EF6;&#xFF0C;&#x8BE6;&#x60C5;&#x8BF7;&#x770B; <a href="https://github.com/koajs/koa/wiki#middleware" _target="blank">Middleware</a></p>
+<h2 id="appkeys">app.keys=</h2>
+<p>  &#x8BBE;&#x7F6E;&#x7B7E;&#x540D;Cookie&#x5BC6;&#x94A5;&#xFF0C;&#x8BE5;&#x5BC6;&#x94A5;&#x4F1A;&#x88AB;&#x4F20;&#x9012;&#x7ED9; <a href="https://github.com/jed/keygrip" _target="blank">KeyGrip</a>&#x3002;</p>
+<p>  &#x5F53;&#x7136;&#xFF0C;&#x60A8;&#x4E5F;&#x53EF;&#x4EE5;&#x81EA;&#x5DF1;&#x751F;&#x6210; <code>KeyGrip</code> &#x5B9E;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-js">app.keys = [<span class="hljs-string">&apos;im a newer secret&apos;</span>, <span class="hljs-string">&apos;i like turtle&apos;</span>];
+app.keys = <span class="hljs-keyword">new</span> KeyGrip([<span class="hljs-string">&apos;im a newer secret&apos;</span>, <span class="hljs-string">&apos;i like turtle&apos;</span>], <span class="hljs-string">&apos;sha256&apos;</span>);
+</code></pre>
+<p>  &#x5728;&#x8FDB;&#x884C;cookie&#x7B7E;&#x540D;&#x65F6;&#xFF0C;&#x53EA;&#x6709;&#x8BBE;&#x7F6E; <code>signed</code> &#x4E3A; <code>true</code> &#x7684;&#x65F6;&#x5019;&#xFF0C;&#x624D;&#x4F1A;&#x4F7F;&#x7528;&#x5BC6;&#x94A5;&#x8FDB;&#x884C;&#x52A0;&#x5BC6;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">this</span>.cookies.set(<span class="hljs-string">&apos;name&apos;</span>, <span class="hljs-string">&apos;tobi&apos;</span>, { signed: <span class="hljs-literal">true</span> });
+</code></pre>
+<h2 id="&#x9519;&#x8BEF;&#x5904;&#x7406;">&#x9519;&#x8BEF;&#x5904;&#x7406;</h2>
+<p>  &#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;Koa&#x4F1A;&#x5C06;&#x6240;&#x6709;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#x8F93;&#x51FA;&#x5230; stderr&#xFF0C;&#x9664;&#x975E; <strong>NODE_ENV</strong> &#x662F; &quot;test&quot;&#x3002;&#x4E3A;&#x4E86;&#x5B9E;&#x73B0;&#x81EA;&#x5B9A;&#x4E49;&#x9519;&#x8BEF;&#x5904;&#x7406;&#x903B;&#x8F91;&#xFF08;&#x6BD4;&#x5982; centralized logging&#xFF09;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x6DFB;&#x52A0; &quot;error&quot; &#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5668;&#x3002;</p>
+<pre><code class="lang-js">app.on(<span class="hljs-string">&apos;error&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err</span>)</span>{
+  log.error(<span class="hljs-string">&apos;server error&apos;</span>, err);
+});
+</code></pre>
+<p>  &#x5982;&#x679C;&#x9519;&#x8BEF;&#x53D1;&#x751F;&#x5728; &#x8BF7;&#x6C42;/&#x54CD;&#x5E94; &#x73AF;&#x8282;&#xFF0C;&#x5E76;&#x4E14;&#x5176;&#x4E0D;&#x80FD;&#x591F;&#x54CD;&#x5E94;&#x5BA2;&#x6237;&#x7AEF;&#x65F6;&#xFF0C;<code>Contenxt</code> &#x5B9E;&#x4F8B;&#x4E5F;&#x4F1A;&#x88AB;&#x4F20;&#x9012;&#x5230; <code>error</code> &#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5668;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x91CC;&#x3002;</p>
+<pre><code class="lang-js">app.on(<span class="hljs-string">&apos;error&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, ctx</span>)</span>{
+  log.error(<span class="hljs-string">&apos;server error&apos;</span>, err, ctx);
+});
+</code></pre>
+<p>  &#x5F53;&#x53D1;&#x751F;&#x9519;&#x8BEF;&#x4F46;&#x4ECD;&#x80FD;&#x591F;&#x54CD;&#x5E94;&#x5BA2;&#x6237;&#x7AEF;&#x65F6;&#xFF08;&#x6BD4;&#x5982;&#x6CA1;&#x6709;&#x6570;&#x636E;&#x5199;&#x5230;socket&#x4E2D;&#xFF09;&#xFF0C;Koa&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;500&#x9519;&#x8BEF;(Internal Server Error)&#x3002;</p>
+<p>  &#x65E0;&#x8BBA;&#x54EA;&#x79CD;&#x60C5;&#x51B5;&#xFF0C;Koa&#x90FD;&#x4F1A;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x5E94;&#x7528;&#x7EA7;&#x522B;&#x7684;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#xFF0C;&#x4EE5;&#x4FBF;&#x5B9E;&#x73B0;&#x65E5;&#x5FD7;&#x8BB0;&#x5F55;&#x7B49;&#x76EE;&#x7684;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 简介">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="context.html" class="navigation navigation-next " aria-label="Next page: 上下文content">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"使用","level":"1.2","depth":1,"next":{"title":"上下文content","level":"1.3","depth":1,"path":"context.md","ref":"./context.md","articles":[]},"previous":{"title":"简介","level":"1.1","depth":1,"path":"README.md","ref":"./README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"use.md","mtime":"2016-07-16T05:35:50.000Z","type":"markdown"},"gitbook":{"version":"3.1.0","time":"2016-07-16T05:36:40.456Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

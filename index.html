@@ -49,16 +49,17 @@
         <li><a href="javascript:void(0)" folder="vue-router">vue-router</a></li>
         <li><a href="javascript:void(0)" folder="es6">es6入门</a></li>
         <li><a href="javascript:void(0)" folder="fis3">fis3文档</a></li>
+        <li><a href="javascript:void(0)" folder="tools">工具</a></li>
     </ul>
 </nav>
-<iframe id="main" src="./es6/book/index.html"></iframe>
+<iframe id="main" src="./books/es6/index.html"></iframe>
 <script>
     (function () {
         var nav = document.querySelector('nav');
         nav.addEventListener('click', function (e) {
             var folder = e.target.getAttribute('folder');
             if (folder) {
-                document.getElementById('main').src = './' + folder + '/book/index.html';
+                document.getElementById('main').src = './books/' + folder + '/index.html';
                 if (e.preventDefault) {
                     e.preventDefault();
                 }
