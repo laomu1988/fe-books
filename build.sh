@@ -5,5 +5,6 @@ gitbook build koa books/koa
 gitbook build node books/node
 gitbook build react books/react
 gitbook build tools books/tools
+gitbook build node books/node
 gitbook build vue books/vue
 gitbook build vue-router books/vue-router
