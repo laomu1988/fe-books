@@ -1,10 +1,15 @@
-gitbook build assist books/assist
-gitbook build es6 books/es6
-gitbook build fis3 books/fis3
-gitbook build koa books/koa
-gitbook build node books/node
-gitbook build react books/react
-gitbook build tools books/tools
-gitbook build node books/node
-gitbook build vue books/vue
-gitbook build vue-router books/vue-router
+#!/bin/bash
+folders=("assist" "es6" "fis3" "koa" "node" "react" "tools" "vue" "vue-router")
+output='books'
+
+if [ "$1"V = "V" ]
+then
+    for folder in "${folders[@]}"
+    do
+        echo "git book build $folder $output/$folder"
+        gitbook build $folder "$output/$folder"
+    done
+else
+    echo "git book build $1 $output/$1"
+    gitbook build $1 "$output/$1"
+fi
