@@ -7,7 +7,6 @@
 # Todo
 ## 待整合
 * jquery
-* node
 * express
 
 
@@ -19,6 +18,7 @@
 
 
 # history
+* 2016.08.02 增加nodejs
 * 2016.07.06 tools中增加git速查
 * 2016.06.22 增加koa
 * 2016.06.20 增加react文档
