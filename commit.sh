@@ -1,5 +1,3 @@
-rm _books
-sh build.sh
 mv books _books
 git checkout gh-pages
 rm books
