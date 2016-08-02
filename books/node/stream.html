@@ -1,0 +1,2399 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>Stream · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="string_decoder.html" />
+    
+    
+    <link rel="prev" href="repl.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="documentation.html">
+            
+                <a href="documentation.html">
+            
+                    
+                    About these Docs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="synopsis.html">
+            
+                <a href="synopsis.html">
+            
+                    
+                    Usage & Example
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="assert.html">
+            
+                <a href="assert.html">
+            
+                    
+                    Assertion Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="buffer.html">
+            
+                <a href="buffer.html">
+            
+                    
+                    Buffer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="addons.html">
+            
+                <a href="addons.html">
+            
+                    
+                    C/C++ Addons
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="child_process.html">
+            
+                <a href="child_process.html">
+            
+                    
+                    Child Processes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="cluster.html">
+            
+                <a href="cluster.html">
+            
+                    
+                    Cluster
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="cli.html">
+            
+                <a href="cli.html">
+            
+                    
+                    Command Line Options
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="console.html">
+            
+                <a href="console.html">
+            
+                    
+                    Console
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="crypto.html">
+            
+                <a href="crypto.html">
+            
+                    
+                    Crypto
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="debugger.html">
+            
+                <a href="debugger.html">
+            
+                    
+                    Debugger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="dns.html">
+            
+                <a href="dns.html">
+            
+                    
+                    DNS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="domain.html">
+            
+                <a href="domain.html">
+            
+                    
+                    Domain
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="errors.html">
+            
+                <a href="errors.html">
+            
+                    
+                    Errors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="events.html">
+            
+                <a href="events.html">
+            
+                    
+                    Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="fs.html">
+            
+                <a href="fs.html">
+            
+                    
+                    File System
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="globals.html">
+            
+                <a href="globals.html">
+            
+                    
+                    Globals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="http.html">
+            
+                <a href="http.html">
+            
+                    
+                    HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="https.html">
+            
+                <a href="https.html">
+            
+                    
+                    HTTPS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="modules.html">
+            
+                <a href="modules.html">
+            
+                    
+                    Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="net.html">
+            
+                <a href="net.html">
+            
+                    
+                    Net
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="os.html">
+            
+                <a href="os.html">
+            
+                    
+                    OS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="path.html">
+            
+                <a href="path.html">
+            
+                    
+                    Path
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="process.html">
+            
+                <a href="process.html">
+            
+                    
+                    Process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="punycode.html">
+            
+                <a href="punycode.html">
+            
+                    
+                    Punycode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="querystring.html">
+            
+                <a href="querystring.html">
+            
+                    
+                    Query Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="readline.html">
+            
+                <a href="readline.html">
+            
+                    
+                    Readline
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="repl.html">
+            
+                <a href="repl.html">
+            
+                    
+                    REPL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.30" data-path="stream.html">
+            
+                <a href="stream.html">
+            
+                    
+                    Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" data-path="string_decoder.html">
+            
+                <a href="string_decoder.html">
+            
+                    
+                    String Decoder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" data-path="timers.html">
+            
+                <a href="timers.html">
+            
+                    
+                    Timers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33" data-path="tls.html">
+            
+                <a href="tls.html">
+            
+                    
+                    TLS/SSL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34" data-path="tty.html">
+            
+                <a href="tty.html">
+            
+                    
+                    TTY
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35" data-path="dgram.html">
+            
+                <a href="dgram.html">
+            
+                    
+                    UDP/Datagram
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.36" data-path="url.html">
+            
+                <a href="url.html">
+            
+                    
+                    URL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.37" data-path="util.html">
+            
+                <a href="util.html">
+            
+                    
+                    Utilities
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.38" data-path="v8.html">
+            
+                <a href="v8.html">
+            
+                    
+                    V8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.39" data-path="vm.html">
+            
+                <a href="vm.html">
+            
+                    
+                    VM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.40" data-path="zlib.html">
+            
+                <a href="zlib.html">
+            
+                    
+                    ZLIB
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <a target="_blank" href="https://github.com/nodejs/node">
+            
+                    
+                    GitHub Repo & Issue Tracker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" >
+            
+                <a target="_blank" href="http://groups.google.com/group/nodejs">
+            
+                    
+                    Mailing List
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Stream</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="stream">Stream</h1>
+<pre><code>Stability: 2 - Stable
+</code></pre><p>A stream is an abstract interface for working with streaming data in Node.js.
+The <code>stream</code> module provides a base API that makes it easy to build objects
+that implement the stream interface.</p>
+<p>There are many stream objects provided by Node.js. For instance, a
+<a href="http.html#http_class_http_incomingmessage">request to an HTTP server</a> and <a href="process.html#process_process_stdout"><code>process.stdout</code></a>
+are both stream instances.</p>
+<p>Streams can be readable, writable, or both. All streams are instances of
+<a href="events.html#events_class_eventemitter"><code>EventEmitter</code></a>.</p>
+<p>The <code>stream</code> module can be accessed using:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> stream = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;stream&apos;</span>);
+</code></pre>
+<p>While it is important for all Node.js users to understand how streams works,
+the <code>stream</code> module itself is most useful for developers that are creating new
+types of stream instances. Developer&apos;s who are primarily <em>consuming</em> stream
+objects will rarely (if ever) have need to use the <code>stream</code> module directly.</p>
+<h2 id="organization-of-this-document">Organization of this document</h2>
+<p>This document is divided into two primary sections and third section for
+additional notes. The first section explains the elements of the stream API that
+are required to <em>use</em> streams within an application. The second section explains
+the elements of the API that are required to <em>implement</em> new types of streams.</p>
+<h2 id="types-of-streams">Types of Streams</h2>
+<p>There are four fundamental stream types within Node.js:</p>
+<ul>
+<li><a href="#stream_class_stream_readable">Readable</a> - streams from which data can be read (for example
+<a href="fs.html#fs_fs_createreadstream_path_options"><code>fs.createReadStream()</code></a>).</li>
+<li><a href="#stream_class_stream_writable">Writable</a> - streams to which data can be written (for example
+<a href="fs.html#fs_fs_createwritestream_path_options"><code>fs.createWriteStream()</code></a>).</li>
+<li><a href="#stream_class_stream_duplex">Duplex</a> - streams that are both Readable and Writable (for example
+<a href="net.html#net_class_net_socket"><code>net.Socket</code></a>).</li>
+<li><a href="#stream_class_stream_transform">Transform</a> - Duplex streams that can modify or transform the data as it
+is written and read (for example <a href="zlib.html#zlib_zlib_createdeflate_options"><code>zlib.createDeflate()</code></a>).</li>
+</ul>
+<h3 id="object-mode">Object Mode</h3>
+<p>All streams created by Node.js APIs operate exclusively on strings and <code>Buffer</code>
+objects. It is possible, however, for stream implementations to work with other
+types of JavaScript values (with the exception of <code>null</code> which serves a special
+purpose within streams). Such streams are considered to operate in &quot;object
+mode&quot;.</p>
+<p>Stream instances are switched into object mode using the <code>objectMode</code> option
+when the stream is created. Attempting to switch an existing stream into
+object mode is not safe.</p>
+<h3 id="buffering">Buffering</h3>
+<!--type=misc-->
+<p>Both <a href="#stream_class_stream_writable">Writable</a> and <a href="#stream_class_stream_readable">Readable</a> streams will store data in an internal
+buffer that can be retrieved using <code>writable._writableState.getBuffer()</code> or
+<code>readable._readableState.buffer</code>, respectively.</p>
+<p>The amount of data potentially buffered depends on the <code>highWaterMark</code> option
+passed into the streams constructor. For normal streams, the <code>highWaterMark</code>
+option specifies a total number of bytes. For streams operating in object mode,
+the <code>highWaterMark</code> specifies a total number of objects.</p>
+<p>Data is buffered in Readable streams when the implementation calls
+<a href="#stream_readable_push_chunk_encoding"><code>stream.push(chunk)</code></a>. If the consumer of the Stream does not
+call <a href="#stream_readable_read_size"><code>stream.read()</code></a>, the data will sit in the internal
+queue until it is consumed.</p>
+<p>Once the total size of the internal read buffer reaches the threshold specified
+by <code>highWaterMark</code>, the stream will temporarily stop reading data from the
+underlying resource until the data currently buffered can be consumed (that is,
+the stream will stop calling the internal <code>readable._read()</code> method that is
+used to fill the read buffer).</p>
+<p>Data is buffered in Writable streams when the
+<a href="#stream_writable_write_chunk_encoding_callback"><code>writable.write(chunk)</code></a> method is called repeatedly. While the
+total size of the internal write buffer is below the threshold set by
+<code>highWaterMark</code>, calls to <code>writable.write()</code> will return <code>true</code>. Once the
+the size of the internal buffer reaches or exceeds the <code>highWaterMark</code>, <code>false</code>
+will be returned.</p>
+<p>A key goal of the <code>stream</code> API, and in particular the <a href="#stream_readable_pipe_destination_options"><code>stream.pipe()</code></a> method,
+is to limit the buffering of data to acceptable levels such that sources and
+destinations of differing speeds will not overwhelm the available memory.</p>
+<p>Because <a href="#stream_class_stream_duplex">Duplex</a> and <a href="#stream_class_stream_transform">Transform</a> streams are both Readable and Writable,
+each maintain <em>two</em> separate internal buffers used for reading and writing,
+allowing each side to operate independently of the other while maintaining an
+appropriate and efficient flow of data. For example, <a href="net.html#net_class_net_socket"><code>net.Socket</code></a> instances
+are <a href="#stream_class_stream_duplex">Duplex</a> streams whose Readable side allows consumption of data received
+<em>from</em> the socket and whose Writable side allows writing data <em>to</em> the socket.
+Because data may be written to the socket at a faster or slower rate than data
+is received, it is important each side operate (and buffer) independently of
+the other.</p>
+<h2 id="api-for-stream-consumers">API for Stream Consumers</h2>
+<!--type=misc-->
+<p>Almost all Node.js applications, no matter how simple, use streams in some
+manner. The following is an example of using streams in a Node.js application
+that implements an HTTP server:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;http&apos;</span>);
+
+<span class="hljs-keyword">const</span> server = http.createServer( (req, res) =&gt; {
+  <span class="hljs-comment">// req is an http.IncomingMessage, which is a Readable Stream</span>
+  <span class="hljs-comment">// res is an http.ServerResponse, which is a Writable Stream</span>
+
+  <span class="hljs-keyword">let</span> body = <span class="hljs-string">&apos;&apos;</span>;
+  <span class="hljs-comment">// Get the data as utf8 strings.</span>
+  <span class="hljs-comment">// If an encoding is not set, Buffer objects will be received.</span>
+  req.setEncoding(<span class="hljs-string">&apos;utf8&apos;</span>);
+
+  <span class="hljs-comment">// Readable streams emit &apos;data&apos; events once a listener is added</span>
+  req.on(<span class="hljs-string">&apos;data&apos;</span>, (chunk) =&gt; {
+    body += chunk;
+  });
+
+  <span class="hljs-comment">// the end event indicates that the entire body has been received</span>
+  req.on(<span class="hljs-string">&apos;end&apos;</span>, () =&gt; {
+    <span class="hljs-keyword">try</span> {
+      <span class="hljs-keyword">const</span> data = <span class="hljs-built_in">JSON</span>.parse(body);
+    } <span class="hljs-keyword">catch</span> (er) {
+      <span class="hljs-comment">// uh oh!  bad json!</span>
+      res.statusCode = <span class="hljs-number">400</span>;
+      <span class="hljs-keyword">return</span> res.end(<span class="hljs-string">`error: <span class="hljs-subst">${er.message}</span>`</span>);
+    }
+
+    <span class="hljs-comment">// write back something interesting to the user:</span>
+    res.write(<span class="hljs-keyword">typeof</span> data);
+    res.end();
+  });
+});
+
+server.listen(<span class="hljs-number">1337</span>);
+
+<span class="hljs-comment">// $ curl localhost:1337 -d &apos;{}&apos;</span>
+<span class="hljs-comment">// object</span>
+<span class="hljs-comment">// $ curl localhost:1337 -d &apos;&quot;foo&quot;&apos;</span>
+<span class="hljs-comment">// string</span>
+<span class="hljs-comment">// $ curl localhost:1337 -d &apos;not json&apos;</span>
+<span class="hljs-comment">// error: Unexpected token o</span>
+</code></pre>
+<p><a href="#stream_class_stream_writable">Writable</a> streams (such as <code>res</code> in the example) expose methods such as
+<code>write()</code> and <code>end()</code> that are used to write data onto the stream.</p>
+<p><a href="#stream_class_stream_readable">Readable</a> streams use the <a href="events.html#events_class_eventemitter"><code>EventEmitter</code></a> API for notifying application
+code when data is available to be read off the stream. That available data can
+be read from the stream in multiple ways.</p>
+<p>Both <a href="#stream_class_stream_writable">Writable</a> and <a href="#stream_class_stream_readable">Readable</a> streams use the <a href="events.html#events_class_eventemitter"><code>EventEmitter</code></a> API in
+various ways to communicate the current state of the stream.</p>
+<p><a href="#stream_class_stream_duplex">Duplex</a> and <a href="#stream_class_stream_transform">Transform</a> streams are both <a href="#stream_class_stream_writable">Writable</a> and <a href="#stream_class_stream_readable">Readable</a>.</p>
+<p>Applications that are either writing data to or consuming data from a stream
+are not required to implement the stream interfaces directly and will generally
+have no reason to call <code>require(&apos;stream&apos;)</code>.</p>
+<p>Developers wishing to implement new types of streams should refer to the
+section <a href="#stream_api_for_stream_implementers">API for Stream Implementers</a>.</p>
+<h3 id="writable-streams">Writable Streams</h3>
+<p>Writable streams are an abstraction for a <em>destination</em> to which data is
+written.</p>
+<p>Examples of <a href="#stream_class_stream_writable">Writable</a> streams include:</p>
+<ul>
+<li><a href="http.html#http_class_http_clientrequest">HTTP requests, on the client</a></li>
+<li><a href="http.html#http_class_http_serverresponse">HTTP responses, on the server</a></li>
+<li><a href="fs.html#fs_class_fs_writestream">fs write streams</a></li>
+<li><a href="zlib.html">zlib streams</a></li>
+<li><a href="crypto.html">crypto streams</a></li>
+<li><a href="net.html#net_class_net_socket">TCP sockets</a></li>
+<li><a href="child_process.html#child_process_child_stdin">child process stdin</a></li>
+<li><a href="process.html#process_process_stdout"><code>process.stdout</code></a>, <a href="process.html#process_process_stderr"><code>process.stderr</code></a></li>
+</ul>
+<p><em>Note</em>: Some of these examples are actually <a href="#stream_class_stream_duplex">Duplex</a> streams that implement
+the <a href="#stream_class_stream_writable">Writable</a> interface.</p>
+<p>All <a href="#stream_class_stream_writable">Writable</a> streams implement the interface defined by the
+<code>stream.Writable</code> class.</p>
+<p>While specific instances of <a href="#stream_class_stream_writable">Writable</a> streams may differ in various ways,
+all Writable streams follow the same fundamental usage pattern as illustrated
+in the example below:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> myStream = getWritableStreamSomehow();
+myStream.write(<span class="hljs-string">&apos;some data&apos;</span>);
+myStream.write(<span class="hljs-string">&apos;some more data&apos;</span>);
+myStream.end(<span class="hljs-string">&apos;done writing data&apos;</span>);
+</code></pre>
+<h4 id="class-streamwritable">Class: stream.Writable</h4>
+<!-- YAML
+added: v0.9.4
+-->
+<!--type=class-->
+<h5 id="event-close">Event: &apos;close&apos;</h5>
+<!-- YAML
+added: v0.9.4
+-->
+<p>The <code>&apos;close&apos;</code> event is emitted when the stream and any of its underlying
+resources (a file descriptor, for example) have been closed. The event indicates
+that no more events will be emitted, and no further computation will occur.</p>
+<p>Not all Writable streams will emit the <code>&apos;close&apos;</code> event.</p>
+<h5 id="event-drain">Event: &apos;drain&apos;</h5>
+<!-- YAML
+added: v0.9.4
+-->
+<p>If a call to <a href="#stream_writable_write_chunk_encoding_callback"><code>stream.write(chunk)</code></a> returns <code>false</code>, the
+<code>&apos;drain&apos;</code> event will be emitted when it is appropriate to resume writing data
+to the stream.</p>
+<pre><code class="lang-js"><span class="hljs-comment">// Write the data to the supplied writable stream one million times.</span>
+<span class="hljs-comment">// Be attentive to back-pressure.</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">writeOneMillionTimes</span>(<span class="hljs-params">writer, data, encoding, callback</span>) </span>{
+  <span class="hljs-keyword">let</span> i = <span class="hljs-number">1000000</span>;
+  write();
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">write</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">var</span> ok = <span class="hljs-literal">true</span>;
+    <span class="hljs-keyword">do</span> {
+      i--;
+      <span class="hljs-keyword">if</span> (i === <span class="hljs-number">0</span>) {
+        <span class="hljs-comment">// last time!</span>
+        writer.write(data, encoding, callback);
+      } <span class="hljs-keyword">else</span> {
+        <span class="hljs-comment">// see if we should continue, or wait</span>
+        <span class="hljs-comment">// don&apos;t pass the callback, because we&apos;re not done yet.</span>
+        ok = writer.write(data, encoding);
+      }
+    } <span class="hljs-keyword">while</span> (i &gt; <span class="hljs-number">0</span> &amp;&amp; ok);
+    <span class="hljs-keyword">if</span> (i &gt; <span class="hljs-number">0</span>) {
+      <span class="hljs-comment">// had to stop early!</span>
+      <span class="hljs-comment">// write some more once it drains</span>
+      writer.once(<span class="hljs-string">&apos;drain&apos;</span>, write);
+    }
+  }
+}
+</code></pre>
+<h5 id="event-error">Event: &apos;error&apos;</h5>
+<!-- YAML
+added: v0.9.4
+-->
+<ul>
+<li>{Error}</li>
+</ul>
+<p>The <code>&apos;error&apos;</code> event is emitted if an error occurred while writing or piping
+data. The listener callback is passed a single <code>Error</code> argument when called.</p>
+<p><em>Note</em>: The stream is not closed when the <code>&apos;error&apos;</code> event is emitted.</p>
+<h5 id="event-finish">Event: &apos;finish&apos;</h5>
+<!-- YAML
+added: v0.9.4
+-->
+<p>The <code>&apos;finish&apos;</code> event is emitted after the <a href="#stream_writable_end_chunk_encoding_callback"><code>stream.end()</code></a> method
+has been called, and all data has been flushed to the underlying system.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> writer = getWritableStreamSomehow();
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">100</span>; i ++) {
+  writer.write(<span class="hljs-string">&apos;hello, #${i}!\n&apos;</span>);
+}
+writer.end(<span class="hljs-string">&apos;This is the end\n&apos;</span>);
+writer.on(<span class="hljs-string">&apos;finish&apos;</span>, () =&gt; {
+  <span class="hljs-built_in">console</span>.error(<span class="hljs-string">&apos;All writes are now complete.&apos;</span>);
+});
+</code></pre>
+<h5 id="event-pipe">Event: &apos;pipe&apos;</h5>
+<!-- YAML
+added: v0.9.4
+-->
+<ul>
+<li><code>src</code> {stream.Readable} source stream that is piping to this writable</li>
+</ul>
+<p>The <code>&apos;pipe&apos;</code> event is emitted when the <a href="#stream_readable_pipe_destination_options"><code>stream.pipe()</code></a> method is called on
+a readable stream, adding this writable to its set of destinations.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> writer = getWritableStreamSomehow();
+<span class="hljs-keyword">const</span> reader = getReadableStreamSomehow();
+writer.on(<span class="hljs-string">&apos;pipe&apos;</span>, (src) =&gt; {
+  <span class="hljs-built_in">console</span>.error(<span class="hljs-string">&apos;something is piping into the writer&apos;</span>);
+  assert.equal(src, reader);
+});
+reader.pipe(writer);
+</code></pre>
+<h5 id="event-unpipe">Event: &apos;unpipe&apos;</h5>
+<!-- YAML
+added: v0.9.4
+-->
+<ul>
+<li><code>src</code> {<a href="#stream_class_stream_readable">Readable</a> Stream} The source stream that
+<a href="#stream_readable_unpipe_destination">unpiped</a> this writable</li>
+</ul>
+<p>The <code>&apos;unpipe&apos;</code> event is emitted when the <a href="#stream_readable_unpipe_destination"><code>stream.unpipe()</code></a> method is called
+on a <a href="#stream_class_stream_readable">Readable</a> stream, removing this <a href="#stream_class_stream_writable">Writable</a> from its set of
+destinations.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> writer = getWritableStreamSomehow();
+<span class="hljs-keyword">const</span> reader = getReadableStreamSomehow();
+writer.on(<span class="hljs-string">&apos;unpipe&apos;</span>, (src) =&gt; {
+  <span class="hljs-built_in">console</span>.error(<span class="hljs-string">&apos;Something has stopped piping into the writer.&apos;</span>);
+  assert.equal(src, reader);
+});
+reader.pipe(writer);
+reader.unpipe(writer);
+</code></pre>
+<h5 id="writablecork">writable.cork()</h5>
+<!-- YAML
+added: v0.11.2
+-->
+<p>The <code>writable.cork()</code> method forces all written data to be buffered in memory.
+The buffered data will be flushed when either the <a href="#stream_writable_uncork"><code>stream.uncork()</code></a> or
+<a href="#stream_writable_end_chunk_encoding_callback"><code>stream.end()</code></a> methods are called.</p>
+<p>The primary intent of <code>writable.cork()</code> is to avoid a situation where writing
+many small chunks of data to a stream do not cause a backup in the internal
+buffer that would have an adverse impact on performance. In such situations,
+implementations that implement the <code>writable._writev()</code> method can perform
+buffered writes in a more optimized manner.</p>
+<h5 id="writableendchunk-encoding-callback">writable.end([chunk][, encoding][, callback])</h5>
+<!-- YAML
+added: v0.9.4
+-->
+<ul>
+<li><code>chunk</code> {String|Buffer|any} Optional data to write. For streams not operating
+in object mode, <code>chunk</code> must be a string or a <code>Buffer</code>. For object mode
+streams, <code>chunk</code> may be any JavaScript value other than <code>null</code>.</li>
+<li><code>encoding</code> {String} The encoding, if <code>chunk</code> is a String</li>
+<li><code>callback</code> {Function} Optional callback for when the stream is finished</li>
+</ul>
+<p>Calling the <code>writable.end()</code> method signals that no more data will be written
+to the <a href="#stream_class_stream_writable">Writable</a>. The optional <code>chunk</code> and <code>encoding</code> arguments allow one
+final additional chunk of data to be written immediately before closing the
+stream. If provided, the optional <code>callback</code> function is attached as a listener
+for the <a href="#stream_event_finish"><code>&apos;finish&apos;</code></a> event.</p>
+<p>Calling the <a href="#stream_writable_write_chunk_encoding_callback"><code>stream.write()</code></a> method after calling
+<a href="#stream_writable_end_chunk_encoding_callback"><code>stream.end()</code></a> will raise an error.</p>
+<pre><code class="lang-js"><span class="hljs-comment">// write &apos;hello, &apos; and then end with &apos;world!&apos;</span>
+<span class="hljs-keyword">const</span> file = fs.createWriteStream(<span class="hljs-string">&apos;example.txt&apos;</span>);
+file.write(<span class="hljs-string">&apos;hello, &apos;</span>);
+file.end(<span class="hljs-string">&apos;world!&apos;</span>);
+<span class="hljs-comment">// writing more now is not allowed!</span>
+</code></pre>
+<h5 id="writablesetdefaultencodingencoding">writable.setDefaultEncoding(encoding)</h5>
+<!-- YAML
+added: v0.11.15
+-->
+<ul>
+<li><code>encoding</code> {String} The new default encoding</li>
+<li>Return: <code>this</code></li>
+</ul>
+<p>The <code>writable.setDefaultEncoding()</code> method sets the default <code>encoding</code> for a
+<a href="#stream_class_stream_writable">Writable</a> stream.</p>
+<h5 id="writableuncork">writable.uncork()</h5>
+<!-- YAML
+added: v0.11.2
+-->
+<p>The <code>writable.uncork()</code> method flushes all data buffered since
+<a href="#stream_writable_cork"><code>stream.cork()</code></a> was called.</p>
+<p>When using <code>writable.cork()</code> and <code>writable.uncork()</code> to manage the buffering
+of writes to a stream, it is recommended that calls to <code>writable.uncork()</code> be
+deferred using <code>process.nextTick()</code>. Doing so allows batching of all
+<code>writable.write()</code> calls that occur within a given Node.js event loop phase.</p>
+<pre><code class="lang-js">stream.cork();
+stream.write(<span class="hljs-string">&apos;some &apos;</span>);
+stream.write(<span class="hljs-string">&apos;data &apos;</span>);
+process.nextTick(() =&gt; stream.uncork());
+</code></pre>
+<p>If the <code>writable.cork()</code> method is called multiple times on a stream, the same
+number of calls to <code>writable.uncork()</code> must be called to flush the buffered
+data.</p>
+<pre><code class="lang-js">stream.cork();
+stream.write(<span class="hljs-string">&apos;some &apos;</span>);
+stream.cork();
+stream.write(<span class="hljs-string">&apos;data &apos;</span>);
+process.nextTick(() =&gt; {
+  stream.uncork();
+  <span class="hljs-comment">// The data will not be flushed until uncork() is called a second time.</span>
+  stream.uncork();
+});
+</code></pre>
+<h5 id="writablewritechunk-encoding-callback">writable.write(chunk[, encoding][, callback])</h5>
+<!-- YAML
+added: v0.9.4
+-->
+<ul>
+<li><code>chunk</code> {String|Buffer} The data to write</li>
+<li><code>encoding</code> {String} The encoding, if <code>chunk</code> is a String</li>
+<li><code>callback</code> {Function} Callback for when this chunk of data is flushed</li>
+<li>Returns: {Boolean} <code>false</code> if the stream wishes for the calling code to
+wait for the <code>&apos;drain&apos;</code> event to be emitted before continuing to write
+additional data; otherwise <code>true</code>.</li>
+</ul>
+<p>The <code>writable.write()</code> method writes some data to the stream, and calls the
+supplied <code>callback</code> once the data has been fully handled. If an error
+occurs, the <code>callback</code> <em>may or may not</em> be called with the error as its
+first argument. To reliably detect write errors, add a listener for the
+<code>&apos;error&apos;</code> event.</p>
+<p>The return value indicates whether the written <code>chunk</code> was buffered internally
+and the buffer has exceeded the <code>highWaterMark</code> configured when the stream was
+created. If <code>false</code> is returned, further attempts to write data to the stream
+should be paused until the <a href="#stream_event_drain"><code>&apos;drain&apos;</code></a> event is emitted.</p>
+<p>A Writable stream in object mode will always ignore the <code>encoding</code> argument.</p>
+<h3 id="readable-streams">Readable Streams</h3>
+<p>Readable streams are an abstraction for a <em>source</em> from which data is
+consumed.</p>
+<p>Examples of Readable streams include:</p>
+<ul>
+<li><a href="http.html#http_class_http_incomingmessage">HTTP responses, on the client</a></li>
+<li><a href="http.html#http_class_http_incomingmessage">HTTP requests, on the server</a></li>
+<li><a href="fs.html#fs_class_fs_readstream">fs read streams</a></li>
+<li><a href="zlib.html">zlib streams</a></li>
+<li><a href="crypto.html">crypto streams</a></li>
+<li><a href="net.html#net_class_net_socket">TCP sockets</a></li>
+<li><a href="child_process.html#child_process_child_stdout">child process stdout and stderr</a></li>
+<li><a href="process.html#process_process_stdin"><code>process.stdin</code></a></li>
+</ul>
+<p>All <a href="#stream_class_stream_readable">Readable</a> streams implement the interface defined by the
+<code>stream.Readable</code> class.</p>
+<h4 id="two-modes">Two Modes</h4>
+<p>Readable streams effectively operate in one of two modes: flowing and paused.</p>
+<p>When in flowing mode, data is read from the underlying system automatically
+and provided to an application as quickly as possible using events via the
+<a href="events.html#events_class_eventemitter"><code>EventEmitter</code></a> interface.</p>
+<p>In paused mode, the <a href="#stream_readable_read_size"><code>stream.read()</code></a> method must be called
+explicitly to read chunks of data from the stream.</p>
+<p>All <a href="#stream_class_stream_readable">Readable</a> streams begin in paused mode but can be switched to flowing
+mode in one of the following ways:</p>
+<ul>
+<li>Adding a <a href="#stream_event_data"><code>&apos;data&apos;</code></a> event handler.</li>
+<li>Calling the <a href="#stream_readable_resume"><code>stream.resume()</code></a> method.</li>
+<li>Calling the <a href="#stream_readable_pipe_destination_options"><code>stream.pipe()</code></a> method to send the data to a <a href="#stream_class_stream_writable">Writable</a>.</li>
+</ul>
+<p>The Readable can switch back to paused mode using one of the following:</p>
+<ul>
+<li>If there are no pipe destinations, by calling the
+<a href="#stream_readable_pause"><code>stream.pause()</code></a> method.</li>
+<li>If there are pipe destinations, by removing any <a href="#stream_event_data"><code>&apos;data&apos;</code></a> event
+handlers, and removing all pipe destinations by calling the
+<a href="#stream_readable_unpipe_destination"><code>stream.unpipe()</code></a> method.</li>
+</ul>
+<p>The important concept to remember is that a Readable will not generate data
+until a mechanism for either consuming or ignoring that data is provided. If
+the consuming mechanism is disabled or taken away, the Readable will <em>attempt</em>
+to stop generating the data.</p>
+<p><em>Note</em>: For backwards compatibility reasons, removing <a href="#stream_event_data"><code>&apos;data&apos;</code></a> event
+handlers will <strong>not</strong> automatically pause the stream. Also, if there are piped
+destinations, then calling <a href="#stream_readable_pause"><code>stream.pause()</code></a> will not guarantee
+that the stream will <em>remain</em> paused once those destinations drain and ask for
+more data.</p>
+<p><em>Note</em>: If a <a href="#stream_class_stream_readable">Readable</a> is switched into flowing mode and there are no
+consumers available handle the data, that data will be lost. This can occur,
+for instance, when the <code>readable.resume()</code> method is called without a listener
+attached to the <code>&apos;data&apos;</code> event, or when a <code>&apos;data&apos;</code> event handler is removed
+from the stream.</p>
+<h4 id="three-states">Three States</h4>
+<p>The &quot;two modes&quot; of operation for a Readable stream are a simplified abstraction
+for the more complicated internal state management that is happening within the
+Readable stream implementation.</p>
+<p>Specifically, at any given point in time, every Readable is in one of three
+possible states:</p>
+<ul>
+<li><code>readable._readableState.flowing = null</code></li>
+<li><code>readable._readableState.flowing = false</code></li>
+<li><code>readable._readableState.flowing = true</code></li>
+</ul>
+<p>When <code>readable._readableState.flowing</code> is <code>null</code>, no mechanism for consuming the
+streams data is provided so the stream will not generate its data.</p>
+<p>Attaching a listener for the <code>&apos;data&apos;</code> event, calling the <code>readable.pipe()</code>
+method, or calling the <code>readable.resume()</code> method will switch
+<code>readable._readableState.flowing</code> to <code>true</code>, causing the Readable to begin
+actively emitting events as data is generated.</p>
+<p>Calling <code>readable.pause()</code>, <code>readable.unpipe()</code>, or receiving &quot;back pressure&quot;
+will cause the <code>readable._readableState.flowing</code> to be set as <code>false</code>,
+temporarily halting the flowing of events but <em>not</em> halting the generation of
+data.</p>
+<p>While <code>readable._readableState.flowing</code> is <code>false</code>, data may be accumulating
+within the streams internal buffer.</p>
+<h4 id="choose-one">Choose One</h4>
+<p>The Readable stream API evolved across multiple Node.js versions and provides
+multiple methods of consuming stream data. In general, developers should choose
+<em>one</em> of the methods of consuming data and <em>should never</em> use multiple methods
+to consume data from a single stream.</p>
+<p>Use of the <code>readable.pipe()</code> method is recommended for most users as it has been
+implemented to provide the easiest way of consuming stream data. Developers that
+require more fine-grained control over the transfer and generation of data can
+use the <a href="events.html#events_class_eventemitter"><code>EventEmitter</code></a> and <code>readable.pause()</code>/<code>readable.resume()</code> APIs.</p>
+<h4 id="class-streamreadable">Class: stream.Readable</h4>
+<!-- YAML
+added: v0.9.4
+-->
+<!--type=class-->
+<h5 id="event-close">Event: &apos;close&apos;</h5>
+<!-- YAML
+added: v0.9.4
+-->
+<p>The <code>&apos;close&apos;</code> event is emitted when the stream and any of its underlying
+resources (a file descriptor, for example) have been closed. The event indicates
+that no more events will be emitted, and no further computation will occur.</p>
+<p>Not all <a href="#stream_class_stream_readable">Readable</a> streams will emit the <code>&apos;close&apos;</code> event.</p>
+<h5 id="event-data">Event: &apos;data&apos;</h5>
+<!-- YAML
+added: v0.9.4
+-->
+<ul>
+<li><code>chunk</code> {Buffer|String|any} The chunk of data. For streams that are not
+operating in object mode, the chunk will be either a string or <code>Buffer</code>.
+For streams that are in object mode, the chunk can be any JavaScript value
+other than <code>null</code>.</li>
+</ul>
+<p>The <code>&apos;data&apos;</code> event is emitted whenever the stream is relinquishing ownership of
+a chunk of data to a consumer. This may occur whenever the stream is switched
+in flowing mode by calling <code>readable.pipe()</code>, <code>readable.resume()</code>, or by
+attaching a listener callback to the <code>&apos;data&apos;</code> event. The <code>&apos;data&apos;</code> event will
+also be emitted whenever the <code>readable.read()</code> method is called and a chunk of
+data is available to be returned.</p>
+<p>Attaching a <code>&apos;data&apos;</code> event listener to a stream that has not been explicitly
+paused will switch the stream into flowing mode. Data will then be passed as
+soon as it is available.</p>
+<p>The listener callback will be passed the chunk of data as a string if a default
+encoding has been specified for the stream using the
+<code>readable.setEncoding()</code> method; otherwise the data will be passed as a
+<code>Buffer</code>.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> readable = getReadableStreamSomehow();
+readable.on(<span class="hljs-string">&apos;data&apos;</span>, (chunk) =&gt; {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Received <span class="hljs-subst">${chunk.length}</span> bytes of data.`</span>);
+});
+</code></pre>
+<h5 id="event-end">Event: &apos;end&apos;</h5>
+<!-- YAML
+added: v0.9.4
+-->
+<p>The <code>&apos;end&apos;</code> event is emitted when there is no more data to be consumed from
+the stream.</p>
+<p><em>Note</em>: The <code>&apos;end&apos;</code> event <strong>will not be emitted</strong> unless the data is
+completely consumed. This can be accomplished by switching the stream into
+flowing mode, or by calling <a href="#stream_readable_read_size"><code>stream.read()</code></a> repeatedly until
+all data has been consumed.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> readable = getReadableStreamSomehow();
+readable.on(<span class="hljs-string">&apos;data&apos;</span>, (chunk) =&gt; {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Received <span class="hljs-subst">${chunk.length}</span> bytes of data.`</span>);
+});
+readable.on(<span class="hljs-string">&apos;end&apos;</span>, () =&gt; {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;There will be no more data.&apos;</span>);
+});
+</code></pre>
+<h5 id="event-error">Event: &apos;error&apos;</h5>
+<!-- YAML
+added: v0.9.4
+-->
+<ul>
+<li>{Error}</li>
+</ul>
+<p>The <code>&apos;error&apos;</code> event may be emitted by a Readable implementation at any time.
+Typically, this may occur if the underlying stream in unable to generate data
+due to an underlying internal failure, or when a stream implementation attempts
+to push an invalid chunk of data.</p>
+<p>The listener callback will be passed a single <code>Error</code> object.</p>
+<h5 id="event-readable">Event: &apos;readable&apos;</h5>
+<!-- YAML
+added: v0.9.4
+-->
+<p>The <code>&apos;readable&apos;</code> event is emitted when there is data available to be read from
+the stream. In some cases, attaching a listener for the <code>&apos;readable&apos;</code> event will
+cause some amount of data to be read into an internal buffer.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> readable = getReadableStreamSomehow();
+readable.on(<span class="hljs-string">&apos;readable&apos;</span>, () =&gt; {
+  <span class="hljs-comment">// there is some data to read now</span>
+});
+</code></pre>
+<p>The <code>&apos;readable&apos;</code> event will also be emitted once the end of the stream data
+has been reached but before the <code>&apos;end&apos;</code> event is emitted.</p>
+<p>Effectively, the <code>&apos;readable&apos;</code> event indicates that the stream has new
+information: either new data is available or the end of the stream has been
+reached. In the former case, <a href="#stream_readable_read_size"><code>stream.read()</code></a> will return the
+available data. In the latter case, <a href="#stream_readable_read_size"><code>stream.read()</code></a> will return
+<code>null</code>. For instance, in the following example, <code>foo.txt</code> is an empty file:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;fs&apos;</span>);
+<span class="hljs-keyword">const</span> rr = fs.createReadStream(<span class="hljs-string">&apos;foo.txt&apos;</span>);
+rr.on(<span class="hljs-string">&apos;readable&apos;</span>, () =&gt; {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;readable:&apos;</span>, rr.read());
+});
+rr.on(<span class="hljs-string">&apos;end&apos;</span>, () =&gt; {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;end&apos;</span>);
+});
+</code></pre>
+<p>The output of running this script is:</p>
+<pre><code class="lang-txt">$ node test.js
+readable: null
+end
+</code></pre>
+<p><em>Note</em>: In general, the <code>readable.pipe()</code> and <code>&apos;data&apos;</code> event mechanisms are
+preferred over the use of the <code>&apos;readable&apos;</code> event.</p>
+<h5 id="readableispaused">readable.isPaused()</h5>
+<!--
+added: v0.11.14
+-->
+<ul>
+<li>Return: {Boolean}</li>
+</ul>
+<p>The <code>readable.isPaused()</code> method returns the current operating state of the
+Readable. This is used primarily by the mechanism that underlies the
+<code>readable.pipe()</code> method. In most typical cases, there will be no reason to
+use this method directly.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> readable = <span class="hljs-keyword">new</span> stream.Readable
+
+readable.isPaused() <span class="hljs-comment">// === false</span>
+readable.pause()
+readable.isPaused() <span class="hljs-comment">// === true</span>
+readable.resume()
+readable.isPaused() <span class="hljs-comment">// === false</span>
+</code></pre>
+<h5 id="readablepause">readable.pause()</h5>
+<!-- YAML
+added: v0.9.4
+-->
+<ul>
+<li>Return: <code>this</code></li>
+</ul>
+<p>The <code>readable.pause()</code> method will cause a stream in flowing mode to stop
+emitting <a href="#stream_event_data"><code>&apos;data&apos;</code></a> events, switching out of flowing mode. Any data that
+becomes available will remain in the internal buffer.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> readable = getReadableStreamSomehow();
+readable.on(<span class="hljs-string">&apos;data&apos;</span>, (chunk) =&gt; {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Received <span class="hljs-subst">${chunk.length}</span> bytes of data.`</span>);
+  readable.pause();
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;There will be no additional data for 1 second.&apos;</span>);
+  setTimeout(() =&gt; {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Now data will start flowing again.&apos;</span>);
+    readable.resume();
+  }, <span class="hljs-number">1000</span>);
+});
+</code></pre>
+<h5 id="readablepipedestination-options">readable.pipe(destination[, options])</h5>
+<!-- YAML
+added: v0.9.4
+-->
+<ul>
+<li><code>destination</code> {stream.Writable} The destination for writing data</li>
+<li><code>options</code> {Object} Pipe options<ul>
+<li><code>end</code> {Boolean} End the writer when the reader ends. Defaults to <code>true</code>.</li>
+</ul>
+</li>
+</ul>
+<p>The <code>readable.pipe()</code> method attaches a <a href="#stream_class_stream_writable">Writable</a> stream to the <code>readable</code>,
+causing it to switch automatically into flowing mode and push all of its data
+to the attached <a href="#stream_class_stream_writable">Writable</a>. The flow of data will be automatically managed so
+that the destination Writable stream is not overwhelmed by a faster Readable
+stream.</p>
+<p>The following example pipes all of the data from the <code>readable</code> into a file
+named <code>file.txt</code>:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> readable = getReadableStreamSomehow();
+<span class="hljs-keyword">const</span> writable = fs.createWriteStream(<span class="hljs-string">&apos;file.txt&apos;</span>);
+<span class="hljs-comment">// All the data from readable goes into &apos;file.txt&apos;</span>
+readable.pipe(writable);
+</code></pre>
+<p>It is possible to attach multiple Writable streams to a single Readable stream.</p>
+<p>The <code>readable.pipe()</code> method returns a reference to the <em>destination</em> stream
+making it possible to set up chains of piped streams:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> r = fs.createReadStream(<span class="hljs-string">&apos;file.txt&apos;</span>);
+<span class="hljs-keyword">const</span> z = zlib.createGzip();
+<span class="hljs-keyword">const</span> w = fs.createWriteStream(<span class="hljs-string">&apos;file.txt.gz&apos;</span>);
+r.pipe(z).pipe(w);
+</code></pre>
+<p>By default, <a href="#stream_writable_end_chunk_encoding_callback"><code>stream.end()</code></a> is called on the destination Writable
+stream when the source Readable stream emits <a href="#stream_event_end"><code>&apos;end&apos;</code></a>, so that the
+destination is no longer writable. To disable this default behavior, the <code>end</code>
+option can be passed as <code>false</code>, causing the destination stream to remain open,
+as illustrated in the following example:</p>
+<pre><code class="lang-js">reader.pipe(writer, { end: <span class="hljs-literal">false</span> });
+reader.on(<span class="hljs-string">&apos;end&apos;</span>, () =&gt; {
+  writer.end(<span class="hljs-string">&apos;Goodbye\n&apos;</span>);
+});
+</code></pre>
+<p>One important caveat is that if the Readable stream emits an error during
+processing, the Writable destination <em>is not closed</em> automatically. If an
+error occurs, it will be necessary to <em>manually</em> close each stream in order
+to prevent memory leaks.</p>
+<p><em>Note</em>: The <a href="process.html#process_process_stderr"><code>process.stderr</code></a> and <a href="process.html#process_process_stdout"><code>process.stdout</code></a> Writable streams are
+never closed until the Node.js process exits, regardless of the specified
+options.</p>
+<h5 id="readablereadsize">readable.read([size])</h5>
+<!-- YAML
+added: v0.9.4
+-->
+<ul>
+<li><code>size</code> {Number} Optional argument to specify how much data to read.</li>
+<li>Return {String|Buffer|Null}</li>
+</ul>
+<p>The <code>readable.read()</code> method pulls some data out of the internal buffer and
+returns it. If no data available to be read, <code>null</code> is returned. By default,
+the data will be returned as a <code>Buffer</code> object unless an encoding has been
+specified using the <code>readable.setEncoding()</code> method or the stream is operating
+in object mode.</p>
+<p>The optional <code>size</code> argument specifies a specific number of bytes to read. If
+<code>size</code> bytes are not available to be read, <code>null</code> will be returned <em>unless</em>
+the stream has ended, in which case all of the data remaining in the internal
+buffer will be returned (<em>even if it exceeds <code>size</code> bytes</em>).</p>
+<p>If the <code>size</code> argument is not specified, all of the data contained in the
+internal buffer will be returned.</p>
+<p>The <code>readable.read()</code> method should only be called on Readable streams operating
+in paused mode. In flowing mode, <code>readable.read()</code> is called automatically until
+the internal buffer is fully drained.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> readable = getReadableStreamSomehow();
+readable.on(<span class="hljs-string">&apos;readable&apos;</span>, () =&gt; {
+  <span class="hljs-keyword">var</span> chunk;
+  <span class="hljs-keyword">while</span> (<span class="hljs-literal">null</span> !== (chunk = readable.read())) {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Received <span class="hljs-subst">${chunk.length}</span> bytes of data.`</span>);
+  }
+});
+</code></pre>
+<p>In general, it is recommended that developers avoid the use of the <code>&apos;readable&apos;</code>
+event and the <code>readable.read()</code> method in favor of using either
+<code>readable.pipe()</code> or the <code>&apos;data&apos;</code> event.</p>
+<p>A Readable stream in object mode will always return a single item from
+a call to <a href="#stream_readable_read_size"><code>readable.read(size)</code></a>, regardless of the value of the
+<code>size</code> argument.</p>
+<p><em>Note:</em> If the <code>readable.read()</code> method returns a chunk of data, a <code>&apos;data&apos;</code>
+event will also be emitted.</p>
+<p><em>Note</em>: Calling <a href="#stream_readable_read_size"><code>stream.read([size])</code></a> after the <a href="#stream_event_end"><code>&apos;end&apos;</code></a>
+event has been emitted will return <code>null</code>. No runtime error will be raised.</p>
+<h5 id="readableresume">readable.resume()</h5>
+<!-- YAML
+added: v0.9.4
+-->
+<ul>
+<li>Return: <code>this</code></li>
+</ul>
+<p>The <code>readable.resume()</code> method causes an explicitly paused Readable stream to
+resume emitting <a href="#stream_event_data"><code>&apos;data&apos;</code></a> events, switching the stream into flowing mode.</p>
+<p>The <code>readable.resume()</code> method can be used to fully consume the data from a
+stream without actually processing any of that data as illustrated in the
+following example:</p>
+<pre><code class="lang-js">getReadableStreamSomehow()
+  .resume()
+  .on(<span class="hljs-string">&apos;end&apos;</span>, () =&gt; {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Reached the end, but did not read anything.&apos;</span>);
+  });
+</code></pre>
+<h5 id="readablesetencodingencoding">readable.setEncoding(encoding)</h5>
+<!-- YAML
+added: v0.9.4
+-->
+<ul>
+<li><code>encoding</code> {String} The encoding to use.</li>
+<li>Return: <code>this</code></li>
+</ul>
+<p>The <code>readable.setEncoding()</code> method sets the default character encoding for
+data read from the Readable stream.</p>
+<p>Setting an encoding causes the stream data
+to be returned as string of the specified encoding rather than as <code>Buffer</code>
+objects. For instance, calling <code>readable.setEncoding(&apos;utf8&apos;)</code> will cause the
+output data will be interpreted as UTF-8 data, and passed as strings. Calling
+<code>readable.setEncoding(&apos;hex&apos;)</code> will cause the data to be encoded in hexadecimal
+string format.</p>
+<p>The Readable stream will properly handle multi-byte characters delivered through
+the stream that would otherwise become improperly decoded if simply pulled from
+the stream as <code>Buffer</code> objects.</p>
+<p>Encoding can be disabled by calling <code>readable.setEncoding(null)</code>. This approach
+is useful when working with binary data or with large multi-byte strings spread
+out over multiple chunks.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> readable = getReadableStreamSomehow();
+readable.setEncoding(<span class="hljs-string">&apos;utf8&apos;</span>);
+readable.on(<span class="hljs-string">&apos;data&apos;</span>, (chunk) =&gt; {
+  assert.equal(<span class="hljs-keyword">typeof</span> chunk, <span class="hljs-string">&apos;string&apos;</span>);
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;got %d characters of string data&apos;</span>, chunk.length);
+});
+</code></pre>
+<h5 id="readableunpipedestination">readable.unpipe([destination])</h5>
+<!-- YAML
+added: v0.9.4
+-->
+<ul>
+<li><code>destination</code> {stream.Writable} Optional specific stream to unpipe</li>
+</ul>
+<p>The <code>readable.unpipe()</code> method detaches a Writable stream previously attached
+using the <a href="#stream_readable_pipe_destination_options"><code>stream.pipe()</code></a> method.</p>
+<p>If the <code>destination</code> is not specified, then <em>all</em> pipes are detached.</p>
+<p>If the <code>destination</code> is specified, but no pipe is set up for it, then
+the method does nothing.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> readable = getReadableStreamSomehow();
+<span class="hljs-keyword">const</span> writable = fs.createWriteStream(<span class="hljs-string">&apos;file.txt&apos;</span>);
+<span class="hljs-comment">// All the data from readable goes into &apos;file.txt&apos;,</span>
+<span class="hljs-comment">// but only for the first second</span>
+readable.pipe(writable);
+setTimeout(() =&gt; {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Stop writing to file.txt&apos;</span>);
+  readable.unpipe(writable);
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Manually close the file stream&apos;</span>);
+  writable.end();
+}, <span class="hljs-number">1000</span>);
+</code></pre>
+<h5 id="readableunshiftchunk">readable.unshift(chunk)</h5>
+<!-- YAML
+added: v0.9.11
+-->
+<ul>
+<li><code>chunk</code> {Buffer|String} Chunk of data to unshift onto the read queue</li>
+</ul>
+<p>The <code>readable.unshift()</code> method pushes a chunk of data back into the internal
+buffer. This is useful in certain situations where a stream is being consumed by
+code that needs to &quot;un-consume&quot; some amount of data that it has optimistically
+pulled out of the source, so that the data can be passed on to some other party.</p>
+<p><em>Note</em>: The <code>stream.unshift(chunk)</code> method cannot be called after the
+<a href="#stream_event_end"><code>&apos;end&apos;</code></a> event has been emitted or a runtime error will be thrown.</p>
+<p>Developers using <code>stream.unshift()</code> often should consider switching to
+use of a <a href="#stream_class_stream_transform">Transform</a> stream instead. See the <a href="#stream_api_for_stream_implementers">API for Stream Implementers</a>
+section for more information.</p>
+<pre><code class="lang-js"><span class="hljs-comment">// Pull off a header delimited by \n\n</span>
+<span class="hljs-comment">// use unshift() if we get too much</span>
+<span class="hljs-comment">// Call the callback with (error, header, stream)</span>
+<span class="hljs-keyword">const</span> StringDecoder = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;string_decoder&apos;</span>).StringDecoder;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">parseHeader</span>(<span class="hljs-params">stream, callback</span>) </span>{
+  stream.on(<span class="hljs-string">&apos;error&apos;</span>, callback);
+  stream.on(<span class="hljs-string">&apos;readable&apos;</span>, onReadable);
+  <span class="hljs-keyword">const</span> decoder = <span class="hljs-keyword">new</span> StringDecoder(<span class="hljs-string">&apos;utf8&apos;</span>);
+  <span class="hljs-keyword">var</span> header = <span class="hljs-string">&apos;&apos;</span>;
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onReadable</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">var</span> chunk;
+    <span class="hljs-keyword">while</span> (<span class="hljs-literal">null</span> !== (chunk = stream.read())) {
+      <span class="hljs-keyword">var</span> str = decoder.write(chunk);
+      <span class="hljs-keyword">if</span> (str.match(<span class="hljs-regexp">/\n\n/</span>)) {
+        <span class="hljs-comment">// found the header boundary</span>
+        <span class="hljs-keyword">var</span> split = str.split(<span class="hljs-regexp">/\n\n/</span>);
+        header += split.shift();
+        <span class="hljs-keyword">const</span> remaining = split.join(<span class="hljs-string">&apos;\n\n&apos;</span>);
+        <span class="hljs-keyword">const</span> buf = Buffer.from(remaining, <span class="hljs-string">&apos;utf8&apos;</span>);
+        <span class="hljs-keyword">if</span> (buf.length)
+          stream.unshift(buf);
+        stream.removeListener(<span class="hljs-string">&apos;error&apos;</span>, callback);
+        stream.removeListener(<span class="hljs-string">&apos;readable&apos;</span>, onReadable);
+        <span class="hljs-comment">// now the body of the message can be read from the stream.</span>
+        callback(<span class="hljs-literal">null</span>, header, stream);
+      } <span class="hljs-keyword">else</span> {
+        <span class="hljs-comment">// still reading the header.</span>
+        header += str;
+      }
+    }
+  }
+}
+</code></pre>
+<p><em>Note</em>: Unlike <a href="#stream_readable_push_chunk_encoding"><code>stream.push(chunk)</code></a>, <code>stream.unshift(chunk)</code>
+will not end the reading process by resetting the internal reading state of the
+stream. This can cause unexpected results if <code>readable.unshift()</code> is called
+during a read (i.e. from within a <a href="#stream_readable_read_size_1"><code>stream._read()</code></a>
+implementation on a custom stream). Following the call to <code>readable.unshift()</code>
+with an immediate <a href="#stream_readable_push_chunk_encoding"><code>stream.push(&apos;&apos;)</code></a> will reset the reading state
+appropriately, however it is best to simply avoid calling <code>readable.unshift()</code>
+while in the process of performing a read.</p>
+<h5 id="readablewrapstream">readable.wrap(stream)</h5>
+<!-- YAML
+added: v0.9.4
+-->
+<ul>
+<li><code>stream</code> {Stream} An &quot;old style&quot; readable stream</li>
+</ul>
+<p>Versions of Node.js prior to v0.10 had streams that did not implement the
+entire <code>stream</code> module API as it is currently defined. (See <a href="#stream_compatibility_with_older_node_js_versions">Compatibility</a>
+for more information.)</p>
+<p>When using an older Node.js library that emits <a href="#stream_event_data"><code>&apos;data&apos;</code></a> events and has a
+<a href="#stream_readable_pause"><code>stream.pause()</code></a> method that is advisory only, the
+<code>readable.wrap()</code> method can be used to create a <a href="#stream_class_stream_readable">Readable</a> stream that uses
+the old stream as its data source.</p>
+<p>It will rarely be necessary to use <code>readable.wrap()</code> but the method has been
+provided as a convenience for interacting with older Node.js applications and
+libraries.</p>
+<p>For example:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> OldReader = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./old-api-module.js&apos;</span>).OldReader;
+<span class="hljs-keyword">const</span> Readable = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;stream&apos;</span>).Readable;
+<span class="hljs-keyword">const</span> oreader = <span class="hljs-keyword">new</span> OldReader;
+<span class="hljs-keyword">const</span> myReader = <span class="hljs-keyword">new</span> Readable().wrap(oreader);
+
+myReader.on(<span class="hljs-string">&apos;readable&apos;</span>, () =&gt; {
+  myReader.read(); <span class="hljs-comment">// etc.</span>
+});
+</code></pre>
+<h3 id="duplex-and-transform-streams">Duplex and Transform Streams</h3>
+<h4 id="class-streamduplex">Class: stream.Duplex</h4>
+<!-- YAML
+added: v0.9.4
+-->
+<!--type=class-->
+<p>Duplex streams are streams that implement both the <a href="#stream_class_stream_readable">Readable</a> and
+<a href="#stream_class_stream_writable">Writable</a> interfaces.</p>
+<p>Examples of Duplex streams include:</p>
+<ul>
+<li><a href="net.html#net_class_net_socket">TCP sockets</a></li>
+<li><a href="zlib.html">zlib streams</a></li>
+<li><a href="crypto.html">crypto streams</a></li>
+</ul>
+<h4 id="class-streamtransform">Class: stream.Transform</h4>
+<!-- YAML
+added: v0.9.4
+-->
+<!--type=class-->
+<p>Transform streams are <a href="#stream_class_stream_duplex">Duplex</a> streams where the output is in some way
+related to the input. Like all <a href="#stream_class_stream_duplex">Duplex</a> streams, Transform streams
+implement both the <a href="#stream_class_stream_readable">Readable</a> and <a href="#stream_class_stream_writable">Writable</a> interfaces.</p>
+<p>Examples of Transform streams include:</p>
+<ul>
+<li><a href="zlib.html">zlib streams</a></li>
+<li><a href="crypto.html">crypto streams</a></li>
+</ul>
+<h2 id="api-for-stream-implementers">API for Stream Implementers</h2>
+<!--type=misc-->
+<p>The <code>stream</code> module API has been designed to make it possible to easily
+implement streams using JavaScript&apos;s prototypical inheritance model.</p>
+<p>First, a stream developer would declare a new JavaScript class that extends one
+of the four basic stream classes (<code>stream.Writable</code>, <code>stream.Readable</code>,
+<code>stream.Duplex</code>, or <code>stream.Transform</code>), making sure the call the appropriate
+parent class constructor:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> Writable = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;stream&apos;</span>).Writable;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyWritable</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Writable</span> </span>{
+  <span class="hljs-keyword">constructor</span>(options) {
+    <span class="hljs-keyword">super</span>(options);
+  }
+}
+</code></pre>
+<p>The new stream class must then implement one or more specific methods, depending
+on the type of stream being created, as detailed in the chart below:</p>
+<table>
+  <thead>
+    <tr>
+      <th>
+        <p>Use-case</p>
+      </th>
+      <th>
+        <p>Class</p>
+      </th>
+      <th>
+        <p>Method(s) to implement</p>
+      </th>
+    </tr>
+  </thead>
+  <tr>
+    <td>
+      <p>Reading only</p>
+    </td>
+    <td>
+      <p>[Readable](#stream_class_stream_readable)</p>
+    </td>
+    <td>
+      <p><code>[_read][stream-_read]</code></p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>Writing only</p>
+    </td>
+    <td>
+      <p>[Writable](#stream_class_stream_writable)</p>
+    </td>
+    <td>
+      <p><code>[_write][stream-_write]</code>, <code>[_writev][stream-_writev]</code></p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>Reading and writing</p>
+    </td>
+    <td>
+      <p>[Duplex](#stream_class_stream_duplex)</p>
+    </td>
+    <td>
+      <p><code>[_read][stream-_read]</code>, <code>[_write][stream-_write]</code>, <code>[_writev][stream-_writev]</code></p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>Operate on written data, then read the result</p>
+    </td>
+    <td>
+      <p>[Transform](#stream_class_stream_transform)</p>
+    </td>
+    <td>
+      <p><code>[_transform][stream-_transform]</code>, <code>[_flush][stream-_flush]</code></p>
+    </td>
+  </tr>
+</table>
+
+<p><em>Note</em>: The implementation code for a stream should <em>never</em> call the &quot;public&quot;
+methods of a stream that are intended for use by consumers (as described in
+the <a href="#stream_api_for_stream_consumers">API for Stream Consumers</a> section). Doing so may lead to adverse
+side effects in application code consuming the stream.</p>
+<h3 id="simplified-construction">Simplified Construction</h3>
+<p>For many simple cases, it is possible to construct a stream without relying on
+inheritance. This can be accomplished by directly creating instances of the
+<code>stream.Writable</code>, <code>stream.Readable</code>, <code>stream.Duplex</code> or <code>stream.Transform</code>
+objects and passing appropriate methods as constructor options.</p>
+<p>For example:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> Writable = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;stream&apos;</span>).Writable;
+
+<span class="hljs-keyword">const</span> myWritable = <span class="hljs-keyword">new</span> Writable({
+  write(chunk, encoding, callback) {
+    <span class="hljs-comment">// ...</span>
+  }
+});
+</code></pre>
+<h3 id="implementing-a-writable-stream">Implementing a Writable Stream</h3>
+<p>The <code>stream.Writable</code> class is extended to implement a <a href="#stream_class_stream_writable">Writable</a> stream.</p>
+<p>Custom Writable streams <em>must</em> call the <code>new stream.Writable([options])</code>
+constructor and implement the <code>writable._write()</code> method. The
+<code>writable._writev()</code> method <em>may</em> also be implemented.</p>
+<h4 id="constructor-new-streamwritableoptions">Constructor: new stream.Writable([options])</h4>
+<ul>
+<li><code>options</code> {Object}<ul>
+<li><code>highWaterMark</code> {Number} Buffer level when
+<a href="#stream_writable_write_chunk_encoding_callback"><code>stream.write()</code></a> starts returning <code>false</code>. Defaults to
+<code>16384</code> (16kb), or <code>16</code> for <code>objectMode</code> streams.</li>
+<li><code>decodeStrings</code> {Boolean} Whether or not to decode strings into
+Buffers before passing them to <a href="#stream_writable_write_chunk_encoding_callback_1"><code>stream._write()</code></a>.
+Defaults to <code>true</code></li>
+<li><code>objectMode</code> {Boolean} Whether or not the
+<a href="#stream_writable_write_chunk_encoding_callback"><code>stream.write(anyObj)</code></a> is a valid operation. When set,
+it becomes possible to write JavaScript values other than string or
+<code>Buffer</code> if supported by the stream implementation. Defaults to <code>false</code></li>
+<li><code>write</code> {Function} Implementation for the
+<a href="#stream_writable_write_chunk_encoding_callback_1"><code>stream._write()</code></a> method.</li>
+<li><code>writev</code> {Function} Implementation for the
+<a href="#stream_writable_writev_chunks_callback"><code>stream._writev()</code></a> method.</li>
+</ul>
+</li>
+</ul>
+<p>For example:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> Writable = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;stream&apos;</span>).Writable;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyWritable</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Writable</span> </span>{
+  <span class="hljs-keyword">constructor</span>(options) {
+    <span class="hljs-comment">// Calls the stream.Writable() constructor</span>
+    <span class="hljs-keyword">super</span>(options);
+  }
+}
+</code></pre>
+<p>Or, when using pre-ES6 style constructors:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> Writable = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;stream&apos;</span>).Writable;
+<span class="hljs-keyword">const</span> util = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;util&apos;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">MyWritable</span>(<span class="hljs-params">options</span>) </span>{
+  <span class="hljs-keyword">if</span> (!(<span class="hljs-keyword">this</span> <span class="hljs-keyword">instanceof</span> MyWritable))
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> MyWritable(options);
+  Writable.call(<span class="hljs-keyword">this</span>, options);
+}
+util.inherits(MyWritable, Writable);
+</code></pre>
+<p>Or, using the Simplified Constructor approach:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> Writable = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;stream&apos;</span>).Writable;
+
+<span class="hljs-keyword">const</span> myWritable = <span class="hljs-keyword">new</span> Writable({
+  write(chunk, encoding, callback) {
+    <span class="hljs-comment">// ...</span>
+  },
+  writev(chunks, callback) {
+    <span class="hljs-comment">// ...</span>
+  }
+});
+</code></pre>
+<h4 id="writablewritechunk-encoding-callback">writable._write(chunk, encoding, callback)</h4>
+<ul>
+<li><code>chunk</code> {Buffer|String} The chunk to be written. Will <strong>always</strong>
+be a buffer unless the <code>decodeStrings</code> option was set to <code>false</code>.</li>
+<li><code>encoding</code> {String} If the chunk is a string, then <code>encoding</code> is the
+character encoding of that string. If chunk is a <code>Buffer</code>, or if the
+stream is operating in object mode, <code>encoding</code> may be ignored.</li>
+<li><code>callback</code> {Function} Call this function (optionally with an error
+argument) when processing is complete for the supplied chunk.</li>
+</ul>
+<p>All Writable stream implementations must provide a
+<a href="#stream_writable_write_chunk_encoding_callback_1"><code>writable._write()</code></a> method to send data to the underlying
+resource.</p>
+<p><em>Note</em>: <a href="#stream_class_stream_transform">Transform</a> streams provide their own implementation of the
+<a href="#stream_writable_write_chunk_encoding_callback_1"><code>writable._write()</code></a>.</p>
+<p><em>Note</em>: <strong>This function MUST NOT be called by application code directly.</strong> It
+should be implemented by child classes, and called only by the internal Writable
+class methods only.</p>
+<p>The <code>callback</code> method must be called to signal either that the write completed
+successfully or failed with an error. The first argument passed to the
+<code>callback</code> must be the <code>Error</code> object if the call failed or <code>null</code> if the
+write succeeded.</p>
+<p>It is important to note that all calls to <code>writable.write()</code> that occur between
+the time <code>writable._write()</code> is called and the <code>callback</code> is called will cause
+the written data to be buffered. Once the <code>callback</code> is invoked, the stream will
+emit a <a href="#stream_event_drain"><code>&apos;drain&apos;</code></a> event. If a stream implementation is capable of processing
+multiple chunks of data at once, the <code>writable._writev()</code> method should be
+implemented.</p>
+<p>If the <code>decodeStrings</code> property is set in the constructor options, then
+<code>chunk</code> may be a string rather than a Buffer, and <code>encoding</code> will
+indicate the character encoding of the string. This is to support
+implementations that have an optimized handling for certain string
+data encodings. If the <code>decodeStrings</code> property is explicitly set to <code>false</code>,
+the <code>encoding</code> argument can be safely ignored, and <code>chunk</code> will always be a
+<code>Buffer</code>.</p>
+<p>The <code>writable._write()</code> method is prefixed with an underscore because it is
+internal to the class that defines it, and should never be called directly by
+user programs.</p>
+<h4 id="writablewritevchunks-callback">writable._writev(chunks, callback)</h4>
+<ul>
+<li><code>chunks</code> {Array} The chunks to be written. Each chunk has following
+format: <code>{ chunk: ..., encoding: ... }</code>.</li>
+<li><code>callback</code> {Function} A callback function (optionally with an error
+argument) to be invoked when processing is complete for the supplied chunks.</li>
+</ul>
+<p><em>Note</em>: <strong>This function MUST NOT be called by application code directly.</strong> It
+should be implemented by child classes, and called only by the internal Writable
+class methods only.</p>
+<p>The <code>writable._writev()</code> method may be implemented in addition to
+<code>writable._write()</code> in stream implementations that are capable of processing
+multiple chunks of data at once. If implemented, the method will be called with
+all chunks of data currently buffered in the write queue.</p>
+<p>The <code>writable._writev()</code> method is prefixed with an underscore because it is
+internal to the class that defines it, and should never be called directly by
+user programs.</p>
+<h4 id="errors-while-writing">Errors While Writing</h4>
+<p>It is recommended that errors occurring during the processing of the
+<code>writable._write()</code> and <code>writable._writev()</code> methods are reported by invoking
+the callback and passing the error as the first argument. This will cause an
+<code>&apos;error&apos;</code> event to be emitted by the Writable. Throwing an Error from within
+<code>writable._write()</code> can result in expected and inconsistent behavior depending
+on how the stream is being used.  Using the callback ensures consistent and
+predictable handling of errors.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> Writable = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;stream&apos;</span>).Writable;
+
+<span class="hljs-keyword">const</span> myWritable = <span class="hljs-keyword">new</span> Writable({
+  write(chunk, encoding, callback) {
+    <span class="hljs-keyword">if</span> (chunk.toString().indexOf(<span class="hljs-string">&apos;a&apos;</span>) &gt;= <span class="hljs-number">0</span>) {
+      callback(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">&apos;chunk is invalid&apos;</span>));
+    } <span class="hljs-keyword">else</span> {
+      callback();
+    }
+  }
+});
+</code></pre>
+<h4 id="an-example-writable-stream">An Example Writable Stream</h4>
+<p>The following illustrates a rather simplistic (and somewhat pointless) custom
+Writable stream implementation. While this specific Writable stream instance
+is not of any real particular usefulness, the example illustrates each of the
+required elements of a custom <a href="#stream_class_stream_writable">Writable</a> stream instance:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> Writable = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;stream&apos;</span>).Writable;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyWritable</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Writable</span> </span>{
+  <span class="hljs-keyword">constructor</span>(options) {
+    <span class="hljs-keyword">super</span>(options);
+  }
+
+  _write(chunk, encoding, callback) {
+    <span class="hljs-keyword">if</span> (chunk.toString().indexOf(<span class="hljs-string">&apos;a&apos;</span>) &gt;= <span class="hljs-number">0</span>) {
+      callback(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">&apos;chunk is invalid&apos;</span>));
+    } <span class="hljs-keyword">else</span> {
+      callback();
+    }
+  }
+}
+</code></pre>
+<h3 id="implementing-a-readable-stream">Implementing a Readable Stream</h3>
+<p>The <code>stream.Readable</code> class is extended to implement a <a href="#stream_class_stream_readable">Readable</a> stream.</p>
+<p>Custom Readable streams <em>must</em> call the <code>new stream.Readable([options])</code>
+constructor and implement the <code>readable._read()</code> method.</p>
+<h4 id="new-streamreadableoptions">new stream.Readable([options])</h4>
+<ul>
+<li><code>options</code> {Object}<ul>
+<li><code>highWaterMark</code> {Number} The maximum number of bytes to store in
+the internal buffer before ceasing to read from the underlying
+resource. Defaults to <code>16384</code> (16kb), or <code>16</code> for <code>objectMode</code> streams</li>
+<li><code>encoding</code> {String} If specified, then buffers will be decoded to
+strings using the specified encoding. Defaults to <code>null</code></li>
+<li><code>objectMode</code> {Boolean} Whether this stream should behave
+as a stream of objects. Meaning that <a href="#stream_readable_read_size"><code>stream.read(n)</code></a> returns
+a single value instead of a Buffer of size n. Defaults to <code>false</code></li>
+<li><code>read</code> {Function} Implementation for the <a href="#stream_readable_read_size_1"><code>stream._read()</code></a>
+method.</li>
+</ul>
+</li>
+</ul>
+<p>For example:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> Readable = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;stream&apos;</span>).Readable;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyReadable</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Readable</span> </span>{
+  <span class="hljs-keyword">constructor</span>(options) {
+    <span class="hljs-comment">// Calls the stream.Readable(options) constructor</span>
+    <span class="hljs-keyword">super</span>(options);
+  }
+}
+</code></pre>
+<p>Or, when using pre-ES6 style constructors:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> Readable = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;stream&apos;</span>).Readable;
+<span class="hljs-keyword">const</span> util = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;util&apos;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">MyReadable</span>(<span class="hljs-params">options</span>) </span>{
+  <span class="hljs-keyword">if</span> (!(<span class="hljs-keyword">this</span> <span class="hljs-keyword">instanceof</span> MyReadable))
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> MyReadable(options);
+  Readable.call(<span class="hljs-keyword">this</span>, options);
+}
+util.inherits(MyReadable, Readable);
+</code></pre>
+<p>Or, using the Simplified Constructor approach:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> Readable = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;stream&apos;</span>).Readable;
+
+<span class="hljs-keyword">const</span> myReadable = <span class="hljs-keyword">new</span> Readable({
+  read(size) {
+    <span class="hljs-comment">// ...</span>
+  }
+});
+</code></pre>
+<h4 id="readablereadsize">readable._read(size)</h4>
+<ul>
+<li><code>size</code> {Number} Number of bytes to read asynchronously</li>
+</ul>
+<p><em>Note</em>: <strong>This function MUST NOT be called by application code directly.</strong> It
+should be implemented by child classes, and called only by the internal Readable
+class methods only.</p>
+<p>All Readable stream implementations must provide an implementation of the
+<code>readable._read()</code> method to fetch data from the underlying resource.</p>
+<p>When <code>readable._read()</code> is called, if data is available from the resource, the
+implementation should begin pushing that data into the read queue using the
+<a href="#stream_readable_push_chunk_encoding"><code>this.push(dataChunk)</code></a> method. <code>_read()</code> should continue reading
+from the resource and pushing data until <code>readable.push()</code> returns <code>false</code>. Only
+when <code>_read()</code> is called again after it has stopped should it resume pushing
+additional data onto the queue.</p>
+<p><em>Note</em>: Once the <code>readable._read()</code> method has been called, it will not be
+called again until the <a href="#stream_readable_push_chunk_encoding"><code>readable.push()</code></a> method is called.</p>
+<p>The <code>size</code> argument is advisory. For implementations where a &quot;read&quot; is a
+single operation that returns data can use the <code>size</code> argument to determine how
+much data to fetch. Other implementations may ignore this argument and simply
+provide data whenever it becomes available. There is no need to &quot;wait&quot; until
+<code>size</code> bytes are available before calling <a href="#stream_readable_push_chunk_encoding"><code>stream.push(chunk)</code></a>.</p>
+<p>The <code>readable._read()</code> method is prefixed with an underscore because it is
+internal to the class that defines it, and should never be called directly by
+user programs.</p>
+<h4 id="readablepushchunk-encoding">readable.push(chunk[, encoding])</h4>
+<ul>
+<li><code>chunk</code> {Buffer|Null|String} Chunk of data to push into the read queue</li>
+<li><code>encoding</code> {String} Encoding of String chunks.  Must be a valid
+Buffer encoding, such as <code>&apos;utf8&apos;</code> or <code>&apos;ascii&apos;</code></li>
+<li>Returns {Boolean} <code>true</code> if additional chunks of data may continued to be
+pushed; <code>false</code> otherwise.</li>
+</ul>
+<p>When <code>chunk</code> is a <code>Buffer</code> or <code>string</code>, the <code>chunk</code> of data will be added to the
+internal queue for users of the stream to consume. Passing <code>chunk</code> as <code>null</code>
+signals the end of the stream (EOF), after which no more data can be written.</p>
+<p>When the Readable is operating in paused mode, the data added with
+<code>readable.push()</code> can be read out by calling the
+<a href="#stream_readable_read_size"><code>readable.read()</code></a> method when the <a href="#stream_event_readable"><code>&apos;readable&apos;</code></a> event is
+emitted.</p>
+<p>When the Readable is operating in flowing mode, the data added with
+<code>readable.push()</code> will be delivered by emitting a <code>&apos;data&apos;</code> event.</p>
+<p>The <code>readable.push()</code> method is designed to be as flexible as possible. For
+example, when wrapping a lower-level source that provides some form of
+pause/resume mechanism, and a data callback, the low-level source can be wrapped
+by the custom Readable instance as illustrated in the following example:</p>
+<pre><code class="lang-js"><span class="hljs-comment">// source is an object with readStop() and readStart() methods,</span>
+<span class="hljs-comment">// and an `ondata` member that gets called when it has data, and</span>
+<span class="hljs-comment">// an `onend` member that gets called when the data is over.</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SourceWrapper</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Readable</span> </span>{
+  <span class="hljs-keyword">constructor</span>(options) {
+    <span class="hljs-keyword">super</span>(options);
+
+    <span class="hljs-keyword">this</span>._source = getLowlevelSourceObject();
+
+    <span class="hljs-comment">// Every time there&apos;s data, push it into the internal buffer.</span>
+    <span class="hljs-keyword">this</span>._source.ondata = (chunk) =&gt; {
+      <span class="hljs-comment">// if push() returns false, then stop reading from source</span>
+      <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">this</span>.push(chunk))
+        <span class="hljs-keyword">this</span>._source.readStop();
+    };
+
+    <span class="hljs-comment">// When the source ends, push the EOF-signaling `null` chunk</span>
+    <span class="hljs-keyword">this</span>._source.onend = () =&gt; {
+      <span class="hljs-keyword">this</span>.push(<span class="hljs-literal">null</span>);
+    };
+  }
+  <span class="hljs-comment">// _read will be called when the stream wants to pull more data in</span>
+  <span class="hljs-comment">// the advisory size argument is ignored in this case.</span>
+  _read(size) {
+    <span class="hljs-keyword">this</span>._source.readStart();
+  }
+}
+</code></pre>
+<p><em>Note</em>: The <code>readable.push()</code> method is intended be called only by Readable
+Implementers, and only from within the <code>readable._read()</code> method.</p>
+<h4 id="errors-while-reading">Errors While Reading</h4>
+<p>It is recommended that errors occurring during the processing of the
+<code>readable._read()</code> method are emitted using the <code>&apos;error&apos;</code> event rather than
+being thrown. Throwing an Error from within <code>readable._read()</code> can result in
+expected and inconsistent behavior depending on whether the stream is operating
+in flowing or paused mode. Using the <code>&apos;error&apos;</code> event ensures consistent and
+predictable handling of errors.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> Readable = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;stream&apos;</span>).Readable;
+
+<span class="hljs-keyword">const</span> myReadable = <span class="hljs-keyword">new</span> Readable({
+  read(size) {
+    <span class="hljs-keyword">if</span> (checkSomeErrorCondition()) {
+      process.nextTick(() =&gt; <span class="hljs-keyword">this</span>.emit(<span class="hljs-string">&apos;error&apos;</span>, err));
+      <span class="hljs-keyword">return</span>;
+    }
+    <span class="hljs-comment">// do some work</span>
+  }
+});
+</code></pre>
+<h4 id="an-example-counting-stream">An Example Counting Stream</h4>
+<!--type=example-->
+<p>The following is a basic example of a Readable stream that emits the numerals
+from 1 to 1,000,000 in ascending order, and then ends.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> Readable = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;stream&apos;</span>).Readable;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Counter</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Readable</span> </span>{
+  <span class="hljs-keyword">constructor</span>(opt) {
+    <span class="hljs-keyword">super</span>(opt);
+    <span class="hljs-keyword">this</span>._max = <span class="hljs-number">1000000</span>;
+    <span class="hljs-keyword">this</span>._index = <span class="hljs-number">1</span>;
+  }
+
+  _read() {
+    <span class="hljs-keyword">var</span> i = <span class="hljs-keyword">this</span>._index++;
+    <span class="hljs-keyword">if</span> (i &gt; <span class="hljs-keyword">this</span>._max)
+      <span class="hljs-keyword">this</span>.push(<span class="hljs-literal">null</span>);
+    <span class="hljs-keyword">else</span> {
+      <span class="hljs-keyword">var</span> str = <span class="hljs-string">&apos;&apos;</span> + i;
+      <span class="hljs-keyword">var</span> buf = Buffer.from(str, <span class="hljs-string">&apos;ascii&apos;</span>);
+      <span class="hljs-keyword">this</span>.push(buf);
+    }
+  }
+}
+</code></pre>
+<h3 id="implementing-a-duplex-stream">Implementing a Duplex Stream</h3>
+<p>A <a href="#stream_class_stream_duplex">Duplex</a> stream is one that implements both <a href="#stream_class_stream_readable">Readable</a> and <a href="#stream_class_stream_writable">Writable</a>,
+such as a TCP socket connection.</p>
+<p>Because JavaScript does not have support for multiple inheritance, the
+<code>stream.Duplex</code> class is extended to implement a <a href="#stream_class_stream_duplex">Duplex</a> stream (as opposed
+to extending the <code>stream.Readable</code> <em>and</em> <code>stream.Writable</code> classes).</p>
+<p><em>Note</em>: The <code>stream.Duplex</code> class prototypically inherits from <code>stream.Readable</code>
+and parasitically from <code>stream.Writable</code>.</p>
+<p>Custom Duplex streams <em>must</em> call the <code>new stream.Duplex([options])</code>
+constructor and implement <em>both</em> the <code>readable._read()</code> and
+<code>writable._write()</code> methods.</p>
+<h4 id="new-streamduplexoptions">new stream.Duplex(options)</h4>
+<ul>
+<li><code>options</code> {Object} Passed to both Writable and Readable
+constructors. Also has the following fields:<ul>
+<li><code>allowHalfOpen</code> {Boolean} Defaults to <code>true</code>. If set to <code>false</code>, then
+the stream will automatically end the readable side when the
+writable side ends and vice versa.</li>
+<li><code>readableObjectMode</code> {Boolean} Defaults to <code>false</code>. Sets <code>objectMode</code>
+for readable side of the stream. Has no effect if <code>objectMode</code>
+is <code>true</code>.</li>
+<li><code>writableObjectMode</code> {Boolean} Defaults to <code>false</code>. Sets <code>objectMode</code>
+for writable side of the stream. Has no effect if <code>objectMode</code>
+is <code>true</code>.</li>
+</ul>
+</li>
+</ul>
+<p>For example:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> Duplex = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;stream&apos;</span>).Duplex;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyDuplex</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Duplex</span> </span>{
+  <span class="hljs-keyword">constructor</span>(options) {
+    <span class="hljs-keyword">super</span>(options);
+  }
+}
+</code></pre>
+<p>Or, when using pre-ES6 style constructors:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> Duplex = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;stream&apos;</span>).Duplex;
+<span class="hljs-keyword">const</span> util = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;util&apos;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">MyDuplex</span>(<span class="hljs-params">options</span>) </span>{
+  <span class="hljs-keyword">if</span> (!(<span class="hljs-keyword">this</span> <span class="hljs-keyword">instanceof</span> MyDuplex))
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> MyDuplex(options);
+  Duplex.call(<span class="hljs-keyword">this</span>, options);
+}
+util.inherits(MyDuplex, Duplex);
+</code></pre>
+<p>Or, using the Simplified Constructor approach:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> Duplex = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;stream&apos;</span>).Duplex;
+
+<span class="hljs-keyword">const</span> myDuplex = <span class="hljs-keyword">new</span> Duplex({
+  read(size) {
+    <span class="hljs-comment">// ...</span>
+  },
+  write(chunk, encoding, callback) {
+    <span class="hljs-comment">// ...</span>
+  }
+});
+</code></pre>
+<h4 id="an-example-duplex-stream">An Example Duplex Stream</h4>
+<p>The following illustrates a simple example of a Duplex stream that wraps a
+hypothetical lower-level source object to which data can be written, and
+from which data can be read, albeit using an API that is not compatible with
+Node.js streams.
+The following illustrates a simple example of a Duplex stream that buffers
+incoming written data via the <a href="#stream_class_stream_writable">Writable</a> interface that is read back out
+via the <a href="#stream_class_stream_readable">Readable</a> interface.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> Duplex = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;stream&apos;</span>).Duplex;
+<span class="hljs-keyword">const</span> kSource = <span class="hljs-built_in">Symbol</span>(<span class="hljs-string">&apos;source&apos;</span>);
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyDuplex</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Duplex</span> </span>{
+  <span class="hljs-keyword">constructor</span>(source, options) {
+    <span class="hljs-keyword">super</span>(options);
+    <span class="hljs-keyword">this</span>[kSource] = source;
+  }
+
+  _write(chunk, encoding, callback) {
+    <span class="hljs-comment">// The underlying source only deals with strings</span>
+    <span class="hljs-keyword">if</span> (Buffer.isBuffer(chunk))
+      chunk = chunk.toString(encoding);
+    <span class="hljs-keyword">this</span>[kSource].writeSomeData(chunk, encoding);
+    callback();
+  }
+
+  _read(size) {
+    <span class="hljs-keyword">this</span>[kSource].fetchSomeData(size, (data, encoding) =&gt; {
+      <span class="hljs-keyword">this</span>.push(Buffer.from(data, encoding));
+    });
+  }
+}
+</code></pre>
+<p>The most important aspect of a Duplex stream is that the Readable and Writable
+sides operate independently of one another despite co-existing within a single
+object instance.</p>
+<h4 id="object-mode-duplex-streams">Object Mode Duplex Streams</h4>
+<p>For Duplex streams, <code>objectMode</code> can be set exclusively for either the Readable
+or Writable side using the <code>readableObjectMode</code> and <code>writableObjectMode</code> options
+respectively.</p>
+<p>In the following example, for instance, a new Transform stream (which is a
+type of <a href="#stream_class_stream_duplex">Duplex</a> stream) is created that has an object mode Writable side
+that accepts JavaScript numbers that are converted to hexidecimal strings on
+the Readable side.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> Transform = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;stream&apos;</span>).Transform;
+
+<span class="hljs-comment">// All Transform streams are also Duplex Streams</span>
+<span class="hljs-keyword">const</span> myTransform = <span class="hljs-keyword">new</span> Transform({
+  writableObjectMode: <span class="hljs-literal">true</span>,
+
+  transform(chunk, encoding, callback) {
+    <span class="hljs-comment">// Coerce the chunk to a number if necessary</span>
+    chunk |= <span class="hljs-number">0</span>;
+
+    <span class="hljs-comment">// Transform the chunk into something else.</span>
+    <span class="hljs-keyword">const</span> data = chunk.toString(<span class="hljs-number">16</span>);
+
+    <span class="hljs-comment">// Push the data onto the readable queue.</span>
+    callback(<span class="hljs-literal">null</span>, <span class="hljs-string">&apos;0&apos;</span>.repeat(data.length % <span class="hljs-number">2</span>) + data);
+  }
+});
+
+myTransform.setEncoding(<span class="hljs-string">&apos;ascii&apos;</span>);
+myTransform.on(<span class="hljs-string">&apos;data&apos;</span>, (chunk) =&gt; <span class="hljs-built_in">console</span>.log(chunk));
+
+myTransform.write(<span class="hljs-number">1</span>);
+  <span class="hljs-comment">// Prints: 01</span>
+myTransform.write(<span class="hljs-number">10</span>);
+  <span class="hljs-comment">// Prints: 0a</span>
+myTransform.write(<span class="hljs-number">100</span>);
+  <span class="hljs-comment">// Prints: 64</span>
+</code></pre>
+<h3 id="implementing-a-transform-stream">Implementing a Transform Stream</h3>
+<p>A <a href="#stream_class_stream_transform">Transform</a> stream is a <a href="#stream_class_stream_duplex">Duplex</a> stream where the output is computed
+in some way from the input. Examples include <a href="zlib.html">zlib</a> streams or <a href="crypto.html">crypto</a>
+streams that compress, encrypt, or decrypt data.</p>
+<p><em>Note</em>: There is no requirement that the output be the same size as the input,
+the same number of chunks, or arrive at the same time. For example, a
+Hash stream will only ever have a single chunk of output which is
+provided when the input is ended. A <code>zlib</code> stream will produce output
+that is either much smaller or much larger than its input.</p>
+<p>The <code>stream.Transform</code> class is extended to implement a <a href="#stream_class_stream_transform">Transform</a> stream.</p>
+<p>The <code>stream.Transform</code> class prototypically inherits from <code>stream.Duplex</code> and
+implements its own versions of the <code>writable._write()</code> and <code>readable._read()</code>
+methods. Custom Transform implementations <em>must</em> implement the
+<a href="#stream_transform_transform_chunk_encoding_callback"><code>transform._transform()</code></a> method and <em>may</em> also implement
+the <a href="#stream_transform_flush_callback"><code>transform._flush()</code></a> method.</p>
+<p><em>Note</em>: Care must be taken when using Transform streams in that data written
+to the stream can cause the Writable side of the stream to become paused if
+the output on the Readable side is not consumed.</p>
+<h4 id="new-streamtransformoptions">new stream.Transform([options])</h4>
+<ul>
+<li><code>options</code> {Object} Passed to both Writable and Readable
+constructors. Also has the following fields:<ul>
+<li><code>transform</code> {Function} Implementation for the
+<a href="#stream_transform_transform_chunk_encoding_callback"><code>stream._transform()</code></a> method.</li>
+<li><code>flush</code> {Function} Implementation for the <a href="#stream_transform_flush_callback"><code>stream._flush()</code></a>
+method.</li>
+</ul>
+</li>
+</ul>
+<p>For example:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> Transform = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;stream&apos;</span>).Transform;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyTransform</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Transform</span> </span>{
+  <span class="hljs-keyword">constructor</span>(options) {
+    <span class="hljs-keyword">super</span>(options);
+  }
+}
+</code></pre>
+<p>Or, when using pre-ES6 style constructors:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> Transform = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;stream&apos;</span>).Transform;
+<span class="hljs-keyword">const</span> util = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;util&apos;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">MyTransform</span>(<span class="hljs-params">options</span>) </span>{
+  <span class="hljs-keyword">if</span> (!(<span class="hljs-keyword">this</span> <span class="hljs-keyword">instanceof</span> MyTransform))
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> MyTransform(options);
+  Transform.call(<span class="hljs-keyword">this</span>, options);
+}
+util.inherits(MyTransform, Transform);
+</code></pre>
+<p>Or, using the Simplified Constructor approach:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> Transform = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;stream&apos;</span>).Transform;
+
+<span class="hljs-keyword">const</span> myTransform = <span class="hljs-keyword">new</span> Transform({
+  transform(chunk, encoding, callback) {
+    <span class="hljs-comment">// ...</span>
+  }
+});
+</code></pre>
+<h4 id="events-finish-and-end">Events: &apos;finish&apos; and &apos;end&apos;</h4>
+<p>The <a href="#stream_event_finish"><code>&apos;finish&apos;</code></a> and <a href="#stream_event_end"><code>&apos;end&apos;</code></a> events are from the <code>stream.Writable</code>
+and <code>stream.Readable</code> classes, respectively. The <code>&apos;finish&apos;</code> event is emitted
+after <a href="#stream_writable_end_chunk_encoding_callback"><code>stream.end()</code></a> is called and all chunks have been processed
+by <a href="#stream_transform_transform_chunk_encoding_callback"><code>stream._transform()</code></a>. The <code>&apos;end&apos;</code> event is emitted
+after all data has been output, which occurs after the callback in
+<a href="#stream_transform_flush_callback"><code>transform._flush()</code></a> has been called.</p>
+<h4 id="transformflushcallback">transform._flush(callback)</h4>
+<ul>
+<li><code>callback</code> {Function} A callback function (optionally with an error
+argument and data) to be called when remaining data has been flushed.</li>
+</ul>
+<p><em>Note</em>: <strong>This function MUST NOT be called by application code directly.</strong> It
+should be implemented by child classes, and called only by the internal Readable
+class methods only.</p>
+<p>In some cases, a transform operation may need to emit an additional bit of
+data at the end of the stream. For example, a <code>zlib</code> compression stream will
+store an amount of internal state used to optimally compress the output. When
+the stream ends, however, that additional data needs to be flushed so that the
+compressed data will be complete.</p>
+<p>Custom <a href="#stream_class_stream_transform">Transform</a> implementations <em>may</em> implement the <code>transform._flush()</code>
+method. This will be called when there is no more written data to be consumed,
+but before the <a href="#stream_event_end"><code>&apos;end&apos;</code></a> event is emitted signaling the end of the
+<a href="#stream_class_stream_readable">Readable</a> stream.</p>
+<p>Within the <code>transform._flush()</code> implementation, the <code>readable.push()</code> method
+may be called zero or more times, as appropriate. The <code>callback</code> function must
+be called when the flush operation is complete.</p>
+<p>The <code>transform._flush()</code> method is prefixed with an underscore because it is
+internal to the class that defines it, and should never be called directly by
+user programs.</p>
+<h4 id="transformtransformchunk-encoding-callback">transform._transform(chunk, encoding, callback)</h4>
+<ul>
+<li><code>chunk</code> {Buffer|String} The chunk to be transformed. Will <strong>always</strong>
+be a buffer unless the <code>decodeStrings</code> option was set to <code>false</code>.</li>
+<li><code>encoding</code> {String} If the chunk is a string, then this is the
+encoding type. If chunk is a buffer, then this is the special
+value - &apos;buffer&apos;, ignore it in this case.</li>
+<li><code>callback</code> {Function} A callback function (optionally with an error
+argument and data) to be called after the supplied <code>chunk</code> has been
+processed.</li>
+</ul>
+<p><em>Note</em>: <strong>This function MUST NOT be called by application code directly.</strong> It
+should be implemented by child classes, and called only by the internal Readable
+class methods only.</p>
+<p>All Transform stream implementations must provide a <code>_transform()</code>
+method to accept input and produce output. The <code>transform._transform()</code>
+implementation handles the bytes being written, computes an output, then passes
+that output off to the readable portion using the <code>readable.push()</code> method.</p>
+<p>The <code>transform.push()</code> method may be called zero or more times to generate
+output from a single input chunk, depending on how much is to be output
+as a result of the chunk.</p>
+<p>It is possible that no output is generated from any given chunk of input data.</p>
+<p>The <code>callback</code> function must be called only when the current chunk is completely
+consumed. The first argument passed to the <code>callback</code> must be an <code>Error</code> object
+if an error occurred while processing the input or <code>null</code> otherwise. If a second
+argument is passed to the <code>callback</code>, it will be forwarded on to the
+<code>readable.push()</code> method. In other words the following are equivalent:</p>
+<pre><code class="lang-js">transform.prototype._transform = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">data, encoding, callback</span>) </span>{
+  <span class="hljs-keyword">this</span>.push(data);
+  callback();
+};
+
+transform.prototype._transform = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">data, encoding, callback</span>) </span>{
+  callback(<span class="hljs-literal">null</span>, data);
+};
+</code></pre>
+<p>The <code>transform._transform()</code> method is prefixed with an underscore because it
+is internal to the class that defines it, and should never be called directly by
+user programs.</p>
+<h4 id="class-streampassthrough">Class: stream.PassThrough</h4>
+<p>The <code>stream.PassThrough</code> class is a trivial implementation of a <a href="#stream_class_stream_transform">Transform</a>
+stream that simply passes the input bytes across to the output. Its purpose is
+primarily for examples and testing, but there are some use cases where
+<code>stream.PassThrough</code> is useful as a building block for novel sorts of streams.</p>
+<h2 id="additional-notes">Additional Notes</h2>
+<!--type=misc-->
+<h3 id="compatibility-with-older-nodejs-versions">Compatibility with Older Node.js Versions</h3>
+<!--type=misc-->
+<p>In versions of Node.js prior to v0.10, the Readable stream interface was
+simpler, but also less powerful and less useful.</p>
+<ul>
+<li>Rather than waiting for calls the <a href="#stream_readable_read_size"><code>stream.read()</code></a> method,
+<a href="#stream_event_data"><code>&apos;data&apos;</code></a> events would begin emitting immediately. Applications that
+would need to perform some amount of work to decide how to handle data
+were required to store read data into buffers so the data would not be lost.</li>
+<li>The <a href="#stream_readable_pause"><code>stream.pause()</code></a> method was advisory, rather than
+guaranteed. This meant that it was still necessary to be prepared to receive
+<a href="#stream_event_data"><code>&apos;data&apos;</code></a> events <em>even when the stream was in a paused state</em>.</li>
+</ul>
+<p>In Node.js v0.10, the <a href="#stream_class_stream_readable">Readable</a> class was added. For backwards compatibility
+with older Node.js programs, Readable streams switch into &quot;flowing mode&quot; when a
+<a href="#stream_event_data"><code>&apos;data&apos;</code></a> event handler is added, or when the
+<a href="#stream_readable_resume"><code>stream.resume()</code></a> method is called. The effect is that, even
+when not using the new <a href="#stream_readable_read_size"><code>stream.read()</code></a> method and
+<a href="#stream_event_readable"><code>&apos;readable&apos;</code></a> event, it is no longer necessary to worry about losing
+<a href="#stream_event_data"><code>&apos;data&apos;</code></a> chunks.</p>
+<p>While most applications will continue to function normally, this introduces an
+edge case in the following conditions:</p>
+<ul>
+<li>No <a href="#stream_event_data"><code>&apos;data&apos;</code></a> event listener is added.</li>
+<li>The <a href="#stream_readable_resume"><code>stream.resume()</code></a> method is never called.</li>
+<li>The stream is not piped to any writable destination.</li>
+</ul>
+<p>For example, consider the following code:</p>
+<pre><code class="lang-js"><span class="hljs-comment">// WARNING!  BROKEN!</span>
+net.createServer((socket) =&gt; {
+
+  <span class="hljs-comment">// we add an &apos;end&apos; method, but never consume the data</span>
+  socket.on(<span class="hljs-string">&apos;end&apos;</span>, () =&gt; {
+    <span class="hljs-comment">// It will never get here.</span>
+    socket.end(<span class="hljs-string">&apos;The message was received but was not processed.\n&apos;</span>);
+  });
+
+}).listen(<span class="hljs-number">1337</span>);
+</code></pre>
+<p>In versions of Node.js prior to v0.10, the incoming message data would be
+simply discarded. However, in Node.js v0.10 and beyond, the socket remains
+paused forever.</p>
+<p>The workaround in this situation is to call the
+<a href="#stream_readable_resume"><code>stream.resume()</code></a> method to begin the flow of data:</p>
+<pre><code class="lang-js"><span class="hljs-comment">// Workaround</span>
+net.createServer((socket) =&gt; {
+
+  socket.on(<span class="hljs-string">&apos;end&apos;</span>, () =&gt; {
+    socket.end(<span class="hljs-string">&apos;The message was received but was not processed.\n&apos;</span>);
+  });
+
+  <span class="hljs-comment">// start the flow of data, discarding it.</span>
+  socket.resume();
+
+}).listen(<span class="hljs-number">1337</span>);
+</code></pre>
+<p>In addition to new Readable streams switching into flowing mode,
+pre-v0.10 style streams can be wrapped in a Readable class using the
+<a href="#stream_readable_wrap_stream"><code>readable.wrap()</code></a> method.</p>
+<h3 id="readableread0"><code>readable.read(0)</code></h3>
+<p>There are some cases where it is necessary to trigger a refresh of the
+underlying readable stream mechanisms, without actually consuming any
+data. In such cases, it is possible to call <code>readable.read(0)</code>, which will
+always return <code>null</code>.</p>
+<p>If the internal read buffer is below the <code>highWaterMark</code>, and the
+stream is not currently reading, then calling <code>stream.read(0)</code> will trigger
+a low-level <a href="#stream_readable_read_size_1"><code>stream._read()</code></a> call.</p>
+<p>While most applications will almost never need to do this, there are
+situations within Node.js where this is done, particularly in the
+Readable stream class internals.</p>
+<h3 id="readablepush"><code>readable.push(&apos;&apos;)</code></h3>
+<p>Use of <code>readable.push(&apos;&apos;)</code> is not recommended.</p>
+<p>Pushing a zero-byte string or <code>Buffer</code> to a stream that is not in object mode
+has an interesting side effect. Because it <em>is</em> a call to
+<a href="#stream_readable_push_chunk_encoding"><code>readable.push()</code></a>, the call will end the reading process.
+However, because the argument is an empty string, no data is added to the
+readable buffer so there is nothing for a user to consume.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="repl.html" class="navigation navigation-prev " aria-label="Previous page: REPL">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="string_decoder.html" class="navigation navigation-next " aria-label="Next page: String Decoder">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Stream","level":"1.30","depth":1,"next":{"title":"String Decoder","level":"1.31","depth":1,"path":"string_decoder.md","ref":"string_decoder.md","articles":[]},"previous":{"title":"REPL","level":"1.29","depth":1,"path":"repl.md","ref":"repl.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"stream.md","mtime":"2016-08-02T03:44:16.000Z","type":"markdown"},"gitbook":{"version":"3.1.0","time":"2016-08-02T03:57:46.539Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
