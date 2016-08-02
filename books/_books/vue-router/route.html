@@ -1,0 +1,725 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>路由对象和路由匹配 · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="named.html" />
+    
+    
+    <link rel="prev" href="nested.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    vue-router介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="installation.html">
+            
+                <a href="installation.html">
+            
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="basic.html">
+            
+                <a href="basic.html">
+            
+                    
+                    基本用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="nested.html">
+            
+                <a href="nested.html">
+            
+                    
+                    嵌套路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="route.html">
+            
+                <a href="route.html">
+            
+                    
+                    路由对象和路由匹配
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="named.html">
+            
+                <a href="named.html">
+            
+                    
+                    具名路径
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="options.html">
+            
+                <a href="options.html">
+            
+                    
+                    路由配置项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="view.html">
+            
+                <a href="view.html">
+            
+                    
+                    router-view
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="link.html">
+            
+                <a href="link.html">
+            
+                    
+                    v-link
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="lazy.html">
+            
+                <a href="lazy.html">
+            
+                    
+                    动态组件载入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="pipeline/">
+            
+                <a href="pipeline/">
+            
+                    
+                    切换控制流水线
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="pipeline/hooks.html">
+            
+                <a href="pipeline/hooks.html">
+            
+                    
+                    切换钩子函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="pipeline/data.html">
+            
+                <a href="pipeline/data.html">
+            
+                    
+                    data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="pipeline/activate.html">
+            
+                <a href="pipeline/activate.html">
+            
+                    
+                    activate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="pipeline/deactivate.html">
+            
+                <a href="pipeline/deactivate.html">
+            
+                    
+                    deactivate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="pipeline/can-activate.html">
+            
+                <a href="pipeline/can-activate.html">
+            
+                    
+                    canActivate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="pipeline/can-deactivate.html">
+            
+                <a href="pipeline/can-deactivate.html">
+            
+                    
+                    canDeactivate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="pipeline/can-reuse.html">
+            
+                <a href="pipeline/can-reuse.html">
+            
+                    
+                    canReuse
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="api/">
+            
+                <a href="api/">
+            
+                    
+                    API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="api/properties.html">
+            
+                <a href="api/properties.html">
+            
+                    
+                    路由实例属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="api/start.html">
+            
+                <a href="api/start.html">
+            
+                    
+                    router.start
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="api/stop.html">
+            
+                <a href="api/stop.html">
+            
+                    
+                    router.stop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="api/map.html">
+            
+                <a href="api/map.html">
+            
+                    
+                    router.map
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="api/on.html">
+            
+                <a href="api/on.html">
+            
+                    
+                    router.on
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.6" data-path="api/go.html">
+            
+                <a href="api/go.html">
+            
+                    
+                    router.go
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.7" data-path="api/replace.html">
+            
+                <a href="api/replace.html">
+            
+                    
+                    router.replace
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.8" data-path="api/redirect.html">
+            
+                <a href="api/redirect.html">
+            
+                    
+                    router.redirect
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.9" data-path="api/alias.html">
+            
+                <a href="api/alias.html">
+            
+                    
+                    router.alias
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.10" data-path="api/before-each.html">
+            
+                <a href="api/before-each.html">
+            
+                    
+                    router.beforeEach
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.11" data-path="api/after-each.html">
+            
+                <a href="api/after-each.html">
+            
+                    
+                    router.afterEach
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >路由对象和路由匹配</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x8DEF;&#x7531;&#x89C4;&#x5219;&#x548C;&#x8DEF;&#x7531;&#x5339;&#x914D;">&#x8DEF;&#x7531;&#x89C4;&#x5219;&#x548C;&#x8DEF;&#x7531;&#x5339;&#x914D;</h1>
+<p>Vue-router &#x505A;&#x8DEF;&#x5F84;&#x5339;&#x914D;&#x65F6;&#x652F;&#x6301;&#x52A8;&#x6001;&#x7247;&#x6BB5;&#x3001;&#x5168;&#x5339;&#x914D;&#x7247;&#x6BB5;&#x4EE5;&#x53CA;&#x67E5;&#x8BE2;&#x53C2;&#x6570;&#xFF08;&#x7247;&#x6BB5;&#x6307;&#x7684;&#x662F; URL &#x4E2D;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF09;&#x3002;&#x5BF9;&#x4E8E;&#x89E3;&#x6790;&#x8FC7;&#x7684;&#x8DEF;&#x7531;&#xFF0C;&#x8FD9;&#x4E9B;&#x4FE1;&#x606F;&#x90FD;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<strong>&#x8DEF;&#x7531;&#x4E0A;&#x4E0B;&#x6587;&#x5BF9;&#x8C61;</strong>&#xFF08;&#x4ECE;&#x73B0;&#x5728;&#x8D77;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x79F0;&#x5176;&#x4E3A;&#x8DEF;&#x7531;&#x5BF9;&#x8C61;&#xFF09;&#x8BBF;&#x95EE;&#x3002;
+&#x5728;&#x4F7F;&#x7528;&#x4E86; vue-router &#x7684;&#x5E94;&#x7528;&#x4E2D;&#xFF0C;&#x8DEF;&#x7531;&#x5BF9;&#x8C61;&#x4F1A;&#x88AB;&#x6CE8;&#x5165;&#x6BCF;&#x4E2A;&#x7EC4;&#x4EF6;&#x4E2D;&#xFF0C;&#x8D4B;&#x503C;&#x4E3A; <code>this.$route</code> &#xFF0C;&#x5E76;&#x4E14;&#x5F53;&#x8DEF;&#x7531;&#x5207;&#x6362;&#x65F6;&#xFF0C;&#x8DEF;&#x7531;&#x5BF9;&#x8C61;&#x4F1A;&#x88AB;&#x66F4;&#x65B0;&#x3002;</p>
+<p>&#x8DEF;&#x7531;&#x5BF9;&#x8C61;&#x66B4;&#x9732;&#x4E86;&#x4EE5;&#x4E0B;&#x5C5E;&#x6027;&#xFF1A;</p>
+<ul>
+<li><p><strong>$route.path</strong></p>
+<p>&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x7B49;&#x4E8E;&#x5F53;&#x524D;&#x8DEF;&#x7531;&#x5BF9;&#x8C61;&#x7684;&#x8DEF;&#x5F84;&#xFF0C;&#x4F1A;&#x88AB;&#x89E3;&#x6790;&#x4E3A;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#xFF0C;&#x5982; <code>&quot;/foo/bar&quot;</code> &#x3002;</p>
+</li>
+<li><p><strong>$route.params</strong></p>
+<p>&#x5BF9;&#x8C61;&#xFF0C;&#x5305;&#x542B;&#x8DEF;&#x7531;&#x4E2D;&#x7684;&#x52A8;&#x6001;&#x7247;&#x6BB5;&#x548C;&#x5168;&#x5339;&#x914D;&#x7247;&#x6BB5;&#x7684;&#x952E;&#x503C;&#x5BF9;&#xFF0C;&#x8BE6;&#x60C5;&#x89C1;&#x540E;&#x6587;</p>
+</li>
+<li><p><strong>$route.query</strong></p>
+<p>&#x5BF9;&#x8C61;&#xFF0C;&#x5305;&#x542B;&#x8DEF;&#x7531;&#x4E2D;&#x67E5;&#x8BE2;&#x53C2;&#x6570;&#x7684;&#x952E;&#x503C;&#x5BF9;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5BF9;&#x4E8E; <code>/foo?user=1</code> &#xFF0C;&#x4F1A;&#x5F97;&#x5230; <code>$route.query.user == 1</code> &#x3002;</p>
+</li>
+<li><p><strong>$route.router</strong></p>
+<p>&#x8DEF;&#x7531;&#x89C4;&#x5219;&#x6240;&#x5C5E;&#x7684;&#x8DEF;&#x7531;&#x5668;&#xFF08;&#x4EE5;&#x53CA;&#x5176;&#x6240;&#x5C5E;&#x7684;&#x7EC4;&#x4EF6;&#xFF09;&#x3002;</p>
+</li>
+<li><p><strong>$route.matched</strong></p>
+<p>&#x6570;&#x7EC4;&#xFF0C;&#x5305;&#x542B;&#x5F53;&#x524D;&#x5339;&#x914D;&#x7684;&#x8DEF;&#x5F84;&#x4E2D;&#x6240;&#x5305;&#x542B;&#x7684;&#x6240;&#x6709;&#x7247;&#x6BB5;&#x6240;&#x5BF9;&#x5E94;&#x7684;&#x914D;&#x7F6E;&#x53C2;&#x6570;&#x5BF9;&#x8C61;&#x3002;</p>
+</li>
+<li><p><strong>$route.name</strong></p>
+<p>&#x5F53;&#x524D;&#x8DEF;&#x5F84;&#x7684;&#x540D;&#x5B57;&#x3002; (&#x53C2;&#x89C1;<a href="named.html">&#x5177;&#x540D;&#x8DEF;&#x5F84;</a>)</p>
+</li>
+</ul>
+<h3 id="&#x81EA;&#x5B9A;&#x4E49;&#x5B57;&#x6BB5;">&#x81EA;&#x5B9A;&#x4E49;&#x5B57;&#x6BB5;</h3>
+<p>&#x9664;&#x4E86;&#x4EE5;&#x4E0A;&#x8FD9;&#x4E9B;&#x5185;&#x7F6E;&#x7684;&#x5C5E;&#x6027;&#x5916;&#xFF0C;&#x5728;&#x8DEF;&#x7531;&#x8BBE;&#x7F6E;&#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x5176;&#x4ED6;&#x81EA;&#x5B9A;&#x4E49;&#x5B57;&#x6BB5;&#x4E5F;&#x4F1A;&#x88AB;&#x62F7;&#x8D1D;&#x5230;&#x6700;&#x7EC8;&#x7684;&#x8DEF;&#x7531;&#x5BF9;&#x8C61;&#x4E0A;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-js">router.map({
+  <span class="hljs-string">&apos;/a&apos;</span>: {
+    component: { ... },
+    auth: <span class="hljs-literal">true</span> <span class="hljs-comment">// &#x8FD9;&#x91CC; auth &#x662F;&#x4E00;&#x4E2A;&#x81EA;&#x5B9A;&#x4E49;&#x5B57;&#x6BB5;</span>
+  }
+})
+</code></pre>
+<p>&#x5F53; <code>/a</code> &#x88AB;&#x5339;&#x914D;&#x65F6;&#xFF0C;<code>$route.auth</code> &#x7684;&#x503C;&#x5C06;&#x4F1A;&#x662F; <code>true</code>&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x8FD9;&#x4E2A;&#x7279;&#x6027;&#x5728;&#x5168;&#x5C40;&#x7684;&#x94A9;&#x5B50;&#x51FD;&#x6570;&#x4E2D;&#x8FDB;&#x884C;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#xFF1A;</p>
+<pre><code class="lang-js">router.beforeEach(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">transition</span>) </span>{
+  <span class="hljs-keyword">if</span> (transition.to.auth) {
+    <span class="hljs-comment">// &#x5BF9;&#x7528;&#x6237;&#x8EAB;&#x4EFD;&#x8FDB;&#x884C;&#x9A8C;&#x8BC1;...</span>
+  }
+})
+</code></pre>
+<p>&#x5F53;&#x5D4C;&#x5957;&#x7684;&#x8DEF;&#x5F84;&#x88AB;&#x5339;&#x914D;&#x65F6;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A;&#x8DEF;&#x5F84;&#x6BB5;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x5B57;&#x6BB5;&#x90FD;&#x4F1A;&#x88AB;&#x62F7;&#x8D1D;&#x5230;&#x540C;&#x4E00;&#x4E2A;&#x8DEF;&#x7531;&#x5BF9;&#x8C61;&#x4E0A;&#x3002;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x5B50;&#x8DEF;&#x5F84;&#x548C;&#x4E00;&#x4E2A;&#x7236;&#x8DEF;&#x5F84;&#x6709;&#x76F8;&#x540C;&#x7684;&#x5B57;&#x6BB5;&#xFF0C;&#x5219;&#x5B50;&#x8DEF;&#x5F84;&#x7684;&#x503C;&#x4F1A;&#x8986;&#x76D6;&#x7236;&#x8DEF;&#x5F84;&#x7684;&#x503C;&#x3002;</p>
+<h3 id="&#x5728;&#x6A21;&#x677F;&#x4E2D;&#x4F7F;&#x7528;">&#x5728;&#x6A21;&#x677F;&#x4E2D;&#x4F7F;&#x7528;</h3>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5728;&#x7EC4;&#x4EF6;&#x6A21;&#x677F;&#x4E2D;&#x4F7F;&#x7528; <code>$route</code> &#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x5F53;&#x524D;&#x8DEF;&#x5F84;: {{$route.path}}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x5F53;&#x524D;&#x8DEF;&#x7531;&#x53C2;&#x6570;: {{$route.params | json}}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<h3 id="&#x8DEF;&#x7531;&#x5339;&#x914D;">&#x8DEF;&#x7531;&#x5339;&#x914D;</h3>
+<h4 id="&#x52A8;&#x6001;&#x7247;&#x6BB5;">&#x52A8;&#x6001;&#x7247;&#x6BB5;</h4>
+<p>&#x52A8;&#x6001;&#x7247;&#x6BB5;&#x4F7F;&#x7528;&#x4EE5;&#x5192;&#x53F7;&#x5F00;&#x5934;&#x7684;&#x8DEF;&#x5F84;&#x7247;&#x6BB5;&#x5B9A;&#x4E49;&#xFF0C;&#x4F8B;&#x5982; <code>user/:username</code> &#x4E2D;&#xFF0C;<code>:username</code> &#x5C31;&#x662F;&#x52A8;&#x6001;&#x7247;&#x6BB5;&#x3002;&#x5B83;&#x4F1A;&#x5339;&#x914D;&#x6CE8;&#x5165; <code>/user/foo</code> &#x6216;&#x8005; <code>/user/bar</code> &#x4E4B;&#x7C7B;&#x7684;&#x8DEF;&#x5F84;&#x3002;&#x5F53;&#x8DEF;&#x5F84;&#x5339;&#x914D;&#x4E00;&#x4E2A;&#x542B;&#x6709;&#x52A8;&#x6001;&#x7247;&#x6BB5;&#x7684;&#x8DEF;&#x7531;&#x89C4;&#x5219;&#x65F6;&#xFF0C;&#x52A8;&#x6001;&#x7247;&#x6BB5;&#x7684;&#x4FE1;&#x606F;&#x53EF;&#x4EE5;&#x4ECE; <code>$route.params</code> &#x4E2D;&#x83B7;&#x5F97;&#x3002;</p>
+<p>&#x4F7F;&#x7528;&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-js">router.map({
+  <span class="hljs-string">&apos;/user/:username&apos;</span>: {
+    component: {
+      template: <span class="hljs-string">&apos;&lt;p&gt;&#x7528;&#x6237;&#x540D;&#x662F;{{$route.params.username}}&lt;/p&gt;&apos;</span>
+    }
+  }
+})
+</code></pre>
+<p>&#x4E00;&#x6761;&#x8DEF;&#x5F84;&#x4E2D;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x591A;&#x4E2A;&#x52A8;&#x6001;&#x7247;&#x6BB5;&#xFF0C;&#x6BCF;&#x4E2A;&#x7247;&#x6BB5;&#x90FD;&#x4F1A;&#x88AB;&#x89E3;&#x6790;&#x6210; <code>$route.params</code> &#x7684;&#x4E00;&#x4E2A;&#x952E;&#x503C;&#x5BF9;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;:</p>
+<table>
+<thead>
+<tr>
+<th>&#x6A21;&#x5F0F;</th>
+<th>&#x5339;&#x914D;&#x7684;&#x8DEF;&#x5F84;</th>
+<th>$route.params</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/user/:username</td>
+<td>/user/evan</td>
+<td><code>{ username: &apos;evan&apos; }</code></td>
+</tr>
+<tr>
+<td>/user/:username/post/:post_id</td>
+<td>/user/evan/post/123</td>
+<td><code>{ username: &apos;evan&apos;, post_id: 123 }</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x5168;&#x5339;&#x914D;&#x7247;&#x6BB5;">&#x5168;&#x5339;&#x914D;&#x7247;&#x6BB5;</h4>
+<p>&#x52A8;&#x6001;&#x7247;&#x6BB5;&#x53EA;&#x80FD;&#x5339;&#x914D;&#x8DEF;&#x5F84;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x90E8;&#x5206;&#xFF0C;&#x800C;&#x5168;&#x5339;&#x914D;&#x7247;&#x6BB5;&#x5219;&#x57FA;&#x672C;&#x7C7B;&#x4F3C;&#x4E8E;&#x5B83;&#x7684;&#x8D2A;&#x5FC3;&#x7248;&#x3002;&#x4F8B;&#x5982; <code>/foo/*bar</code> &#x4F1A;&#x5339;&#x914D;&#x4EFB;&#x4F55;&#x4EE5; <code>/foo/</code> &#x5F00;&#x5934;&#x7684;&#x8DEF;&#x5F84;&#x3002;&#x5339;&#x914D;&#x7684;&#x90E8;&#x5206;&#x4E5F;&#x4F1A;&#x88AB;&#x89E3;&#x6790;&#x4E3A; <code>$route.params</code> &#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x952E;&#x503C;&#x5BF9;&#x3002;</p>
+<p>&#x4F8B;&#x5982;:</p>
+<table>
+<thead>
+<tr>
+<th>&#x6A21;&#x5F0F;</th>
+<th>&#x5339;&#x914D;&#x7684;&#x8DEF;&#x5F84;</th>
+<th>$route.params</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/user/*any</td>
+<td>/user/a/b/c</td>
+<td><code>{ any: &apos;a/b/c&apos; }</code></td>
+</tr>
+<tr>
+<td>/foo/*any/bar</td>
+<td>/foo/a/b/bar</td>
+<td><code>{ any: &apos;a/b&apos; }</code></td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="nested.html" class="navigation navigation-prev " aria-label="Previous page: 嵌套路由">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="named.html" class="navigation navigation-next " aria-label="Next page: 具名路径">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"路由对象和路由匹配","level":"1.5","depth":1,"next":{"title":"具名路径","level":"1.6","depth":1,"path":"named.md","ref":"named.md","articles":[]},"previous":{"title":"嵌套路由","level":"1.4","depth":1,"path":"nested.md","ref":"nested.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"route.md","mtime":"2016-08-02T06:11:40.000Z","type":"markdown"},"gitbook":{"version":"3.1.0","time":"2016-08-02T06:46:20.063Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

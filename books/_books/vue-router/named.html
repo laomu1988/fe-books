@@ -1,0 +1,634 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>具名路径 · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="options.html" />
+    
+    
+    <link rel="prev" href="route.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    vue-router介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="installation.html">
+            
+                <a href="installation.html">
+            
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="basic.html">
+            
+                <a href="basic.html">
+            
+                    
+                    基本用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="nested.html">
+            
+                <a href="nested.html">
+            
+                    
+                    嵌套路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="route.html">
+            
+                <a href="route.html">
+            
+                    
+                    路由对象和路由匹配
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="named.html">
+            
+                <a href="named.html">
+            
+                    
+                    具名路径
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="options.html">
+            
+                <a href="options.html">
+            
+                    
+                    路由配置项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="view.html">
+            
+                <a href="view.html">
+            
+                    
+                    router-view
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="link.html">
+            
+                <a href="link.html">
+            
+                    
+                    v-link
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="lazy.html">
+            
+                <a href="lazy.html">
+            
+                    
+                    动态组件载入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="pipeline/">
+            
+                <a href="pipeline/">
+            
+                    
+                    切换控制流水线
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="pipeline/hooks.html">
+            
+                <a href="pipeline/hooks.html">
+            
+                    
+                    切换钩子函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="pipeline/data.html">
+            
+                <a href="pipeline/data.html">
+            
+                    
+                    data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="pipeline/activate.html">
+            
+                <a href="pipeline/activate.html">
+            
+                    
+                    activate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="pipeline/deactivate.html">
+            
+                <a href="pipeline/deactivate.html">
+            
+                    
+                    deactivate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="pipeline/can-activate.html">
+            
+                <a href="pipeline/can-activate.html">
+            
+                    
+                    canActivate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="pipeline/can-deactivate.html">
+            
+                <a href="pipeline/can-deactivate.html">
+            
+                    
+                    canDeactivate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="pipeline/can-reuse.html">
+            
+                <a href="pipeline/can-reuse.html">
+            
+                    
+                    canReuse
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="api/">
+            
+                <a href="api/">
+            
+                    
+                    API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="api/properties.html">
+            
+                <a href="api/properties.html">
+            
+                    
+                    路由实例属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="api/start.html">
+            
+                <a href="api/start.html">
+            
+                    
+                    router.start
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="api/stop.html">
+            
+                <a href="api/stop.html">
+            
+                    
+                    router.stop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="api/map.html">
+            
+                <a href="api/map.html">
+            
+                    
+                    router.map
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="api/on.html">
+            
+                <a href="api/on.html">
+            
+                    
+                    router.on
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.6" data-path="api/go.html">
+            
+                <a href="api/go.html">
+            
+                    
+                    router.go
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.7" data-path="api/replace.html">
+            
+                <a href="api/replace.html">
+            
+                    
+                    router.replace
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.8" data-path="api/redirect.html">
+            
+                <a href="api/redirect.html">
+            
+                    
+                    router.redirect
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.9" data-path="api/alias.html">
+            
+                <a href="api/alias.html">
+            
+                    
+                    router.alias
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.10" data-path="api/before-each.html">
+            
+                <a href="api/before-each.html">
+            
+                    
+                    router.beforeEach
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.11" data-path="api/after-each.html">
+            
+                <a href="api/after-each.html">
+            
+                    
+                    router.afterEach
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >具名路径</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5177;&#x540D;&#x8DEF;&#x5F84;">&#x5177;&#x540D;&#x8DEF;&#x5F84;</h1>
+<p>&#x5728;&#x6709;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x7ED9;&#x4E00;&#x6761;&#x8DEF;&#x5F84;&#x52A0;&#x4E0A;&#x4E00;&#x4E2A;&#x540D;&#x5B57;&#x80FD;&#x591F;&#x8BA9;&#x6211;&#x4EEC;&#x66F4;&#x65B9;&#x4FBF;&#x5730;&#x8FDB;&#x884C;&#x8DEF;&#x5F84;&#x7684;&#x8DF3;&#x8F6C;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x6309;&#x7167;&#x4E0B;&#x9762;&#x7684;&#x793A;&#x4F8B;&#x7ED9;&#x4E00;&#x6761;&#x8DEF;&#x5F84;&#x52A0;&#x4E0A;&#x540D;&#x5B57;&#xFF1A;</p>
+<pre><code class="lang-js">router.map({
+  <span class="hljs-string">&apos;/user/:userId&apos;</span>: {
+    name: <span class="hljs-string">&apos;user&apos;</span>, <span class="hljs-comment">// &#x7ED9;&#x8FD9;&#x6761;&#x8DEF;&#x5F84;&#x52A0;&#x4E0A;&#x4E00;&#x4E2A;&#x540D;&#x5B57;</span>
+    component: { ... }
+  }
+})
+</code></pre>
+<p>&#x53EF;&#x4EE5;&#x5982;&#x4E0B;&#x7528; <code>v-link</code> &#x94FE;&#x63A5;&#x5230;&#x8BE5;&#x8DEF;&#x5F84;&#xFF1A;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">v-link</span>=<span class="hljs-string">&quot;{ name: &apos;user&apos;, params: { userId: 123 }}&quot;</span>&gt;</span>User<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+<p>&#x540C;&#x6837;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x7528; <code>router.go()</code> &#x6765;&#x5207;&#x6362;&#x5230;&#x8BE5;&#x8DEF;&#x5F84;&#xFF1A;</p>
+<pre><code class="lang-js">router.go({ name: <span class="hljs-string">&apos;user&apos;</span>, params: { userId: <span class="hljs-number">123</span> }})
+</code></pre>
+<p>&#x4EE5;&#x4E0A;&#x4E24;&#x79CD;&#x60C5;&#x51B5;&#xFF0C;&#x8DEF;&#x7531;&#x90FD;&#x4F1A;&#x6700;&#x7EC8;&#x5207;&#x6362;&#x5230; <code>/user/123</code>&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="route.html" class="navigation navigation-prev " aria-label="Previous page: 路由对象和路由匹配">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="options.html" class="navigation navigation-next " aria-label="Next page: 路由配置项">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"具名路径","level":"1.6","depth":1,"next":{"title":"路由配置项","level":"1.7","depth":1,"path":"options.md","ref":"options.md","articles":[]},"previous":{"title":"路由对象和路由匹配","level":"1.5","depth":1,"path":"route.md","ref":"route.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"named.md","mtime":"2016-08-02T06:11:40.000Z","type":"markdown"},"gitbook":{"version":"3.1.0","time":"2016-08-02T06:46:20.063Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

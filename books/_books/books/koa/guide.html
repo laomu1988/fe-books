@@ -1,0 +1,519 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>实践 · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="links.html" />
+    
+    
+    <link rel="prev" href="response.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="use.html">
+            
+                <a href="use.html">
+            
+                    
+                    使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="context.html">
+            
+                <a href="context.html">
+            
+                    
+                    上下文content
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="request.html">
+            
+                <a href="request.html">
+            
+                    
+                    请求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="response.html">
+            
+                <a href="response.html">
+            
+                    
+                    响应
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="guide.html">
+            
+                <a href="guide.html">
+            
+                    
+                    实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="links.html">
+            
+                <a href="links.html">
+            
+                    
+                    相关资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >实践</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="guide">Guide</h1>
+<p>  This guide covers Koa topics are not directly API related, such as best practices for writing middleware,
+  application structure suggestions.</p>
+<h2 id="writing-middleware">Writing Middleware</h2>
+<p>  Koa middleware are simple functions which return a <code>GeneratorFunction</code>, and accept another. When
+  the middleware is run by an &quot;upstream&quot; middleware, it must manually <code>yield</code> to the &quot;downstream&quot; middleware.</p>
+<p>  For example if you wanted to track how long it takes for a request to propagate through Koa by adding an
+  <code>X-Response-Time</code> header field the middleware would look like the following:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> *<span class="hljs-title">responseTime</span>(<span class="hljs-params">next</span>) </span>{
+  <span class="hljs-keyword">var</span> start = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>;
+  <span class="hljs-keyword">yield</span> next;
+  <span class="hljs-keyword">var</span> ms = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span> - start;
+  <span class="hljs-keyword">this</span>.set(<span class="hljs-string">&apos;X-Response-Time&apos;</span>, ms + <span class="hljs-string">&apos;ms&apos;</span>);
+}
+
+app.use(responseTime);
+</code></pre>
+<p>  Here&apos;s another way to write the same thing, inline:</p>
+<pre><code class="lang-js">app.use(<span class="hljs-function"><span class="hljs-keyword">function</span> *(<span class="hljs-params">next</span>)</span>{
+  <span class="hljs-keyword">var</span> start = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>;
+  <span class="hljs-keyword">yield</span> next;
+  <span class="hljs-keyword">var</span> ms = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span> - start;
+  <span class="hljs-keyword">this</span>.set(<span class="hljs-string">&apos;X-Response-Time&apos;</span>, ms + <span class="hljs-string">&apos;ms&apos;</span>);
+});
+</code></pre>
+<p>  If you&apos;re a front-end developer you can think any code before <code>yield next;</code> as the &quot;capture&quot; phase,
+  while any code after is the &quot;bubble&quot; phase. This crude gif illustrates how ES6 generators allow us
+  to properly utilize stack flow to implement request and response flows:</p>
+<p><img src="https://i.cloudup.com/N7L5UakJo0.gif" alt="koa middleware"></p>
+<ol>
+<li>Create a date to track duration</li>
+<li>Yield control to the next middleware</li>
+<li>Create another date to track response time</li>
+<li>Yield control to the next middleware</li>
+<li>Yield immediately since <code>contentLength</code> only works with responses</li>
+<li>Yield upstream to Koa&apos;s noop middleware</li>
+<li>Ignore setting the body unless the path is &quot;/&quot;</li>
+<li>Set the response to &quot;Hello World&quot;</li>
+<li>Ignore setting <code>Content-Length</code> when no body is present</li>
+<li>Set the field</li>
+<li>Output log line</li>
+<li>Set <code>X-Response-Time</code> header field before response</li>
+<li>Hand off to Koa to handle the response</li>
+</ol>
+<p>Note that the final middleware (step <strong>6</strong>) yields to what looks to be nothing - it&apos;s actually
+yielding to a no-op generator within Koa. This is so that every middleware can conform with the
+same API, and may be placed before or after others. If you removed <code>yield next;</code> from the furthest
+&quot;downstream&quot; middleware everything would function appropritaely, however it would no longer conform
+to this behaviour.</p>
+<p> For example this would be fine:</p>
+<pre><code class="lang-js">app.use(<span class="hljs-function"><span class="hljs-keyword">function</span> *<span class="hljs-title">response</span>(<span class="hljs-params"></span>)</span>{
+  <span class="hljs-keyword">if</span> (<span class="hljs-string">&apos;/&apos;</span> != <span class="hljs-keyword">this</span>.url) <span class="hljs-keyword">return</span>;
+  <span class="hljs-keyword">this</span>.body = <span class="hljs-string">&apos;Hello World&apos;</span>;
+});
+</code></pre>
+<p> Next we&apos;ll look at the best practices for creating Koa middleware.</p>
+<h2 id="middleware-best-practices">Middleware Best Practices</h2>
+<p>  This section covers middleware authoring best practices, such as middleware
+  accepting options, named middleware for debugging, among others.</p>
+<h3 id="middleware-options">Middleware options</h3>
+<p>  When creating public middleware it&apos;s useful to conform to the convention of
+  wrapping the middleware in a function that accepts options, allowing users to
+  extend functionality. Even if your middleware accepts <em>no</em> options, this is still
+  a good idea to keep things uniform.</p>
+<p>  Here our contrived <code>logger</code> middleware accepts a <code>format</code> string for customization,
+  and returns the middleware itself:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">logger</span>(<span class="hljs-params">format</span>) </span>{
+  format = format || <span class="hljs-string">&apos;:method &quot;:url&quot;&apos;</span>;
+
+  <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> *(<span class="hljs-params">next</span>)</span>{
+    <span class="hljs-keyword">var</span> str = format
+      .replace(<span class="hljs-string">&apos;:method&apos;</span>, <span class="hljs-keyword">this</span>.method)
+      .replace(<span class="hljs-string">&apos;:url&apos;</span>, <span class="hljs-keyword">this</span>.url);
+
+    <span class="hljs-built_in">console</span>.log(str);
+
+    <span class="hljs-keyword">yield</span> next;
+  }
+}
+
+app.use(logger());
+app.use(logger(<span class="hljs-string">&apos;:method :url&apos;</span>));
+</code></pre>
+<h3 id="named-middleware">Named middleware</h3>
+<p>  Naming middleware is optional, however it&apos;s useful for debugging purposes to assign a name.</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">logger</span>(<span class="hljs-params">format</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> *<span class="hljs-title">logger</span>(<span class="hljs-params">next</span>)</span>{
+
+  }
+}
+</code></pre>
+<h3 id="combining-multiple-middleware">Combining multiple middleware</h3>
+<p>  Sometimes you want to &quot;compose&quot; multiple middleware into a single middleware for easy re-use or exporting. To do so, you may chain them together with <code>.call(this, next)</code>s, then return another function that yields the chain.</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> *<span class="hljs-title">random</span>(<span class="hljs-params">next</span>) </span>{
+  <span class="hljs-keyword">if</span> (<span class="hljs-string">&apos;/random&apos;</span> == <span class="hljs-keyword">this</span>.path) {
+    <span class="hljs-keyword">this</span>.body = <span class="hljs-built_in">Math</span>.floor(<span class="hljs-built_in">Math</span>.random()*<span class="hljs-number">10</span>);
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-keyword">yield</span> next;
+  }
+};
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> *<span class="hljs-title">backwords</span>(<span class="hljs-params">next</span>) </span>{
+  <span class="hljs-keyword">if</span> (<span class="hljs-string">&apos;/backwords&apos;</span> == <span class="hljs-keyword">this</span>.path) {
+    <span class="hljs-keyword">this</span>.body = <span class="hljs-string">&apos;sdrowkcab&apos;</span>;
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-keyword">yield</span> next;
+  }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> *<span class="hljs-title">pi</span>(<span class="hljs-params">next</span>) </span>{
+  <span class="hljs-keyword">if</span> (<span class="hljs-string">&apos;/pi&apos;</span> == <span class="hljs-keyword">this</span>.path) {
+    <span class="hljs-keyword">this</span>.body = <span class="hljs-built_in">String</span>(<span class="hljs-built_in">Math</span>.PI);
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-keyword">yield</span> next;
+  }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> *<span class="hljs-title">all</span>(<span class="hljs-params">next</span>) </span>{
+  <span class="hljs-keyword">yield</span> random.call(<span class="hljs-keyword">this</span>, backwords.call(<span class="hljs-keyword">this</span>, pi.call(<span class="hljs-keyword">this</span>, next)));
+}
+
+app.use(all);
+</code></pre>
+<p>  This is exactly what <a href="https://github.com/koajs/compose" _target="blank">koa-compose</a> does, which Koa internally uses to create and dispatch the middleware stack.</p>
+<h3 id="response-middleware">Response Middleware</h3>
+<p>  Middleware that decide to respond to a request and wish to bypass downstream middleware may
+  simply omit <code>yield next</code>. Typically this will be in routing middleware, but this can be performed by
+  any. For example the following will respond with &quot;two&quot;, however all three are executed, giving the
+  downstream &quot;three&quot; middleware a chance to manipulate the response.</p>
+<pre><code class="lang-js">app.use(<span class="hljs-function"><span class="hljs-keyword">function</span> *(<span class="hljs-params">next</span>)</span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;&gt;&gt; one&apos;</span>);
+  <span class="hljs-keyword">yield</span> next;
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;&lt;&lt; one&apos;</span>);
+});
+
+app.use(<span class="hljs-function"><span class="hljs-keyword">function</span> *(<span class="hljs-params">next</span>)</span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;&gt;&gt; two&apos;</span>);
+  <span class="hljs-keyword">this</span>.body = <span class="hljs-string">&apos;two&apos;</span>;
+  <span class="hljs-keyword">yield</span> next;
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;&lt;&lt; two&apos;</span>);
+});
+
+app.use(<span class="hljs-function"><span class="hljs-keyword">function</span> *(<span class="hljs-params">next</span>)</span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;&gt;&gt; three&apos;</span>);
+  <span class="hljs-keyword">yield</span> next;
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;&lt;&lt; three&apos;</span>);
+});
+</code></pre>
+<p>  The following configuration omits <code>yield next</code> in the second middleware, and will still respond
+  with &quot;two&quot;, however the third (and any other downstream middleware) will be ignored:</p>
+<pre><code class="lang-js">app.use(<span class="hljs-function"><span class="hljs-keyword">function</span> *(<span class="hljs-params">next</span>)</span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;&gt;&gt; one&apos;</span>);
+  <span class="hljs-keyword">yield</span> next;
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;&lt;&lt; one&apos;</span>);
+});
+
+app.use(<span class="hljs-function"><span class="hljs-keyword">function</span> *(<span class="hljs-params">next</span>)</span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;&gt;&gt; two&apos;</span>);
+  <span class="hljs-keyword">this</span>.body = <span class="hljs-string">&apos;two&apos;</span>;
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;&lt;&lt; two&apos;</span>);
+});
+
+app.use(<span class="hljs-function"><span class="hljs-keyword">function</span> *(<span class="hljs-params">next</span>)</span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;&gt;&gt; three&apos;</span>);
+  <span class="hljs-keyword">yield</span> next;
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;&lt;&lt; three&apos;</span>);
+});
+</code></pre>
+<p>  When the furthest downstream middleware executes <code>yield next;</code> it&apos;s really yielding to a noop
+  function, allowing the middleware to compose correctly anywhere in the stack.</p>
+<h2 id="async-operations">Async operations</h2>
+<p>  The <a href="https://github.com/visionmedia/co" _target="blank">Co</a> forms Koa&apos;s foundation for generator delegation, allowing
+  you to write non-blocking sequential code. For example this middleware reads the filenames from <code>./docs</code>,
+  and then reads the contents of each markdown file in parallel before assigning the body to the joint result.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;co-fs&apos;</span>);
+
+app.use(<span class="hljs-function"><span class="hljs-keyword">function</span> *(<span class="hljs-params"></span>)</span>{
+  <span class="hljs-keyword">var</span> paths = <span class="hljs-keyword">yield</span> fs.readdir(<span class="hljs-string">&apos;docs&apos;</span>);
+
+  <span class="hljs-keyword">var</span> files = <span class="hljs-keyword">yield</span> paths.map(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">path</span>)</span>{
+    <span class="hljs-keyword">return</span> fs.readFile(<span class="hljs-string">&apos;docs/&apos;</span> + path, <span class="hljs-string">&apos;utf8&apos;</span>);
+  });
+
+  <span class="hljs-keyword">this</span>.type = <span class="hljs-string">&apos;markdown&apos;</span>;
+  <span class="hljs-keyword">this</span>.body = files.join(<span class="hljs-string">&apos;&apos;</span>);
+});
+</code></pre>
+<h2 id="debugging-koa">Debugging Koa</h2>
+<p>  Koa along with many of the libraries it&apos;s built with support the <strong>DEBUG</strong> environment variable from <a href="https://github.com/visionmedia/debug" _target="blank">debug</a> which provides simple conditional logging.</p>
+<p>  For example
+  to see all koa-specific debugging information just pass <code>DEBUG=koa*</code> and upon boot you&apos;ll see the list of middleware used, among other things.</p>
+<pre><code>$ DEBUG=koa* node --harmony examples/simple
+  koa:application use responseTime +0ms
+  koa:application use logger +4ms
+  koa:application use contentLength +0ms
+  koa:application use notfound +0ms
+  koa:application use response +0ms
+  koa:application listen +0ms
+</code></pre><p>  Since JavaScript does not allow defining function names at
+  runtime, you can also set a middleware&apos;s name as <code>._name</code>.
+  This useful when you don&apos;t have control of a middleware&apos;s name.
+  For example:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;path&apos;</span>);
+<span class="hljs-keyword">var</span> <span class="hljs-keyword">static</span> = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;koa-static&apos;</span>);
+
+<span class="hljs-keyword">var</span> publicFiles = <span class="hljs-keyword">static</span>(path.join(__dirname, <span class="hljs-string">&apos;public&apos;</span>));
+publicFiles._name = <span class="hljs-string">&apos;static /public&apos;</span>;
+
+app.use(publicFiles);
+</code></pre>
+<p>  Now, instead of just seeing &quot;static&quot; when debugging, you will see:</p>
+<pre><code>  koa:application use static /public +0ms
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="response.html" class="navigation navigation-prev " aria-label="Previous page: 响应">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="links.html" class="navigation navigation-next " aria-label="Next page: 相关资源">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"实践","level":"1.6","depth":1,"next":{"title":"相关资源","level":"1.7","depth":1,"path":"links.md","ref":"./links.md","articles":[]},"previous":{"title":"响应","level":"1.5","depth":1,"path":"response.md","ref":"./response.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"guide.md","mtime":"2016-08-02T06:11:40.000Z","type":"markdown"},"gitbook":{"version":"3.1.0","time":"2016-08-02T06:57:20.044Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
