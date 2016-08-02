@@ -7,12 +7,17 @@
     "website": "styles/website.css"
   },
   "plugins": [
+    "-highlight",
+    "-lunr",
+    "-sharing",
+    "-fontsettings",
     "-search",
-    "search-pro",
-    "advanced-emoji",
-    "github",
-    "splitter",
-    "toggle-chapters"
+    "-theme-default",
+    "-search-pro",
+    "-advanced-emoji",
+    "-github",
+    "-splitter",
+    "-toggle-chapters"
   ],
   "pluginsConfig": {
     "search-pro": {
