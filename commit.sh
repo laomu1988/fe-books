@@ -1,10 +1,11 @@
 git add .
 git commit -m 'add-to-update'
+rm -rf _books
 mv books _books
 git checkout gh-pages
-rm books
+rm -rf books
 mv _books books
-git add ./
+git add .
 git commit -m "update"
 mv books _books
 git checkout master
