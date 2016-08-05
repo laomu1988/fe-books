@@ -1,6 +1,9 @@
+**前端书籍fe-book**
+======
+* 访问地址: [http://laomu1988.github.io/fe-books/](http://laomu1988.github.io/fe-books/)
+* 源码地址: [https://github.com/laomu1988/fe-books](https://github.com/laomu1988/fe-books)
 
-# 项目介绍
-    项目使用gitbook将部分技术资料整理打包成html，主要是为了便于快速查找资料
+    使用gitbook将资料打包成html，便于从网站访问和查找资料
     你可以将项目放在下载到本地浏览，响应速度更快
     目前搜索仅支持英文
 

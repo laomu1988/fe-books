@@ -1,0 +1,48 @@
+{% extends template.self %}
+
+{% block head %}
+{{ super() }}
+<link rel="stylesheet" href="/server/index.css"/>
+{% endblock %}
+
+
+{% block body %}
+<nav class="fe-menu">
+	<ul>
+		<li><a href="/books/assist/index.html">说明</a></li>
+		<li><a href="/books/react/index.html">react</a></li>
+		<li>
+			<a href="/books/vue/index.html">vue.js</a>
+			<ul class="sub">
+				<li><a href="/books/vue-router/index.html">vue-router</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="/books/node/documentation.html">node</a>
+			<ul class="sub">
+				<li><a href="/books/koa/index.html">koa</a></li>
+			</ul>
+		</li>
+		<li><a href="/books/es6/index.html">es6入门</a></li>
+		<li>
+			<a href="/books/tools/index.html">工具</a>
+			<ul class="sub">
+				<li><a href="/books/tools/git.html">git</a></li>
+				<li><a href="/books/tools/vim.html">vim</a></li>
+				<li><a href="/books/fis3/index.html">fis3</a></li>
+			</ul>
+		</li>
+	</ul>
+</nav>
+{{ super() }}
+<script>
+	// 百度统计
+	var _hmt = _hmt || [];
+	(function () {
+		var hm = document.createElement("script");
+		hm.src = "//hm.baidu.com/hm.js?171566b3d4f03c9c68c8f2c7a42d4b0e";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+{% endblock %}

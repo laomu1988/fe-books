@@ -2,17 +2,12 @@
   "title": "fe-books",
   "author": "laomu1988@qq.com",
   "language": "zh-hans",
-  "output": "book",
   "styles": {
     "website": "styles/website.css"
   },
   "plugins": [
-    "-highlight",
-    "-lunr",
     "-sharing",
     "-fontsettings",
-    "-search",
-    "-theme-default",
     "-search-pro",
     "-advanced-emoji",
     "-github",
