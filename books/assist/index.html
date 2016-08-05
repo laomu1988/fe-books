@@ -1,14 +1,14 @@
 
 <!DOCTYPE HTML>
-<html lang="" >
+<html lang="zh-hans" >
     <head>
-        <title>项目介绍 · GitBook</title>
+        <title>项目介绍 · fe-books</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.1.0">
-        
+        <meta name="author" content="laomu1988@qq.com">
         
         
     
@@ -24,10 +24,6 @@
                 <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
                 
             
-                
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
-                
-            
         
 
     
@@ -35,18 +31,9 @@
     
         
     
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
 
         
+
     
     
     <meta name="HandheldFriendly" content="true"/>
@@ -61,9 +48,39 @@
     
     
 
+<link rel="stylesheet" href="/server/index.css"/>
+
     </head>
     <body>
         
+<nav class="fe-menu">
+	<ul>
+		<li><a href="/books/assist/index.html">说明</a></li>
+		<li><a href="/books/react/index.html">react</a></li>
+		<li>
+			<a href="/books/vue/index.html">vue.js</a>
+			<ul class="sub">
+				<li><a href="/books/vue-router/index.html">vue-router</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="/books/node/documentation.html">node</a>
+			<ul class="sub">
+				<li><a href="/books/koa/index.html">koa</a></li>
+			</ul>
+		</li>
+		<li><a href="/books/es6/index.html">es6入门</a></li>
+		<li>
+			<a href="/books/tools/index.html">工具</a>
+			<ul class="sub">
+				<li><a href="/books/tools/git.html">git</a></li>
+				<li><a href="/books/tools/vim.html">vim</a></li>
+				<li><a href="/books/fis3/index.html">fis3</a></li>
+			</ul>
+		</li>
+	</ul>
+</nav>
+
 <div class="book">
     <div class="book-summary">
         
@@ -158,11 +175,16 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x9879;&#x76EE;&#x4ECB;&#x7ECD;">&#x9879;&#x76EE;&#x4ECB;&#x7ECD;</h1>
-<pre><code>&#x9879;&#x76EE;&#x4F7F;&#x7528;gitbook&#x5C06;&#x90E8;&#x5206;&#x6280;&#x672F;&#x8D44;&#x6599;&#x6574;&#x7406;&#x6253;&#x5305;&#x6210;html&#xFF0C;&#x4E3B;&#x8981;&#x662F;&#x4E3A;&#x4E86;&#x4FBF;&#x4E8E;&#x5FEB;&#x901F;&#x67E5;&#x627E;&#x8D44;&#x6599;
-&#x4F60;&#x53EF;&#x4EE5;&#x5C06;&#x9879;&#x76EE;&#x653E;&#x5728;&#x4E0B;&#x8F7D;&#x5230;&#x672C;&#x5730;&#x6D4F;&#x89C8;&#xFF0C;&#x54CD;&#x5E94;&#x901F;&#x5EA6;&#x66F4;&#x5FEB;
-&#x76EE;&#x524D;&#x641C;&#x7D22;&#x4EC5;&#x652F;&#x6301;&#x82F1;&#x6587;
-</code></pre><h1 id="todo">Todo</h1>
+                                <h1 id="&#x524D;&#x7AEF;&#x4E66;&#x7C4D;fe-book"><strong>&#x524D;&#x7AEF;&#x4E66;&#x7C4D;fe-book</strong></h1>
+<ul>
+<li>&#x8BBF;&#x95EE;&#x5730;&#x5740;: <a href="http://laomu1988.github.io/fe-books/" _target="blank">http://laomu1988.github.io/fe-books/</a></li>
+<li><p>&#x6E90;&#x7801;&#x5730;&#x5740;: <a href="https://github.com/laomu1988/fe-books" _target="blank">https://github.com/laomu1988/fe-books</a></p>
+<p>  &#x4F7F;&#x7528;gitbook&#x5C06;&#x8D44;&#x6599;&#x6253;&#x5305;&#x6210;html&#xFF0C;&#x4FBF;&#x4E8E;&#x4ECE;&#x7F51;&#x7AD9;&#x8BBF;&#x95EE;&#x548C;&#x67E5;&#x627E;&#x8D44;&#x6599;
+  &#x4F60;&#x53EF;&#x4EE5;&#x5C06;&#x9879;&#x76EE;&#x653E;&#x5728;&#x4E0B;&#x8F7D;&#x5230;&#x672C;&#x5730;&#x6D4F;&#x89C8;&#xFF0C;&#x54CD;&#x5E94;&#x901F;&#x5EA6;&#x66F4;&#x5FEB;
+  &#x76EE;&#x524D;&#x641C;&#x7D22;&#x4EC5;&#x652F;&#x6301;&#x82F1;&#x6587;</p>
+</li>
+</ul>
+<h1 id="todo">Todo</h1>
 <h2 id="&#x5F85;&#x6574;&#x5408;">&#x5F85;&#x6574;&#x5408;</h2>
 <ul>
 <li>jquery</li>
@@ -226,10 +248,21 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"项目介绍","level":"1.1","depth":1,"next":{"title":"gitbook配置","level":"1.2","depth":1,"path":"gitbook-set.md","ref":"gitbook-set.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2016-08-04T03:46:06.000Z","type":"markdown"},"gitbook":{"version":"3.1.0","time":"2016-08-04T03:51:23.786Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"项目介绍","level":"1.1","depth":1,"next":{"title":"gitbook配置","level":"1.2","depth":1,"path":"gitbook-set.md","ref":"gitbook-set.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-fontsettings","-search-pro","-advanced-emoji","-github","-splitter","-toggle-chapters"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search-pro":{"cutWordLib":"nodejieba","defineWord":["Gitbook"]},"github":{"url":"https://github.com/laomu1988/fe-books"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"laomu1988@qq.com","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"fe-books","language":"zh-hans","gitbook":"*"},"file":{"path":"README.md","mtime":"2016-08-05T05:14:47.000Z","type":"markdown"},"gitbook":{"version":"3.1.0","time":"2016-08-05T06:20:43.850Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
+
+<script>
+	// 百度统计
+	var _hmt = _hmt || [];
+	(function () {
+		var hm = document.createElement("script");
+		hm.src = "//hm.baidu.com/hm.js?171566b3d4f03c9c68c8f2c7a42d4b0e";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})();
+</script>
 
         
     <script src="gitbook/gitbook.js"></script>
@@ -249,14 +282,6 @@
     
         
         <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
 
