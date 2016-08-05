@@ -5,19 +5,31 @@ body {
     overflow-y: hidden;
 }
 
-nav ul {
+.fe-menu {
+    height: 30px;
+}
+
+.fe-menu > ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999999;
+}
+
+.fe-menu ul {
     padding: 0;
     margin: 0;
     background: #252737;
 }
 
-nav li {
+.fe-menu li {
     display: inline-block;
     list-style: none;
     position: relative;
 }
 
-nav li a {
+.fe-menu li a {
     line-height: 30px;
     height: 30px;
     font-size: 16px;
@@ -26,15 +38,15 @@ nav li a {
     white-space: nowrap;
 }
 
-nav li a:hover {
+.fe-menu li a:hover {
     color: #c4b61c;
 }
 
-nav li .sub {
+.fe-menu li .sub {
     display: none;
 }
 
-nav li:hover .sub {
+.fe-menu li:hover .sub {
     display: block;
 }
 
@@ -59,4 +71,9 @@ nav li:hover .sub {
     height: calc(100vh - 30px);
     margin: 0;
     padding: 0;
+}
+
+.book{
+    margin-top: 30px !important;
+    height: calc(100% - 30px) !important;
 }
