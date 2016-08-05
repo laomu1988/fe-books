@@ -2,59 +2,10 @@
 <html lang="cn">
 <head>
 	<meta charset="UTF-8">
-	<title>前端技术文档</title>
-	<link rel="stylesheet" href="server/index.css">
+	<title>前端技术文档FE-Books</title>
+	<script>
+		location.href = '/books/assist/';
+	</script>
 </head>
-<body>
-<nav>
-	<ul>
-		<li><a href="./books/assist/index.html" target="main">说明</a></li>
-		<li><a href="./books/react/index.html" target="main">react</a></li>
-		<li>
-			<a href="./books/vue/index.html" target="main">vue.js</a>
-			<ul class="sub">
-				<li><a href="./books/vue-router/index.html" target="main">vue-router</a></li>
-			</ul>
-		</li>
-		<li>
-			<a href="./books/node/documentation.html" target="main">node</a>
-			<ul class="sub">
-				<li><a href="./books/koa/index.html" target="main">koa</a></li>
-			</ul>
-		</li>
-		<li><a href="./books/es6/index.html" target="main">es6入门</a></li>
-		<li>
-			<a href="./books/tools/index.html" target="main">工具</a>
-			<ul class="sub">
-				<li><a href="./books/tools/git.html" target="main">git</a></li>
-				<li><a href="./books/tools/vim.html" target="main">vim</a></li>
-				<li><a href="./books/fis3/index.html" target="main">fis3</a></li>
-			</ul>
-		</li>
-	</ul>
-</nav>
-<iframe id="main" name="main" src="./books/assist/index.html"></iframe>
-
-<script>
-	(function () {
-		var nav = document.querySelector('nav');
-		nav.addEventListener('click', function (e) {
-			var href = e.target.href;
-			if (href) {
-				location.hash = '#src=' + href;
-			}
-			return true;
-		});
-
-		var hash = location.hash;
-		if (hash.indexOf('#src=') == 0) {
-			var src = hash.substr(5);
-			if (src) {
-				document.getElementById('main').src = src;
-			}
-		}
-
-	})();
-</script>
-</body>
+<body></body>
 </html>
