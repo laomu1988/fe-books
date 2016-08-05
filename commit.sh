@@ -3,12 +3,12 @@ git commit -m 'add-to-update'
 rm -rf _books
 mv books _books
 cp index.html _books/index.html
-cp -f server _books/server
+cp -r server _books/server
 cp package.json _books/package.json
 git checkout gh-pages
-mv -f _books/index.html index.html
-mv -f _books/server.js server.js
-mv -f _book/server server
+mv -r _books/index.html index.html
+mv -r _books/server.js server.js
+mv -r _book/server server
 rm -rf books
 mv _books books
 git add .
