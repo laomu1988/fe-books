@@ -11,7 +11,7 @@ then
         sh build.sh "$folder"
     done
 else
-    echo "git book build $1 $output/$1"
+    echo "gitbook build $1 $output/$1"
     rm -rf $1/book.json
     rm -rf $1/_layouts
     cp book.json $1/book.json
