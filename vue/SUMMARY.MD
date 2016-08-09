@@ -24,7 +24,7 @@
     * [对比其它框架](guide/comparison.md)
     * [加入 Vue 社区！](guide/join.md)
 
-* API
+* [API](api/index.md)
 
 
 * 示例

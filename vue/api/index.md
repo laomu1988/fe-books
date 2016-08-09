@@ -1519,11 +1519,11 @@ type: api
 
 - **示例：**
 
-  ``` html
-  <div v-html="html"></div>
-  <!-- 相同 -->
-  <div>{{{html}}}</div>
-  ```
+```
+<div v-html="html"></div>
+<!-- 相同 -->
+<div>{{{html}}}</div>
+```
 
 ### v-if
 
@@ -1804,16 +1804,16 @@ type: api
 
 - **示例：**
 
-  ``` html
-  <span v-el:msg>hello</span>
-  <span v-el:other-msg>world</span>
-  ```
-  ``` js
-  this.$els.msg.textContent // -> "hello"
-  this.$els.otherMsg.textContent // -> "world"
-  ```
+```html
+<span v-el:msg>hello</span>
+<span v-el:other-msg>world</span>
+```
+``` js
+this.$els.msg.textContent // -> "hello"
+this.$els.otherMsg.textContent // -> "world"
+```
 
-### v-pre
+### 'v-pre'
 
 - **不需要表达式**
 
@@ -1823,9 +1823,11 @@ type: api
 
 - **示例：**
 
-  ``` html
-  <span v-pre>{{ this will not be compiled }}</span>
-  ```
+
+
+```html
+<span v-pre>{{ this will not be compiled }}</span>
+```
 
 ### v-cloak
 
@@ -1929,9 +1931,9 @@ type: api
 
 - **示例：**
 
-  ``` html
-  {{ msg | uppercase }}
-  ```
+```
+{{ msg | uppercase }}
+```
 
   *'abc' => 'ABC'*
 
@@ -1939,9 +1941,9 @@ type: api
 
 - **示例：**
 
-  ``` html
-  {{ msg | lowercase }}
-  ```
+``` html
+{{ msg | lowercase }}
+```
 
   *'ABC' => 'abc'*
 
@@ -1953,25 +1955,25 @@ type: api
 
 - **示例：**
 
-  ``` html
-  {{ amount | currency }}
-  ```
+``` html
+{{ amount | currency }}
+```
 
   *12345 => $12,345.00*
 
   使用其它符号：
 
-  ``` html
-  {{ amount | currency '£' }}
-  ```
+``` html
+{{ amount | currency '£' }}
+```
 
-  *12345 => £12,345.00*
+  * 12345 => £12,345.00*
 
   一些货币使用 3 或 4 个小数位，而一些货币不会，例如日元（¥）、越南盾（₫）：
 
-  ``` html
-  {{ amount | currency '₫' 0 }}
-  ```
+``` html
+{{ amount | currency '₫' 0 }}
+```
 
   *12345 => ₫12,345*
 
@@ -1986,16 +1988,16 @@ type: api
 
 - **示例：**
 
-  ``` html
-  {{count}} {{count | pluralize 'item'}}
-  ```
+``` html
+{{count}} {{count | pluralize 'item'}}
+```
 
   *1 => '1 item'*
   *2 => '2 items'*
 
-  ``` html
-  {{date}}{{date | pluralize 'st' 'nd' 'rd' 'th'}}
-  ```
+``` html
+{{date}}{{date | pluralize 'st' 'nd' 'rd' 'th'}}
+```
 
   结果：
 
@@ -2018,9 +2020,9 @@ type: api
 
   以四个空格的缩进打印一个对象：
 
-  ``` html
-  <pre>{{ nestedObject | json 4 }}</pre>
-  ```
+``` html
+<pre>{{ nestedObject | json 4 }}</pre>
+```
 
 ### debounce
 
@@ -2035,9 +2037,9 @@ type: api
 
 - **示例：**
 
-  ``` html
-  <input @keyup="onKeyup | debounce 500">
-  ```
+``` html
+<input @keyup="onKeyup | debounce 500">
+```
 
 ### limitBy
 
@@ -2348,9 +2350,9 @@ Vue.js 在 `Array.prototype` 上添加了两个方法，以方便常见的数组
 
   通过索引设置数组元素并触发视图更新。
 
-  ``` js
-  vm.animals.$set(0, { name: 'Aardvark' })
-  ```
+``` js
+vm.animals.$set(0, { name: 'Aardvark' })
+```
 
 - **另见：** [数组检测问题](/guide/list.html#问题)
 
@@ -2363,9 +2365,9 @@ Vue.js 在 `Array.prototype` 上添加了两个方法，以方便常见的数组
 
   通过索引删除数组元素并触发视图更新。这个方法先在数组中搜索这个元素，如果找到了则调用 `array.splice(index, 1)`。
 
-  ``` js
-  var aardvark = vm.animals[0]
-  vm.animals.$remove(aardvark)
-  ```
+``` js
+var aardvark = vm.animals[0]
+vm.animals.$remove(aardvark)
+```
 
 - **另见：** [变异方法](/guide/list.html#变异方法)
