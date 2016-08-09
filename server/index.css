@@ -53,16 +53,28 @@ body {
 .sub {
     position: absolute;
     min-width: 100%;
+    max-height: 400px;
     top: 30px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .sub li {
     border-top: 1px solid #554b50;
+    min-width: 60%;
+    max-width: 300px;
 }
 
 .sub li a {
     text-decoration: none;
+    max-width: 100%;
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
+.sub .h2{ padding-left: 30px; }
+.sub .h3{ padding-left: 40px; }
+.sub .h4{ padding-left: 50px; }
 
 #main {
     border: 0;
@@ -73,7 +85,7 @@ body {
     padding: 0;
 }
 
-.book{
+.book {
     margin-top: 30px !important;
     height: calc(100% - 30px) !important;
 }
