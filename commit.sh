@@ -10,6 +10,7 @@ cp package.json _books/package.json
 git checkout gh-pages
 mv -f _books/index.html index.html
 mv -f _books/server.js server.js
+rm -rf server
 mv -f _books/server server
 rm -rf books
 mv _books books
