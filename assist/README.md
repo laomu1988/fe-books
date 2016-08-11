@@ -9,7 +9,7 @@
 
 # Todo
 ## 待整合
-* jquery
+* jquery 需要将xml转化为markdown格式
 * express
 
 
