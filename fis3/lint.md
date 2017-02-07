@@ -1,3 +1,8 @@
+title: lint
+tags: fis3
+date: 2016-08-11 10:27:51
+---
+
 ## 代码校验
 
 ![](./img/outline-by-fis3-lint.png)
