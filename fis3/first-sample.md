@@ -1,8 +1,3 @@
-title: first-sample
-tags: fis3
-date: 2016-08-11 10:27:51
----
-
 ## 从零开始
 
 从零开启一个 FIS3 项目，并学习 FIS3 如何使用。

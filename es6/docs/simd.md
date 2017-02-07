@@ -1,8 +1,3 @@
-title: simd
-tags: [es6,docs]
-date: 2016-08-11 10:27:51
----
-
 # SIMD 的用法
 
 ## 概述

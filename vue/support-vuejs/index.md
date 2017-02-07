@@ -1,8 +1,3 @@
-title: index
-tags: [vue,support-vuejs]
-date: 2016-08-11 10:27:51
----
-
 # 支持 Vue.js 的开发
 
 当前特级赞助商：

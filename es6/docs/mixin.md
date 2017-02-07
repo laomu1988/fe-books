@@ -1,8 +1,3 @@
-title: mixin
-tags: [es6,docs]
-date: 2016-08-11 10:27:51
----
-
 # Mixin
 
 JavaScript语言的设计是单一继承，即子类只能继承一个父类，不允许继承多个父类。这种设计保证了对象继承的层次结构是树状的，而不是复杂的[网状结构](https://en.wikipedia.org/wiki/Multiple_inheritance#The_diamond_problem)。
