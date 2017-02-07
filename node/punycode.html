@@ -1,0 +1,899 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <title>Punycode · fe-books</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.0">
+        <meta name="author" content="laomu1988@qq.com">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="querystring.html" />
+    
+    
+    <link rel="prev" href="process.html" />
+    
+
+<link rel="stylesheet" href="/fe-books/server/index.css"/>
+
+    </head>
+    <body>
+        
+<script src="/fe-books/server/vue.min.js"></script>
+<nav class="fe-menu">
+	<ul>
+		<li><a href="/fe-books/books/assist/index.html">说明</a></li>
+		<li><a href="/fe-books/books/react/index.html">react</a></li>
+		<li>
+			<a href="/fe-books/books/vue/index.html">vue.js</a>
+			<ul class="sub">
+				<li><a href="/fe-books/books/vue-router/index.html">vue-router</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="/fe-books/books/node/documentation.html">node</a>
+			<ul class="sub">
+				<li><a href="/fe-books/books/koa/index.html">koa</a></li>
+			</ul>
+		</li>
+		<li><a href="/fe-books/books/es6/index.html">es6入门</a></li>
+		<li>
+			<a href="/fe-books/books/tools/index.html">工具</a>
+			<ul class="sub">
+				<li><a href="/fe-books/books/tools/git.html">git</a></li>
+				<li><a href="/fe-books/books/tools/vim.html">vim</a></li>
+				<li><a href="/fe-books/books/fis3/index.html">fis3</a></li>
+			</ul>
+		</li>
+		<li class="menu-last"></li>
+	</ul>
+</nav>
+
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="documentation.html">
+            
+                <a href="documentation.html">
+            
+                    
+                    About these Docs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="synopsis.html">
+            
+                <a href="synopsis.html">
+            
+                    
+                    Usage & Example
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="assert.html">
+            
+                <a href="assert.html">
+            
+                    
+                    Assertion Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="buffer.html">
+            
+                <a href="buffer.html">
+            
+                    
+                    Buffer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="addons.html">
+            
+                <a href="addons.html">
+            
+                    
+                    C/C++ Addons
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="child_process.html">
+            
+                <a href="child_process.html">
+            
+                    
+                    Child Processes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="cluster.html">
+            
+                <a href="cluster.html">
+            
+                    
+                    Cluster
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="cli.html">
+            
+                <a href="cli.html">
+            
+                    
+                    Command Line Options
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="console.html">
+            
+                <a href="console.html">
+            
+                    
+                    Console
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="crypto.html">
+            
+                <a href="crypto.html">
+            
+                    
+                    Crypto
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="debugger.html">
+            
+                <a href="debugger.html">
+            
+                    
+                    Debugger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="dns.html">
+            
+                <a href="dns.html">
+            
+                    
+                    DNS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="domain.html">
+            
+                <a href="domain.html">
+            
+                    
+                    Domain
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="errors.html">
+            
+                <a href="errors.html">
+            
+                    
+                    Errors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="events.html">
+            
+                <a href="events.html">
+            
+                    
+                    Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="fs.html">
+            
+                <a href="fs.html">
+            
+                    
+                    File System
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="globals.html">
+            
+                <a href="globals.html">
+            
+                    
+                    Globals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="http.html">
+            
+                <a href="http.html">
+            
+                    
+                    HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="https.html">
+            
+                <a href="https.html">
+            
+                    
+                    HTTPS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="modules.html">
+            
+                <a href="modules.html">
+            
+                    
+                    Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="net.html">
+            
+                <a href="net.html">
+            
+                    
+                    Net
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="os.html">
+            
+                <a href="os.html">
+            
+                    
+                    OS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="path.html">
+            
+                <a href="path.html">
+            
+                    
+                    Path
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="process.html">
+            
+                <a href="process.html">
+            
+                    
+                    Process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.26" data-path="punycode.html">
+            
+                <a href="punycode.html">
+            
+                    
+                    Punycode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="querystring.html">
+            
+                <a href="querystring.html">
+            
+                    
+                    Query Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="readline.html">
+            
+                <a href="readline.html">
+            
+                    
+                    Readline
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="repl.html">
+            
+                <a href="repl.html">
+            
+                    
+                    REPL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="stream.html">
+            
+                <a href="stream.html">
+            
+                    
+                    Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" data-path="string_decoder.html">
+            
+                <a href="string_decoder.html">
+            
+                    
+                    String Decoder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" data-path="timers.html">
+            
+                <a href="timers.html">
+            
+                    
+                    Timers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33" data-path="tls.html">
+            
+                <a href="tls.html">
+            
+                    
+                    TLS/SSL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34" data-path="tty.html">
+            
+                <a href="tty.html">
+            
+                    
+                    TTY
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35" data-path="dgram.html">
+            
+                <a href="dgram.html">
+            
+                    
+                    UDP/Datagram
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.36" data-path="url.html">
+            
+                <a href="url.html">
+            
+                    
+                    URL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.37" data-path="util.html">
+            
+                <a href="util.html">
+            
+                    
+                    Utilities
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.38" data-path="v8.html">
+            
+                <a href="v8.html">
+            
+                    
+                    V8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.39" data-path="vm.html">
+            
+                <a href="vm.html">
+            
+                    
+                    VM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.40" data-path="zlib.html">
+            
+                <a href="zlib.html">
+            
+                    
+                    ZLIB
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <a target="_blank" href="https://github.com/nodejs/node">
+            
+                    
+                    GitHub Repo & Issue Tracker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" >
+            
+                <a target="_blank" href="http://groups.google.com/group/nodejs">
+            
+                    
+                    Mailing List
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Punycode</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="punycode">punycode</h1>
+<pre><code>Stability: 2 - Stable
+</code></pre><p>The <code>punycode</code> module is a bundled version of the <a href="https://mths.be/punycode" _target="blank">Punycode.js</a> module. It
+can be accessed using:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> punycode = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;punycode&apos;</span>);
+</code></pre>
+<p><a href="https://tools.ietf.org/html/rfc3492" _target="blank">Punycode</a> is a character encoding scheme defined by RFC 3492 that is
+primarily intended for use in Internationalized Domain Names. Because host
+names in URLs are limited to ASCII characters only, Domain Names that contain
+non-ASCII characters must be converted into ASCII using the Punycode scheme.
+For instance, the Japanese character that translates into the English word,
+<code>&apos;example&apos;</code> is <code>&apos;&#x4F8B;&apos;</code>. The Internationalized Domain Name, <code>&apos;&#x4F8B;.com&apos;</code> (equivalent
+to <code>&apos;example.com&apos;</code>) is represented by Punycode as the ASCII string
+<code>&apos;xn--fsq.com&apos;</code>.</p>
+<p>The <code>punycode</code> module provides a simple implementation of the Punycode standard.</p>
+<p><em>Note</em>: The <code>punycode</code> module is a third-party dependency used by Node.js and
+made available to developers as a convenience. Fixes or other modifications to
+the module must be directed to the <a href="https://mths.be/punycode" _target="blank">Punycode.js</a> project.</p>
+<h2 id="punycodedecodestring">punycode.decode(string)</h2>
+<!-- YAML
+added: v0.5.1
+-->
+<ul>
+<li><code>string</code> {String}</li>
+</ul>
+<p>The <code>punycode.decode()</code> method converts a <a href="https://tools.ietf.org/html/rfc3492" _target="blank">Punycode</a> string of ASCII-only
+characters to the equivalent string of Unicode codepoints.</p>
+<pre><code class="lang-js">punycode.decode(<span class="hljs-string">&apos;maana-pta&apos;</span>); <span class="hljs-comment">// &apos;ma&#xF1;ana&apos;</span>
+punycode.decode(<span class="hljs-string">&apos;--dqo34k&apos;</span>); <span class="hljs-comment">// &apos;&#x2603;-&#x2318;&apos;</span>
+</code></pre>
+<h2 id="punycodeencodestring">punycode.encode(string)</h2>
+<!-- YAML
+added: v0.5.1
+-->
+<ul>
+<li><code>string</code> {String}</li>
+</ul>
+<p>The <code>punycode.encode()</code> method converts a string of Unicode codepoints to a
+<a href="https://tools.ietf.org/html/rfc3492" _target="blank">Punycode</a> string of ASCII-only characters.</p>
+<pre><code class="lang-js">punycode.encode(<span class="hljs-string">&apos;ma&#xF1;ana&apos;</span>); <span class="hljs-comment">// &apos;maana-pta&apos;</span>
+punycode.encode(<span class="hljs-string">&apos;&#x2603;-&#x2318;&apos;</span>); <span class="hljs-comment">// &apos;--dqo34k&apos;</span>
+</code></pre>
+<h2 id="punycodetoasciidomain">punycode.toASCII(domain)</h2>
+<!-- YAML
+added: v0.6.1
+-->
+<ul>
+<li><code>domain</code> {String}</li>
+</ul>
+<p>The <code>punycode.toASCII()</code> method converts a Unicode string representing an
+Internationalized Domain Name to <a href="https://tools.ietf.org/html/rfc3492" _target="blank">Punycode</a>. Only the non-ASCII parts of the
+domain name will be converted. Calling <code>punycode.toASCII()</code> on a string that
+already only contains ASCII characters will have no effect.</p>
+<pre><code class="lang-js"><span class="hljs-comment">// encode domain names</span>
+punycode.toASCII(<span class="hljs-string">&apos;ma&#xF1;ana.com&apos;</span>);  <span class="hljs-comment">// &apos;xn--maana-pta.com&apos;</span>
+punycode.toASCII(<span class="hljs-string">&apos;&#x2603;-&#x2318;.com&apos;</span>);   <span class="hljs-comment">// &apos;xn----dqo34k.com&apos;</span>
+punycode.toASCII(<span class="hljs-string">&apos;example.com&apos;</span>); <span class="hljs-comment">// &apos;example.com&apos;</span>
+</code></pre>
+<h2 id="punycodetounicodedomain">punycode.toUnicode(domain)</h2>
+<!-- YAML
+added: v0.6.1
+-->
+<ul>
+<li><code>domain</code> {String}</li>
+</ul>
+<p>The <code>punycode.toUnicode()</code> method converts a string representing a domain name
+containing <a href="https://tools.ietf.org/html/rfc3492" _target="blank">Punycode</a> encoded characters into Unicode. Only the <a href="https://tools.ietf.org/html/rfc3492" _target="blank">Punycode</a>
+encoded parts of the domain name are be converted.</p>
+<pre><code class="lang-js"><span class="hljs-comment">// decode domain names</span>
+punycode.toUnicode(<span class="hljs-string">&apos;xn--maana-pta.com&apos;</span>); <span class="hljs-comment">// &apos;ma&#xF1;ana.com&apos;</span>
+punycode.toUnicode(<span class="hljs-string">&apos;xn----dqo34k.com&apos;</span>);  <span class="hljs-comment">// &apos;&#x2603;-&#x2318;.com&apos;</span>
+punycode.toUnicode(<span class="hljs-string">&apos;example.com&apos;</span>);       <span class="hljs-comment">// &apos;example.com&apos;</span>
+</code></pre>
+<h2 id="punycodeucs2">punycode.ucs2</h2>
+<!-- YAML
+added: v0.7.0
+-->
+<h3 id="punycodeucs2decodestring">punycode.ucs2.decode(string)</h3>
+<!-- YAML
+added: v0.7.0
+-->
+<ul>
+<li><code>string</code> {String}</li>
+</ul>
+<p>The <code>punycode.ucs2.decode()</code> method returns an array containing the numeric
+codepoint values of each Unicode symbol in the string.</p>
+<pre><code class="lang-js">punycode.ucs2.decode(<span class="hljs-string">&apos;abc&apos;</span>); <span class="hljs-comment">// [0x61, 0x62, 0x63]</span>
+<span class="hljs-comment">// surrogate pair for U+1D306 tetragram for centre:</span>
+punycode.ucs2.decode(<span class="hljs-string">&apos;\uD834\uDF06&apos;</span>); <span class="hljs-comment">// [0x1D306]</span>
+</code></pre>
+<h3 id="punycodeucs2encodecodepoints">punycode.ucs2.encode(codePoints)</h3>
+<!-- YAML
+added: v0.7.0
+-->
+<ul>
+<li><code>codePoints</code> {Array}</li>
+</ul>
+<p>The <code>punycode.ucs2.encode()</code> method returns a string based on an array of
+numeric code point values.</p>
+<pre><code class="lang-js">punycode.ucs2.encode([<span class="hljs-number">0x61</span>, <span class="hljs-number">0x62</span>, <span class="hljs-number">0x63</span>]); <span class="hljs-comment">// &apos;abc&apos;</span>
+punycode.ucs2.encode([<span class="hljs-number">0x1D306</span>]); <span class="hljs-comment">// &apos;\uD834\uDF06&apos;</span>
+</code></pre>
+<h2 id="punycodeversion">punycode.version</h2>
+<!-- YAML
+added: v0.6.1
+-->
+<p>Returns a string identifying the current <a href="https://mths.be/punycode" _target="blank">Punycode.js</a> version number.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="process.html" class="navigation navigation-prev " aria-label="Previous page: Process">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="querystring.html" class="navigation navigation-next " aria-label="Next page: Query Strings">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Punycode","level":"1.26","depth":1,"next":{"title":"Query Strings","level":"1.27","depth":1,"path":"querystring.md","ref":"querystring.md","articles":[]},"previous":{"title":"Process","level":"1.25","depth":1,"path":"process.md","ref":"process.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-fontsettings","-search-pro","-advanced-emoji","-github","-splitter","-toggle-chapters"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search-pro":{"cutWordLib":"nodejieba","defineWord":["Gitbook"]},"github":{"url":"https://github.com/laomu1988/fe-books"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"laomu1988@qq.com","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"fe-books","language":"zh-hans","gitbook":"*"},"file":{"path":"punycode.md","mtime":"2017-02-07T11:13:21.000Z","type":"markdown"},"gitbook":{"version":"3.1.0","time":"2017-02-07T11:15:53.426Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+<script>
+	// 百度统计
+	var _hmt = _hmt || [];
+	(function () {
+		var hm = document.createElement("script");
+		hm.src = "//hm.baidu.com/hm.js?171566b3d4f03c9c68c8f2c7a42d4b0e";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+<script src="/fe-books/server/index.js"></script>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

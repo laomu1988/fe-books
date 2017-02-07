@@ -1,0 +1,901 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <title>React （虚拟）DOM 术语 · fe-books</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.0">
+        <meta name="author" content="laomu1988@qq.com">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="flux-overview.html" />
+    
+    
+    <link rel="prev" href="ref-08-reconciliation.html" />
+    
+
+<link rel="stylesheet" href="/fe-books/server/index.css"/>
+
+    </head>
+    <body>
+        
+<script src="/fe-books/server/vue.min.js"></script>
+<nav class="fe-menu">
+	<ul>
+		<li><a href="/fe-books/books/assist/index.html">说明</a></li>
+		<li><a href="/fe-books/books/react/index.html">react</a></li>
+		<li>
+			<a href="/fe-books/books/vue/index.html">vue.js</a>
+			<ul class="sub">
+				<li><a href="/fe-books/books/vue-router/index.html">vue-router</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="/fe-books/books/node/documentation.html">node</a>
+			<ul class="sub">
+				<li><a href="/fe-books/books/koa/index.html">koa</a></li>
+			</ul>
+		</li>
+		<li><a href="/fe-books/books/es6/index.html">es6入门</a></li>
+		<li>
+			<a href="/fe-books/books/tools/index.html">工具</a>
+			<ul class="sub">
+				<li><a href="/fe-books/books/tools/git.html">git</a></li>
+				<li><a href="/fe-books/books/tools/vim.html">vim</a></li>
+				<li><a href="/fe-books/books/fis3/index.html">fis3</a></li>
+			</ul>
+		</li>
+		<li class="menu-last"></li>
+	</ul>
+</nav>
+
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="getting-started.html">
+            
+                <a href="getting-started.html">
+            
+                    
+                    快速开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="tutorial.html">
+            
+                <a href="tutorial.html">
+            
+                    
+                    教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="thinking-in-react.html">
+            
+                <a href="thinking-in-react.html">
+            
+                    
+                    深入理解React
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">指南</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="01-why-react.html">
+            
+                <a href="01-why-react.html">
+            
+                    
+                    为什么使用React
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="02-displaying-data.html">
+            
+                <a href="02-displaying-data.html">
+            
+                    
+                    数据呈现
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="02.1-jsx-in-depth.html">
+            
+                <a href="02.1-jsx-in-depth.html">
+            
+                    
+                    深入理解JSX
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="02.2-jsx-spread.html">
+            
+                <a href="02.2-jsx-spread.html">
+            
+                    
+                    JSX的延展属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="02.3-jsx-gotchas.html">
+            
+                <a href="02.3-jsx-gotchas.html">
+            
+                    
+                    JSX陷阱
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="03-interactivity-and-dynamic-uis.html">
+            
+                <a href="03-interactivity-and-dynamic-uis.html">
+            
+                    
+                    富交互性的动态用户界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="04-multiple-components.html">
+            
+                <a href="04-multiple-components.html">
+            
+                    
+                    复合组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="05-reusable-components.html">
+            
+                <a href="05-reusable-components.html">
+            
+                    
+                    可复用组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="06-transferring-props.html">
+            
+                <a href="06-transferring-props.html">
+            
+                    
+                    传递Props
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="07-forms.html">
+            
+                <a href="07-forms.html">
+            
+                    
+                    表单组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="08-working-with-the-browser.html">
+            
+                <a href="08-working-with-the-browser.html">
+            
+                    
+                    浏览器中的工作原理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.8.1" data-path="08.1-more-about-refs.html">
+            
+                <a href="08.1-more-about-refs.html">
+            
+                    
+                    关于Refs的更多内容
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="09-tooling-integration.html">
+            
+                <a href="09-tooling-integration.html">
+            
+                    
+                    工具集成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="10-addons.html">
+            
+                <a href="10-addons.html">
+            
+                    
+                    插件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.10.1" data-path="10.1-animation.html">
+            
+                <a href="10.1-animation.html">
+            
+                    
+                    动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10.2" data-path="10.2-form-input-binding-sugar.html">
+            
+                <a href="10.2-form-input-binding-sugar.html">
+            
+                    
+                    双向绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10.3" data-path="10.3-class-name-manipulation.html">
+            
+                <a href="10.3-class-name-manipulation.html">
+            
+                    
+                    类名操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10.4" data-path="10.4-test-utils.html">
+            
+                <a href="10.4-test-utils.html">
+            
+                    
+                    测试工具集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10.5" data-path="10.5-clone-with-props.html">
+            
+                <a href="10.5-clone-with-props.html">
+            
+                    
+                    克隆组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10.6" data-path="10.6-update.html">
+            
+                <a href="10.6-update.html">
+            
+                    
+                    Immutability Helpers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10.7" data-path="10.7-pure-render-mixin.html">
+            
+                <a href="10.7-pure-render-mixin.html">
+            
+                    
+                    PureRenderMixin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10.8" data-path="10.8-perf.html">
+            
+                <a href="10.8-perf.html">
+            
+                    
+                    性能分析工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">参考</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="ref-01-top-level-api.html">
+            
+                <a href="ref-01-top-level-api.html">
+            
+                    
+                    顶层 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="ref-02-component-api.html">
+            
+                <a href="ref-02-component-api.html">
+            
+                    
+                    组件 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="ref-03-component-specs.html">
+            
+                <a href="ref-03-component-specs.html">
+            
+                    
+                    组件的详细说明和生命周期
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="ref-04-tags-and-attributes.html">
+            
+                <a href="ref-04-tags-and-attributes.html">
+            
+                    
+                    标签和属性支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="ref-05-events.html">
+            
+                <a href="ref-05-events.html">
+            
+                    
+                    事件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="ref-06-dom-differences.html">
+            
+                <a href="ref-06-dom-differences.html">
+            
+                    
+                    与 DOM 的差异
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="ref-07-special-non-dom-attributes.html">
+            
+                <a href="ref-07-special-non-dom-attributes.html">
+            
+                    
+                    特殊的非 DOM 属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="ref-08-reconciliation.html">
+            
+                <a href="ref-08-reconciliation.html">
+            
+                    
+                    Reconciliation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.9" data-path="ref-09-glossary.html">
+            
+                <a href="ref-09-glossary.html">
+            
+                    
+                    React （虚拟）DOM 术语
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Flux</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="flux-overview.html">
+            
+                <a href="flux-overview.html">
+            
+                    
+                    Flux
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Blog</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../_posts/2015-03-16-react-v0.13.1.html">
+            
+                <a href="../_posts/2015-03-16-react-v0.13.1.html">
+            
+                    
+                    React v0.13.1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../_posts/2015-03-10-react-v0.13.html">
+            
+                <a href="../_posts/2015-03-10-react-v0.13.html">
+            
+                    
+                    React v0.13
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >React （虚拟）DOM 术语</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>&#x5728; React &#x7684;&#x672F;&#x8BED;&#x4E2D;&#xFF0C;&#x6709;&#x4E94;&#x4E2A;&#x6838;&#x5FC3;&#x7C7B;&#x578B;&#xFF0C;&#x533A;&#x5206;&#x5B83;&#x4EEC;&#x662F;&#x5F88;&#x91CD;&#x8981;&#x7684;&#xFF1A;</p>
+<ul>
+<li><a href="#react-elements">ReactElement / ReactElement &#x5DE5;&#x5382;</a></li>
+<li><a href="#react-nodes">ReactNode</a></li>
+<li><a href="#react-components">ReactComponent / ReactComponent &#x7C7B;</a></li>
+</ul>
+<h2 id="react-&#x5143;&#x7D20;">React &#x5143;&#x7D20;</h2>
+<p>React &#x4E2D;&#x6700;&#x4E3B;&#x8981;&#x7684;&#x7C7B;&#x578B;&#x5C31;&#x662F; <code>ReactElement</code>&#x3002;&#x5B83;&#x6709;&#x56DB;&#x4E2A;&#x5C5E;&#x6027;&#xFF1A;<code>type</code>&#xFF0C;<code>props</code>&#xFF0C;<code>key</code> &#x548C; <code>ref</code>&#x3002;&#x5B83;&#x6CA1;&#x6709;&#x65B9;&#x6CD5;&#xFF0C;&#x5E76;&#x4E14;&#x539F;&#x578B;&#x4E0A;&#x4EC0;&#x4E48;&#x90FD;&#x6CA1;&#x6709;&#x3002;</p>
+<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>React.createElement</code> &#x521B;&#x5EFA;&#x8BE5;&#x7C7B;&#x578B;&#x7684;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> root = React.createElement(<span class="hljs-string">&apos;div&apos;</span>);
+</code></pre>
+<p>&#x4E3A;&#x4E86;&#x6E32;&#x67D3;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x6811;&#x5F62;&#x7ED3;&#x6784;&#x5230; DOM &#x4E2D;&#xFF0C;&#x4F60;&#x521B;&#x5EFA;&#x82E5;&#x5E72;&#x4E2A; <code>ReactElement</code>&#xFF0C;&#x7136;&#x540E;&#x4F20;&#x7ED9; <code>React.render</code> &#x4F5C;&#x4E3A;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x540C;&#x65F6;&#x5C06;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x8BBE;&#x4E3A;&#x4E00;&#x4E2A;&#x6B63;&#x89C4;&#x7684; DOM <code>&#x5143;&#x7D20;</code> &#xFF08;<code>HTMLElement</code> &#x6216;&#x8005; <code>SVGElement</code>&#xFF09;&#x3002;&#x4E0D;&#x8981;&#x6DF7;&#x6DC6; <code>ReactElement</code> &#x5B9E;&#x4F8B;&#x548C; DOM <code>&#x5143;&#x7D20;</code> &#x5B9E;&#x4F8B;&#x3002;&#x4E00;&#x4E2A; <code>ReactElement</code> &#x5B9E;&#x4F8B;&#x662F;&#x4E00;&#x4E2A;&#x8F7B;&#x91CF;&#x7684;&#xFF0C;&#x65E0;&#x72B6;&#x6001;&#x7684;&#xFF0C;&#x4E0D;&#x53EF;&#x53D8;&#x7684;&#xFF0C;&#x865A;&#x62DF;&#x7684; DOM <code>&#x5143;&#x7D20;</code> &#x7684;&#x8868;&#x793A;&#x3002;&#x662F;&#x4E00;&#x4E2A;&#x865A;&#x62DF; DOM&#x3002;</p>
+<pre><code class="lang-javascript">React.render(root, <span class="hljs-built_in">document</span>.body);
+</code></pre>
+<p>&#x8981;&#x6DFB;&#x52A0;&#x5C5E;&#x6027;&#x5230; DOM &#x5143;&#x7D20;&#xFF0C;&#x628A;&#x5C5E;&#x6027;&#x5BF9;&#x8C61;&#x4F5C;&#x4E3A;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x4F20;&#x5165; <code>React.render</code>&#xFF0C;&#x628A;&#x5B50;&#x7EA7;&#x4F5C;&#x4E3A;&#x7B2C;&#x4E09;&#x4E2A;&#x53C2;&#x6570;&#x4F20;&#x7ED9; <code>React.render</code>&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> child = React.createElement(<span class="hljs-string">&apos;li&apos;</span>, <span class="hljs-literal">null</span>, <span class="hljs-string">&apos;Text Content&apos;</span>);
+<span class="hljs-keyword">var</span> root = React.createElement(<span class="hljs-string">&apos;ul&apos;</span>, { className: <span class="hljs-string">&apos;my-list&apos;</span> }, child);
+React.render(root, <span class="hljs-built_in">document</span>.body);
+</code></pre>
+<p>&#x5982;&#x679C;&#x4F7F;&#x7528; React JSX &#x8BED;&#x6CD5;&#xFF0C;&#x8FD9;&#x4E9B; <code>ReactElement</code> &#x5B9E;&#x4F8B;&#x81EA;&#x52A8;&#x521B;&#x5EFA;&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#x662F;&#x7B49;&#x4EF7;&#x7684;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> root = <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;my-list&quot;</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Text Content<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+           <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></span>;
+React.render(root, <span class="hljs-built_in">document</span>.body);
+</code></pre>
+<p><strong>&#x5DE5;&#x5382;</strong></p>
+<p>&#x4E00;&#x4E2A; <code>ReactElement</code> &#x5DE5;&#x5382;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x8BE5;&#x51FD;&#x6570;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x5E26;&#x6709;&#x7279;&#x6B8A; <code>type</code> &#x5C5E;&#x6027;&#x7684; <code>ReactElement</code>&#x3002;React &#x6709;&#x4E00;&#x4E2A;&#x5185;&#x7F6E;&#x7684;&#x8F85;&#x52A9;&#x65B9;&#x6CD5;&#x7528;&#x4E8E;&#x521B;&#x5EFA;&#x5DE5;&#x5382;&#x51FD;&#x6570;&#x3002;&#x4E8B;&#x5B9E;&#x4E0A;&#x8BE5;&#x65B9;&#x6CD5;&#x5C31;&#x662F;&#x8FD9;&#x6837;&#x7684;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createFactory</span>(<span class="hljs-params">type</span>)</span>{
+  <span class="hljs-keyword">return</span> React.createElement.bind(<span class="hljs-literal">null</span>, type);
+}
+</code></pre>
+<p>&#x8BE5;&#x51FD;&#x6570;&#x80FD;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B9;&#x4FBF;&#x7684;&#x77ED;&#x51FD;&#x6570;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x603B;&#x8C03;&#x7528; <code>React.createElement(&apos;div&apos;)</code>&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> div = React.createFactory(<span class="hljs-string">&apos;div&apos;</span>);
+<span class="hljs-keyword">var</span> root = div({ className: <span class="hljs-string">&apos;my-div&apos;</span> });
+React.render(root, <span class="hljs-built_in">document</span>.body);
+</code></pre>
+<p>React &#x5DF2;&#x7ECF;&#x5185;&#x7F6E;&#x4E86;&#x5E38;&#x7528; HTML &#x6807;&#x7B7E;&#x7684;&#x5DE5;&#x5382;&#x51FD;&#x6570;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> root = React.DOM.ul({ className: <span class="hljs-string">&apos;my-list&apos;</span> },
+             React.DOM.li(<span class="hljs-literal">null</span>, <span class="hljs-string">&apos;Text Content&apos;</span>)
+           );
+</code></pre>
+<p>&#x5982;&#x679C;&#x4F7F;&#x7528; JSX &#x8BED;&#x6CD5;&#xFF0C;&#x5C31;&#x4E0D;&#x9700;&#x8981;&#x5DE5;&#x5382;&#x51FD;&#x6570;&#x4E86;&#x3002;JSX &#x5DF2;&#x7ECF;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x65B9;&#x4FBF;&#x7684;&#x77ED;&#x51FD;&#x6570;&#x6765;&#x521B;&#x5EFA; <code>ReactElement</code> &#x5B9E;&#x4F8B;&#x3002;</p>
+<h2 id="react-&#x8282;&#x70B9;">React &#x8282;&#x70B9;</h2>
+<p>&#x4E00;&#x4E2A; <code>ReactNode</code> &#x53EF;&#x4EE5;&#x662F;&#xFF1A;</p>
+<ul>
+<li><code>ReactElement</code></li>
+<li><code>string</code> &#xFF08;&#x53C8;&#x540D; <code>ReactText</code>&#xFF09;</li>
+<li><code>number</code> &#xFF08;&#x53C8;&#x540D; <code>ReactText</code>&#xFF09;</li>
+<li><code>ReactNode</code> &#x5B9E;&#x4F8B;&#x6570;&#x7EC4; &#xFF08;&#x53C8;&#x540D; <code>ReactFragment</code>&#xFF09;</li>
+</ul>
+<p>&#x8FD9;&#x4E9B;&#x88AB;&#x7528;&#x4F5C;&#x5176;&#x5B83; <code>ReactElement</code> &#x5B9E;&#x4F8B;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x7528;&#x4E8E;&#x8868;&#x793A;&#x5B50;&#x7EA7;&#x3002;&#x5B9E;&#x9645;&#x4E0A;&#x5B83;&#x4EEC;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A; <code>ReactElement</code> &#x5B9E;&#x4F8B;&#x6811;&#x3002;
+&#xFF08;These are used as properties of other <code>ReactElement</code>s to represent children. Effectively they create a tree of <code>ReactElement</code>s.&#xFF09;</p>
+<h2 id="react-&#x7EC4;&#x4EF6;">React &#x7EC4;&#x4EF6;</h2>
+<p>&#x5728;&#x4F7F;&#x7528; React &#x5F00;&#x53D1;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x4EC5;&#x4F7F;&#x7528; <code>ReactElement</code> &#x5B9E;&#x4F8B;&#xFF0C;&#x4F46;&#x662F;&#xFF0C;&#x8981;&#x5145;&#x5206;&#x5229;&#x7528; React&#xFF0C;&#x5C31;&#x8981;&#x4F7F;&#x7528; <code>ReactComponent</code> &#x6765;&#x5C01;&#x88C5;&#x72B6;&#x6001;&#x5316;&#x7684;&#x7EC4;&#x4EF6;&#x3002;</p>
+<p>&#x4E00;&#x4E2A; <code>ReactComponent</code> &#x7C7B;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684; JavaScript &#x7C7B;&#xFF08;&#x6216;&#x8005;&#x8BF4;&#x662F;&#x201C;&#x6784;&#x9020;&#x51FD;&#x6570;&#x201D;&#xFF09;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> MyComponent = React.createClass({
+  render: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    ...
+  }
+});
+</code></pre>
+<p>&#x5F53;&#x8BE5;&#x6784;&#x9020;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5E94;&#x8BE5;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x8BE5;&#x5BF9;&#x8C61;&#x81F3;&#x5C11;&#x5E26;&#x6709;&#x4E00;&#x4E2A; <code>render</code> &#x65B9;&#x6CD5;&#x3002;&#x8BE5;&#x5BF9;&#x8C61;&#x6307;&#x5411;&#x4E00;&#x4E2A; <code>ReactComponent</code> &#x5B9E;&#x4F8B;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> component = <span class="hljs-keyword">new</span> MyComponent(props); <span class="hljs-comment">// never do this</span>
+</code></pre>
+<p>&#x9664;&#x975E;&#x4E3A;&#x4E86;&#x6D4B;&#x8BD5;&#xFF0C;&#x6B63;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#x4E0D;&#x8981;&#x81EA;&#x5DF1;&#x8C03;&#x7528;&#x8BE5;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;React &#x5E2E;&#x4F60;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x76F8;&#x53CD;&#xFF0C;&#x628A; <code>ReactComponent</code> &#x7C7B;&#x4F20;&#x7ED9; <code>createElement</code>&#xFF0C;&#x5C31;&#x4F1A;&#x5F97;&#x5230;&#x4E00;&#x4E2A; <code>ReactElement</code> &#x5B9E;&#x4F8B;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> element = React.createElement(MyComponent);
+</code></pre>
+<p>&#x6216;&#x8005;&#x4F7F;&#x7528; JSX&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> element = <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">MyComponent</span> /&gt;</span>;
+</span></code></pre>
+<p>&#x5F53;&#x8BE5;&#x5B9E;&#x4F8B;&#x4F20;&#x7ED9; <code>React.render</code> &#x7684;&#x65F6;&#x5019;&#xFF0C;React &#x5C06;&#x4F1A;&#x8C03;&#x7528;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x7136;&#x540E;&#x521B;&#x5EFA;&#x5E76;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A; <code>ReactComponent</code>&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> component = React.render(element, <span class="hljs-built_in">document</span>.body);
+</code></pre>
+<p>&#x5982;&#x679C;&#x4E00;&#x76F4;&#x7528;&#x76F8;&#x540C;&#x7684; <code>ReactElement</code> &#x7C7B;&#x578B;&#x548C;&#x76F8;&#x540C;&#x7684; DOM <code>&#x5143;&#x7D20;</code>&#x5BB9;&#x5668;&#x8C03;&#x7528; <code>React.render</code>&#xFF0C;&#x5C06;&#x4F1A;&#x603B;&#x662F;&#x8FD4;&#x56DE;&#x76F8;&#x540C;&#x7684;&#x5B9E;&#x4F8B;&#x3002;&#x8BE5;&#x5B9E;&#x4F8B;&#x662F;&#x72B6;&#x6001;&#x5316;&#x7684;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> componentA = React.render(&lt;MyComponent /&gt;, document.body);
+var componentB = React.render(&lt;MyComponent /&gt;, document.body);
+componentA === componentB; // true
+</code></pre>
+<p>&#x8FD9;&#x5C31;&#x662F;&#x4E3A;&#x4EC0;&#x4E48;&#x4E0D;&#x5E94;&#x8BE5;&#x521B;&#x5EFA;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x5B9E;&#x4F8B;&#x3002;&#x76F8;&#x53CD;&#xFF0C;&#x5728;&#x521B;&#x5EFA;&#x4E4B;&#x524D;&#xFF0C;<code>ReactElement</code> &#x662F;&#x4E00;&#x4E2A;&#x865A;&#x62DF;&#x7684; <code>ReactComponent</code>&#x3002;&#x65B0;&#x65E7; <code>ReactElement</code> &#x53EF;&#x4EE5;&#x6BD4;&#x5BF9;&#xFF0C;&#x4ECE;&#x800C;&#x51B3;&#x5B9A;&#x662F;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684; <code>ReactComponent</code> &#x5B9E;&#x4F8B;&#x8FD8;&#x662F;&#x91CD;&#x7528;&#x5DF2;&#x6709;&#x7684;&#x5B9E;&#x4F8B;&#x3002;</p>
+<p><code>ReactComponent</code> &#x7684; <code>render</code> &#x65B9;&#x6CD5;&#x5E94;&#x8BE5;&#x8FD4;&#x56DE;&#x53E6;&#x4E00;&#x4E2A; <code>ReactElement</code>&#xFF0C;&#x8FD9;&#x5C31;&#x5141;&#x8BB8;&#x7EC4;&#x4EF6;&#x88AB;&#x7EC4;&#x88C5;&#x3002;
+&#xFF08;The <code>render</code> method of a <code>ReactComponent</code> is expected to return another <code>ReactElement</code>. This allows these components to be composed. Ultimately the render resolves into <code>ReactElement</code> with a <code>string</code> tag which instantiates a DOM <code>Element</code> instance and inserts it into the document.&#xFF09;</p>
+<h2 id="&#x6B63;&#x5F0F;&#x7684;&#x7C7B;&#x578B;&#x5B9A;&#x4E49;">&#x6B63;&#x5F0F;&#x7684;&#x7C7B;&#x578B;&#x5B9A;&#x4E49;</h2>
+<p><strong>&#x5165;&#x53E3;&#x70B9;&#xFF08;Entry Point&#xFF09;</strong></p>
+<pre><code>React.render = (ReactElement, HTMLElement | SVGElement) =&gt; ReactComponent;
+</code></pre><p><strong>&#x8282;&#x70B9;&#x548C;&#x5143;&#x7D20;&#xFF08;Nodes and Elements&#xFF09;</strong></p>
+<pre><code>type ReactNode = ReactElement | ReactFragment | ReactText;
+
+type ReactElement = ReactComponentElement | ReactDOMElement;
+
+type ReactDOMElement = {
+  type : string,
+  props : {
+    children : ReactNodeList,
+    className : string,
+    etc.
+  },
+  key : string | boolean | number | null,
+  ref : string | null
+};
+
+type ReactComponentElement&lt;TProps&gt; = {
+  type : ReactClass&lt;TProps&gt;,
+  props : TProps,
+  key : string | boolean | number | null,
+  ref : string | null
+};
+
+type ReactFragment = Array&lt;ReactNode | ReactEmpty&gt;;
+
+type ReactNodeList = ReactNode | ReactEmpty;
+
+type ReactText = string | number;
+
+type ReactEmpty = null | undefined | boolean;
+</code></pre><p><strong>&#x7C7B;&#x548C;&#x7EC4;&#x4EF6;&#xFF08;Classes and Components&#xFF09;</strong></p>
+<pre><code>type ReactClass&lt;TProps&gt; = (TProps) =&gt; ReactComponent&lt;TProps&gt;;
+
+type ReactComponent&lt;TProps&gt; = {
+  props : TProps,
+  render : () =&gt; ReactElement
+};
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ref-08-reconciliation.html" class="navigation navigation-prev " aria-label="Previous page: Reconciliation">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="flux-overview.html" class="navigation navigation-next " aria-label="Next page: Flux">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"id":"glossary","title":"React （虚拟）DOM 术语","permalink":"glossary.html","prev":"reconciliation.html","level":"3.9","depth":1,"next":{"title":"Flux","level":"4.1","depth":1,"path":"zh/docs/flux-overview.md","ref":"zh/docs/flux-overview.md","articles":[]},"previous":{"title":"Reconciliation","level":"3.8","depth":1,"path":"zh/docs/ref-08-reconciliation.md","ref":"zh/docs/ref-08-reconciliation.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-fontsettings","-search-pro","-advanced-emoji","-github","-splitter","-toggle-chapters"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search-pro":{"cutWordLib":"nodejieba","defineWord":["Gitbook"]},"github":{"url":"https://github.com/laomu1988/fe-books"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"laomu1988@qq.com","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"fe-books","language":"zh-hans","gitbook":"*"},"file":{"path":"zh/docs/ref-09-glossary.md","mtime":"2017-02-07T11:13:21.000Z","type":"markdown"},"gitbook":{"version":"3.1.0","time":"2017-02-07T11:16:04.071Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+<script>
+	// 百度统计
+	var _hmt = _hmt || [];
+	(function () {
+		var hm = document.createElement("script");
+		hm.src = "//hm.baidu.com/hm.js?171566b3d4f03c9c68c8f2c7a42d4b0e";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+<script src="/fe-books/server/index.js"></script>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+
