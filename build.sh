@@ -2,14 +2,23 @@
 folders=("assist" "es6" "fis3" "koa" "node" "react" "tools" "vue" "vue-router")
 output='books'
 
-cd $output
-git checkout gh-pages
-cd ../
-
 if [ "$1"V = "V" ]
 then
+    echo 'build'
+    cd $output
+    git checkout gh-pages
+    cd ../
     rm -rf assist/README.md
     cp README.md assist/README.md
+
+    # build vue2
+    echo 'build vue2'
+    cd vue2
+    node ../hexo.js vue2
+    cp -r public ../$output/vue2
+    cd ..
+
+
     for folder in "${folders[@]}"
     do
         sh build.sh "$folder"
