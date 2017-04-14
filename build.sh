@@ -8,9 +8,11 @@ then
     echo 'build'
     cd $output
     git checkout gh-pages
+    rm -rf server
     cd ../
     rm -rf assist/README.md
     cp README.md assist/README.md
+    cp -r server $output/server
 
     # build vue2
     echo 'build vue2'
