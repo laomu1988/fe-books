@@ -1,5 +1,6 @@
 #!/bin/bash
-folders=("assist" "es6" "fis3" "koa" "node" "react" "tools" "vue" "vue-router")
+
+folders=("assist" "es6" "fis3" "koa" "node" "react" "tools" "vue" "vue-router" "vue-router2" "koa2-note")
 output='books'
 
 if [ "$1"V = "V" ]
@@ -19,6 +20,26 @@ then
     cd ..
 
 
+    # 更新子模块
+    git submodule foreach git pull
+    # git  submodule add https://github.com/vuejs/vue-router.git github/vue-router
+
+    # build vue-router
+    echo 'build vue-router and vue-router2'
+    rm -r vue-router
+    rm -r vue-router2
+    rm -r koa2-note
+    cd github/vue-router
+    git reset --hard
+    git checkout 1.0
+    cp -r docs/zh-cn ../../vue-router
+    git checkout dev
+    cp -r docs/zh-cn ../../vue-router2
+    cd ../../
+    cp -r github/koa2-note koa2-note
+
+
+    ## 循环编译指定文件夹
     for folder in "${folders[@]}"
     do
         sh build.sh "$folder"

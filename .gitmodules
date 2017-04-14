@@ -1,0 +1,6 @@
+[submodule "github/vue-router"]
+	path = github/vue-router
+	url = https://github.com/vuejs/vue-router.git
+[submodule "github/koa2-note"]
+	path = github/koa2-note
+	url = https://github.com/chenshenhai/koa2-note.git
