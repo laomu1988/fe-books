@@ -55,35 +55,7 @@
     </head>
     <body>
         
-<script src="/fe-books/server/vue.min.js"></script>
-<nav class="fe-menu">
-	<ul>
-		<li><a href="/fe-books/assist/index.html">说明</a></li>
-		<li><a href="/fe-books/react/index.html">react</a></li>
-		<li>
-			<a href="/fe-books/vue/index.html">vue.js</a>
-			<ul class="sub">
-				<li><a href="/fe-books/vue-router/index.html">vue-router</a></li>
-			</ul>
-		</li>
-		<li>
-			<a href="/fe-books/node/documentation.html">node</a>
-			<ul class="sub">
-				<li><a href="/fe-books/koa/index.html">koa</a></li>
-			</ul>
-		</li>
-		<li><a href="/fe-books/es6/index.html">es6入门</a></li>
-		<li>
-			<a href="/fe-books/tools/index.html">工具</a>
-			<ul class="sub">
-				<li><a href="/fe-books/tools/git.html">git</a></li>
-				<li><a href="/fe-books/tools/vim.html">vim</a></li>
-				<li><a href="/fe-books/fis3/index.html">fis3</a></li>
-			</ul>
-		</li>
-		<li class="menu-last"></li>
-	</ul>
-</nav>
+<script src="/fe-books/server/menu.js"></script>
 
 <div class="book">
     <div class="book-summary">
@@ -113,7 +85,7 @@
                 <a href="../">
             
                     
-                    vue-router介绍
+                    Introduction
             
                 </a>
             
@@ -614,7 +586,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"canReuse","level":"1.11.7","depth":2,"next":{"title":"API","level":"1.12","depth":1,"path":"api/README.md","ref":"api/README.md","articles":[{"title":"路由实例属性","level":"1.12.1","depth":2,"path":"api/properties.md","ref":"api/properties.md","articles":[]},{"title":"router.start","level":"1.12.2","depth":2,"path":"api/start.md","ref":"api/start.md","articles":[]},{"title":"router.stop","level":"1.12.3","depth":2,"path":"api/stop.md","ref":"api/stop.md","articles":[]},{"title":"router.map","level":"1.12.4","depth":2,"path":"api/map.md","ref":"api/map.md","articles":[]},{"title":"router.on","level":"1.12.5","depth":2,"path":"api/on.md","ref":"api/on.md","articles":[]},{"title":"router.go","level":"1.12.6","depth":2,"path":"api/go.md","ref":"api/go.md","articles":[]},{"title":"router.replace","level":"1.12.7","depth":2,"path":"api/replace.md","ref":"api/replace.md","articles":[]},{"title":"router.redirect","level":"1.12.8","depth":2,"path":"api/redirect.md","ref":"api/redirect.md","articles":[]},{"title":"router.alias","level":"1.12.9","depth":2,"path":"api/alias.md","ref":"api/alias.md","articles":[]},{"title":"router.beforeEach","level":"1.12.10","depth":2,"path":"api/before-each.md","ref":"api/before-each.md","articles":[]},{"title":"router.afterEach","level":"1.12.11","depth":2,"path":"api/after-each.md","ref":"api/after-each.md","articles":[]}]},"previous":{"title":"canDeactivate","level":"1.11.6","depth":2,"path":"pipeline/can-deactivate.md","ref":"pipeline/can-deactivate.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-fontsettings","-search-pro","-advanced-emoji","-github","-splitter","-toggle-chapters"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search-pro":{"cutWordLib":"nodejieba","defineWord":["Gitbook"]},"github":{"url":"https://github.com/laomu1988/fe-books"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"laomu1988@qq.com","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"fe-books","language":"zh-hans","gitbook":"*"},"file":{"path":"pipeline/can-reuse.md","mtime":"2017-02-07T11:13:21.000Z","type":"markdown"},"gitbook":{"version":"3.1.0","time":"2017-02-26T05:58:54.985Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"canReuse","level":"1.11.7","depth":2,"next":{"title":"API","level":"1.12","depth":1,"path":"api/README.md","ref":"api/README.md","articles":[{"title":"路由实例属性","level":"1.12.1","depth":2,"path":"api/properties.md","ref":"api/properties.md","articles":[]},{"title":"router.start","level":"1.12.2","depth":2,"path":"api/start.md","ref":"api/start.md","articles":[]},{"title":"router.stop","level":"1.12.3","depth":2,"path":"api/stop.md","ref":"api/stop.md","articles":[]},{"title":"router.map","level":"1.12.4","depth":2,"path":"api/map.md","ref":"api/map.md","articles":[]},{"title":"router.on","level":"1.12.5","depth":2,"path":"api/on.md","ref":"api/on.md","articles":[]},{"title":"router.go","level":"1.12.6","depth":2,"path":"api/go.md","ref":"api/go.md","articles":[]},{"title":"router.replace","level":"1.12.7","depth":2,"path":"api/replace.md","ref":"api/replace.md","articles":[]},{"title":"router.redirect","level":"1.12.8","depth":2,"path":"api/redirect.md","ref":"api/redirect.md","articles":[]},{"title":"router.alias","level":"1.12.9","depth":2,"path":"api/alias.md","ref":"api/alias.md","articles":[]},{"title":"router.beforeEach","level":"1.12.10","depth":2,"path":"api/before-each.md","ref":"api/before-each.md","articles":[]},{"title":"router.afterEach","level":"1.12.11","depth":2,"path":"api/after-each.md","ref":"api/after-each.md","articles":[]}]},"previous":{"title":"canDeactivate","level":"1.11.6","depth":2,"path":"pipeline/can-deactivate.md","ref":"pipeline/can-deactivate.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-fontsettings","-search-pro","-advanced-emoji","-github","-splitter","-toggle-chapters"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search-pro":{"cutWordLib":"nodejieba","defineWord":["Gitbook"]},"github":{"url":"https://github.com/laomu1988/fe-books"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"laomu1988@qq.com","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"fe-books","language":"zh-hans","gitbook":"*"},"file":{"path":"pipeline/can-reuse.md","mtime":"2017-04-14T05:28:09.000Z","type":"markdown"},"gitbook":{"version":"3.1.0","time":"2017-04-14T05:29:05.408Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

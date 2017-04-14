@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>单文件组件 - vue.js</title>
+        <title>单文件组件 - Vue.js</title>
         <meta charset="utf-8">
         <meta name="description" content="Vue.js - Intuitive, Fast and Composable MVVM for building interactive interfaces.">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -18,8 +18,7 @@
 
         <link rel="icon" href="/fe-books/vue2/images/logo.png" type="image/x-icon">
 
-        <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Roboto Mono' rel='stylesheet' type='text/css'>
-        <link href='//fonts.googleapis.com/css?family=Dosis:500&text=Vue.js' rel='stylesheet' type='text/css'>
+        <!-- <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Roboto Mono' rel='stylesheet' type='text/css'> -->
 
         <!-- main page styles -->
         <link rel="stylesheet" href="/fe-books/vue2/css/page.css">
@@ -583,6 +582,7 @@
     
     
     <h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>在很多Vue项目中，我们使用 <code>Vue.component</code> 来定义全局组件，紧接着用 <code>new Vue({ el: &#39;#container &#39;})</code> 在每个页面内指定一个容器元素。</p>
+<p>这种方式在很多中小规模的项目中运作的很好，在这些项目里 JavaScript 只被用来加强特定的视图。但当在更复杂的项目中，或者你的前端完全由 JavaScript 驱动的时候，下面这些缺点将变得非常明显：</p>
 <ul>
 <li><strong>全局定义(Global definitions)</strong>  强制要求每个 component 中的命名不得重复</li>
 <li><strong>字符串模板(String templates)</strong>  缺乏语法高亮，在 HTML 有多行的时候，需要用到丑陋的 <code>\</code></li>
@@ -600,9 +600,9 @@
 </ul>
 <p>正如我们说过的，我们可以使用预处理器来构建简洁和功能更丰富的组件，比如 Jade，Babel (with ES2015 modules)，和 Stylus。</p>
 <p><img src="/fe-books/vue2/images/vue-component-with-preprocessors.png" style="display: block; margin: 30px auto"></p>
-<p>这些特定的语言只是例子，你可以只是简单地使用 Buble，TypeScript，SCSS，PostCSS - 或者其他任何能够帮助你提高生产力的预处理器。</p>
+<p>这些特定的语言只是例子，你可以只是简单地使用 Babel，TypeScript，SCSS，PostCSS - 或者其他任何能够帮助你提高生产力的预处理器。</p>
 <!-- TODO: include CSS modules once it's supported in vue-loader 9.x -->
-<h2 id="起步"><a href="#起步" class="headerlink" title="起步"></a>起步</h2><h3 id="针对刚接触-JavaScript-模块开发系统的用户"><a href="#针对刚接触-JavaScript-模块开发系统的用户" class="headerlink" title="针对刚接触 JavaScript 模块开发系统的用户"></a>针对刚接触 JavaScript 模块开发系统的用户</h3><p>有了 <code>.vue</code> 组件，我们就进入了高级 JavaScirpt 应用领域。如果你没有准备好的话，意味着还需要学会使用一些附加的工具：</p>
+<h2 id="起步"><a href="#起步" class="headerlink" title="起步"></a>起步</h2><h3 id="针对刚接触-JavaScript-模块开发系统的用户"><a href="#针对刚接触-JavaScript-模块开发系统的用户" class="headerlink" title="针对刚接触 JavaScript 模块开发系统的用户"></a>针对刚接触 JavaScript 模块开发系统的用户</h3><p>有了 <code>.vue</code> 组件，我们就进入了高级 JavaScript 应用领域。如果你没有准备好的话，意味着还需要学会使用一些附加的工具：</p>
 <ul>
 <li><p><strong>Node Package Manager (NPM)</strong>: 阅读 <a href="https://docs.npmjs.com/getting-started/what-is-npm" target="_blank" rel="external">Getting Started guide</a> 直到 <em>10: Uninstalling global packages</em>章节.</p>
 </li>

@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>安装 - vue.js</title>
+        <title>安装 - Vue.js</title>
         <meta charset="utf-8">
         <meta name="description" content="Vue.js - Intuitive, Fast and Composable MVVM for building interactive interfaces.">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -18,8 +18,7 @@
 
         <link rel="icon" href="/fe-books/vue2/images/logo.png" type="image/x-icon">
 
-        <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Roboto Mono' rel='stylesheet' type='text/css'>
-        <link href='//fonts.googleapis.com/css?family=Dosis:500&text=Vue.js' rel='stylesheet' type='text/css'>
+        <!-- <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Roboto Mono' rel='stylesheet' type='text/css'> -->
 
         <!-- main page styles -->
         <link rel="stylesheet" href="/fe-books/vue2/css/page.css">
@@ -594,7 +593,6 @@
 <h2 id="NPM"><a href="#NPM" class="headerlink" title="NPM"></a>NPM</h2><p>在用 Vue.js 构建大型应用时推荐使用 NPM 安装， NPM 能很好地和诸如 <a href="http://webpack.github.io/" target="_blank" rel="external">Webpack</a> 或 <a href="http://browserify.org/" target="_blank" rel="external">Browserify</a> 模块打包器配合使用。 Vue.js 也提供配套工具来开发<a href="single-file-components.html">单文件组件</a>。</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><div class="line"><span class="comment"># 最新稳定版</span></div><div class="line">$ npm install vue</div></pre></td></tr></table></figure>
 <h3 id="独立构建-vs-运行时构建"><a href="#独立构建-vs-运行时构建" class="headerlink" title="独立构建 vs 运行时构建"></a>独立构建 vs 运行时构建</h3><p>有两种构建方式，独立构建和运行构建。它们的区别在于前者包含<strong>模板编译器</strong>而后者不包含。</p>
-<p>模板编译用于编译 Vue 模板字符串成纯 JavaScript 渲染函数。如果你想用 <code>template</code> 选项， 你需要编译。</p>
 <p>模板编译器的职责是将模板字符串编译为纯 JavaScript 的渲染函数。如果你想要在组件中使用 <code>template</code> 选项，你就需要编译器。</p>
 <ul>
 <li><p>独立构建包含模板编译器并支持 <code>template</code> 选项。 <strong>它也依赖于浏览器的接口的存在，所以你不能使用它来为服务器端渲染。</strong></p>
@@ -610,9 +608,7 @@
 <p>另一方面，运行时构建的是完全兼容 CSP 的。当通过 <a href="https://github.com/vuejs-templates/webpack-simple" target="_blank" rel="external">Webpack + vue-loader</a> 或者 <a href="https://github.com/vuejs-templates/browserify-simple" target="_blank" rel="external">Browserify + vueify</a> 构建时，在 CSP 环境中模板将被完美预编译到 <code>render</code> 函数中。</p>
 <h2 id="命令行工具"><a href="#命令行工具" class="headerlink" title="命令行工具"></a>命令行工具</h2><p>Vue.js 提供一个<a href="https://github.com/vuejs/vue-cli" target="_blank" rel="external">官方命令行工具</a>，可用于快速搭建大型单页应用。该工具提供开箱即用的构建工具配置，带来现代化的前端开发流程。只需几分钟即可创建并启动一个带热重载、保存时静态检查以及可用于生产环境的构建配置的项目：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><div class="line"><span class="comment"># 全局安装 vue-cli</span></div><div class="line">$ npm install --global vue-cli</div><div class="line"><span class="comment"># 创建一个基于 webpack 模板的新项目</span></div><div class="line">$ vue init webpack my-project</div><div class="line"><span class="comment"># 安装依赖，走你</span></div><div class="line">$ <span class="built_in">cd</span> my-project</div><div class="line">$ npm install</div><div class="line">$ npm run dev</div></pre></td></tr></table></figure>
-<p class="tip">The CLI assumes prior knowledge of Node.js and the associated build tools. If you are new to Vue or front-end build tools, we strongly suggest going through <a href="./">the guide</a> without any build tools before using the CLI.</p>
-
-<p class="tip">CLI 默认了用户对 Node.js 和相关构建工具有一定程度的了解。如果你是新手，我们强烈建议先在不用构建工具的情况下通读<a href="/fe-books/vue2/guide/">指南</a>，熟悉 Vue 本身之后再研究 CLI。</p>
+<p class="tip">CLI 工具假定用户对 Node.js 和相关构建工具有一定程度的了解。如果你是新手，我们强烈建议先在不用构建工具的情况下通读<a href="/fe-books/vue2/guide/">指南</a>，熟悉 Vue 本身之后再研究 CLI。</p>
 
 <p class="tip">对于大陆用户，建议将 npm 的注册表源<a href="http://riny.net/2014/cnpm/" target="_blank" rel="external">设置为国内的镜像</a>，可以大幅提升安装速度。</p>
 

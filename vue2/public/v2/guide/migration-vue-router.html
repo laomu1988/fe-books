@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>从 Vue Router 0.7.x 迁移 - vue.js</title>
+        <title>从 Vue Router 0.7.x 迁移 - Vue.js</title>
         <meta charset="utf-8">
         <meta name="description" content="Vue.js - Intuitive, Fast and Composable MVVM for building interactive interfaces.">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -18,8 +18,7 @@
 
         <link rel="icon" href="/fe-books/vue2/images/logo.png" type="image/x-icon">
 
-        <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Roboto Mono' rel='stylesheet' type='text/css'>
-        <link href='//fonts.googleapis.com/css?family=Dosis:500&text=Vue.js' rel='stylesheet' type='text/css'>
+        <!-- <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Roboto Mono' rel='stylesheet' type='text/css'> -->
 
         <!-- main page styles -->
         <link rel="stylesheet" href="/fe-books/vue2/css/page.css">
@@ -659,6 +658,8 @@
   <p>运行 <a href="https://github.com/vuejs/vue-migration-helper" target="_blank" rel="external">迁移助手</a> 找到任意的路由不在 meta 作用域下的示例。</p>
 </div>
 
+<h3 id="URL-中的-Query-数组-语法-移除"><a href="#URL-中的-Query-数组-语法-移除" class="headerlink" title="URL 中的 Query 数组 [] 语法 移除"></a>URL 中的 Query 数组 [] 语法 <sup>移除</sup></h3><p>当传递数组给 query 参数时，URL 语法不再是 <code>/foo?users[]=Tom&amp;users[]=Jerry</code>，取而代之，新语法是 <code>/foo?users=Tom&amp;users=Jerry</code>，此时 <code>$route.query.users</code> 将仍旧是一个数组，不过如果在该 query 中只有一个参数：<code>/foo?users=Tom</code>，当直接访问该路由时，vue-router 将无法知道我们期待的 <code>users</code> 是个数组。因此，可以考虑添加一个计算属性并且在每个使用 <code>$route.query.users</code> 的地方以该计算属性代替：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><div class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</div><div class="line">  <span class="comment">// ...</span></div><div class="line">  computed: &#123;</div><div class="line">    <span class="comment">// 此计算属性将始终是个数组</span></div><div class="line">    users () &#123;</div><div class="line">      <span class="keyword">const</span> users = <span class="keyword">this</span>.$route.query.users</div><div class="line">      <span class="keyword">return</span> <span class="built_in">Array</span>.isArray(users) ? users : [users]</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h2 id="Route-匹配"><a href="#Route-匹配" class="headerlink" title="Route 匹配"></a>Route 匹配</h2><p>路由匹配现在使用 <a href="https://github.com/pillarjs/path-to-regexp" target="_blank" rel="external">path-to-regexp</a> 这个包，这将会使得工作与之前相比更加灵活。</p>
 <h3 id="一个或者更多的命名参数-改变"><a href="#一个或者更多的命名参数-改变" class="headerlink" title="一个或者更多的命名参数 改变"></a>一个或者更多的命名参数 <sup>改变</sup></h3><p>语法稍微有些许改变，所以以<code>/category/*tags</code>为例，应该被更新为<code>/category/:tags+</code>。</p>
 

@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>服务端渲染 - vue.js</title>
+        <title>服务端渲染 - Vue.js</title>
         <meta charset="utf-8">
         <meta name="description" content="Vue.js - Intuitive, Fast and Composable MVVM for building interactive interfaces.">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -18,8 +18,7 @@
 
         <link rel="icon" href="/fe-books/vue2/images/logo.png" type="image/x-icon">
 
-        <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Roboto Mono' rel='stylesheet' type='text/css'>
-        <link href='//fonts.googleapis.com/css?family=Dosis:500&text=Vue.js' rel='stylesheet' type='text/css'>
+        <!-- <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Roboto Mono' rel='stylesheet' type='text/css'> -->
 
         <!-- main page styles -->
         <link rel="stylesheet" href="/fe-books/vue2/css/page.css">
@@ -587,7 +586,7 @@
 <p>这意味着在异步获取内容的页面上很需要进行搜索引擎优化的时候，服务端渲染就很重要。</p>
 <h3 id="客户端的网络比较慢"><a href="#客户端的网络比较慢" class="headerlink" title="客户端的网络比较慢"></a>客户端的网络比较慢</h3><p>用户可能在网络比较慢的情况下从远处访问网站 - 或者通过比较差的带宽。 这些情况下，尽量减少页面请求数量，来保证用户尽快看到基本的内容。</p>
 <p>可以用 <a href="https://webpack.github.io/docs/code-splitting.html" target="_blank" rel="external">Webpack的代码拆分</a> 避免强制用户下载整个单页面应用，但是，这样也远没有下载个单独的预先渲染过的HTML文件性能高。</p>
-<h3 id="客户端运行在老的-或者直接没有-JavaScript引擎上"><a href="#客户端运行在老的-或者直接没有-JavaScript引擎上" class="headerlink" title="客户端运行在老的(或者直接没有)JavaScript引擎上"></a>客户端运行在老的(或者直接没有)JavaScript引擎上</h3><p>对于世界上的一些地区人，可能只能用1998年产的电脑访问互联网的方式使用计算机。而Vue只能运行在IE9以上的浏览器，你可以也想为那些老式浏览器提供基础内容 - 或者是在命令行中使用 <a href="http://lynx.browser.org/" target="_blank" rel="external">Lynx</a>的时髦的黑客。</p>
+<h3 id="客户端运行在老的-或者直接没有-JavaScript引擎上"><a href="#客户端运行在老的-或者直接没有-JavaScript引擎上" class="headerlink" title="客户端运行在老的(或者直接没有)JavaScript引擎上"></a>客户端运行在老的(或者直接没有)JavaScript引擎上</h3><p>对于世界上的一些地区人，可能只能用1998年产的电脑访问互联网的方式使用计算机。而Vue只能运行在IE9以上的浏览器，你可能也想为那些老式浏览器提供基础内容 - 或者是在命令行中使用 <a href="http://lynx.browser.org/" target="_blank" rel="external">Lynx</a>的时髦的黑客。</p>
 <h3 id="服务端渲染-对比-预渲染-Prerendering"><a href="#服务端渲染-对比-预渲染-Prerendering" class="headerlink" title="服务端渲染 对比 预渲染(Prerendering)"></a>服务端渲染 对比 预渲染(Prerendering)</h3><p>如果你只是用服务端渲染来改善一个少数的营销页面（如 首页，关于，联系 等等）的SEO，那你可以用<strong>预渲染</strong>替换。预渲染不像服务器渲染那样即时编译HTML,预渲染只是在构建时为了特定的路由生成特定的几个静态页面。其优势是预渲染的设置更加简单，可以保持前端是一个完整的静态站。</p>
 <p>你用webpack可以很简单地通过<a href="https://github.com/chrisvfritz/prerender-spa-plugin" target="_blank" rel="external">prerender-spa-plugin</a>来添加预渲染，它被广泛地用在Vue应用上 - 事实上，创建者也是Vue核心团队成员之一。</p>
 <h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2><p>准备在行动中体验服务端渲染吧。服务端渲染(即SSR)听起来很复杂，不过一个简单的Node脚本只需要3步就可以实现这个功能:</p>

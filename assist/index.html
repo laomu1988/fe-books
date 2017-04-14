@@ -53,35 +53,7 @@
     </head>
     <body>
         
-<script src="/fe-books/server/vue.min.js"></script>
-<nav class="fe-menu">
-	<ul>
-		<li><a href="/fe-books/assist/index.html">说明</a></li>
-		<li><a href="/fe-books/react/index.html">react</a></li>
-		<li>
-			<a href="/fe-books/vue/index.html">vue.js</a>
-			<ul class="sub">
-				<li><a href="/fe-books/vue-router/index.html">vue-router</a></li>
-			</ul>
-		</li>
-		<li>
-			<a href="/fe-books/node/documentation.html">node</a>
-			<ul class="sub">
-				<li><a href="/fe-books/koa/index.html">koa</a></li>
-			</ul>
-		</li>
-		<li><a href="/fe-books/es6/index.html">es6入门</a></li>
-		<li>
-			<a href="/fe-books/tools/index.html">工具</a>
-			<ul class="sub">
-				<li><a href="/fe-books/tools/git.html">git</a></li>
-				<li><a href="/fe-books/tools/vim.html">vim</a></li>
-				<li><a href="/fe-books/fis3/index.html">fis3</a></li>
-			</ul>
-		</li>
-		<li class="menu-last"></li>
-	</ul>
-</nav>
+<script src="/fe-books/server/menu.js"></script>
 
 <div class="book">
     <div class="book-summary">
@@ -177,7 +149,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x524D;&#x7AEF;&#x4E66;&#x7C4D;fe-book"><strong>&#x524D;&#x7AEF;&#x4E66;&#x7C4D;fe-book</strong></h1>
+                                <h1 id="&#x524D;&#x7AEF;&#x8D44;&#x6599;&#x6574;&#x7406;fe-book"><strong>&#x524D;&#x7AEF;&#x8D44;&#x6599;&#x6574;&#x7406;fe-book</strong></h1>
 <ul>
 <li>&#x8BBF;&#x95EE;&#x5730;&#x5740;: <a href="http://laomu1988.github.io/fe-books/" _target="blank">http://laomu1988.github.io/fe-books/</a></li>
 <li><p>&#x6E90;&#x7801;&#x5730;&#x5740;: <a href="https://github.com/laomu1988/fe-books" _target="blank">https://github.com/laomu1988/fe-books</a></p>
@@ -185,6 +157,11 @@
   &#x4F60;&#x53EF;&#x4EE5;&#x5C06;&#x9879;&#x76EE;&#x653E;&#x5728;&#x4E0B;&#x8F7D;&#x5230;&#x672C;&#x5730;&#x6D4F;&#x89C8;&#xFF0C;&#x54CD;&#x5E94;&#x901F;&#x5EA6;&#x66F4;&#x5FEB;
   &#x76EE;&#x524D;&#x641C;&#x7D22;&#x4EC5;&#x652F;&#x6301;&#x82F1;&#x6587;</p>
 </li>
+</ul>
+<h1 id="&#x6574;&#x5408;&#x9879;&#x76EE;&#x53CA;&#x5F15;&#x5165;&#x5730;&#x5740;">&#x6574;&#x5408;&#x9879;&#x76EE;&#x53CA;&#x5F15;&#x5165;&#x5730;&#x5740;</h1>
+<ul>
+<li>vue-router&#x548C;vue-router2<a href="https://github.com/vuejs/vue-router/" _target="blank">https://github.com/vuejs/vue-router/</a></li>
+<li>koa2<a href="https://github.com/chenshenhai/koa2-note.git" _target="blank">https://github.com/chenshenhai/koa2-note.git</a></li>
 </ul>
 <h1 id="todo">Todo</h1>
 <h3 id="&#x5F85;&#x6574;&#x5408;">&#x5F85;&#x6574;&#x5408;</h3>
@@ -200,8 +177,14 @@
 <li>gitbook&#x548C;hexo&#x4E24;&#x79CD;&#x683C;&#x5F0F;&#x7684;&#x517C;&#x5BB9;&#x5904;&#x7406;&#xFF0C;&#x5728;&#x4E0D;&#x4FEE;&#x6539;&#x539F;&#x6709;&#x9879;&#x76EE;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x8FDB;&#x884C;&#x6253;&#x5305;</li>
 <li>&#x9876;&#x7EA7;&#x83DC;&#x5355;&#x6539;&#x4E3A;&#x4F7F;&#x7528;js&#x5F15;&#x5165;</li>
 </ul>
+<h3 id="&#x5DE5;&#x5177;&#x8BDD;">&#x5DE5;&#x5177;&#x8BDD;</h3>
+<ul>
+<li>&#x96C6;&#x6210;&#x5230;electron</li>
+<li>&#x914D;&#x7F6E;git&#x5730;&#x5740;,&#x81EA;&#x52A8;&#x4E0B;&#x8F7D;</li>
+</ul>
 <h1 id="history">history</h1>
 <ul>
+<li>2017.04.14 &#x589E;&#x52A0;vue-router2&#x548C;koa2-note&#x5B66;&#x4E60;&#x7B14;&#x8BB0;</li>
 <li>2017.02.08 hexo&#x6253;&#x5305;&#x5185;&#x5BB9;&#x4FEE;&#x6539;&#xFF1A; &#x6839;&#x76EE;&#x5F55;&#x4FEE;&#x6539;</li>
 <li>2017.02.07 vue2&#x5B50;&#x6A21;&#x5757;</li>
 <li>2016.08.10 vue&#x7684;api&#x548C;&#x4EE3;&#x7801;&#x6267;&#x884C;&#x95EE;&#x9898;</li>
@@ -255,7 +238,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"项目介绍","level":"1.1","depth":1,"next":{"title":"gitbook配置","level":"1.2","depth":1,"path":"gitbook-set.md","ref":"gitbook-set.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-fontsettings","-search-pro","-advanced-emoji","-github","-splitter","-toggle-chapters"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search-pro":{"cutWordLib":"nodejieba","defineWord":["Gitbook"]},"github":{"url":"https://github.com/laomu1988/fe-books"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"laomu1988@qq.com","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"fe-books","language":"zh-hans","gitbook":"*"},"file":{"path":"README.md","mtime":"2017-02-26T05:57:52.000Z","type":"markdown"},"gitbook":{"version":"3.1.0","time":"2017-02-26T05:57:58.590Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"项目介绍","level":"1.1","depth":1,"next":{"title":"gitbook配置","level":"1.2","depth":1,"path":"gitbook-set.md","ref":"gitbook-set.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-fontsettings","-search-pro","-advanced-emoji","-github","-splitter","-toggle-chapters"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search-pro":{"cutWordLib":"nodejieba","defineWord":["Gitbook"]},"github":{"url":"https://github.com/laomu1988/fe-books"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"laomu1988@qq.com","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"fe-books","language":"zh-hans","gitbook":"*"},"file":{"path":"README.md","mtime":"2017-04-14T05:27:57.000Z","type":"markdown"},"gitbook":{"version":"3.1.0","time":"2017-04-14T05:28:11.178Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

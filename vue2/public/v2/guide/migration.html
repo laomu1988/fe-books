@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>从 Vue 1.x 迁移 - vue.js</title>
+        <title>从 Vue 1.x 迁移 - Vue.js</title>
         <meta charset="utf-8">
         <meta name="description" content="Vue.js - Intuitive, Fast and Composable MVVM for building interactive interfaces.">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -18,8 +18,7 @@
 
         <link rel="icon" href="/fe-books/vue2/images/logo.png" type="image/x-icon">
 
-        <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Roboto Mono' rel='stylesheet' type='text/css'>
-        <link href='//fonts.googleapis.com/css?family=Dosis:500&text=Vue.js' rel='stylesheet' type='text/css'>
+        <!-- <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Roboto Mono' rel='stylesheet' type='text/css'> -->
 
         <!-- main page styles -->
         <link rel="stylesheet" href="/fe-books/vue2/css/page.css">
@@ -729,8 +728,8 @@
 
 <h3 id="twoWay-Prop-的参数-移除"><a href="#twoWay-Prop-的参数-移除" class="headerlink" title="twoWay Prop 的参数 移除"></a><code>twoWay</code> Prop 的参数 <sup>移除</sup></h3><p>Props 现在只能单项传递。为了对父组件产生反向影响，子组件需要显式地传递一个事件而不是依赖于隐式地双向绑定。详见：</p>
 <ul>
-<li><a href="components.html#Custom-Events">自定义组件事件</a></li>
-<li><a href="components.html#Form-Input-Components-using-Custom-Events">自定义输入组件</a> (使用组件事件)</li>
+<li><a href="components.html#自定义事件">自定义组件事件</a></li>
+<li><a href="components.html#使用自定义事件的表单输入组件">自定义输入组件</a> (使用组件事件)</li>
 <li><a href="state-management.html">全局状态管理</a></li>
 </ul>
 
@@ -741,8 +740,8 @@
 
 <h3 id="v-bind-的-once和-sync-修饰符-移除"><a href="#v-bind-的-once和-sync-修饰符-移除" class="headerlink" title="v-bind 的 .once和.sync 修饰符 移除"></a><code>v-bind</code> 的 <code>.once</code>和<code>.sync</code> 修饰符 <sup>移除</sup></h3><p>Props 现在只能单向传递。为了对父组件产生反向影响，子组件需要显式地传递一个事件而不是依赖于隐式地双向绑定。详见：</p>
 <ul>
-<li><a href="components.html#Custom-Events">自定义组件事件</a></li>
-<li><a href="components.html#Form-Input-Components-using-Custom-Events">自定义输入组件</a> (使用组件事件)</li>
+<li><a href="components.html#自定义事件">自定义组件事件</a></li>
+<li><a href="components.html#使用自定义事件的表单输入组件">自定义输入组件</a> (使用组件事件)</li>
 <li><a href="state-management.html">全局状态管理</a></li>
 </ul>
 
@@ -1080,7 +1079,7 @@ new Vue({
   <p>Run the<a href="https://github.com/vuejs/vue-migration-helper" target="_blank" rel="external">迁移工具</a>on your codebase to find examples of filters used in directives like <code>v-model</code>. If you miss any, you should also see <strong>console errors</strong>.</p>
 </div>
 
-<h2 id="Slots"><a href="#Slots" class="headerlink" title="Slots"></a>Slots</h2><h3 id="重名的-Slots-移除"><a href="#重名的-Slots-移除" class="headerlink" title="重名的 Slots 移除"></a>重名的 Slots <sup>移除</sup></h3><p>同一模板中的重名 <code>&lt;slot&gt;</code> 已经弃用。当一个 slot 已经被渲染过了，那么就不能在同一模板其它地方被再次渲染了。如果要在不同位置渲染同一内容，可一用prop来传递。</p>
+<h2 id="Slots"><a href="#Slots" class="headerlink" title="Slots"></a>Slots</h2><h3 id="重名的-Slots-移除"><a href="#重名的-Slots-移除" class="headerlink" title="重名的 Slots 移除"></a>重名的 Slots <sup>移除</sup></h3><p>同一模板中的重名 <code>&lt;slot&gt;</code> 已经弃用。当一个 slot 已经被渲染过了，那么就不能在同一模板其它地方被再次渲染了。如果要在不同位置渲染同一内容，可以用prop来传递。</p>
 
 <div class="upgrade-path">
   <h4>升级方式</h4>

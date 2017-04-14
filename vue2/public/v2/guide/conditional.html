@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>条件渲染 - vue.js</title>
+        <title>条件渲染 - Vue.js</title>
         <meta charset="utf-8">
         <meta name="description" content="Vue.js - Intuitive, Fast and Composable MVVM for building interactive interfaces.">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -18,8 +18,7 @@
 
         <link rel="icon" href="/fe-books/vue2/images/logo.png" type="image/x-icon">
 
-        <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Roboto Mono' rel='stylesheet' type='text/css'>
-        <link href='//fonts.googleapis.com/css?family=Dosis:500&text=Vue.js' rel='stylesheet' type='text/css'>
+        <!-- <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Roboto Mono' rel='stylesheet' type='text/css'> -->
 
         <!-- main page styles -->
         <link rel="stylesheet" href="/fe-books/vue2/css/page.css">
@@ -588,21 +587,21 @@
 <figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">v-if</span>=<span class="string">"ok"</span>&gt;</span>Yes<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div></pre></td></tr></table></figure>
 <p>也可以用 <code>v-else</code> 添加一个 “else” 块：</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">v-if</span>=<span class="string">"ok"</span>&gt;</span>Yes<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">v-else</span>&gt;</span>No<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div></pre></td></tr></table></figure>
-<h3 id="lt-template-gt-中-v-if-条件组"><a href="#lt-template-gt-中-v-if-条件组" class="headerlink" title="&lt;template&gt; 中 v-if 条件组"></a><code>&lt;template&gt;</code> 中 <code>v-if</code> 条件组</h3><p>因为 <code>v-if</code> 是一个指令，需要将它添加到一个元素上。但是如果我们想切换多个元素呢？此时我们可以把一个 <code>&lt;template&gt;</code> 元素当做包装元素，并在上面使用 <code>v-if</code>，最终的渲染结果不会包含它。</p>
+<h3 id="lt-template-gt-中-v-if-条件组"><a href="#lt-template-gt-中-v-if-条件组" class="headerlink" title="&lt;template&gt; 中 v-if 条件组"></a><code>&lt;template&gt;</code> 中 <code>v-if</code> 条件组</h3><p>因为 <code>v-if</code> 是一个指令，需要将它添加到一个元素上。但是如果我们想切换多个元素呢？此时我们可以把一个 <code>&lt;template&gt;</code> 元素当做包装元素，并在上面使用 <code>v-if</code>。最终的渲染结果不会包含 <code>&lt;template&gt;</code> 元素。</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">template</span> <span class="attr">v-if</span>=<span class="string">"ok"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">h1</span>&gt;</span>Title<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>Paragraph 1<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>Paragraph 2<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></div></pre></td></tr></table></figure>
-<h3 id="v-else"><a href="#v-else" class="headerlink" title="v-else"></a><code>v-else</code></h3><p>可以用 <code>v-else</code> 指令给 <code>v-if</code> 添加一个 “else” 块：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-if</span>=<span class="string">"Math.random() &gt; 0.5"</span>&gt;</span></div><div class="line">  Sorry</div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-else</span>&gt;</span></div><div class="line">  Not sorry</div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
-<p><code>v-else</code> 元素必须紧跟在 <code>v-if</code> 元素或者 <code>v-else-if</code>的后面——否则它不能被识别。</p>
+<h3 id="v-else"><a href="#v-else" class="headerlink" title="v-else"></a><code>v-else</code></h3><p>你可以使用 <code>v-else</code> 指令来表示 <code>v-if</code> 的“else 块”：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-if</span>=<span class="string">"Math.random() &gt; 0.5"</span>&gt;</span></div><div class="line">  Now you see me</div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-else</span>&gt;</span></div><div class="line">  Now you don't</div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<p><code>v-else</code> 元素必须紧跟在 <code>v-if</code> 或者 <code>v-else-if</code> 元素的后面——否则它将不会被识别。</p>
 <h3 id="v-else-if"><a href="#v-else-if" class="headerlink" title="v-else-if"></a><code>v-else-if</code></h3><blockquote>
 <p>2.1.0 新增</p>
 </blockquote>
-<p><code>v-else-if</code>，顾名思义，用作 <code>v-if</code> 的 <code>else-if</code> 块。可以链式的多次使用：</p>
+<p><code>v-else-if</code>，顾名思义，充当 <code>v-if</code> 的“else-if 块”。可以链式地使用多次：</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-if</span>=<span class="string">"type === 'A'"</span>&gt;</span></div><div class="line">  A</div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-else-if</span>=<span class="string">"type === 'B'"</span>&gt;</span></div><div class="line">  B</div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-else-if</span>=<span class="string">"type === 'C'"</span>&gt;</span></div><div class="line">  C</div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-else</span>&gt;</span></div><div class="line">  Not A/B/C</div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
-<p>与 <code>v-else</code> 相似,，<code>v-else-if</code> 必须跟在 <code>v-if</code> 或者 <code>v-else-if</code>之后。</p>
-<h3 id="使用-key-控制元素的可重用"><a href="#使用-key-控制元素的可重用" class="headerlink" title="使用 key 控制元素的可重用"></a>使用 <code>key</code> 控制元素的可重用</h3><p>Vue 尝试尽可能高效的渲染元素，通常会复用已有元素而不是从头开始渲染。这么做除了使 Vue 更快之外还可以得到一些好处。如下例，当允许用户在不同的登录方式之间切换:</p>
+<p>类似于 <code>v-else</code>，<code>v-else-if</code> 必须紧跟在 <code>v-if</code> 或者 <code>v-else-if</code> 元素之后。</p>
+<h3 id="用-key-管理可复用的元素"><a href="#用-key-管理可复用的元素" class="headerlink" title="用 key 管理可复用的元素"></a>用 <code>key</code> 管理可复用的元素</h3><p>Vue 会尽可能高效地渲染元素，通常会复用已有元素而不是从头开始渲染。这么做，除了使 Vue 变得非常快之外，还有一些有用的好处。例如，如果你允许用户在不同的登录方式之间切换:</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">template</span> <span class="attr">v-if</span>=<span class="string">"loginType === 'username'"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">label</span>&gt;</span>Username<span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">placeholder</span>=<span class="string">"Enter your username"</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">template</span> <span class="attr">v-else</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">label</span>&gt;</span>Email<span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">placeholder</span>=<span class="string">"Enter your email address"</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></div></pre></td></tr></table></figure>
-<p>在代码中切换 <code>loginType</code> 不会删除用户已经输入的内容，两个模版由于使用了相同的元素，<code>&lt;input&gt;</code> 会被复用，仅仅是替换了他们的 <code>placeholder</code>。</p>
-<p>自己动手试一试,输入一些文本，然后点击 「Toggle login type」 进行切换</p>
+<p>那么在上面的代码中切换 <code>loginType</code> 将不会清除用户已经输入的内容。因为两个模版使用了相同的元素，<code>&lt;input&gt;</code> 不会被替换掉——仅仅是替换了它的的 <code>placeholder</code>。</p>
+<p>自己动手试一试，在输入框中输入一些文本，然后按下切换按钮：</p>
 
 <div id="no-key-example" class="demo">
   <div>
@@ -631,9 +630,9 @@ new Vue({
 })
 </script>
 
-<p>这样也不总是符合实际需求，所以 Vue 提供一种方式让你可以自己决定是否要复用元素。你要做的是添加一个属性 <code>key</code> ，<code>key</code> 必须带有唯一的值。</p>
+<p>这样也不总是符合实际需求，所以 Vue 为你提供了一种方式来声明“这两个元素是完全独立的——不要复用它们”。只需添加一个具有唯一值的 <code>key</code> 属性即可：</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">template</span> <span class="attr">v-if</span>=<span class="string">"loginType === 'username'"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">label</span>&gt;</span>Username<span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">placeholder</span>=<span class="string">"Enter your username"</span> <span class="attr">key</span>=<span class="string">"username-input"</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">template</span> <span class="attr">v-else</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">label</span>&gt;</span>Email<span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">placeholder</span>=<span class="string">"Enter your email address"</span> <span class="attr">key</span>=<span class="string">"email-input"</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></div></pre></td></tr></table></figure>
-<p>现在输入文本将会在每次切换时重新渲染。自动动手试一试。</p>
+<p>现在，每次切换时，输入框都将被重新渲染。你自己看：</p>
 
 <div id="key-example" class="demo">
   <div>
@@ -662,22 +661,19 @@ new Vue({
 })
 </script>
 
-<p>注意, <code>&lt;label&gt;</code> 元素仍然会被复用，因为没有被添加了 <code>key</code> 属性。</p>
-<h2 id="v-show"><a href="#v-show" class="headerlink" title="v-show"></a><code>v-show</code></h2><p>另一个根据条件展示元素的选项是 <code>v-show</code> 指令。用法大体上一样：</p>
+<p>注意, <code>&lt;label&gt;</code> 元素仍然会被高效地复用，因为它们没有添加 <code>key</code> 属性。</p>
+<h2 id="v-show"><a href="#v-show" class="headerlink" title="v-show"></a><code>v-show</code></h2><p>另一个用于根据条件展示元素的选项是 <code>v-show</code> 指令。用法大致一样：</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">v-show</span>=<span class="string">"ok"</span>&gt;</span>Hello!<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div></pre></td></tr></table></figure>
-<p>不同的是有 <code>v-show</code> 的元素会始终渲染并保持在 DOM 中。<code>v-show</code> 是简单的切换元素的 CSS 属性 <code>display</code> 。</p>
-<p class="tip">注意 <code>v-show</code> 不支持 <code>&lt;template&gt;</code> 语法。</p>
+<p>不同的是带有 <code>v-show</code> 的元素始终会被渲染并保留在 DOM 中。<code>v-show</code> 是简单地切换元素的 CSS 属性 <code>display</code> 。</p>
+<p class="tip">注意， <code>v-show</code> 不支持 <code>&lt;template&gt;</code> 语法，也不支持 <code>v-else</code>。</p>
 
 
-<h2 id="v-if-vs-v-show"><a href="#v-if-vs-v-show" class="headerlink" title="v-if vs v-show"></a><code>v-if</code> vs <code>v-show</code></h2><p><code>v-if</code> 是真实的条件渲染，因为它会确保条件块在切换当中适当地销毁与重建条件块内的事件监听器和子组件。</p>
-<p><code>v-if</code> 也是<strong>惰性的</strong>：如果在初始渲染时条件为假，则什么也不做——在条件第一次变为真时才开始局部编译（编译会被缓存起来）。</p>
-<p>相比之下， <code>v-show</code> 简单得多——元素始终被编译并保留，只是简单地基于 CSS 切换。</p>
-<p>一般来说， <code>v-if</code> 有更高的切换消耗而 <code>v-show</code> 有更高的初始渲染消耗。因此，如果需要频繁切换使用 <code>v-show</code> 较好，如果在运行时条件不大可能改变则使用 <code>v-if</code> 较好。</p>
-<hr>
-<blockquote>
-<p>原文：<a href="http://vuejs.org/guide/conditional.html" target="_blank" rel="external">http://vuejs.org/guide/conditional.html</a></p>
-</blockquote>
-<hr>
+<h2 id="v-if-vs-v-show"><a href="#v-if-vs-v-show" class="headerlink" title="v-if vs v-show"></a><code>v-if</code> vs <code>v-show</code></h2><p><code>v-if</code> 是“真正的”条件渲染，因为它会确保在切换过程中条件块内的事件监听器和子组件适当地被销毁和重建。</p>
+<p><code>v-if</code> 也是<strong>惰性的</strong>：如果在初始渲染时条件为假，则什么也不做——直到条件第一次变为真时，才会开始渲染条件块。</p>
+<p>相比之下， <code>v-show</code> 就简单得多——不管初始条件是什么，元素总是会被渲染，并且只是简单地基于 CSS 进行切换。</p>
+<p>一般来说， <code>v-if</code> 有更高的切换开销，而 <code>v-show</code> 有更高的初始渲染开销。因此，如果需要非常频繁地切换，则使用 <code>v-show</code> 较好；如果在运行时条件不太可能改变，则使用 <code>v-if</code> 较好。</p>
+<h2 id="v-if-与-v-for-一起使用"><a href="#v-if-与-v-for-一起使用" class="headerlink" title="v-if 与 v-for 一起使用"></a>v-if 与 v-for 一起使用</h2><p>当 v-if 与 v-for 一起使用时，v-for 具有比 v-if 更高的优先级。</p>
+<p>请查阅 <a href="../guide/list.html#v-for-with-v-if">列表渲染指南</a> 以获取详细信息。</p>
 
     
       <div class="guide-links">
