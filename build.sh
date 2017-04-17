@@ -39,6 +39,8 @@ then
     cp -r docs/zh-cn ../../vue-router2
     cd ../../
     cp -r github/koa2-note koa2-note
+    rm -r koa2-note/.git
+    rm -r koa2-note/.gitignore
 
 
     ## 循环编译指定文件夹
