@@ -7,6 +7,9 @@
     你可以将项目放在下载到本地浏览，响应速度更快
     目前搜索仅支持英文
 
+# 前端文档合集
+* [devdocs.io](http://devdocs.io)
+
 # 整合项目及引入地址
 
 * vue-router和vue-router2[https://github.com/vuejs/vue-router/](https://github.com/vuejs/vue-router/)
