@@ -16,6 +16,7 @@
                 {name: 'vue2'},
                 {name: 'vue-router'},
                 {name: 'vue-router2'},
+                {name: 'vuex'},
             ]
         },
         {

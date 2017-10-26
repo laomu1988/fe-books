@@ -16,6 +16,7 @@
                 {name: 'vue2'},
                 {name: 'vue-router'},
                 {name: 'vue-router2'},
+                {name: 'vuex'},
             ]
         },
         {
@@ -47,7 +48,7 @@
         html += '</li>';
         return html;
     }
-     HTML = '<nav class="fe-menu"><ul>' + menus.map(createHTML).join('') + '</ul></nav>';
+     HTML = '<nav class="fe-menu"><ul>' + menus.map(createHTML).join('') + '<li class="menu-last"></li></ul></nav>';
 
     var match = location.pathname.match(/fe-books\/(\w+)/);
     var module = match[1];

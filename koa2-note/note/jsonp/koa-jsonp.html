@@ -838,8 +838,9 @@ app.use( <span class="hljs-keyword">async</span> ( ctx ) =&gt; {
   ctx.body = returnData
 })
 
-app.listen(<span class="hljs-number">3000</span>)
-<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;[demo] jsonp is starting at port 3000&apos;</span>)
+app.listen(<span class="hljs-number">3000</span>, () =&gt; {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;[demo] jsonp is starting at port 3000&apos;</span>)
+})
 </code></pre>
 
                                 
@@ -880,7 +881,7 @@ app.listen(<span class="hljs-number">3000</span>)
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"9.2 koa-jsonp中间件","level":"1.10.2","depth":2,"next":{"title":"10. 测试","level":"1.11","depth":1,"ref":"","articles":[{"title":"10.1 单元测试","level":"1.11.1","depth":2,"path":"note/test/unit.md","ref":"note/test/unit.md","articles":[]}]},"previous":{"title":"9.1 原生koa2实现JSONP","level":"1.10.1","depth":2,"path":"note/jsonp/info.md","ref":"note/jsonp/info.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-fontsettings","-search-pro","-advanced-emoji","-github","-splitter","-toggle-chapters"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search-pro":{"cutWordLib":"nodejieba","defineWord":["Gitbook"]},"github":{"url":"https://github.com/laomu1988/fe-books"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"laomu1988@qq.com","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"fe-books","language":"zh-hans","gitbook":"*"},"file":{"path":"note/jsonp/koa-jsonp.md","mtime":"2017-04-14T05:28:09.000Z","type":"markdown"},"gitbook":{"version":"3.1.0","time":"2017-04-17T11:08:33.205Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"9.2 koa-jsonp中间件","level":"1.10.2","depth":2,"next":{"title":"10. 测试","level":"1.11","depth":1,"ref":"","articles":[{"title":"10.1 单元测试","level":"1.11.1","depth":2,"path":"note/test/unit.md","ref":"note/test/unit.md","articles":[]}]},"previous":{"title":"9.1 原生koa2实现JSONP","level":"1.10.1","depth":2,"path":"note/jsonp/info.md","ref":"note/jsonp/info.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-fontsettings","-search-pro","-advanced-emoji","-github","-splitter","-toggle-chapters"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search-pro":{"cutWordLib":"nodejieba","defineWord":["Gitbook"]},"github":{"url":"https://github.com/laomu1988/fe-books"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"laomu1988@qq.com","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"fe-books","language":"zh-hans","gitbook":"*"},"file":{"path":"note/jsonp/koa-jsonp.md","mtime":"2017-10-26T07:01:34.000Z","type":"markdown"},"gitbook":{"version":"3.1.0","time":"2017-10-26T07:02:44.704Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
