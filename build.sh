@@ -1,6 +1,6 @@
 #!/bin/bash
 
-folders=("assist" "es6" "fis3" "koa" "node" "react" "tools" "vue" "vue-router" "vue-router2" "koa2-note")
+folders=("assist" "es6" "fis3" "koa" "node" "react" "tools" "vue" "vue-router" "vue-router2" "koa2-note" "vuex")
 output='books'
 
 if [ "$1"V = "V" ]
@@ -31,6 +31,7 @@ then
     rm -r vue-router
     rm -r vue-router2
     rm -r koa2-note
+    rm -r vuex
     cd github/vue-router
     git reset --hard
     git checkout 1.0
@@ -42,6 +43,7 @@ then
     rm -r koa2-note/.git
     rm -r koa2-note/.gitignore
 
+    cp -r github/vuex/docs/zh-cn vuex
 
     ## 循环编译指定文件夹
     for folder in "${folders[@]}"

@@ -4,3 +4,9 @@
 [submodule "github/koa2-note"]
 	path = github/koa2-note
 	url = https://github.com/chenshenhai/koa2-note.git
+[submodule "github/yog2"]
+	path = github/yog2
+	url = https://github.com/fex-team/yog2.git
+[submodule "github/vuex"]
+	path = github/vuex
+	url = https://github.com/vuejs/vuex.git

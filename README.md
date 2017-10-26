@@ -29,10 +29,13 @@
 
 ### 工具话
 * 集成到electron
-* 配置git地址,自动下载
+* 配置git地址
 
+## mark
+* 增加git子模块示例：git submodule add https://github.com/vuejs/vuex.git github/vuex
 
 # history
+* 2017.10.26 增加Vuex
 * 2017.04.14 增加vue-router2和koa2-note学习笔记
 * 2017.02.08 hexo打包内容修改： 根目录修改
 * 2017.02.07 vue2子模块

@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/laomu1988/fe-books#readme",
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "gitbook-cli": "^2.3.2"
   }
 }

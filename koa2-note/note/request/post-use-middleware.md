@@ -22,11 +22,6 @@ const app = new Koa()
 const bodyParser = require('koa-bodyparser')
 
 // 使用ctx.body解析中间件
-const Koa = require('koa')
-const app = new Koa()
-const bodyParser = require('koa-bodyparser')
-
-// 使用ctx.body解析中间件
 app.use(bodyParser())
 
 app.use( async ( ctx ) => {
@@ -56,8 +51,10 @@ app.use( async ( ctx ) => {
   }
 })
 
-app.listen(3000)
-console.log('[demo] request post is starting at port 3000')
+app.listen(3000, () => {
+  console.log('[demo] request post is starting at port 3000')
+})
+
 ```
 
 ### 启动例子
