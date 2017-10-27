@@ -34,6 +34,7 @@ all=(
 folders=(
     "assist"
     "es6"
+    "egg"
     "fis3"
     "koa"
     "node"
@@ -46,6 +47,11 @@ folders=(
     "vuex"
 )
 
+## 使用hexo打包的模块列表
+hexo=(
+    "vue2"
+)
+
 if [ "$1"V = "V" ]
 then
     # 未指定打包具体模块
@@ -54,8 +60,15 @@ then
     echo 'build'
     cd $output
     git checkout gh-pages
+    git reset --hard
     rm -rf server
     cd ../
+    
+    cp -rf index.html $output/index.html
+    cp -rf server $output/server
+    cp -rf server.js $output/server.js
+    cp -rf package.json $output/package.json
+    rm -rf assist/README.md
 
     # 更新子模块
     git submodule foreach git pull
@@ -72,17 +85,12 @@ then
     do
         sh build.sh "$folder"
     done
-
-    cp -r index.html $output/index.html
-    cp -r server $output/server
-    cp -r server.js $output/server.js
-    cp -r package.json $output/package.json
-    rm -rf assist/README.md
 else
+    rm -rf $source/$1
+    mkdir $source/$1
     echo "build $1"
     if [ "$1" = "assist" ]; then
-        rm -rf docs/assist/README.md
-        cp README.md docs/assist/README.md
+        cp README.md $source/assist/README.md
     elif [ "$1" = "vue2" ]; then
         cd docs/vue2
         node ../../hexo.js docs/vue2
@@ -109,7 +117,12 @@ else
     elif [ "$1" = "vuex" ]; then
         cp -r github/vuex/docs/zh-cn $source/vuex
     else
-        echo ' ----'
+        echo ' ---'
+    fi
+
+    # 判断是否使用hexo打包
+    if echo "${hexo[@]}" | grep -w "$1" &>/dev/null; then
+        echo "todo: hexo build github/$1 $output/$1"
     fi
 
     # 判断是否使用gitbook打包
