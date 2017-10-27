@@ -1,0 +1,1182 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <title>Router 路由 · fe-books</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.0">
+        <meta name="author" content="laomu1988@qq.com">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="controller.html" />
+    
+    
+    <link rel="prev" href="middleware.html" />
+    
+
+<link rel="stylesheet" href="/fe-books/server/index.css"/>
+
+    </head>
+    <body>
+        
+<script src="/fe-books/server/menu.js"></script>
+
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    目录结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    新手指南
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../intro/">
+            
+                <a href="../intro/">
+            
+                    
+                    Egg.js 是什么?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../intro/egg-and-koa.html">
+            
+                <a href="../intro/egg-and-koa.html">
+            
+                    
+                    Egg 与 Koa
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../intro/quickstart.html">
+            
+                <a href="../intro/quickstart.html">
+            
+                    
+                    快速入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    基础功能
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="structure.html">
+            
+                <a href="structure.html">
+            
+                    
+                    目录结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="objects.html">
+            
+                <a href="objects.html">
+            
+                    
+                    框架内置基础对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="env.html">
+            
+                <a href="env.html">
+            
+                    
+                    运行环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="config.html">
+            
+                <a href="config.html">
+            
+                    
+                    Config 配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="middleware.html">
+            
+                <a href="middleware.html">
+            
+                    
+                    Middleware 中间件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.6" data-path="router.html">
+            
+                <a href="router.html">
+            
+                    
+                    Router 路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="controller.html">
+            
+                <a href="controller.html">
+            
+                    
+                    什么是 Controller
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="service.html">
+            
+                <a href="service.html">
+            
+                    
+                    Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="schedule.html">
+            
+                <a href="schedule.html">
+            
+                    
+                    定时任务Schedule
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="extend.html">
+            
+                <a href="extend.html">
+            
+                    
+                    框架扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="app-start.html">
+            
+                <a href="app-start.html">
+            
+                    
+                    启动自定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    核心功能
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../core/development.html">
+            
+                <a href="../core/development.html">
+            
+                    
+                    本地开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../core/unittest.html">
+            
+                <a href="../core/unittest.html">
+            
+                    
+                    单元测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../core/deployment.html">
+            
+                <a href="../core/deployment.html">
+            
+                    
+                    应用部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../core/logger.html">
+            
+                <a href="../core/logger.html">
+            
+                    
+                    日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../core/httpclient.html">
+            
+                <a href="../core/httpclient.html">
+            
+                    
+                    HttpClient
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../core/cookie-and-session.html">
+            
+                <a href="../core/cookie-and-session.html">
+            
+                    
+                    Cookie and Session
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../core/cluster-and-ipc.html">
+            
+                <a href="../core/cluster-and-ipc.html">
+            
+                    
+                    多进程模型和进程间通讯
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../core/view.html">
+            
+                <a href="../core/view.html">
+            
+                    
+                    View 模板渲染
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../core/error-handling.html">
+            
+                <a href="../core/error-handling.html">
+            
+                    
+                    异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../core/security.html">
+            
+                <a href="../core/security.html">
+            
+                    
+                    安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="../core/i18n.html">
+            
+                <a href="../core/i18n.html">
+            
+                    
+                    i18n国际化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    教程
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../tutorials/progressive.html">
+            
+                <a href="../tutorials/progressive.html">
+            
+                    
+                    渐进式开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../tutorials/mysql.html">
+            
+                <a href="../tutorials/mysql.html">
+            
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../tutorials/restful.html">
+            
+                <a href="../tutorials/restful.html">
+            
+                    
+                    RESTful API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../tutorials/async-function.html">
+            
+                <a href="../tutorials/async-function.html">
+            
+                    
+                    Async Function
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../core/passport.md">
+            
+                <span>
+            
+                    
+                    # Passport
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    进阶
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../advanced/loader.html">
+            
+                <a href="../advanced/loader.html">
+            
+                    
+                    Loader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../advanced/plugin.html">
+            
+                <a href="../advanced/plugin.html">
+            
+                    
+                    插件开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../advanced/framework.html">
+            
+                <a href="../advanced/framework.html">
+            
+                    
+                    框架开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../advanced/cluster-client.html">
+            
+                <a href="../advanced/cluster-client.html">
+            
+                    
+                    多进程研发模式增强
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../advanced/view-plugin.html">
+            
+                <a href="../advanced/view-plugin.html">
+            
+                    
+                    View 插件开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    社区
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../plugins/">
+            
+                <a href="../plugins/">
+            
+                    
+                    内置插件列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../contributing.md">
+            
+                <span>
+            
+                    
+                    如何贡献
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../resource.html">
+            
+                <a href="../resource.html">
+            
+                    
+                    资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../member_guide.md">
+            
+                <span>
+            
+                    
+                    成员指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../faq.html">
+            
+                <a href="../faq.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Router 路由</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="title-router-&#x8DEF;&#x7531;">title: Router &#x8DEF;&#x7531;</h2>
+<p>Router &#x4E3B;&#x8981;&#x7528;&#x6765;&#x63CF;&#x8FF0;&#x8BF7;&#x6C42; URL &#x548C;&#x5177;&#x4F53;&#x627F;&#x62C5;&#x6267;&#x884C;&#x52A8;&#x4F5C;&#x7684; Controller &#x7684;&#x5BF9;&#x5E94;&#x5173;&#x7CFB;&#xFF0C;
+&#x6846;&#x67B6;&#x7EA6;&#x5B9A;&#x4E86; <code>app/router.js</code> &#x6587;&#x4EF6;&#x7528;&#x4E8E;&#x7EDF;&#x4E00;&#x6240;&#x6709;&#x8DEF;&#x7531;&#x89C4;&#x5219;&#x3002;</p>
+<p>&#x901A;&#x8FC7;&#x7EDF;&#x4E00;&#x7684;&#x914D;&#x7F6E;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x907F;&#x514D;&#x8DEF;&#x7531;&#x89C4;&#x5219;&#x903B;&#x8F91;&#x6563;&#x843D;&#x5728;&#x591A;&#x4E2A;&#x5730;&#x65B9;&#xFF0C;&#x4ECE;&#x800C;&#x51FA;&#x73B0;&#x672A;&#x77E5;&#x7684;&#x51B2;&#x7A81;&#xFF0C;&#x96C6;&#x4E2D;&#x5728;&#x4E00;&#x8D77;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x66F4;&#x65B9;&#x4FBF;&#x7684;&#x6765;&#x67E5;&#x770B;&#x5168;&#x5C40;&#x7684;&#x8DEF;&#x7531;&#x89C4;&#x5219;&#x3002;</p>
+<h2 id="&#x5982;&#x4F55;&#x5B9A;&#x4E49;-router">&#x5982;&#x4F55;&#x5B9A;&#x4E49; Router</h2>
+<ul>
+<li><code>app/router.js</code> &#x91CC;&#x9762;&#x5B9A;&#x4E49; URL &#x8DEF;&#x7531;&#x89C4;&#x5219;</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-comment">// app/router.js</span>
+<span class="hljs-built_in">module</span>.exports = app =&gt; {
+  app.get(<span class="hljs-string">&apos;/user/:id&apos;</span>, app.controller.user.info);
+};
+</code></pre>
+<ul>
+<li><code>app/controller</code> &#x76EE;&#x5F55;&#x4E0B;&#x9762;&#x5B9E;&#x73B0; Controller</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-comment">// app/controller/user.js</span>
+exports.info = <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params">ctx</span>) </span>{
+  ctx.body = {
+    name: <span class="hljs-string">`hello <span class="hljs-subst">${ctx.params.id}</span>`</span>,
+  };
+};
+</code></pre>
+<p>&#x8FD9;&#x6837;&#x5C31;&#x5B8C;&#x6210;&#x4E86;&#x4E00;&#x4E2A;&#x6700;&#x7B80;&#x5355;&#x7684; Router &#x5B9A;&#x4E49;&#xFF0C;&#x5F53;&#x7528;&#x6237;&#x6267;&#x884C; <code>GET /user/123</code>&#xFF0C;<code>user.js</code> &#x8FD9;&#x4E2A;&#x91CC;&#x9762;&#x7684; info &#x65B9;&#x6CD5;&#x5C31;&#x4F1A;&#x6267;&#x884C;&#x3002;</p>
+<h2 id="router-&#x8BE6;&#x7EC6;&#x5B9A;&#x4E49;&#x8BF4;&#x660E;">Router &#x8BE6;&#x7EC6;&#x5B9A;&#x4E49;&#x8BF4;&#x660E;</h2>
+<p>&#x4E0B;&#x9762;&#x662F;&#x8DEF;&#x7531;&#x7684;&#x5B8C;&#x6574;&#x5B9A;&#x4E49;&#xFF0C;&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x573A;&#x666F;&#x7684;&#x4E0D;&#x540C;&#xFF0C;&#x81EA;&#x7531;&#x9009;&#x62E9;&#xFF1A;</p>
+<pre><code class="lang-js">app.verb(<span class="hljs-string">&apos;path-match&apos;</span>, app.controller.controller.action);
+app.verb(<span class="hljs-string">&apos;router-name&apos;</span>, <span class="hljs-string">&apos;path-match&apos;</span>, app.controller.controller.action);
+app.verb(<span class="hljs-string">&apos;path-match&apos;</span>, middleware1, ..., middlewareN, app.controller.controller.action);
+app.verb(<span class="hljs-string">&apos;router-name&apos;</span>, <span class="hljs-string">&apos;path-match&apos;</span>, middleware1, ..., middlewareN, app.controller.controller.action);
+</code></pre>
+<p>&#x8DEF;&#x7531;&#x5B8C;&#x6574;&#x5B9A;&#x4E49;&#x4E3B;&#x8981;&#x5305;&#x62EC;5&#x4E2A;&#x4E3B;&#x8981;&#x90E8;&#x5206;:</p>
+<ul>
+<li>verb - &#x7528;&#x6237;&#x89E6;&#x53D1;&#x52A8;&#x4F5C;&#xFF0C;&#x652F;&#x6301; get&#xFF0C;post &#x7B49;&#x65B9;&#x6CD5;&#xFF0C;&#x540E;&#x9762;&#x4F1A;&#x901A;&#x8FC7;&#x793A;&#x4F8B;&#x8BE6;&#x7EC6;&#x8BF4;&#x660E;&#x3002;<ul>
+<li>app.head - HEAD</li>
+<li>app.options - OPTIONS</li>
+<li>app.get - GET</li>
+<li>app.put - PUT</li>
+<li>app.post - POST</li>
+<li>app.patch - PATCH</li>
+<li>app.delete - DELETE</li>
+<li>app.del - &#x7531;&#x4E8E; delete &#x662F;&#x4E00;&#x4E2A;&#x4FDD;&#x7559;&#x5B57;&#xFF0C;&#x6240;&#x4EE5;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A; delete &#x65B9;&#x6CD5;&#x7684;&#x522B;&#x540D;&#x3002;</li>
+<li>app.redirect - &#x53EF;&#x4EE5;&#x5BF9; URL &#x8FDB;&#x884C;&#x91CD;&#x5B9A;&#x5411;&#x5904;&#x7406;&#xFF0C;&#x6BD4;&#x5982;&#x6211;&#x4EEC;&#x6700;&#x7ECF;&#x5E38;&#x4F7F;&#x7528;&#x7684;&#x53EF;&#x4EE5;&#x628A;&#x7528;&#x6237;&#x8BBF;&#x95EE;&#x7684;&#x6839;&#x76EE;&#x5F55;&#x8DEF;&#x7531;&#x5230;&#x67D0;&#x4E2A;&#x4E3B;&#x9875;&#x3002;</li>
+</ul>
+</li>
+<li>router-name &#x7ED9;&#x8DEF;&#x7531;&#x8BBE;&#x5B9A;&#x4E00;&#x4E2A;&#x522B;&#x540D;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; Helper &#x63D0;&#x4F9B;&#x7684;&#x8F85;&#x52A9;&#x51FD;&#x6570; <code>pathFor</code> &#x548C; <code>urlFor</code> &#x6765;&#x751F;&#x6210; URL&#x3002;(&#x53EF;&#x9009;)</li>
+<li>path-match - &#x8DEF;&#x7531; URL &#x8DEF;&#x5F84;&#x3002;</li>
+<li>middleware1 - &#x5728; Router &#x91CC;&#x9762;&#x53EF;&#x4EE5;&#x914D;&#x7F6E;&#x591A;&#x4E2A; Middleware&#x3002;(&#x53EF;&#x9009;)</li>
+<li>controller - &#x6307;&#x5B9A;&#x8DEF;&#x7531;&#x6620;&#x5C04;&#x5230;&#x7684;&#x5177;&#x4F53;&#x7684; controller &#x4E0A;&#xFF0C;controller &#x53EF;&#x4EE5;&#x6709;&#x4E24;&#x79CD;&#x5199;&#x6CD5;&#xFF1A;<ul>
+<li><code>app.controller.user.fetch</code> - &#x76F4;&#x63A5;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x5177;&#x4F53;&#x7684; controller</li>
+<li><code>&apos;user.fetch&apos;</code> - &#x53EF;&#x4EE5;&#x7B80;&#x5199;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x5F62;&#x5F0F;</li>
+</ul>
+</li>
+</ul>
+<h3 id="&#x6CE8;&#x610F;&#x4E8B;&#x9879;">&#x6CE8;&#x610F;&#x4E8B;&#x9879;</h3>
+<ul>
+<li>&#x5728; Router &#x5B9A;&#x4E49;&#x4E2D;&#xFF0C; &#x53EF;&#x4EE5;&#x652F;&#x6301;&#x591A;&#x4E2A; Middleware &#x4E32;&#x8054;&#x6267;&#x884C;</li>
+<li>Controller &#x5FC5;&#x987B;&#x5B9A;&#x4E49;&#x5728; <code>app/controller</code> &#x76EE;&#x5F55;&#x4E2D;&#x3002;</li>
+<li>&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x91CC;&#x9762;&#x4E5F;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x591A;&#x4E2A; Controller &#x5B9A;&#x4E49;&#xFF0C;&#x5728;&#x5B9A;&#x4E49;&#x8DEF;&#x7531;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>${fileName}.${functionName}</code> &#x7684;&#x65B9;&#x5F0F;&#x6307;&#x5B9A;&#x5BF9;&#x5E94;&#x7684; Controller&#x3002;</li>
+<li>Controller &#x652F;&#x6301;&#x5B50;&#x76EE;&#x5F55;&#xFF0C;&#x5728;&#x5B9A;&#x4E49;&#x8DEF;&#x7531;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>${directoryName}.${fileName}.${functionName}</code> &#x7684;&#x65B9;&#x5F0F;&#x5236;&#x5B9A;&#x5BF9;&#x5E94;&#x7684; Controller&#x3002;</li>
+</ul>
+<p>&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E9B;&#x8DEF;&#x7531;&#x5B9A;&#x4E49;&#x7684;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<pre><code class="lang-js">app.get(<span class="hljs-string">&apos;/home&apos;</span>, app.controller.home);
+app.get(<span class="hljs-string">&apos;/user/:id&apos;</span>, app.controller.user.page);
+app.post(<span class="hljs-string">&apos;/admin&apos;</span>, isAdmin, app.controller.admin);
+app.post(<span class="hljs-string">&apos;/user&apos;</span>, isLoginUser, hasAdminPermission, app.controller.user.create);
+app.post(<span class="hljs-string">&apos;/api/v1/comments&apos;</span>, app.controller.v1.comments.create); <span class="hljs-comment">// app/controller/v1/comments.js</span>
+</code></pre>
+<h3 id="restful-&#x98CE;&#x683C;&#x7684;-url-&#x5B9A;&#x4E49;">RESTful &#x98CE;&#x683C;&#x7684; URL &#x5B9A;&#x4E49;</h3>
+<p>&#x5982;&#x679C;&#x60F3;&#x901A;&#x8FC7; RESTful &#x7684;&#x65B9;&#x5F0F;&#x6765;&#x5B9A;&#x4E49;&#x8DEF;&#x7531;&#xFF0C;
+&#x6211;&#x4EEC;&#x63D0;&#x4F9B;&#x4E86; <code>app.resources(&apos;routerName&apos;, &apos;pathMatch&apos;, controller)</code> &#x5FEB;&#x901F;&#x5728;&#x4E00;&#x4E2A;&#x8DEF;&#x5F84;&#x4E0A;&#x751F;&#x6210; <a href="https://en.wikipedia.org/wiki/Create,_read,_update_and_delete" _target="blank">CRUD</a> &#x8DEF;&#x7531;&#x7ED3;&#x6784;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// app/router.js</span>
+<span class="hljs-built_in">module</span>.exports = app =&gt; {
+  app.resources(<span class="hljs-string">&apos;posts&apos;</span>, <span class="hljs-string">&apos;/api/posts&apos;</span>, app.controller.posts);
+  app.resources(<span class="hljs-string">&apos;users&apos;</span>, <span class="hljs-string">&apos;/api/v1/users&apos;</span>, app.controller.v1.users); <span class="hljs-comment">// app/controller/v1/users.js</span>
+};
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x5C31;&#x5728; <code>/posts</code> &#x8DEF;&#x5F84;&#x4E0A;&#x90E8;&#x7F72;&#x4E86;&#x4E00;&#x7EC4; CRUD &#x8DEF;&#x5F84;&#x7ED3;&#x6784;&#xFF0C;&#x5BF9;&#x5E94;&#x7684; Controller &#x4E3A; <code>app/controller/posts.js</code> &#x63A5;&#x4E0B;&#x6765;&#xFF0C;
+&#x4F60;&#x53EA;&#x9700;&#x8981;&#x5728; <code>posts.js</code> &#x91CC;&#x9762;&#x5B9E;&#x73B0;&#x5BF9;&#x5E94;&#x7684;&#x51FD;&#x6570;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Path</th>
+<th>Route Name</th>
+<th>Controller.Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GET</td>
+<td>/posts</td>
+<td>posts</td>
+<td>app.controllers.posts.index</td>
+</tr>
+<tr>
+<td>GET</td>
+<td>/posts/new</td>
+<td>new_post</td>
+<td>app.controllers.posts.new</td>
+</tr>
+<tr>
+<td>GET</td>
+<td>/posts/:id</td>
+<td>post</td>
+<td>app.controllers.posts.show</td>
+</tr>
+<tr>
+<td>GET</td>
+<td>/posts/:id/edit</td>
+<td>edit_post</td>
+<td>app.controllers.posts.edit</td>
+</tr>
+<tr>
+<td>POST</td>
+<td>/posts</td>
+<td>posts</td>
+<td>app.controllers.posts.create</td>
+</tr>
+<tr>
+<td>PUT</td>
+<td>/posts/:id</td>
+<td>post</td>
+<td>app.controllers.posts.update</td>
+</tr>
+<tr>
+<td>DELETE</td>
+<td>/posts/:id</td>
+<td>post</td>
+<td>app.controllers.posts.destroy</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-js"><span class="hljs-comment">// app/controller/posts.js</span>
+exports.index = <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params"></span>) </span>{};
+
+exports.new = <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params"></span>) </span>{};
+
+exports.create = <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params"></span>) </span>{};
+
+exports.show = <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params"></span>) </span>{};
+
+exports.edit = <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params"></span>) </span>{};
+
+exports.update = <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params"></span>) </span>{};
+
+exports.destroy = <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params"></span>) </span>{};
+</code></pre>
+<p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x4E0D;&#x9700;&#x8981;&#x5176;&#x4E2D;&#x7684;&#x67D0;&#x51E0;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x4EE5;&#x4E0D;&#x7528;&#x5728; <code>posts.js</code> &#x91CC;&#x9762;&#x5B9E;&#x73B0;&#xFF0C;&#x8FD9;&#x6837;&#x5BF9;&#x5E94; URL &#x8DEF;&#x5F84;&#x4E5F;&#x4E0D;&#x4F1A;&#x6CE8;&#x518C;&#x5230; Router&#x3002;</p>
+<h2 id="router-&#x5B9E;&#x6218;">router &#x5B9E;&#x6218;</h2>
+<p>&#x4E0B;&#x9762;&#x901A;&#x8FC7;&#x66F4;&#x591A;&#x5B9E;&#x9645;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x6765;&#x8BF4;&#x660E; router &#x7684;&#x7528;&#x6CD5;&#x3002;</p>
+<h3 id="&#x53C2;&#x6570;&#x83B7;&#x53D6;">&#x53C2;&#x6570;&#x83B7;&#x53D6;</h3>
+<h4 id="query-string-&#x65B9;&#x5F0F;">Query String &#x65B9;&#x5F0F;</h4>
+<pre><code class="lang-js"><span class="hljs-comment">// app/router.js</span>
+<span class="hljs-built_in">module</span>.exports = app =&gt; {
+  app.get(<span class="hljs-string">&apos;/search&apos;</span>, app.controller.search);
+};
+
+<span class="hljs-comment">// app/controller/search.js</span>
+<span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params">ctx</span>) </span>{
+  ctx.body = <span class="hljs-string">`search: <span class="hljs-subst">${ctx.query.name}</span>`</span>;
+};
+
+<span class="hljs-comment">// curl http://127.0.0.1:7001/search?name=egg</span>
+</code></pre>
+<h4 id="&#x53C2;&#x6570;&#x547D;&#x540D;&#x65B9;&#x5F0F;">&#x53C2;&#x6570;&#x547D;&#x540D;&#x65B9;&#x5F0F;</h4>
+<pre><code class="lang-js"><span class="hljs-comment">// app/router.js</span>
+<span class="hljs-built_in">module</span>.exports = app =&gt; {
+  app.get(<span class="hljs-string">&apos;/user/:id/:name&apos;</span>, app.controller.user.info);
+};
+
+<span class="hljs-comment">// app/controller/user.js</span>
+exports.info = <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params">ctx</span>) </span>{
+  ctx.body = <span class="hljs-string">`user: <span class="hljs-subst">${ctx.params.id}</span>, <span class="hljs-subst">${ctx.params.name}</span>`</span>;
+};
+
+<span class="hljs-comment">// curl http://127.0.0.1:7001/user/123/xiaoming</span>
+</code></pre>
+<h4 id="&#x590D;&#x6742;&#x53C2;&#x6570;&#x7684;&#x83B7;&#x53D6;">&#x590D;&#x6742;&#x53C2;&#x6570;&#x7684;&#x83B7;&#x53D6;</h4>
+<p>&#x8DEF;&#x7531;&#x91CC;&#x9762;&#x4E5F;&#x652F;&#x6301;&#x5B9A;&#x4E49;&#x6B63;&#x5219;&#xFF0C;&#x53EF;&#x4EE5;&#x66F4;&#x52A0;&#x7075;&#x6D3B;&#x7684;&#x83B7;&#x53D6;&#x53C2;&#x6570;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// app/router.js</span>
+<span class="hljs-built_in">module</span>.exports = app =&gt; {
+  app.get(<span class="hljs-regexp">/^\/package\/([\w-.]+\/[\w-.]+)$/</span>, app.controller.package.detail);
+};
+
+<span class="hljs-comment">// app/controller/package.js</span>
+exports.detail = <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params">ctx</span>) </span>{
+  <span class="hljs-comment">// &#x5982;&#x679C;&#x8BF7;&#x6C42; URL &#x88AB;&#x6B63;&#x5219;&#x5339;&#x914D;&#xFF0C; &#x53EF;&#x4EE5;&#x6309;&#x7167;&#x6355;&#x83B7;&#x5206;&#x7EC4;&#x7684;&#x987A;&#x5E8F;&#xFF0C;&#x4ECE; ctx.params &#x4E2D;&#x83B7;&#x53D6;&#x3002;</span>
+  <span class="hljs-comment">// &#x6309;&#x7167;&#x4E0B;&#x9762;&#x7684;&#x7528;&#x6237;&#x8BF7;&#x6C42;&#xFF0C;`ctx.params[0]` &#x7684; &#x5185;&#x5BB9;&#x5C31;&#x662F; `egg/1.0.0`</span>
+  ctx.body = <span class="hljs-string">`package:<span class="hljs-subst">${ctx.params[0]}</span>`</span>;
+};
+
+<span class="hljs-comment">// curl http://127.0.0.1:7001/package/egg/1.0.0</span>
+</code></pre>
+<h3 id="&#x8868;&#x5355;&#x5185;&#x5BB9;&#x7684;&#x83B7;&#x53D6;">&#x8868;&#x5355;&#x5185;&#x5BB9;&#x7684;&#x83B7;&#x53D6;</h3>
+<pre><code class="lang-js"><span class="hljs-comment">// app/router.js</span>
+<span class="hljs-built_in">module</span>.exports = app =&gt; {
+  app.post(<span class="hljs-string">&apos;/form&apos;</span>, app.controller.form);
+};
+
+<span class="hljs-comment">// app/controller/form.js</span>
+<span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params">ctx</span>) </span>{
+  ctx.body = <span class="hljs-string">`body: <span class="hljs-subst">${JSON.stringify(ctx.request.body)}</span>`</span>;
+};
+
+<span class="hljs-comment">// &#x6A21;&#x62DF;&#x53D1;&#x8D77; post &#x8BF7;&#x6C42;&#x3002;</span>
+<span class="hljs-comment">// curl -X POST http://127.0.0.1:7001/form --data &apos;{&quot;name&quot;:&quot;controller&quot;}&apos; --header &apos;Content-Type:application/json&apos;</span>
+</code></pre>
+<blockquote>
+<p>&#x9644;&#xFF1A;</p>
+<p>&#x8FD9;&#x91CC;&#x76F4;&#x63A5;&#x53D1;&#x8D77; POST &#x8BF7;&#x6C42;&#x4F1A;<strong>&#x62A5;&#x9519;</strong>&#xFF1A;&apos;secret is missing&apos;&#x3002;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#x6765;&#x81EA; <a href="https://github.com/koajs/csrf/blob/2.5.0/index.js#L69" _target="blank">koa-csrf/index.js#L69</a> &#x3002;</p>
+<p><strong>&#x539F;&#x56E0;</strong>&#xFF1A;&#x6846;&#x67B6;&#x5185;&#x90E8;&#x9488;&#x5BF9;&#x8868;&#x5355; POST &#x8BF7;&#x6C42;&#x5747;&#x4F1A;&#x9A8C;&#x8BC1; CSRF &#x7684;&#x503C;&#xFF0C;&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x5728;&#x8868;&#x5355;&#x63D0;&#x4EA4;&#x65F6;&#xFF0C;&#x8BF7;&#x5E26;&#x4E0A; CSRF key &#x8FDB;&#x884C;&#x63D0;&#x4EA4;&#xFF0C;&#x53EF;&#x53C2;&#x8003;<a href="https://eggjs.org/zh-cn/core/security.html#&#x5B89;&#x5168;&#x5A01;&#x80C1;csrf&#x7684;&#x9632;&#x8303;" _target="blank">&#x5B89;&#x5168;&#x5A01;&#x80C1;csrf&#x7684;&#x9632;&#x8303;</a></p>
+<p><strong>&#x6CE8;&#x610F;</strong>&#xFF1A;&#x4E0A;&#x9762;&#x7684;&#x6821;&#x9A8C;&#x662F;&#x56E0;&#x4E3A;&#x6846;&#x67B6;&#x4E2D;&#x5185;&#x7F6E;&#x4E86;&#x5B89;&#x5168;&#x63D2;&#x4EF6; <a href="https://github.com/eggjs/egg-security" _target="blank">egg-security</a>&#xFF0C;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E9B;&#x9ED8;&#x8BA4;&#x7684;&#x5B89;&#x5168;&#x5B9E;&#x8DF5;&#xFF0C;&#x5E76;&#x4E14;&#x6846;&#x67B6;&#x7684;&#x5B89;&#x5168;&#x63D2;&#x4EF6;&#x662F;&#x9ED8;&#x8BA4;&#x5F00;&#x542F;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#x5173;&#x95ED;&#x5176;&#x4E2D;&#x4E00;&#x4E9B;&#x5B89;&#x5168;&#x9632;&#x8303;&#xFF0C;&#x76F4;&#x63A5;&#x8BBE;&#x7F6E;&#x8BE5;&#x9879;&#x7684; enable &#x5C5E;&#x6027;&#x4E3A; false &#x5373;&#x53EF;&#x3002;</p>
+<p>&#x300C;&#x9664;&#x975E;&#x6E05;&#x695A;&#x7684;&#x786E;&#x8BA4;&#x540E;&#x679C;&#xFF0C;&#x5426;&#x5219;&#x4E0D;&#x5EFA;&#x8BAE;&#x64C5;&#x81EA;&#x5173;&#x95ED;&#x5B89;&#x5168;&#x63D2;&#x4EF6;&#x63D0;&#x4F9B;&#x7684;&#x529F;&#x80FD;&#x3002;&#x300D;</p>
+<p>&#x8FD9;&#x91CC;&#x5728;&#x5199;&#x4F8B;&#x5B50;&#x7684;&#x8BDD;&#x53EF;&#x4E34;&#x65F6;&#x5728; <code>config/config.default.js</code> &#x4E2D;&#x8BBE;&#x7F6E;</p>
+<pre><code>exports.security = {
+  csrf: false
+};
+</code></pre></blockquote>
+<h3 id="&#x8868;&#x5355;&#x6821;&#x9A8C;">&#x8868;&#x5355;&#x6821;&#x9A8C;</h3>
+<pre><code class="lang-js"><span class="hljs-comment">// app/router.js</span>
+<span class="hljs-built_in">module</span>.exports = app =&gt; {
+  app.post(<span class="hljs-string">&apos;/user&apos;</span>, app.controller.user);
+};
+
+<span class="hljs-comment">// app/controller/user.js</span>
+<span class="hljs-keyword">const</span> createRule = {
+  username: {
+    type: <span class="hljs-string">&apos;email&apos;</span>,
+  },
+  password: {
+    type: <span class="hljs-string">&apos;password&apos;</span>,
+    compare: <span class="hljs-string">&apos;re-password&apos;</span>,
+  },
+};
+
+exports.create = <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params">ctx</span>) </span>{
+  <span class="hljs-comment">// &#x5982;&#x679C;&#x6821;&#x9A8C;&#x62A5;&#x9519;&#xFF0C;&#x4F1A;&#x629B;&#x51FA;&#x5F02;&#x5E38;</span>
+  ctx.validate(createRule);
+  ctx.body = ctx.request.body;
+};
+
+<span class="hljs-comment">// curl -X POST http://127.0.0.1:7001/user --data &apos;username=abc@abc.com&amp;password=111111&amp;re-password=111111&apos;</span>
+</code></pre>
+<h3 id="&#x91CD;&#x5B9A;&#x5411;">&#x91CD;&#x5B9A;&#x5411;</h3>
+<h4 id="&#x5185;&#x90E8;&#x91CD;&#x5B9A;&#x5411;">&#x5185;&#x90E8;&#x91CD;&#x5B9A;&#x5411;</h4>
+<pre><code class="lang-js"><span class="hljs-comment">// app/router.js</span>
+<span class="hljs-built_in">module</span>.exports = app =&gt; {
+  app.get(<span class="hljs-string">&apos;index&apos;</span>, <span class="hljs-string">&apos;/home/index&apos;</span>, app.controller.home.index);
+  app.redirect(<span class="hljs-string">&apos;/&apos;</span>, <span class="hljs-string">&apos;/home/index&apos;</span>, <span class="hljs-number">302</span>);
+};
+
+<span class="hljs-comment">// app/controller/home.js</span>
+exports.index = <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params">ctx</span>) </span>{
+  ctx.body = <span class="hljs-string">&apos;hello controller&apos;</span>;
+};
+
+<span class="hljs-comment">// curl -L http://localhost:7001</span>
+</code></pre>
+<h4 id="&#x5916;&#x90E8;&#x91CD;&#x5B9A;&#x5411;">&#x5916;&#x90E8;&#x91CD;&#x5B9A;&#x5411;</h4>
+<pre><code class="lang-js"><span class="hljs-comment">// app/router.js</span>
+<span class="hljs-built_in">module</span>.exports = app =&gt; {
+  app.get(<span class="hljs-string">&apos;/search&apos;</span>, app.controller.search);
+};
+
+<span class="hljs-comment">// app/controller/search.js</span>
+<span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params">ctx</span>) </span>{
+  <span class="hljs-keyword">const</span> type = ctx.query.type;
+  <span class="hljs-keyword">const</span> q = ctx.query.q || <span class="hljs-string">&apos;nodejs&apos;</span>;
+
+  <span class="hljs-keyword">if</span> (type === <span class="hljs-string">&apos;bing&apos;</span>) {
+    <span class="hljs-keyword">this</span>.redirect(<span class="hljs-string">`http://cn.bing.com/search?q=<span class="hljs-subst">${q}</span>`</span>);
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-keyword">this</span>.redirect(<span class="hljs-string">`https://www.google.co.kr/search?q=<span class="hljs-subst">${q}</span>`</span>);
+  }
+};
+
+<span class="hljs-comment">// curl http://localhost:7001/search?type=bing&amp;q=node.js</span>
+<span class="hljs-comment">// curl http://localhost:7001/search?q=node.js</span>
+</code></pre>
+<h3 id="&#x4E2D;&#x95F4;&#x4EF6;&#x7684;&#x4F7F;&#x7528;">&#x4E2D;&#x95F4;&#x4EF6;&#x7684;&#x4F7F;&#x7528;</h3>
+<p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x60F3;&#x628A;&#x7528;&#x6237;&#x67D0;&#x4E00;&#x7C7B;&#x8BF7;&#x6C42;&#x7684;&#x53C2;&#x6570;&#x90FD;&#x5927;&#x5199;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E2D;&#x95F4;&#x4EF6;&#x6765;&#x5B9E;&#x73B0;&#x3002;
+&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x53EA;&#x662F;&#x7B80;&#x5355;&#x8BF4;&#x660E;&#x4E0B;&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x4E2D;&#x95F4;&#x4EF6;&#xFF0C;&#x66F4;&#x591A;&#x8BF7;&#x67E5;&#x770B; <a href="middleware.html">&#x4E2D;&#x95F4;&#x4EF6;</a>&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// app/controller/search.js</span>
+<span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params">ctx</span>) </span>{
+  ctx.body = <span class="hljs-string">`search: <span class="hljs-subst">${ctx.query.name}</span>`</span>;
+};
+
+<span class="hljs-comment">// app/middleware/uppercase.js</span>
+<span class="hljs-built_in">module</span>.exports = () =&gt; {
+  <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params">next</span>) </span>{
+    <span class="hljs-keyword">this</span>.query.name = <span class="hljs-keyword">this</span>.query.name &amp;&amp; <span class="hljs-keyword">this</span>.query.name.toUpperCase();
+    <span class="hljs-keyword">yield</span> next;
+  };
+};
+
+<span class="hljs-comment">// app/router.js</span>
+<span class="hljs-built_in">module</span>.exports = app =&gt; {
+  app.get(<span class="hljs-string">&apos;s&apos;</span>, <span class="hljs-string">&apos;/search&apos;</span>, app.middlewares.uppercase(), app.controller.search)
+};
+
+<span class="hljs-comment">// curl http://localhost:7001/search2?name=egg</span>
+</code></pre>
+<h3 id="&#x592A;&#x591A;&#x8DEF;&#x7531;&#x6620;&#x5C04;">&#x592A;&#x591A;&#x8DEF;&#x7531;&#x6620;&#x5C04;?</h3>
+<p>&#x5982;&#x4E0A;&#x6240;&#x8FF0;&#xFF0C;&#x6211;&#x4EEC;&#x5E76;&#x4E0D;&#x5EFA;&#x8BAE;&#x628A;&#x8DEF;&#x7531;&#x89C4;&#x5219;&#x903B;&#x8F91;&#x6563;&#x843D;&#x5728;&#x591A;&#x4E2A;&#x5730;&#x65B9;&#xFF0C;&#x4F1A;&#x7ED9;&#x6392;&#x67E5;&#x95EE;&#x9898;&#x5E26;&#x6765;&#x56F0;&#x6270;&#x3002;</p>
+<p>&#x82E5;&#x786E;&#x5B9E;&#x6709;&#x9700;&#x6C42;&#xFF0C;&#x53EF;&#x4EE5;&#x5982;&#x4E0B;&#x62C6;&#x5206;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// app/router.js</span>
+<span class="hljs-built_in">module</span>.exports = app =&gt; {
+  <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./router/news&apos;</span>)(app);
+  <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./router/admin&apos;</span>)(app);
+};
+
+<span class="hljs-comment">// app/router/news.js</span>
+<span class="hljs-built_in">module</span>.exports = app =&gt; {
+  app.get(<span class="hljs-string">&apos;/news/list&apos;</span>, app.controller.news.list);
+  app.get(<span class="hljs-string">&apos;/news/detail&apos;</span>, app.controller.news.detail);
+};
+
+<span class="hljs-comment">// app/router/admin.js</span>
+<span class="hljs-built_in">module</span>.exports = app =&gt; {
+  app.get(<span class="hljs-string">&apos;/admin/user&apos;</span>, app.controller.admin.user);
+  app.get(<span class="hljs-string">&apos;/admin/log&apos;</span>, app.controller.admin.log);
+};
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="middleware.html" class="navigation navigation-prev " aria-label="Previous page: Middleware 中间件">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="controller.html" class="navigation navigation-next " aria-label="Next page: 什么是 Controller">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Router 路由","level":"1.3.6","depth":2,"next":{"title":"什么是 Controller","level":"1.3.7","depth":2,"path":"basics/controller.md","ref":"basics/controller.md","articles":[]},"previous":{"title":"Middleware 中间件","level":"1.3.5","depth":2,"path":"basics/middleware.md","ref":"basics/middleware.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-fontsettings","-search-pro","-advanced-emoji","-github","-splitter","-toggle-chapters"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search-pro":{"cutWordLib":"nodejieba","defineWord":["Gitbook"]},"github":{"url":"https://github.com/laomu1988/fe-books"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"laomu1988@qq.com","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"fe-books","language":"zh-hans","gitbook":"*"},"file":{"path":"basics/router.md","mtime":"2017-10-27T07:54:15.000Z","type":"markdown"},"gitbook":{"version":"3.1.0","time":"2017-10-27T07:54:17.244Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+<script>
+	// 百度统计
+	var _hmt = _hmt || [];
+	(function () {
+		var hm = document.createElement("script");
+		hm.src = "//hm.baidu.com/hm.js?171566b3d4f03c9c68c8f2c7a42d4b0e";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+<script src="/fe-books/server/index.js"></script>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

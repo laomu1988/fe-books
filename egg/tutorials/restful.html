@@ -1,0 +1,1179 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <title>RESTful API · fe-books</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.0">
+        <meta name="author" content="laomu1988@qq.com">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="async-function.html" />
+    
+    
+    <link rel="prev" href="mysql.html" />
+    
+
+<link rel="stylesheet" href="/fe-books/server/index.css"/>
+
+    </head>
+    <body>
+        
+<script src="/fe-books/server/menu.js"></script>
+
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    目录结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    新手指南
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../intro/">
+            
+                <a href="../intro/">
+            
+                    
+                    Egg.js 是什么?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../intro/egg-and-koa.html">
+            
+                <a href="../intro/egg-and-koa.html">
+            
+                    
+                    Egg 与 Koa
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../intro/quickstart.html">
+            
+                <a href="../intro/quickstart.html">
+            
+                    
+                    快速入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    基础功能
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../basics/structure.html">
+            
+                <a href="../basics/structure.html">
+            
+                    
+                    目录结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../basics/objects.html">
+            
+                <a href="../basics/objects.html">
+            
+                    
+                    框架内置基础对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../basics/env.html">
+            
+                <a href="../basics/env.html">
+            
+                    
+                    运行环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../basics/config.html">
+            
+                <a href="../basics/config.html">
+            
+                    
+                    Config 配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../basics/middleware.html">
+            
+                <a href="../basics/middleware.html">
+            
+                    
+                    Middleware 中间件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../basics/router.html">
+            
+                <a href="../basics/router.html">
+            
+                    
+                    Router 路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../basics/controller.html">
+            
+                <a href="../basics/controller.html">
+            
+                    
+                    什么是 Controller
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../basics/service.html">
+            
+                <a href="../basics/service.html">
+            
+                    
+                    Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../basics/schedule.html">
+            
+                <a href="../basics/schedule.html">
+            
+                    
+                    定时任务Schedule
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../basics/extend.html">
+            
+                <a href="../basics/extend.html">
+            
+                    
+                    框架扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../basics/app-start.html">
+            
+                <a href="../basics/app-start.html">
+            
+                    
+                    启动自定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    核心功能
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../core/development.html">
+            
+                <a href="../core/development.html">
+            
+                    
+                    本地开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../core/unittest.html">
+            
+                <a href="../core/unittest.html">
+            
+                    
+                    单元测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../core/deployment.html">
+            
+                <a href="../core/deployment.html">
+            
+                    
+                    应用部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../core/logger.html">
+            
+                <a href="../core/logger.html">
+            
+                    
+                    日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../core/httpclient.html">
+            
+                <a href="../core/httpclient.html">
+            
+                    
+                    HttpClient
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../core/cookie-and-session.html">
+            
+                <a href="../core/cookie-and-session.html">
+            
+                    
+                    Cookie and Session
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../core/cluster-and-ipc.html">
+            
+                <a href="../core/cluster-and-ipc.html">
+            
+                    
+                    多进程模型和进程间通讯
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../core/view.html">
+            
+                <a href="../core/view.html">
+            
+                    
+                    View 模板渲染
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../core/error-handling.html">
+            
+                <a href="../core/error-handling.html">
+            
+                    
+                    异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../core/security.html">
+            
+                <a href="../core/security.html">
+            
+                    
+                    安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="../core/i18n.html">
+            
+                <a href="../core/i18n.html">
+            
+                    
+                    i18n国际化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    教程
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="progressive.html">
+            
+                <a href="progressive.html">
+            
+                    
+                    渐进式开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="mysql.html">
+            
+                <a href="mysql.html">
+            
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.3" data-path="restful.html">
+            
+                <a href="restful.html">
+            
+                    
+                    RESTful API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="async-function.html">
+            
+                <a href="async-function.html">
+            
+                    
+                    Async Function
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../core/passport.md">
+            
+                <span>
+            
+                    
+                    # Passport
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    进阶
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../advanced/loader.html">
+            
+                <a href="../advanced/loader.html">
+            
+                    
+                    Loader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../advanced/plugin.html">
+            
+                <a href="../advanced/plugin.html">
+            
+                    
+                    插件开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../advanced/framework.html">
+            
+                <a href="../advanced/framework.html">
+            
+                    
+                    框架开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../advanced/cluster-client.html">
+            
+                <a href="../advanced/cluster-client.html">
+            
+                    
+                    多进程研发模式增强
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../advanced/view-plugin.html">
+            
+                <a href="../advanced/view-plugin.html">
+            
+                    
+                    View 插件开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    社区
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../plugins/">
+            
+                <a href="../plugins/">
+            
+                    
+                    内置插件列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../contributing.md">
+            
+                <span>
+            
+                    
+                    如何贡献
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../resource.html">
+            
+                <a href="../resource.html">
+            
+                    
+                    资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../member_guide.md">
+            
+                <span>
+            
+                    
+                    成员指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../faq.html">
+            
+                <a href="../faq.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >RESTful API</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="title-&#x5B9E;&#x73B0;-restful-api">title: &#x5B9E;&#x73B0; RESTful API</h2>
+<p>&#x901A;&#x8FC7; Web &#x6280;&#x672F;&#x5F00;&#x53D1;&#x670D;&#x52A1;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;&#x63D0;&#x4F9B;&#x63A5;&#x53E3;&#xFF0C;&#x53EF;&#x80FD;&#x662F;&#x5404;&#x4E2A; Web &#x6846;&#x67B6;&#x6700;&#x5E7F;&#x6CDB;&#x7684;&#x5E94;&#x7528;&#x4E4B;&#x4E00;&#x3002;&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;&#x6211;&#x4EEC;&#x62FF; <a href="https://cnodejs.org/" _target="blank">CNode &#x793E;&#x533A;</a> &#x7684;&#x63A5;&#x53E3;&#x6765;&#x770B;&#x4E00;&#x770B;&#x901A;&#x8FC7; Egg &#x5982;&#x4F55;&#x5B9E;&#x73B0; <a href="https://zh.wikipedia.org/wiki/REST" _target="blank">RESTful</a> API &#x7ED9;&#x5BA2;&#x6237;&#x7AEF;&#x8C03;&#x7528;&#x3002;</p>
+<p>CNode &#x793E;&#x533A;&#x73B0;&#x5728; v1 &#x7248;&#x672C;&#x7684;&#x63A5;&#x53E3;&#x4E0D;&#x662F;&#x5B8C;&#x5168;&#x7B26;&#x5408; RESTful &#x8BED;&#x4E49;&#xFF0C;&#x5728;&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x57FA;&#x4E8E; CNode V1 &#x7684;&#x63A5;&#x53E3;&#xFF0C;&#x5C01;&#x88C5;&#x4E00;&#x4E2A;&#x66F4;&#x7B26;&#x5408; RESTful &#x8BED;&#x4E49;&#x7684; V2 &#x7248;&#x672C; API&#x3002;</p>
+<h2 id="&#x8BBE;&#x8BA1;&#x54CD;&#x5E94;&#x683C;&#x5F0F;">&#x8BBE;&#x8BA1;&#x54CD;&#x5E94;&#x683C;&#x5F0F;</h2>
+<p>&#x5728; RESTful &#x98CE;&#x683C;&#x7684;&#x8BBE;&#x8BA1;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x901A;&#x8FC7;&#x54CD;&#x5E94;&#x72B6;&#x6001;&#x7801;&#x6765;&#x6807;&#x8BC6;&#x54CD;&#x5E94;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x4FDD;&#x6301;&#x54CD;&#x5E94;&#x7684; body &#x7B80;&#x6D01;&#xFF0C;&#x53EA;&#x8FD4;&#x56DE;&#x63A5;&#x53E3;&#x6570;&#x636E;&#x3002;&#x4EE5; <code>topics</code> &#x8D44;&#x6E90;&#x4E3A;&#x4F8B;&#xFF1A;</p>
+<h3 id="&#x83B7;&#x53D6;&#x4E3B;&#x9898;&#x5217;&#x8868;">&#x83B7;&#x53D6;&#x4E3B;&#x9898;&#x5217;&#x8868;</h3>
+<ul>
+<li><code>GET /api/v2/topics</code></li>
+<li>&#x54CD;&#x5E94;&#x72B6;&#x6001;&#x7801;&#xFF1A;200</li>
+<li>&#x54CD;&#x5E94;&#x4F53;&#xFF1A;</li>
+</ul>
+<pre><code class="lang-json">[
+  {
+    <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-string">&quot;57ea257b3670ca3f44c5beb6&quot;</span>,
+    <span class="hljs-string">&quot;author_id&quot;</span>: <span class="hljs-string">&quot;541bf9b9ad60405c1f151a03&quot;</span>,
+    <span class="hljs-string">&quot;tab&quot;</span>: <span class="hljs-string">&quot;share&quot;</span>,
+    <span class="hljs-string">&quot;content&quot;</span>: <span class="hljs-string">&quot;content&quot;</span>,
+    <span class="hljs-string">&quot;last_reply_at&quot;</span>: <span class="hljs-string">&quot;2017-01-11T13:32:25.089Z&quot;</span>,
+    <span class="hljs-string">&quot;good&quot;</span>: <span class="hljs-literal">false</span>,
+    <span class="hljs-string">&quot;top&quot;</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-string">&quot;reply_count&quot;</span>: <span class="hljs-number">155</span>,
+    <span class="hljs-string">&quot;visit_count&quot;</span>: <span class="hljs-number">28176</span>,
+    <span class="hljs-string">&quot;create_at&quot;</span>: <span class="hljs-string">&quot;2016-09-27T07:53:31.872Z&quot;</span>,
+  },
+  {
+    <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-string">&quot;57ea257b3670ca3f44c5beb6&quot;</span>,
+    <span class="hljs-string">&quot;author_id&quot;</span>: <span class="hljs-string">&quot;541bf9b9ad60405c1f151a03&quot;</span>,
+    <span class="hljs-string">&quot;tab&quot;</span>: <span class="hljs-string">&quot;share&quot;</span>,
+    <span class="hljs-string">&quot;content&quot;</span>: <span class="hljs-string">&quot;content&quot;</span>,
+    <span class="hljs-string">&quot;title&quot;</span>: <span class="hljs-string">&quot;&#x300A;&#x4E00;&#x8D77;&#x5B66; Node.js&#x300B;&#x5F7B;&#x5E95;&#x91CD;&#x5199;&#x5B8C;&#x6BD5;&quot;</span>,
+    <span class="hljs-string">&quot;last_reply_at&quot;</span>: <span class="hljs-string">&quot;2017-01-11T10:20:56.496Z&quot;</span>,
+    <span class="hljs-string">&quot;good&quot;</span>: <span class="hljs-literal">false</span>,
+    <span class="hljs-string">&quot;top&quot;</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-string">&quot;reply_count&quot;</span>: <span class="hljs-number">193</span>,
+    <span class="hljs-string">&quot;visit_count&quot;</span>: <span class="hljs-number">47633</span>,
+  },
+]
+</code></pre>
+<h3 id="&#x83B7;&#x53D6;&#x5355;&#x4E2A;&#x4E3B;&#x9898;">&#x83B7;&#x53D6;&#x5355;&#x4E2A;&#x4E3B;&#x9898;</h3>
+<ul>
+<li><code>GET /api/v2/topics/57ea257b3670ca3f44c5beb6</code></li>
+<li>&#x54CD;&#x5E94;&#x72B6;&#x6001;&#x7801;&#xFF1A;200</li>
+<li>&#x54CD;&#x5E94;&#x4F53;&#xFF1A;</li>
+</ul>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-string">&quot;57ea257b3670ca3f44c5beb6&quot;</span>,
+  <span class="hljs-string">&quot;author_id&quot;</span>: <span class="hljs-string">&quot;541bf9b9ad60405c1f151a03&quot;</span>,
+  <span class="hljs-string">&quot;tab&quot;</span>: <span class="hljs-string">&quot;share&quot;</span>,
+  <span class="hljs-string">&quot;content&quot;</span>: <span class="hljs-string">&quot;content&quot;</span>,
+  <span class="hljs-string">&quot;title&quot;</span>: <span class="hljs-string">&quot;&#x300A;&#x4E00;&#x8D77;&#x5B66; Node.js&#x300B;&#x5F7B;&#x5E95;&#x91CD;&#x5199;&#x5B8C;&#x6BD5;&quot;</span>,
+  <span class="hljs-string">&quot;last_reply_at&quot;</span>: <span class="hljs-string">&quot;2017-01-11T10:20:56.496Z&quot;</span>,
+  <span class="hljs-string">&quot;good&quot;</span>: <span class="hljs-literal">false</span>,
+  <span class="hljs-string">&quot;top&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-string">&quot;reply_count&quot;</span>: <span class="hljs-number">193</span>,
+  <span class="hljs-string">&quot;visit_count&quot;</span>: <span class="hljs-number">47633</span>,
+}
+</code></pre>
+<h3 id="&#x521B;&#x5EFA;&#x4E3B;&#x9898;">&#x521B;&#x5EFA;&#x4E3B;&#x9898;</h3>
+<ul>
+<li><code>POST /api/v2/topics</code></li>
+<li>&#x54CD;&#x5E94;&#x72B6;&#x6001;&#x7801;&#xFF1A;201</li>
+<li>&#x54CD;&#x5E94;&#x4F53;&#xFF1A;</li>
+</ul>
+<pre><code>{
+  &quot;topic_id&quot;: &quot;57ea257b3670ca3f44c5beb6&quot;
+}
+</code></pre><h3 id="&#x66F4;&#x65B0;&#x4E3B;&#x9898;">&#x66F4;&#x65B0;&#x4E3B;&#x9898;</h3>
+<ul>
+<li><code>PUT /api/v2/topics/57ea257b3670ca3f44c5beb6</code></li>
+<li>&#x54CD;&#x5E94;&#x72B6;&#x6001;&#x7801;&#xFF1A;204</li>
+<li>&#x54CD;&#x5E94;&#x4F53;&#xFF1A;&#x7A7A;</li>
+</ul>
+<h3 id="&#x9519;&#x8BEF;&#x5904;&#x7406;">&#x9519;&#x8BEF;&#x5904;&#x7406;</h3>
+<p>&#x5728;&#x63A5;&#x53E3;&#x5904;&#x7406;&#x53D1;&#x751F;&#x9519;&#x8BEF;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x5BA2;&#x6237;&#x7AEF;&#x8BF7;&#x6C42;&#x53C2;&#x6570;&#x5BFC;&#x81F4;&#x7684;&#x9519;&#x8BEF;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x8FD4;&#x56DE; 4xx &#x72B6;&#x6001;&#x7801;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x670D;&#x52A1;&#x7AEF;&#x81EA;&#x8EAB;&#x7684;&#x5904;&#x7406;&#x903B;&#x8F91;&#x9519;&#x8BEF;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x8FD4;&#x56DE; 5xx &#x72B6;&#x6001;&#x7801;&#x3002;&#x6240;&#x6709;&#x7684;&#x5F02;&#x5E38;&#x5BF9;&#x8C61;&#x90FD;&#x662F;&#x5BF9;&#x8FD9;&#x4E2A;&#x5F02;&#x5E38;&#x72B6;&#x6001;&#x7684;&#x63CF;&#x8FF0;&#xFF0C;&#x5176;&#x4E2D; error &#x5B57;&#x6BB5;&#x662F;&#x9519;&#x8BEF;&#x7684;&#x63CF;&#x8FF0;&#xFF0C;detail &#x5B57;&#x6BB5;&#xFF08;&#x53EF;&#x9009;&#xFF09;&#x662F;&#x5BFC;&#x81F4;&#x9519;&#x8BEF;&#x7684;&#x8BE6;&#x7EC6;&#x539F;&#x56E0;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x5F53;&#x5BA2;&#x6237;&#x7AEF;&#x4F20;&#x9012;&#x7684;&#x53C2;&#x6570;&#x5F02;&#x5E38;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x80FD;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x54CD;&#x5E94;&#xFF0C;&#x72B6;&#x6001;&#x7801;&#x4E3A; 422&#xFF0C;&#x8FD4;&#x56DE;&#x54CD;&#x5E94;&#x4F53;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;error&quot;</span>: <span class="hljs-string">&quot;Validation Failed&quot;</span>,
+  <span class="hljs-string">&quot;detail&quot;</span>: [ { <span class="hljs-string">&quot;message&quot;</span>: <span class="hljs-string">&quot;required&quot;</span>, <span class="hljs-string">&quot;field&quot;</span>: <span class="hljs-string">&quot;title&quot;</span>, <span class="hljs-string">&quot;code&quot;</span>: <span class="hljs-string">&quot;missing_field&quot;</span> } ]
+}
+</code></pre>
+<h2 id="&#x5B9E;&#x73B0;">&#x5B9E;&#x73B0;</h2>
+<p>&#x5728;&#x7EA6;&#x5B9A;&#x597D;&#x63A5;&#x53E3;&#x4E4B;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5F00;&#x59CB;&#x52A8;&#x624B;&#x5B9E;&#x73B0;&#x4E86;&#x3002;</p>
+<h3 id="&#x521D;&#x59CB;&#x5316;&#x9879;&#x76EE;">&#x521D;&#x59CB;&#x5316;&#x9879;&#x76EE;</h3>
+<p>&#x8FD8;&#x662F;&#x901A;&#x8FC7;<a href="../intro/quickstart.html">&#x5FEB;&#x901F;&#x5165;&#x95E8;</a>&#x7AE0;&#x8282;&#x4ECB;&#x7ECD;&#x7684; <a href="https://github.com/eggjs/egg-init" _target="blank">egg-init</a> &#x5DE5;&#x5177;&#x6765;&#x521D;&#x59CB;&#x5316;&#x6211;&#x4EEC;&#x7684;&#x5E94;&#x7528;</p>
+<pre><code class="lang-bash">$ egg-init cnode-api --type=empty
+$ <span class="hljs-built_in">cd</span> cnode-api
+$ npm i
+</code></pre>
+<h3 id="&#x5F00;&#x542F;-validate-&#x63D2;&#x4EF6;">&#x5F00;&#x542F; validate &#x63D2;&#x4EF6;</h3>
+<p>&#x6211;&#x4EEC;&#x9009;&#x62E9; <a href="https://github.com/eggjs/egg-validate" _target="blank">egg-validate</a> &#x4F5C;&#x4E3A; validate &#x63D2;&#x4EF6;&#x7684;&#x793A;&#x4F8B;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// config/plugin.js</span>
+exports.validate = {
+  enable: <span class="hljs-literal">true</span>,
+  package: <span class="hljs-string">&apos;egg-validate&apos;</span>,
+};
+</code></pre>
+<h3 id="&#x6CE8;&#x518C;&#x8DEF;&#x7531;">&#x6CE8;&#x518C;&#x8DEF;&#x7531;</h3>
+<p>&#x9996;&#x5148;&#xFF0C;&#x6211;&#x4EEC;&#x5148;&#x6309;&#x7167;&#x524D;&#x9762;&#x7684;&#x8BBE;&#x8BA1;&#x6765;&#x6CE8;&#x518C;<a href="../basics/router.html">&#x8DEF;&#x7531;</a>&#xFF0C;&#x6846;&#x67B6;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x4FBF;&#x6377;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x521B;&#x5EFA; RESTful &#x98CE;&#x683C;&#x7684;&#x8DEF;&#x7531;&#xFF0C;&#x5E76;&#x5C06;&#x4E00;&#x4E2A;&#x8D44;&#x6E90;&#x7684;&#x63A5;&#x53E3;&#x6620;&#x5C04;&#x5230;&#x5BF9;&#x5E94;&#x7684; controller &#x6587;&#x4EF6;&#x3002;&#x5728; <code>app/router.js</code> &#x4E2D;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// app/router.js</span>
+<span class="hljs-built_in">module</span>.exports = app =&gt; {
+  app.resources(<span class="hljs-string">&apos;topics&apos;</span>, <span class="hljs-string">&apos;/api/v2/topics&apos;</span>, <span class="hljs-string">&apos;topics&apos;</span>);
+};
+</code></pre>
+<p>&#x901A;&#x8FC7; <code>app.resources</code> &#x65B9;&#x6CD5;&#xFF0C;&#x6211;&#x4EEC;&#x5C06; topics &#x8FD9;&#x4E2A;&#x8D44;&#x6E90;&#x7684;&#x589E;&#x5220;&#x6539;&#x67E5;&#x63A5;&#x53E3;&#x6620;&#x5C04;&#x5230;&#x4E86; <code>app/controller/topics.js</code> &#x6587;&#x4EF6;&#x3002;</p>
+<h3 id="controller-&#x5F00;&#x53D1;">controller &#x5F00;&#x53D1;</h3>
+<p>&#x5728; <a href="../basics/controller.html">controller</a> &#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x8981;&#x5B9E;&#x73B0; <code>app.resources</code> &#x7EA6;&#x5B9A;&#x7684; <a href="../basics/router.html#restful-&#x98CE;&#x683C;&#x7684;-url-&#x5B9A;&#x4E49;">RESTful &#x98CE;&#x683C;&#x7684; URL &#x5B9A;&#x4E49;</a> &#x4E2D;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x63D0;&#x4F9B;&#x7684;&#x63A5;&#x53E3;&#x5373;&#x53EF;&#x3002;&#x4F8B;&#x5982;&#x6211;&#x4EEC;&#x6765;&#x5B9E;&#x73B0;&#x521B;&#x5EFA;&#x4E00;&#x4E2A; topics &#x7684;&#x63A5;&#x53E3;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// app/controller/topics.js</span>
+<span class="hljs-comment">// &#x5B9A;&#x4E49;&#x521B;&#x5EFA;&#x63A5;&#x53E3;&#x7684;&#x8BF7;&#x6C42;&#x53C2;&#x6570;&#x89C4;&#x5219;</span>
+<span class="hljs-keyword">const</span> createRule = {
+  accesstoken: <span class="hljs-string">&apos;string&apos;</span>,
+  title: <span class="hljs-string">&apos;string&apos;</span>,
+  tab: { type: <span class="hljs-string">&apos;enum&apos;</span>, values: [ <span class="hljs-string">&apos;ask&apos;</span>, <span class="hljs-string">&apos;share&apos;</span>, <span class="hljs-string">&apos;job&apos;</span> ], required: <span class="hljs-literal">false</span> },
+  content: <span class="hljs-string">&apos;string&apos;</span>,
+};
+exports.create = <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params">ctx</span>) </span>{
+  <span class="hljs-comment">// &#x6821;&#x9A8C; `ctx.request.body` &#x662F;&#x5426;&#x7B26;&#x5408;&#x6211;&#x4EEC;&#x9884;&#x671F;&#x7684;&#x683C;&#x5F0F;</span>
+  <span class="hljs-comment">// &#x5982;&#x679C;&#x53C2;&#x6570;&#x6821;&#x9A8C;&#x672A;&#x901A;&#x8FC7;&#xFF0C;&#x5C06;&#x4F1A;&#x629B;&#x51FA;&#x4E00;&#x4E2A; status = 422 &#x7684;&#x5F02;&#x5E38;</span>
+  ctx.validate(createRule);
+  <span class="hljs-comment">// &#x8C03;&#x7528; service &#x521B;&#x5EFA;&#x4E00;&#x4E2A; topic</span>
+  <span class="hljs-keyword">const</span> id = <span class="hljs-keyword">yield</span> ctx.service.topics.create(ctx.request.body);
+  <span class="hljs-comment">// &#x8BBE;&#x7F6E;&#x54CD;&#x5E94;&#x4F53;&#x548C;&#x72B6;&#x6001;&#x7801;</span>
+  ctx.body = {
+    topic_id: id,
+  };
+  ctx.status = <span class="hljs-number">201</span>;
+};
+</code></pre>
+<p>&#x5982;&#x540C;&#x6CE8;&#x91CA;&#x4E2D;&#x8BF4;&#x660E;&#x7684;&#xFF0C;&#x4E00;&#x4E2A; controller &#x4E3B;&#x8981;&#x5B9E;&#x73B0;&#x4E86;&#x4E0B;&#x9762;&#x7684;&#x903B;&#x8F91;&#xFF1A;</p>
+<ol>
+<li>&#x8C03;&#x7528; validate &#x65B9;&#x6CD5;&#x5BF9;&#x8BF7;&#x6C42;&#x53C2;&#x6570;&#x8FDB;&#x884C;&#x9A8C;&#x8BC1;&#x3002;</li>
+<li>&#x7528;&#x9A8C;&#x8BC1;&#x8FC7;&#x7684;&#x53C2;&#x6570;&#x8C03;&#x7528; service &#x5C01;&#x88C5;&#x7684;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x6765;&#x521B;&#x5EFA;&#x4E00;&#x4E2A; topic&#x3002;</li>
+<li>&#x6309;&#x7167;&#x63A5;&#x53E3;&#x7EA6;&#x5B9A;&#x7684;&#x683C;&#x5F0F;&#x8BBE;&#x7F6E;&#x54CD;&#x5E94;&#x72B6;&#x6001;&#x7801;&#x548C;&#x5185;&#x5BB9;&#x3002;</li>
+</ol>
+<h3 id="service-&#x5F00;&#x53D1;">service &#x5F00;&#x53D1;</h3>
+<p>&#x5728; <a href="../basics/service.html">service</a> &#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x66F4;&#x52A0;&#x4E13;&#x6CE8;&#x7684;&#x7F16;&#x5199;&#x5B9E;&#x9645;&#x751F;&#x6548;&#x7684;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// app/service/topics.js</span>
+<span class="hljs-built_in">module</span>.exports = app =&gt; {
+  <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TopicService</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">app</span>.<span class="hljs-title">Service</span> </span>{
+    <span class="hljs-keyword">constructor</span>(ctx) {
+      <span class="hljs-keyword">super</span>(ctx);
+      <span class="hljs-keyword">this</span>.root = <span class="hljs-string">&apos;https://cnodejs.org/api/v1&apos;</span>;
+    }
+
+    * create(params) {
+      <span class="hljs-comment">// &#x8C03;&#x7528; CNode V1 &#x7248;&#x672C; API</span>
+      <span class="hljs-keyword">const</span> result = <span class="hljs-keyword">yield</span> <span class="hljs-keyword">this</span>.ctx.curl(<span class="hljs-string">`<span class="hljs-subst">${this.root}</span>/topics`</span>, {
+        method: <span class="hljs-string">&apos;post&apos;</span>,
+        data: params,
+        dataType: <span class="hljs-string">&apos;json&apos;</span>,
+        contentType: <span class="hljs-string">&apos;json&apos;</span>,
+      });
+      <span class="hljs-comment">// &#x68C0;&#x67E5;&#x8C03;&#x7528;&#x662F;&#x5426;&#x6210;&#x529F;&#xFF0C;&#x5982;&#x679C;&#x8C03;&#x7528;&#x5931;&#x8D25;&#x4F1A;&#x629B;&#x51FA;&#x5F02;&#x5E38;</span>
+      <span class="hljs-keyword">this</span>.checkSuccess(result);
+      <span class="hljs-comment">// &#x8FD4;&#x56DE;&#x521B;&#x5EFA;&#x7684; topic &#x7684; id</span>
+      <span class="hljs-keyword">return</span> result.data.topic_id;
+    }
+
+    <span class="hljs-comment">// &#x5C01;&#x88C5;&#x7EDF;&#x4E00;&#x7684;&#x8C03;&#x7528;&#x68C0;&#x67E5;&#x51FD;&#x6570;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x67E5;&#x8BE2;&#x3001;&#x521B;&#x5EFA;&#x548C;&#x66F4;&#x65B0;&#x7B49; service &#x4E2D;&#x590D;&#x7528;</span>
+    checkSuccess(result) {
+      <span class="hljs-keyword">if</span> (result.status !== <span class="hljs-number">200</span>) {
+        <span class="hljs-keyword">const</span> errorMsg = result.data &amp;&amp; result.data.error_msg ? result.data.error_msg : <span class="hljs-string">&apos;unknown error&apos;</span>;
+        <span class="hljs-keyword">this</span>.ctx.throw(result.status, errorMsg);
+      }
+      <span class="hljs-keyword">if</span> (!result.data.success) {
+        <span class="hljs-comment">// &#x8FDC;&#x7A0B;&#x8C03;&#x7528;&#x8FD4;&#x56DE;&#x683C;&#x5F0F;&#x9519;&#x8BEF;</span>
+        <span class="hljs-keyword">this</span>.ctx.throw(<span class="hljs-number">500</span>, <span class="hljs-string">&apos;remote response error&apos;</span>, { data: result.data });
+      }
+    }
+  }
+
+  <span class="hljs-keyword">return</span> TopicService;
+};
+</code></pre>
+<p>&#x5728; &#x521B;&#x5EFA; topic &#x7684; service &#x5F00;&#x53D1;&#x5B8C;&#x6210;&#x4E4B;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x4ECE;&#x4E0A;&#x5F80;&#x4E0B;&#x7684;&#x5B8C;&#x6210;&#x4E86;&#x4E00;&#x4E2A;&#x63A5;&#x53E3;&#x7684;&#x5F00;&#x53D1;&#x3002;</p>
+<h3 id="&#x7EDF;&#x4E00;&#x9519;&#x8BEF;&#x5904;&#x7406;">&#x7EDF;&#x4E00;&#x9519;&#x8BEF;&#x5904;&#x7406;</h3>
+<p>&#x6B63;&#x5E38;&#x7684;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x5DF2;&#x7ECF;&#x6B63;&#x5E38;&#x5B8C;&#x6210;&#x4E86;&#xFF0C;&#x4F46;&#x662F;&#x5F02;&#x5E38;&#x6211;&#x4EEC;&#x8FD8;&#x6CA1;&#x6709;&#x8FDB;&#x884C;&#x5904;&#x7406;&#x3002;&#x5728;&#x524D;&#x9762;&#x7F16;&#x5199;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;controller &#x548C; service &#x90FD;&#x6709;&#x53EF;&#x80FD;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#xFF0C;&#x8FD9;&#x4E5F;&#x662F;&#x6211;&#x4EEC;&#x63A8;&#x8350;&#x7684;&#x7F16;&#x7801;&#x65B9;&#x5F0F;&#xFF0C;&#x5F53;&#x53D1;&#x73B0;&#x5BA2;&#x6237;&#x7AEF;&#x53C2;&#x6570;&#x4F20;&#x9012;&#x9519;&#x8BEF;&#x6216;&#x8005;&#x8C03;&#x7528;&#x540E;&#x7AEF;&#x670D;&#x52A1;&#x5F02;&#x5E38;&#x65F6;&#xFF0C;&#x901A;&#x8FC7;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x8FDB;&#x884C;&#x4E2D;&#x65AD;&#x3002;</p>
+<ul>
+<li>controller &#x4E2D; <code>this.validate()</code> &#x8FDB;&#x884C;&#x53C2;&#x6570;&#x6821;&#x9A8C;&#xFF0C;&#x5931;&#x8D25;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#x3002;</li>
+<li>service &#x4E2D;&#x8C03;&#x7528; <code>this.ctx.curl()</code> &#x65B9;&#x6CD5;&#x8BBF;&#x95EE; CNode &#x670D;&#x52A1;&#xFF0C;&#x53EF;&#x80FD;&#x7531;&#x4E8E;&#x7F51;&#x7EDC;&#x95EE;&#x9898;&#x7B49;&#x539F;&#x56E0;&#x629B;&#x51FA;&#x670D;&#x52A1;&#x7AEF;&#x5F02;&#x5E38;&#x3002;</li>
+<li>service &#x4E2D;&#x62FF;&#x5230; CNode &#x670D;&#x52A1;&#x7AEF;&#x8FD4;&#x56DE;&#x7684;&#x7ED3;&#x679C;&#x540E;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x6536;&#x5230;&#x8BF7;&#x6C42;&#x8C03;&#x7528;&#x5931;&#x8D25;&#x7684;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#xFF0C;&#x6B64;&#x65F6;&#x4E5F;&#x4F1A;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#x3002;</li>
+</ul>
+<p>&#x6846;&#x67B6;&#x867D;&#x7136;&#x63D0;&#x4F9B;&#x4E86;&#x9ED8;&#x8BA4;&#x7684;&#x5F02;&#x5E38;&#x5904;&#x7406;&#xFF0C;&#x4F46;&#x662F;&#x53EF;&#x80FD;&#x548C;&#x6211;&#x4EEC;&#x5728;&#x524D;&#x9762;&#x7684;&#x63A5;&#x53E3;&#x7EA6;&#x5B9A;&#x4E0D;&#x4E00;&#x81F4;&#xFF0C;&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x81EA;&#x5DF1;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x7EDF;&#x4E00;&#x9519;&#x8BEF;&#x5904;&#x7406;&#x7684;&#x4E2D;&#x95F4;&#x4EF6;&#x6765;&#x5BF9;&#x9519;&#x8BEF;&#x8FDB;&#x884C;&#x5904;&#x7406;&#x3002;</p>
+<p>&#x5728; <code>app/middleware</code> &#x76EE;&#x5F55;&#x4E0B;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A; <code>error_handler.js</code> &#x7684;&#x6587;&#x4EF6;&#x6765;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A; <a href="../basics/middleware.html">middleware</a></p>
+<pre><code class="lang-js"><span class="hljs-comment">// app/middleware/error_handler.js</span>
+<span class="hljs-built_in">module</span>.exports = () =&gt; {
+  <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params">next</span>) </span>{
+    <span class="hljs-keyword">try</span> {
+      <span class="hljs-keyword">yield</span> next;
+    } <span class="hljs-keyword">catch</span> (err) {
+      <span class="hljs-comment">// &#x6240;&#x6709;&#x7684;&#x5F02;&#x5E38;&#x90FD;&#x5728; app &#x4E0A;&#x89E6;&#x53D1;&#x4E00;&#x4E2A; error &#x4E8B;&#x4EF6;&#xFF0C;&#x6846;&#x67B6;&#x4F1A;&#x8BB0;&#x5F55;&#x4E00;&#x6761;&#x9519;&#x8BEF;&#x65E5;&#x5FD7;</span>
+      <span class="hljs-keyword">this</span>.app.emit(<span class="hljs-string">&apos;error&apos;</span>, err, <span class="hljs-keyword">this</span>);
+
+      <span class="hljs-keyword">const</span> status = err.status || <span class="hljs-number">500</span>;
+      <span class="hljs-comment">// &#x751F;&#x4EA7;&#x73AF;&#x5883;&#x65F6; 500 &#x9519;&#x8BEF;&#x7684;&#x8BE6;&#x7EC6;&#x9519;&#x8BEF;&#x5185;&#x5BB9;&#x4E0D;&#x8FD4;&#x56DE;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;&#xFF0C;&#x56E0;&#x4E3A;&#x53EF;&#x80FD;&#x5305;&#x542B;&#x654F;&#x611F;&#x4FE1;&#x606F;</span>
+      <span class="hljs-keyword">const</span> error = status === <span class="hljs-number">500</span> &amp;&amp; <span class="hljs-keyword">this</span>.app.config.env === <span class="hljs-string">&apos;prod&apos;</span>
+        ? <span class="hljs-string">&apos;Internal Server Error&apos;</span>
+        : err.message;
+
+      <span class="hljs-comment">// &#x4ECE; error &#x5BF9;&#x8C61;&#x4E0A;&#x8BFB;&#x51FA;&#x5404;&#x4E2A;&#x5C5E;&#x6027;&#xFF0C;&#x8BBE;&#x7F6E;&#x5230;&#x54CD;&#x5E94;&#x4E2D;</span>
+      <span class="hljs-keyword">this</span>.body = { error };
+      <span class="hljs-keyword">if</span> (status === <span class="hljs-number">422</span>) {
+        <span class="hljs-keyword">this</span>.body.detail = err.errors;
+      }
+      <span class="hljs-keyword">this</span>.status = status;
+    }
+  };
+};
+</code></pre>
+<p>&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x4E2D;&#x95F4;&#x4EF6;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6355;&#x83B7;&#x6240;&#x6709;&#x5F02;&#x5E38;&#xFF0C;&#x5E76;&#x6309;&#x7167;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x7684;&#x683C;&#x5F0F;&#x5C01;&#x88C5;&#x4E86;&#x54CD;&#x5E94;&#x3002;&#x5C06;&#x8FD9;&#x4E2A;&#x4E2D;&#x95F4;&#x4EF6;&#x901A;&#x8FC7;&#x914D;&#x7F6E;&#x6587;&#x4EF6;(<code>config/config.default.js</code>)&#x52A0;&#x8F7D;&#x8FDB;&#x6765;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// config/config.default.js</span>
+<span class="hljs-built_in">module</span>.exports = {
+  <span class="hljs-comment">// &#x52A0;&#x8F7D; errorHandler &#x4E2D;&#x95F4;&#x4EF6;</span>
+  middleware: [ <span class="hljs-string">&apos;errorHandler&apos;</span> ],
+  <span class="hljs-comment">// &#x53EA;&#x5BF9; /api &#x524D;&#x7F00;&#x7684; url &#x8DEF;&#x5F84;&#x751F;&#x6548;</span>
+  errorHandler: {
+    match: <span class="hljs-string">&apos;/api&apos;</span>,
+  },
+};
+</code></pre>
+<h2 id="&#x6D4B;&#x8BD5;">&#x6D4B;&#x8BD5;</h2>
+<p>&#x4EE3;&#x7801;&#x5B8C;&#x6210;&#x53EA;&#x662F;&#x7B2C;&#x4E00;&#x6B65;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x9700;&#x8981;&#x7ED9;&#x4EE3;&#x7801;&#x52A0;&#x4E0A;<a href="../core/unittest.html">&#x5355;&#x5143;&#x6D4B;&#x8BD5;</a>&#x3002;</p>
+<h3 id="controller-&#x6D4B;&#x8BD5;">controller &#x6D4B;&#x8BD5;</h3>
+<p>&#x6211;&#x4EEC;&#x5148;&#x6765;&#x7F16;&#x5199; controller &#x4EE3;&#x7801;&#x7684;&#x5355;&#x5143;&#x6D4B;&#x8BD5;&#x3002;&#x5728;&#x5199; controller &#x5355;&#x6D4B;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x9002;&#x65F6;&#x7684;&#x6A21;&#x62DF; service &#x5C42;&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x56E0;&#x4E3A;&#x5BF9; controller &#x7684;&#x5355;&#x5143;&#x6D4B;&#x8BD5;&#x800C;&#x8A00;&#xFF0C;&#x6700;&#x91CD;&#x8981;&#x7684;&#x90E8;&#x5206;&#x662F;&#x6D4B;&#x8BD5;&#x81EA;&#x8EAB;&#x7684;&#x903B;&#x8F91;&#xFF0C;&#x800C; service &#x5C42;&#x6309;&#x7167;&#x7EA6;&#x5B9A;&#x7684;&#x63A5;&#x53E3; mock &#x6389;&#xFF0C;service &#x81EA;&#x8EAB;&#x7684;&#x903B;&#x8F91;&#x53EF;&#x4EE5;&#x8BA9; service &#x7684;&#x5355;&#x5143;&#x6D4B;&#x8BD5;&#x6765;&#x8986;&#x76D6;&#xFF0C;&#x8FD9;&#x6837;&#x6211;&#x4EEC;&#x5F00;&#x53D1;&#x7684;&#x65F6;&#x5019;&#x4E5F;&#x53EF;&#x4EE5;&#x5206;&#x5C42;&#x8FDB;&#x884C;&#x5F00;&#x53D1;&#x6D4B;&#x8BD5;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> mock = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;egg-mock&apos;</span>);
+
+describe(<span class="hljs-string">&apos;test/app/controller/topics.test.js&apos;</span>, () =&gt; {
+  <span class="hljs-keyword">let</span> app;
+  before(() =&gt; {
+    <span class="hljs-comment">// &#x901A;&#x8FC7; egg-mock &#x5E93;&#x5FEB;&#x901F;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5E94;&#x7528;&#x5B9E;&#x4F8B;</span>
+    app = mock.app();
+    <span class="hljs-keyword">return</span> app.ready();
+  });
+
+  afterEach(mock.restore);
+
+  <span class="hljs-comment">// &#x6D4B;&#x8BD5;&#x8BF7;&#x6C42;&#x53C2;&#x6570;&#x9519;&#x8BEF;&#x65F6;&#x5E94;&#x7528;&#x7684;&#x54CD;&#x5E94;</span>
+  it(<span class="hljs-string">&apos;should POST /api/v2/topics/ 422&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params"></span>) </span>{
+    app.mockCsrf();
+    <span class="hljs-keyword">yield</span> app.httpRequest()
+    .post(<span class="hljs-string">&apos;/api/v2/topics&apos;</span>)
+    .send({
+      accesstoken: <span class="hljs-string">&apos;123&apos;</span>,
+    })
+    .expect(<span class="hljs-number">422</span>)
+    .expect({
+      error: <span class="hljs-string">&apos;Validation Failed&apos;</span>,
+      detail: [{ message: <span class="hljs-string">&apos;required&apos;</span>, field: <span class="hljs-string">&apos;title&apos;</span>, code: <span class="hljs-string">&apos;missing_field&apos;</span> }, { message: <span class="hljs-string">&apos;required&apos;</span>, field: <span class="hljs-string">&apos;content&apos;</span>, code: <span class="hljs-string">&apos;missing_field&apos;</span> }],
+    });
+  });
+
+  <span class="hljs-comment">// mock &#x6389; service &#x5C42;&#xFF0C;&#x6D4B;&#x8BD5;&#x6B63;&#x5E38;&#x65F6;&#x7684;&#x8FD4;&#x56DE;</span>
+  it(<span class="hljs-string">&apos;should POST /api/v2/topics/ 201&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params"></span>) </span>{
+    app.mockCsrf();
+    app.mockService(<span class="hljs-string">&apos;topics&apos;</span>, <span class="hljs-string">&apos;create&apos;</span>, <span class="hljs-number">123</span>);
+    <span class="hljs-keyword">yield</span> app.httpRequest()
+    .post(<span class="hljs-string">&apos;/api/v2/topics&apos;</span>)
+    .send({
+      accesstoken: <span class="hljs-string">&apos;123&apos;</span>,
+      title: <span class="hljs-string">&apos;title&apos;</span>,
+      content: <span class="hljs-string">&apos;hello&apos;</span>,
+    })
+    .expect(<span class="hljs-number">201</span>)
+    .expect({
+      topic_id: <span class="hljs-number">123</span>,
+    });
+  });
+});
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x5BF9; controller &#x7684;&#x6D4B;&#x8BD5;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x901A;&#x8FC7; <a href="https://github.com/eggjs/egg-mock" _target="blank">egg-mock</a> &#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x5E94;&#x7528;&#xFF0C;&#x5E76;&#x901A;&#x8FC7; <a href="https://github.com/visionmedia/supertest" _target="blank">SuperTest</a> &#x6765;&#x6A21;&#x62DF;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x8FDB;&#x884C;&#x6D4B;&#x8BD5;&#x3002;&#x5728;&#x6D4B;&#x8BD5;&#x4E2D;&#x6211;&#x4EEC;&#x4F1A;&#x6A21;&#x62DF; service &#x5C42;&#x7684;&#x54CD;&#x5E94;&#x6765;&#x6D4B;&#x8BD5; controller &#x5C42;&#x7684;&#x5904;&#x7406;&#x903B;&#x8F91;&#x3002;</p>
+<h3 id="service-&#x6D4B;&#x8BD5;">service &#x6D4B;&#x8BD5;</h3>
+<p>service &#x5C42;&#x7684;&#x6D4B;&#x8BD5;&#x4E5F;&#x53EA;&#x9700;&#x8981;&#x805A;&#x7126;&#x4E8E;&#x81EA;&#x8EAB;&#x7684;&#x4EE3;&#x7801;&#x903B;&#x8F91;&#xFF0C;<a href="https://github.com/eggjs/egg-mock" _target="blank">egg-mock</a> &#x540C;&#x6837;&#x63D0;&#x4F9B;&#x4E86;&#x5FEB;&#x901F;&#x6D4B;&#x8BD5; service &#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x4E0D;&#x518D;&#x9700;&#x8981;&#x7528; SuperTest &#x6A21;&#x62DF;&#x4ECE;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x8D77;&#x8BF7;&#x6C42;&#xFF0C;&#x800C;&#x662F;&#x76F4;&#x63A5;&#x8C03;&#x7528; service &#x4E2D;&#x7684;&#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x6D4B;&#x8BD5;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> assert = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;assert&apos;</span>);
+<span class="hljs-keyword">const</span> mock = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;egg-mock&apos;</span>);
+
+describe(<span class="hljs-string">&apos;test/app/service/topics.test.js&apos;</span>, () =&gt; {
+  <span class="hljs-keyword">let</span> app;
+  <span class="hljs-keyword">let</span> ctx;
+  before(<span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params"></span>) </span>{
+    app = mock.app();
+    <span class="hljs-keyword">yield</span> app.ready();
+    <span class="hljs-comment">// &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5168;&#x5C40;&#x7684; context &#x5BF9;&#x8C61;&#xFF0C;&#x53EF;&#x4EE5;&#x5728; ctx &#x5BF9;&#x8C61;&#x4E0A;&#x8C03;&#x7528; service &#x7684;&#x65B9;&#x6CD5;</span>
+    ctx = app.mockContext();
+  });
+
+  describe(<span class="hljs-string">&apos;create()&apos;</span>, () =&gt; {
+    it(<span class="hljs-string">&apos;should create failed by accesstoken error&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params"></span>) </span>{
+      <span class="hljs-keyword">try</span> {
+        <span class="hljs-comment">// &#x76F4;&#x63A5;&#x5728; ctx &#x4E0A;&#x8C03;&#x7528; service &#x65B9;&#x6CD5;</span>
+        <span class="hljs-keyword">yield</span> ctx.service.topics.create({
+          accesstoken: <span class="hljs-string">&apos;hello&apos;</span>,
+          title: <span class="hljs-string">&apos;title&apos;</span>,
+          content: <span class="hljs-string">&apos;content&apos;</span>,
+        });
+      } <span class="hljs-keyword">catch</span> (err) {
+        assert(err.status === <span class="hljs-number">401</span>);
+        assert(err.message === <span class="hljs-string">&apos;&#x9519;&#x8BEF;&#x7684;accessToken&apos;</span>);
+      }
+    });
+
+    it(<span class="hljs-string">&apos;should create success&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params"></span>) </span>{
+      <span class="hljs-comment">// &#x4E0D;&#x5F71;&#x54CD; CNode &#x7684;&#x6B63;&#x5E38;&#x8FD0;&#x884C;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5C06;&#x5BF9; CNode &#x7684;&#x8C03;&#x7528;&#x6309;&#x7167;&#x63A5;&#x53E3;&#x7EA6;&#x5B9A;&#x6A21;&#x62DF;&#x6389;</span>
+      <span class="hljs-comment">// app.mockHttpclient &#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x4FBF;&#x6377;&#x7684;&#x5BF9;&#x5E94;&#x7528;&#x53D1;&#x8D77;&#x7684; http &#x8BF7;&#x6C42;&#x8FDB;&#x884C;&#x6A21;&#x62DF;</span>
+      app.mockHttpclient(<span class="hljs-string">`<span class="hljs-subst">${ctx.service.topics.root}</span>/topics`</span>, <span class="hljs-string">&apos;POST&apos;</span>, {
+        data: {
+          success: <span class="hljs-literal">true</span>,
+          topic_id: <span class="hljs-string">&apos;5433d5e4e737cbe96dcef312&apos;</span>,
+        },
+      });
+      <span class="hljs-keyword">const</span> id = <span class="hljs-keyword">yield</span> ctx.service.topics.create({
+        accesstoken: <span class="hljs-string">&apos;hello&apos;</span>,
+        title: <span class="hljs-string">&apos;title&apos;</span>,
+        content: <span class="hljs-string">&apos;content&apos;</span>,
+      });
+      assert(id === <span class="hljs-string">&apos;5433d5e4e737cbe96dcef312&apos;</span>);
+    });
+  });
+});
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x5BF9; service &#x5C42;&#x7684;&#x6D4B;&#x8BD5;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x901A;&#x8FC7; egg-mock &#x63D0;&#x4F9B;&#x7684; <code>app.createContext()</code> &#x65B9;&#x6CD5;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A; context &#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x76F4;&#x63A5;&#x8C03;&#x7528; context &#x4E0A;&#x7684; service &#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x6D4B;&#x8BD5;&#xFF0C;&#x6D4B;&#x8BD5;&#x65F6;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>app.mockHttpclient()</code> &#x65B9;&#x6CD5;&#x6A21;&#x62DF; HTTP &#x8C03;&#x7528;&#x7684;&#x54CD;&#x5E94;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x5265;&#x79BB;&#x73AF;&#x5883;&#x7684;&#x5F71;&#x54CD;&#x800C;&#x4E13;&#x6CE8;&#x4E8E; service &#x81EA;&#x8EAB;&#x903B;&#x8F91;&#x7684;&#x6D4B;&#x8BD5;&#x4E0A;&#x3002;</p>
+<hr>
+<p>&#x5B8C;&#x6574;&#x7684;&#x4EE3;&#x7801;&#x5B9E;&#x73B0;&#x548C;&#x6D4B;&#x8BD5;&#x90FD;&#x5728; <a href="https://github.com/eggjs/examples/tree/master/cnode-api" _target="blank">eggjs/examples/cnode-api</a> &#x4E2D;&#x53EF;&#x4EE5;&#x627E;&#x5230;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="mysql.html" class="navigation navigation-prev " aria-label="Previous page: MySQL">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="async-function.html" class="navigation navigation-next " aria-label="Next page: Async Function">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"RESTful API","level":"1.5.3","depth":2,"next":{"title":"Async Function","level":"1.5.4","depth":2,"path":"tutorials/async-function.md","ref":"tutorials/async-function.md","articles":[]},"previous":{"title":"MySQL","level":"1.5.2","depth":2,"path":"tutorials/mysql.md","ref":"tutorials/mysql.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-fontsettings","-search-pro","-advanced-emoji","-github","-splitter","-toggle-chapters"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search-pro":{"cutWordLib":"nodejieba","defineWord":["Gitbook"]},"github":{"url":"https://github.com/laomu1988/fe-books"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"laomu1988@qq.com","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"fe-books","language":"zh-hans","gitbook":"*"},"file":{"path":"tutorials/restful.md","mtime":"2017-10-27T07:54:15.000Z","type":"markdown"},"gitbook":{"version":"3.1.0","time":"2017-10-27T07:54:17.244Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+<script>
+	// 百度统计
+	var _hmt = _hmt || [];
+	(function () {
+		var hm = document.createElement("script");
+		hm.src = "//hm.baidu.com/hm.js?171566b3d4f03c9c68c8f2c7a42d4b0e";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+<script src="/fe-books/server/index.js"></script>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

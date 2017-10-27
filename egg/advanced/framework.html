@@ -1,0 +1,1160 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <title>框架开发 · fe-books</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.0">
+        <meta name="author" content="laomu1988@qq.com">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="cluster-client.html" />
+    
+    
+    <link rel="prev" href="plugin.html" />
+    
+
+<link rel="stylesheet" href="/fe-books/server/index.css"/>
+
+    </head>
+    <body>
+        
+<script src="/fe-books/server/menu.js"></script>
+
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    目录结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    新手指南
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../intro/">
+            
+                <a href="../intro/">
+            
+                    
+                    Egg.js 是什么?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../intro/egg-and-koa.html">
+            
+                <a href="../intro/egg-and-koa.html">
+            
+                    
+                    Egg 与 Koa
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../intro/quickstart.html">
+            
+                <a href="../intro/quickstart.html">
+            
+                    
+                    快速入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    基础功能
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../basics/structure.html">
+            
+                <a href="../basics/structure.html">
+            
+                    
+                    目录结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../basics/objects.html">
+            
+                <a href="../basics/objects.html">
+            
+                    
+                    框架内置基础对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../basics/env.html">
+            
+                <a href="../basics/env.html">
+            
+                    
+                    运行环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../basics/config.html">
+            
+                <a href="../basics/config.html">
+            
+                    
+                    Config 配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../basics/middleware.html">
+            
+                <a href="../basics/middleware.html">
+            
+                    
+                    Middleware 中间件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../basics/router.html">
+            
+                <a href="../basics/router.html">
+            
+                    
+                    Router 路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../basics/controller.html">
+            
+                <a href="../basics/controller.html">
+            
+                    
+                    什么是 Controller
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../basics/service.html">
+            
+                <a href="../basics/service.html">
+            
+                    
+                    Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../basics/schedule.html">
+            
+                <a href="../basics/schedule.html">
+            
+                    
+                    定时任务Schedule
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../basics/extend.html">
+            
+                <a href="../basics/extend.html">
+            
+                    
+                    框架扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../basics/app-start.html">
+            
+                <a href="../basics/app-start.html">
+            
+                    
+                    启动自定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    核心功能
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../core/development.html">
+            
+                <a href="../core/development.html">
+            
+                    
+                    本地开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../core/unittest.html">
+            
+                <a href="../core/unittest.html">
+            
+                    
+                    单元测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../core/deployment.html">
+            
+                <a href="../core/deployment.html">
+            
+                    
+                    应用部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../core/logger.html">
+            
+                <a href="../core/logger.html">
+            
+                    
+                    日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../core/httpclient.html">
+            
+                <a href="../core/httpclient.html">
+            
+                    
+                    HttpClient
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../core/cookie-and-session.html">
+            
+                <a href="../core/cookie-and-session.html">
+            
+                    
+                    Cookie and Session
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../core/cluster-and-ipc.html">
+            
+                <a href="../core/cluster-and-ipc.html">
+            
+                    
+                    多进程模型和进程间通讯
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../core/view.html">
+            
+                <a href="../core/view.html">
+            
+                    
+                    View 模板渲染
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../core/error-handling.html">
+            
+                <a href="../core/error-handling.html">
+            
+                    
+                    异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../core/security.html">
+            
+                <a href="../core/security.html">
+            
+                    
+                    安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="../core/i18n.html">
+            
+                <a href="../core/i18n.html">
+            
+                    
+                    i18n国际化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    教程
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../tutorials/progressive.html">
+            
+                <a href="../tutorials/progressive.html">
+            
+                    
+                    渐进式开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../tutorials/mysql.html">
+            
+                <a href="../tutorials/mysql.html">
+            
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../tutorials/restful.html">
+            
+                <a href="../tutorials/restful.html">
+            
+                    
+                    RESTful API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../tutorials/async-function.html">
+            
+                <a href="../tutorials/async-function.html">
+            
+                    
+                    Async Function
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../core/passport.md">
+            
+                <span>
+            
+                    
+                    # Passport
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    进阶
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="loader.html">
+            
+                <a href="loader.html">
+            
+                    
+                    Loader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="plugin.html">
+            
+                <a href="plugin.html">
+            
+                    
+                    插件开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.3" data-path="framework.html">
+            
+                <a href="framework.html">
+            
+                    
+                    框架开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="cluster-client.html">
+            
+                <a href="cluster-client.html">
+            
+                    
+                    多进程研发模式增强
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="view-plugin.html">
+            
+                <a href="view-plugin.html">
+            
+                    
+                    View 插件开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    社区
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../plugins/">
+            
+                <a href="../plugins/">
+            
+                    
+                    内置插件列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../contributing.md">
+            
+                <span>
+            
+                    
+                    如何贡献
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../resource.html">
+            
+                <a href="../resource.html">
+            
+                    
+                    资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../member_guide.md">
+            
+                <span>
+            
+                    
+                    成员指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../faq.html">
+            
+                <a href="../faq.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >框架开发</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="title-&#x6846;&#x67B6;&#x5F00;&#x53D1;">title: &#x6846;&#x67B6;&#x5F00;&#x53D1;</h2>
+<p>&#x5982;&#x679C;&#x4F60;&#x7684;&#x56E2;&#x961F;&#x9047;&#x5230;&#x8FC7;&#xFF1A;</p>
+<ul>
+<li>&#x7EF4;&#x62A4;&#x5F88;&#x591A;&#x4E2A;&#x9879;&#x76EE;&#xFF0C;&#x6BCF;&#x4E2A;&#x9879;&#x76EE;&#x90FD;&#x9700;&#x8981;&#x590D;&#x5236;&#x62F7;&#x8D1D;&#x8BF8;&#x5982; <code>gulpfile.js</code> / <code>webpack.config.js</code> &#x4E4B;&#x7C7B;&#x7684;&#x6587;&#x4EF6;&#x3002;</li>
+<li>&#x6BCF;&#x4E2A;&#x9879;&#x76EE;&#x90FD;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x4E00;&#x4E9B;&#x76F8;&#x540C;&#x7684;&#x7C7B;&#x5E93;&#xFF0C;&#x76F8;&#x540C;&#x7684;&#x914D;&#x7F6E;&#x3002;</li>
+<li>&#x5728;&#x65B0;&#x9879;&#x76EE;&#x4E2D;&#x5BF9;&#x4E0A;&#x9762;&#x7684;&#x914D;&#x7F6E;&#x505A;&#x4E86;&#x4E00;&#x4E2A;&#x4F18;&#x5316;&#x540E;&#xFF0C;&#x5982;&#x4F55;&#x540C;&#x6B65;&#x5230;&#x5176;&#x4ED6;&#x9879;&#x76EE;&#xFF1F;</li>
+</ul>
+<p>&#x5982;&#x679C;&#x4F60;&#x7684;&#x56E2;&#x961F;&#x9700;&#x8981;&#xFF1A;</p>
+<ul>
+<li>&#x7EDF;&#x4E00;&#x7684;&#x6280;&#x672F;&#x9009;&#x578B;&#xFF0C;&#x6BD4;&#x5982;&#x6570;&#x636E;&#x5E93;&#x3001;&#x6A21;&#x677F;&#x3001;&#x524D;&#x7AEF;&#x6846;&#x67B6;&#x53CA;&#x5404;&#x79CD;&#x4E2D;&#x95F4;&#x4EF6;&#x8BBE;&#x65BD;&#x90FD;&#x9700;&#x8981;&#x9009;&#x578B;&#xFF0C;&#x800C;&#x6846;&#x67B6;&#x5C01;&#x88C5;&#x540E;&#x4FDD;&#x8BC1;&#x5E94;&#x7528;&#x4F7F;&#x7528;&#x4E00;&#x5957;&#x67B6;&#x6784;&#x3002;</li>
+<li>&#x7EDF;&#x4E00;&#x7684;&#x9ED8;&#x8BA4;&#x914D;&#x7F6E;&#xFF0C;&#x5F00;&#x6E90;&#x793E;&#x533A;&#x7684;&#x914D;&#x7F6E;&#x53EF;&#x80FD;&#x4E0D;&#x9002;&#x7528;&#x4E8E;&#x516C;&#x53F8;&#xFF0C;&#x800C;&#x53C8;&#x4E0D;&#x5E0C;&#x671B;&#x5E94;&#x7528;&#x53BB;&#x914D;&#x7F6E;&#x3002;</li>
+<li>&#x7EDF;&#x4E00;&#x7684;&#x90E8;&#x7F72;&#x65B9;&#x6848;&#xFF0C;&#x901A;&#x8FC7;&#x6846;&#x67B6;&#x548C;&#x5E73;&#x53F0;&#x7684;&#x53CC;&#x5411;&#x63A7;&#x5236;&#xFF0C;&#x5E94;&#x7528;&#x53EA;&#x9700;&#x8981;&#x5173;&#x6CE8;&#x81EA;&#x5DF1;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x5177;&#x4F53;&#x67E5;&#x770B;<a href="../core/deployment.html">&#x5E94;&#x7528;&#x90E8;&#x7F72;</a></li>
+<li>&#x7EDF;&#x4E00;&#x7684;&#x4EE3;&#x7801;&#x98CE;&#x683C;&#xFF0C;&#x6846;&#x67B6;&#x4E0D;&#x4EC5;&#x4EC5;&#x89E3;&#x51B3;&#x4EE3;&#x7801;&#x91CD;&#x7528;&#x95EE;&#x9898;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x5BF9;&#x5E94;&#x7528;&#x505A;&#x4E00;&#x5B9A;&#x7EA6;&#x675F;&#xFF0C;&#x4F5C;&#x4E3A;&#x4F01;&#x4E1A;&#x6846;&#x67B6;&#x662F;&#x5F88;&#x5FC5;&#x8981;&#x7684;&#x3002;Egg &#x5728; Koa &#x57FA;&#x7840;&#x4E0A;&#x505A;&#x4E86;&#x5F88;&#x591A;&#x7EA6;&#x5B9A;&#xFF0C;&#x6846;&#x67B6;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <a href="loader.html">Loader</a> &#x81EA;&#x5DF1;&#x5B9A;&#x4E49;&#x4EE3;&#x7801;&#x89C4;&#x5219;&#x3002;</li>
+</ul>
+<p>&#x4E3A;&#x6B64;&#xFF0C;Egg &#x4E3A;&#x56E2;&#x961F;&#x67B6;&#x6784;&#x5E08;&#x548C;&#x6280;&#x672F;&#x8D1F;&#x8D23;&#x4EBA;&#x63D0;&#x4F9B; <code>&#x6846;&#x67B6;&#x5B9A;&#x5236;</code> &#x7684;&#x80FD;&#x529B;&#xFF0C;&#x6846;&#x67B6;&#x662F;&#x4E00;&#x5C42;&#x62BD;&#x8C61;&#xFF0C;&#x53EF;&#x4EE5;&#x57FA;&#x4E8E; Egg &#x53BB;&#x5C01;&#x88C5;&#x4E0A;&#x5C42;&#x6846;&#x67B6;&#xFF0C;&#x5E76;&#x4E14; Egg &#x652F;&#x6301;&#x591A;&#x5C42;&#x7EE7;&#x627F;&#x3002;</p>
+<p>&#x8FD9;&#x6837;&#xFF0C;&#x6574;&#x4E2A;&#x56E2;&#x961F;&#x5C31;&#x53EF;&#x4EE5;&#x9075;&#x5FAA;&#x7EDF;&#x4E00;&#x7684;&#x65B9;&#x6848;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x4E1A;&#x52A1;&#x573A;&#x666F;&#x81EA;&#x884C;&#x4F7F;&#x7528;&#x63D2;&#x4EF6;&#x505A;&#x5DEE;&#x5F02;&#x5316;&#xFF0C;&#x5F53;&#x540E;&#x8005;&#x9A8C;&#x8BC1;&#x4E3A;&#x6700;&#x4F73;&#x5B9E;&#x8DF5;&#x540E;&#xFF0C;&#x5C31;&#x80FD;&#x4E0B;&#x6C89;&#x5230;&#x6846;&#x67B6;&#x4E2D;&#xFF0C;&#x5176;&#x4ED6;&#x9879;&#x76EE;&#x4EC5;&#x9700;&#x7B80;&#x5355;&#x7684;&#x5347;&#x7EA7;&#x4E0B;&#x6846;&#x67B6;&#x7684;&#x7248;&#x672C;&#x5373;&#x53EF;&#x4EAB;&#x53D7;&#x5230;&#x3002;</p>
+<p>&#x5177;&#x4F53;&#x53EF;&#x4EE5;&#x53C2;&#x89C1;<a href="../tutorials/progressive.html">&#x6E10;&#x8FDB;&#x5F0F;&#x5F00;&#x53D1;</a>&#x3002;</p>
+<h2 id="&#x6846;&#x67B6;&#x4E0E;&#x591A;&#x8FDB;&#x7A0B;">&#x6846;&#x67B6;&#x4E0E;&#x591A;&#x8FDB;&#x7A0B;</h2>
+<p>&#x6846;&#x67B6;&#x7684;&#x6269;&#x5C55;&#x662F;&#x548C;&#x591A;&#x8FDB;&#x7A0B;&#x6A21;&#x578B;&#x6709;&#x5173;&#x7684;&#xFF0C;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x77E5;&#x9053;<a href="../core/cluster-and-ipc.html">&#x591A;&#x8FDB;&#x7A0B;&#x6A21;&#x578B;</a>&#xFF0C;&#x4E5F;&#x77E5;&#x9053; Agent Worker &#x548C; App Worker &#x7684;&#x533A;&#x522B;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x6269;&#x5C55;&#x7684;&#x7C7B;&#x4E5F;&#x6709;&#x4E24;&#x4E2A; Agent &#x548C; Application&#xFF0C;&#x800C;&#x8FD9;&#x4E24;&#x4E2A;&#x7C7B;&#x7684; API &#x4E0D;&#x4E00;&#x5B9A;&#x76F8;&#x540C;&#x3002;</p>
+<p>&#x5728; Agent Worker &#x542F;&#x52A8;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x5B9E;&#x4F8B;&#x5316; Agent&#xFF0C;&#x800C;&#x5728; App Worker &#x542F;&#x52A8;&#x65F6;&#x4F1A;&#x5B9E;&#x4F8B;&#x5316; Application&#xFF0C;&#x8FD9;&#x4E24;&#x4E2A;&#x7C7B;&#x53C8;&#x540C;&#x65F6;&#x7EE7;&#x627F; <a href="https://github.com/eggjs/egg-core" _target="blank">EggCore</a>&#x3002;</p>
+<p>EggCore &#x53EF;&#x4EE5;&#x770B;&#x505A; Koa Application &#x7684;&#x5347;&#x7EA7;&#x7248;&#xFF0C;&#x9ED8;&#x8BA4;&#x5185;&#x7F6E; <a href="loader.html">Loader</a>&#x3001;<a href="../basics/router.html">Router</a> &#x53CA;&#x5E94;&#x7528;&#x5F02;&#x6B65;&#x542F;&#x52A8;&#x7B49;&#x529F;&#x80FD;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x505A;&#x662F;&#x652F;&#x6301; Loader &#x7684; Koa&#x3002;</p>
+<pre><code>       Koa Application
+              ^
+           EggCore
+              ^
+       &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;
+       &#x2502;              &#x2502;
+   Egg Agent      Egg Application
+      ^               ^
+ agent worker     app worker
+</code></pre><h2 id="&#x5982;&#x4F55;&#x5B9A;&#x5236;&#x4E00;&#x4E2A;&#x6846;&#x67B6;">&#x5982;&#x4F55;&#x5B9A;&#x5236;&#x4E00;&#x4E2A;&#x6846;&#x67B6;</h2>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x901A;&#x8FC7; [egg-init] &#x9009;&#x62E9; <a href="https://github.com/eggjs/egg-boilerplate-framework" _target="blank">framework</a> &#x811A;&#x624B;&#x67B6;&#x6765;&#x5FEB;&#x901F;&#x4E0A;&#x624B;&#x3002;</p>
+<pre><code class="lang-bash">$ egg-init my-framework --type=framework
+$ <span class="hljs-built_in">cd</span> my-framework
+$ npm i
+$ npm <span class="hljs-built_in">test</span>
+</code></pre>
+<p>&#x4F46;&#x540C;&#x6837;&#xFF0C;&#x4E3A;&#x4E86;&#x8BA9;&#x5927;&#x5BB6;&#x4E86;&#x89E3;&#x7EC6;&#x8282;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x6211;&#x4EEC;&#x8FD8;&#x662F;&#x624B;&#x628A;&#x624B;&#x6765;&#x5B9A;&#x5236;&#x4E00;&#x4E2A;&#x6846;&#x67B6;&#xFF0C;&#x5177;&#x4F53;&#x4EE3;&#x7801;&#x53EF;&#x4EE5;&#x67E5;&#x770B;<a href="https://github.com/eggjs/examples/tree/master/framework" _target="blank">&#x793A;&#x4F8B;</a></p>
+<h3 id="&#x6846;&#x67B6;-api">&#x6846;&#x67B6; API</h3>
+<p>Egg &#x6846;&#x67B6;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E9B; API&#xFF0C;&#x6240;&#x6709;&#x7EE7;&#x627F;&#x7684;&#x6846;&#x67B6;&#x90FD;&#x9700;&#x8981;&#x63D0;&#x4F9B;&#xFF0C;&#x53EA;&#x589E;&#x4E0D;&#x51CF;&#x3002;&#x8FD9;&#x4E9B; API &#x57FA;&#x672C;&#x90FD;&#x6709; Agent &#x548C; Application &#x4E24;&#x4EFD;&#x3002;</p>
+<h4 id="eggstartcluster"><code>egg.startCluster</code></h4>
+<p>Egg &#x7684;&#x591A;&#x8FDB;&#x7A0B;&#x542F;&#x52A8;&#x5668;&#xFF0C;&#x7531;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x6765;&#x542F;&#x52A8; Master&#xFF0C;&#x4E3B;&#x8981;&#x7684;&#x529F;&#x80FD;&#x5B9E;&#x73B0;&#x5728; <a href="https://github.com/eggjs/egg-cluster" _target="blank">egg-cluster</a> &#x4E0A;&#x3002;&#x6240;&#x4EE5;&#x76F4;&#x63A5;&#x4F7F;&#x7528; EggCore &#x8FD8;&#x662F;&#x5355;&#x8FDB;&#x7A0B;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x800C; Egg &#x5B9E;&#x73B0;&#x4E86;&#x591A;&#x8FDB;&#x7A0B;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> startCluster = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;egg&apos;</span>).startCluster;
+startCluster({
+  <span class="hljs-comment">// &#x5E94;&#x7528;&#x7684;&#x4EE3;&#x7801;&#x76EE;&#x5F55;</span>
+  baseDir: <span class="hljs-string">&apos;/path/to/app&apos;</span>,
+  <span class="hljs-comment">// &#x9700;&#x8981;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x6765;&#x6307;&#x5B9A;&#x6846;&#x67B6;&#x76EE;&#x5F55;</span>
+  framework: <span class="hljs-string">&apos;/path/to/framework&apos;</span>,
+}, () =&gt; {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;app started&apos;</span>);
+});
+</code></pre>
+<p>&#x6240;&#x6709;&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x67E5;&#x770B; <a href="https://github.com/eggjs/egg-cluster#options" _target="blank">egg-cluster</a></p>
+<h4 id="eggapplication-&#x548C;-eggagent"><code>egg.Application</code> &#x548C; <code>egg.Agent</code></h4>
+<p>&#x8FDB;&#x7A0B;&#x4E2D;&#x7684;&#x552F;&#x4E00;&#x5355;&#x4F8B;&#xFF0C;&#x4F46; Application &#x548C; Agent &#x5B58;&#x5728;&#x4E00;&#x5B9A;&#x5DEE;&#x5F02;&#x3002;&#x5982;&#x679C;&#x6846;&#x67B6;&#x7EE7;&#x627F;&#x4E8E; Egg&#xFF0C;&#x4F1A;&#x5B9A;&#x5236;&#x8FD9;&#x4E24;&#x4E2A;&#x7C7B;&#xFF0C;&#x90A3; framework &#x5E94;&#x8BE5; export &#x8FD9;&#x4E24;&#x4E2A;&#x7C7B;&#x3002;</p>
+<h4 id="eggappworkerloader-&#x548C;-eggagentworkerloader"><code>egg.AppWorkerLoader</code> &#x548C; <code>egg.AgentWorkerLoader</code></h4>
+<p>&#x6846;&#x67B6;&#x4E5F;&#x5B58;&#x5728;&#x5B9A;&#x5236; Loader &#x7684;&#x573A;&#x666F;&#xFF0C;&#x8986;&#x76D6;&#x539F;&#x65B9;&#x6CD5;&#x6216;&#x8005;&#x65B0;&#x52A0;&#x8F7D;&#x76EE;&#x5F55;&#x90FD;&#x9700;&#x8981;&#x63D0;&#x4F9B;&#x81EA;&#x5DF1;&#x7684; Loader&#xFF0C;&#x800C;&#x4E14;&#x5FC5;&#x987B;&#x8981;&#x7EE7;&#x627F; Egg &#x7684; Loader&#x3002;</p>
+<h3 id="&#x6846;&#x67B6;&#x7EE7;&#x627F;">&#x6846;&#x67B6;&#x7EE7;&#x627F;</h3>
+<p>&#x6846;&#x67B6;&#x652F;&#x6301;&#x7EE7;&#x627F;&#x5173;&#x7CFB;&#xFF0C;&#x53EF;&#x4EE5;&#x628A;&#x6846;&#x67B6;&#x6BD4;&#x4F5C;&#x4E00;&#x4E2A;&#x7C7B;&#xFF0C;&#x90A3;&#x4E48;&#x57FA;&#x7C7B;&#x5C31;&#x662F; Egg &#x6846;&#x67B6;&#xFF0C;&#x5982;&#x679C;&#x60F3;&#x5BF9; Egg &#x505A;&#x6269;&#x5C55;&#x5C31;&#x7EE7;&#x627F;&#x3002;</p>
+<p>&#x9996;&#x5148;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x6846;&#x67B6;&#x9700;&#x8981;&#x5B9E;&#x73B0; Egg &#x6240;&#x6709;&#x7684; API</p>
+<pre><code class="lang-js"><span class="hljs-comment">// package.json</span>
+{
+  <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;yadan&quot;</span>,
+  <span class="hljs-string">&quot;dependencies&quot;</span>: {
+    <span class="hljs-string">&quot;egg&quot;</span>: <span class="hljs-string">&quot;^1.0.0&quot;</span>
+  }
+}
+
+<span class="hljs-comment">// index.js</span>
+<span class="hljs-keyword">const</span> egg = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;egg&apos;</span>);
+<span class="hljs-comment">// &#x5C06;&#x6240;&#x6709;&#x7684; API clone &#x4E00;&#x4EFD;</span>
+<span class="hljs-built_in">Object</span>.assign(exports, egg);
+</code></pre>
+<p>&#x81EA;&#x5B9A;&#x4E49; Application</p>
+<pre><code class="lang-js"><span class="hljs-comment">// index.js</span>
+<span class="hljs-comment">// &#x8986;&#x76D6;&#x4E86; Egg &#x7684; Application</span>
+exports.Application = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./lib/application.js&apos;</span>);
+
+<span class="hljs-comment">// lib/application.js</span>
+<span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;path&apos;</span>);
+<span class="hljs-keyword">const</span> Application = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;egg&apos;</span>).Application;
+<span class="hljs-keyword">const</span> EGG_PATH = <span class="hljs-built_in">Symbol</span>.for(<span class="hljs-string">&apos;egg#eggPath&apos;</span>);
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">YadanApplication</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Application</span> </span>{
+  get [EGG_PATH]() {
+    <span class="hljs-comment">// &#x8FD4;&#x56DE; framework &#x8DEF;&#x5F84;</span>
+    <span class="hljs-keyword">return</span> path.dirname(__dirname);
+  }
+}
+<span class="hljs-built_in">module</span>.exports = YadanApplication;
+</code></pre>
+<p>&#x542F;&#x52A8;&#x65F6;&#x9700;&#x8981;&#x6307;&#x5B9A;&#x6846;&#x67B6;&#x540D;&#xFF08;&#x5728; <code>package.json</code> &#x6307;&#x5B9A; <code>egg.framework</code>&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; egg&#xFF09;&#xFF0C;Loader &#x5C06;&#x4ECE; <code>node_modules</code> &#x627E;&#x6307;&#x5B9A;&#x6A21;&#x5757;&#x4F5C;&#x4E3A;&#x6846;&#x67B6;&#xFF0C;&#x5E76;&#x52A0;&#x8F7D;&#x5176; export &#x7684; Application&#x3002;</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;scripts&quot;</span>: {
+    <span class="hljs-string">&quot;dev&quot;</span>: <span class="hljs-string">&quot;egg-bin dev&quot;</span>
+  },
+  <span class="hljs-string">&quot;egg&quot;</span>: {
+    <span class="hljs-string">&quot;framework&quot;</span>: <span class="hljs-string">&quot;yadan&quot;</span>
+  }
+}
+</code></pre>
+<p>&#x73B0;&#x5728; yadan &#x6846;&#x67B6;&#x76EE;&#x5F55;&#x5DF2;&#x7ECF;&#x662F;&#x4E00;&#x4E2A; loadUnit&#xFF0C;&#x90A3;&#x4E48;&#x76F8;&#x5E94;&#x76EE;&#x5F55;&#x548C;&#x6587;&#x4EF6;&#xFF08;&#x5982; <code>app</code> &#x548C; <code>config</code>&#xFF09;&#x90FD;&#x4F1A;&#x88AB;&#x52A0;&#x8F7D;&#xFF0C;&#x67E5;&#x770B;<a href="loader.html">&#x6846;&#x67B6;&#x88AB;&#x52A0;&#x8F7D;&#x7684;&#x6587;&#x4EF6;</a>&#x3002;</p>
+<h3 id="&#x6846;&#x67B6;&#x7EE7;&#x627F;&#x539F;&#x7406;">&#x6846;&#x67B6;&#x7EE7;&#x627F;&#x539F;&#x7406;</h3>
+<p>&#x4F7F;&#x7528; <code>Symbol.for(&apos;egg#eggPath&apos;)</code> &#x6765;&#x6307;&#x5B9A;&#x5F53;&#x524D;&#x6846;&#x67B6;&#x7684;&#x8DEF;&#x5F84;&#xFF0C;&#x76EE;&#x7684;&#x662F;&#x8BA9; Loader &#x80FD;&#x63A2;&#x6D4B;&#x5230;&#x6846;&#x67B6;&#x7684;&#x8DEF;&#x5F84;&#x3002;&#x4E3A;&#x4EC0;&#x4E48;&#x8FD9;&#x6837;&#x5B9E;&#x73B0;&#x5462;&#xFF1F;&#x5176;&#x5B9E;&#x6700;&#x7B80;&#x5355;&#x7684;&#x65B9;&#x5F0F;&#x662F;&#x5C06;&#x6846;&#x67B6;&#x7684;&#x8DEF;&#x5F84;&#x4F20;&#x9012;&#x7ED9; Loader&#xFF0C;&#x4F46;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5B9E;&#x73B0;&#x591A;&#x7EA7;&#x6846;&#x67B6;&#x7EE7;&#x627F;&#xFF0C;&#x6BCF;&#x4E00;&#x5C42;&#x6846;&#x67B6;&#x90FD;&#x8981;&#x63D0;&#x4F9B;&#x81EA;&#x5DF1;&#x7684;&#x5F53;&#x524D;&#x8DEF;&#x5F84;&#xFF0C;&#x5E76;&#x4E14;&#x9700;&#x8981;&#x7EE7;&#x627F;&#x5B58;&#x5728;&#x5148;&#x540E;&#x987A;&#x5E8F;&#x3002;</p>
+<p>&#x73B0;&#x5728;&#x7684;&#x5B9E;&#x73B0;&#x65B9;&#x6848;&#x662F;&#x57FA;&#x4E8E;&#x7C7B;&#x7EE7;&#x627F;&#x7684;&#xFF0C;&#x6BCF;&#x4E00;&#x5C42;&#x6846;&#x67B6;&#x90FD;&#x5FC5;&#x987B;&#x7EE7;&#x627F;&#x4E0A;&#x4E00;&#x5C42;&#x6846;&#x67B6;&#x5E76;&#x4E14;&#x6307;&#x5B9A; eggPath&#xFF0C;&#x7136;&#x540E;&#x904D;&#x5386;&#x539F;&#x578B;&#x94FE;&#x5C31;&#x80FD;&#x83B7;&#x53D6;&#x6BCF;&#x4E00;&#x5C42;&#x7684;&#x6846;&#x67B6;&#x8DEF;&#x5F84;&#x4E86;&#x3002;</p>
+<p>&#x6BD4;&#x5982;&#x6709;&#x4E09;&#x5C42;&#x6846;&#x67B6;&#xFF1A;&#x90E8;&#x95E8;&#x6846;&#x67B6;&#xFF08;department&#xFF09;&gt; &#x4F01;&#x4E1A;&#x6846;&#x67B6;&#xFF08;enterprise&#xFF09;&gt; Egg</p>
+<pre><code class="lang-js"><span class="hljs-comment">// enterprise</span>
+<span class="hljs-keyword">const</span> Application = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;egg&apos;</span>).Application;
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Enterprise</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Application</span> </span>{
+  get [EGG_PATH]() {
+    <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;/path/to/enterprise&apos;</span>;
+  }
+}
+<span class="hljs-comment">// &#x81EA;&#x5B9A;&#x4E49;&#x6A21;&#x5757; Application</span>
+exports.Application = Enterprise;
+
+<span class="hljs-comment">// department</span>
+<span class="hljs-keyword">const</span> Application = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;enterprise&apos;</span>).Application;
+<span class="hljs-comment">// &#x7EE7;&#x627F; enterprise &#x7684; Application</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">department</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Application</span> </span>{
+  get [EGG_PATH]() {
+    <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;/path/to/department&apos;</span>;
+  }
+}
+
+<span class="hljs-comment">// &#x542F;&#x52A8;&#x9700;&#x8981;&#x4F20;&#x5165; department &#x7684;&#x6846;&#x67B6;&#x8DEF;&#x5F84;&#x624D;&#x80FD;&#x83B7;&#x53D6; Application</span>
+<span class="hljs-keyword">const</span> Application = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;department&apos;</span>).Application;
+<span class="hljs-keyword">const</span> app = <span class="hljs-keyword">new</span> Application();
+app.ready();
+</code></pre>
+<p>&#x4EE5;&#x4E0A;&#x5747;&#x662F;&#x4F2A;&#x4EE3;&#x7801;&#xFF0C;&#x4E3A;&#x4E86;&#x8BE6;&#x7EC6;&#x8BF4;&#x660E;&#x6846;&#x67B6;&#x8DEF;&#x5F84;&#x7684;&#x52A0;&#x8F7D;&#x8FC7;&#x7A0B;&#xFF0C;&#x4E0D;&#x8FC7; Egg &#x5DF2;&#x7ECF;&#x5728;<a href="../core/development.html">&#x672C;&#x5730;&#x5F00;&#x53D1;</a>&#x548C;<a href="../core/deployment.html">&#x5E94;&#x7528;&#x90E8;&#x7F72;</a>&#x63D0;&#x4F9B;&#x4E86;&#x5F88;&#x597D;&#x7684;&#x5DE5;&#x5177;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x81EA;&#x5DF1;&#x5B9E;&#x73B0;&#x3002;</p>
+<h3 id="&#x81EA;&#x5B9A;&#x4E49;-agent">&#x81EA;&#x5B9A;&#x4E49; Agent</h3>
+<p>&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x81EA;&#x5B9A;&#x4E49;&#x4E86; Application&#xFF0C;&#x56E0;&#x4E3A; Egg &#x662F;&#x591A;&#x8FDB;&#x7A0B;&#x6A21;&#x578B;&#xFF0C;&#x6240;&#x4EE5;&#x8FD8;&#x9700;&#x8981;&#x5B9A;&#x4E49; Agent&#xFF0C;&#x539F;&#x7406;&#x662F;&#x4E00;&#x6837;&#x7684;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// index.js</span>
+exports.Agent = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./lib/agent.js&apos;</span>);
+
+<span class="hljs-comment">// lib/agent.js</span>
+<span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;path&apos;</span>);
+<span class="hljs-keyword">const</span> Agent = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;egg&apos;</span>).Agent;
+<span class="hljs-keyword">const</span> EGG_PATH = <span class="hljs-built_in">Symbol</span>.for(<span class="hljs-string">&apos;egg#eggPath&apos;</span>);
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">YadanAgent</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Agent</span> </span>{
+  get [EGG_PATH]() {
+    <span class="hljs-comment">// &#x8FD4;&#x56DE; framework &#x8DEF;&#x5F84;</span>
+    <span class="hljs-keyword">return</span> path.dirname(__dirname);
+  }
+}
+<span class="hljs-built_in">module</span>.exports = YadanAgent;
+</code></pre>
+<p><strong>&#x4F46;&#x56E0;&#x4E3A; Agent &#x548C; Application &#x662F;&#x4E24;&#x4E2A;&#x5B9E;&#x4F8B;&#xFF0C;&#x6240;&#x4EE5; API &#x6709;&#x53EF;&#x80FD;&#x4E0D;&#x4E00;&#x81F4;&#x3002;</strong></p>
+<h3 id="&#x81EA;&#x5B9A;&#x4E49;-loader">&#x81EA;&#x5B9A;&#x4E49; Loader</h3>
+<p>Loader &#x5E94;&#x7528;&#x542F;&#x52A8;&#x7684;&#x6838;&#x5FC3;&#xFF0C;&#x4F7F;&#x7528;&#x5B83;&#x8FD8;&#x80FD;&#x89C4;&#x8303;&#x5E94;&#x7528;&#x4EE3;&#x7801;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x57FA;&#x4E8E;&#x8FD9;&#x4E2A;&#x7C7B;&#x6269;&#x5C55;&#x66F4;&#x591A;&#x529F;&#x80FD;&#xFF0C;&#x6BD4;&#x5982;&#x52A0;&#x8F7D;&#x6570;&#x636E;&#x4EE3;&#x7801;&#x3002;&#x6269;&#x5C55; Loader &#x8FD8;&#x80FD;&#x8986;&#x76D6;&#x9ED8;&#x8BA4;&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x6216;&#x8C03;&#x6574;&#x73B0;&#x6709;&#x7684;&#x52A0;&#x8F7D;&#x987A;&#x5E8F;&#x7B49;&#x3002;</p>
+<p>&#x81EA;&#x5B9A;&#x4E49; Loader &#x4E5F;&#x662F;&#x7528; <code>Symbol.for(&apos;egg#loader&apos;)</code> &#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x4E3B;&#x8981;&#x7684;&#x539F;&#x56E0;&#x8FD8;&#x662F;&#x4F7F;&#x7528;&#x539F;&#x578B;&#x94FE;&#xFF0C;&#x4E0A;&#x5C42;&#x6846;&#x67B6;&#x53EF;&#x8986;&#x76D6;&#x5E95;&#x5C42; Loader&#xFF0C;&#x5728;&#x4E0A;&#x9762;&#x4F8B;&#x5B50;&#x7684;&#x57FA;&#x7840;&#x4E0A;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// index.js</span>
+<span class="hljs-comment">// &#x81EA;&#x5B9A;&#x4E49;&#x7684; Loader &#x4E5F;&#x9700;&#x8981; export&#xFF0C;&#x4E0A;&#x5C42;&#x6846;&#x67B6;&#x9700;&#x8981;&#x57FA;&#x4E8E;&#x8FD9;&#x4E2A;&#x6269;&#x5C55;</span>
+exports.AppWorkerLoader = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./lib/app_worker_loader.js&apos;</span>);
+
+<span class="hljs-comment">// lib/application.js</span>
+<span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;path&apos;</span>);
+<span class="hljs-keyword">const</span> Application = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;egg&apos;</span>).Application;
+<span class="hljs-keyword">const</span> AppWorkerLoader = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./app_worker_loader&apos;</span>);
+<span class="hljs-keyword">const</span> EGG_PATH = <span class="hljs-built_in">Symbol</span>.for(<span class="hljs-string">&apos;egg#eggPath&apos;</span>);
+<span class="hljs-keyword">const</span> EGG_LOADER = <span class="hljs-built_in">Symbol</span>.for(<span class="hljs-string">&apos;egg#loader&apos;</span>);
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">YadanApplication</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Application</span> </span>{
+  get [EGG_PATH]() {
+    <span class="hljs-keyword">return</span> path.dirname(__dirname);
+  }
+  <span class="hljs-comment">// &#x8986;&#x76D6; Egg &#x7684; Loader&#xFF0C;&#x542F;&#x52A8;&#x65F6;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A; Loader</span>
+  get [EGG_LOADER]() {
+    <span class="hljs-keyword">return</span> AppWorkerLoader;
+  }
+}
+<span class="hljs-built_in">module</span>.exports = YadanApplication;
+
+<span class="hljs-comment">// lib/app_worker_loader.js</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">YadanAppWorkerLoader</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">AppWorkerLoader</span> </span>{
+  load() {
+    <span class="hljs-keyword">super</span>.load();
+    <span class="hljs-comment">// &#x81EA;&#x5DF1;&#x6269;&#x5C55;</span>
+  }
+}
+<span class="hljs-built_in">module</span>.exports = YadanAppWorkerLoader;
+</code></pre>
+<p>AgentWorkerLoader &#x6269;&#x5C55;&#x4E5F;&#x7C7B;&#x4F3C;&#xFF0C;&#x8FD9;&#x91CC;&#x4E0D;&#x518D;&#x4E3E;&#x4F8B;&#x3002;AgentWorkerLoader &#x52A0;&#x8F7D;&#x7684;&#x6587;&#x4EF6;&#x53EF;&#x4EE5;&#x4E8E; AppWorkerLoader &#x4E0D;&#x540C;&#xFF0C;&#x6BD4;&#x5982; &#x9ED8;&#x8BA4;&#x52A0;&#x8F7D;&#x65F6;&#xFF0C;Egg &#x7684; AppWorkerLoader &#x4F1A;&#x52A0;&#x8F7D; <code>app.js</code> &#x800C; AgentWorkerLoader &#x52A0;&#x8F7D;&#x7684;&#x662F; <code>agent.js</code>&#x3002;</p>
+<h2 id="&#x6846;&#x67B6;&#x542F;&#x52A8;&#x539F;&#x7406;">&#x6846;&#x67B6;&#x542F;&#x52A8;&#x539F;&#x7406;</h2>
+<p>&#x6846;&#x67B6;&#x542F;&#x52A8;&#x5728;<a href="../core/cluster-and-ipc.html">&#x591A;&#x8FDB;&#x7A0B;&#x6A21;&#x578B;</a>&#x3001;<a href="loader.html">Loader</a>&#x3001;<a href="plugin.html">&#x63D2;&#x4EF6;</a>&#x4E2D;&#x6216;&#x591A;&#x6216;&#x5C11;&#x90FD;&#x63D0;&#x8FC7;&#xFF0C;&#x8FD9;&#x91CC;&#x7CFB;&#x7EDF;&#x7684;&#x68B3;&#x7406;&#x4E0B;&#x542F;&#x52A8;&#x987A;&#x5E8F;&#x3002;</p>
+<ul>
+<li>startCluster &#x542F;&#x52A8;&#x4F20;&#x5165; <code>baseDir</code> &#x548C; <code>framework</code>&#xFF0C;Master &#x8FDB;&#x7A0B;&#x542F;&#x52A8;</li>
+<li>Master &#x5148; fork Agent Worker<ul>
+<li>&#x6839;&#x636E; framework &#x627E;&#x5230;&#x6846;&#x67B6;&#x76EE;&#x5F55;&#xFF0C;&#x5B9E;&#x4F8B;&#x5316;&#x8BE5;&#x6846;&#x67B6;&#x7684; Agent &#x7C7B;</li>
+<li>Agent &#x627E;&#x5230;&#x5B9A;&#x4E49;&#x7684; AgentWorkerLoader&#xFF0C;&#x5F00;&#x59CB;&#x8FDB;&#x884C;&#x52A0;&#x8F7D;</li>
+<li>AgentWorkerLoader&#xFF0C;&#x5F00;&#x59CB;&#x8FDB;&#x884C;&#x52A0;&#x8F7D; &#x6574;&#x4E2A;&#x52A0;&#x8F7D;&#x8FC7;&#x7A0B;&#x662F;&#x540C;&#x6B65;&#x7684;&#xFF0C;&#x6309; plugin &gt; config &gt; extend &gt; <code>agent.js</code> &gt; &#x5176;&#x4ED6;&#x6587;&#x4EF6;&#x987A;&#x5E8F;&#x52A0;&#x8F7D;</li>
+<li><code>agent.js</code> &#x53EF;&#x81EA;&#x5B9A;&#x4E49;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x652F;&#x6301;&#x5F02;&#x6B65;&#x542F;&#x52A8;&#xFF0C;&#x5982;&#x679C;&#x5B9A;&#x4E49;&#x4E86; beforeStart &#x4F1A;&#x7B49;&#x5F85;&#x6267;&#x884C;&#x5B8C;&#x6210;&#x4E4B;&#x540E;&#x901A;&#x77E5; Master &#x542F;&#x52A8;&#x5B8C;&#x6210;&#x3002;</li>
+</ul>
+</li>
+<li>Master &#x5F97;&#x5230; Agent Worker &#x542F;&#x52A8;&#x6210;&#x529F;&#x7684;&#x6D88;&#x606F;&#xFF0C;&#x4F7F;&#x7528; cluster fork App Worker<ul>
+<li>App Worker &#x6709;&#x591A;&#x4E2A;&#x8FDB;&#x7A0B;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x51E0;&#x4E2A;&#x8FDB;&#x7A0B;&#x662F;&#x5E76;&#x884C;&#x542F;&#x52A8;&#x7684;&#xFF0C;&#x4F46;&#x6267;&#x884C;&#x903B;&#x8F91;&#x662F;&#x4E00;&#x81F4;&#x7684;</li>
+<li>&#x5355;&#x4E2A; App Worker &#x548C; Agent &#x7C7B;&#x4F3C;&#xFF0C;&#x901A;&#x8FC7; framework &#x627E;&#x5230;&#x6846;&#x67B6;&#x76EE;&#x5F55;&#xFF0C;&#x5B9E;&#x4F8B;&#x5316;&#x8BE5;&#x6846;&#x67B6;&#x7684; Application &#x7C7B;</li>
+<li>Application &#x627E;&#x5230; AppWorkerLoader&#xFF0C;&#x5F00;&#x59CB;&#x8FDB;&#x884C;&#x52A0;&#x8F7D;&#xFF0C;&#x987A;&#x5E8F;&#x4E5F;&#x662F;&#x7C7B;&#x4F3C;&#x7684;&#xFF0C;&#x4F1A;&#x5F02;&#x6B65;&#x7B49;&#x5F85;&#xFF0C;&#x5B8C;&#x6210;&#x540E;&#x901A;&#x77E5; Master &#x542F;&#x52A8;&#x5B8C;&#x6210;</li>
+</ul>
+</li>
+<li>Master &#x7B49;&#x5F85;&#x591A;&#x4E2A; App Worker &#x7684;&#x6210;&#x529F;&#x6D88;&#x606F;&#x540E;&#x542F;&#x52A8;&#x5B8C;&#x6210;&#xFF0C;&#x80FD;&#x5BF9;&#x5916;&#x63D0;&#x4F9B;&#x670D;&#x52A1;&#x3002;</li>
+</ul>
+<h2 id="&#x6846;&#x67B6;&#x6D4B;&#x8BD5;">&#x6846;&#x67B6;&#x6D4B;&#x8BD5;</h2>
+<p>&#x5728;&#x770B;&#x4E0B;&#x6587;&#x4E4B;&#x524D;&#x8BF7;&#x5148;&#x67E5;&#x770B;<a href="../core/unittest.html">&#x5355;&#x5143;&#x6D4B;&#x8BD5;&#x7AE0;&#x8282;</a>&#xFF0C;&#x6846;&#x67B6;&#x6D4B;&#x8BD5;&#x7684;&#x5927;&#x90E8;&#x5206;&#x4F7F;&#x7528;&#x573A;&#x666F;&#x548C;&#x5E94;&#x7528;&#x7C7B;&#x4F3C;&#x3002;</p>
+<h3 id="&#x521D;&#x59CB;&#x5316;">&#x521D;&#x59CB;&#x5316;</h3>
+<p>&#x6846;&#x67B6;&#x7684;&#x521D;&#x59CB;&#x5316;&#x65B9;&#x5F0F;&#x6709;&#x4E00;&#x5B9A;&#x5DEE;&#x5F02;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> mock = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;egg-mock&apos;</span>);
+describe(<span class="hljs-string">&apos;test/index.test.js&apos;</span>, () =&gt; {
+  <span class="hljs-keyword">let</span> app;
+  before(() =&gt; {
+    app = mock.app({
+      <span class="hljs-comment">// &#x8F6C;&#x6362;&#x6210; test/fixtures/apps/example</span>
+      baseDir: <span class="hljs-string">&apos;apps/example&apos;</span>,
+      <span class="hljs-comment">// &#x91CD;&#x8981;&#xFF1A;&#x914D;&#x7F6E; framework</span>
+      framework: <span class="hljs-literal">true</span>,
+    });
+    <span class="hljs-keyword">return</span> app.ready();
+  });
+
+  after(() =&gt; app.close());
+  afterEach(mock.restore);
+
+  it(<span class="hljs-string">&apos;should success&apos;</span>, () =&gt; {
+    <span class="hljs-keyword">return</span> app.httpRequest()
+    .get(<span class="hljs-string">&apos;/&apos;</span>)
+    .expect(<span class="hljs-number">200</span>);
+  });
+});
+</code></pre>
+<ul>
+<li>&#x6846;&#x67B6;&#x548C;&#x5E94;&#x7528;&#x4E0D;&#x540C;&#xFF0C;&#x5E94;&#x7528;&#x6D4B;&#x8BD5;&#x5F53;&#x524D;&#x4EE3;&#x7801;&#xFF0C;&#x800C;&#x6846;&#x67B6;&#x662F;&#x6D4B;&#x8BD5;&#x6846;&#x67B6;&#x4EE3;&#x7801;&#xFF0C;&#x6240;&#x4EE5;&#x4F1A;&#x9891;&#x7E41;&#x66F4;&#x6362; baseDir &#x8FBE;&#x5230;&#x6D4B;&#x8BD5;&#x5404;&#x79CD;&#x5E94;&#x7528;&#x7684;&#x76EE;&#x7684;&#x3002;</li>
+<li>baseDir &#x6709;&#x6F5C;&#x89C4;&#x5219;&#xFF0C;&#x6211;&#x4EEC;&#x4E00;&#x822C;&#x4F1A;&#x628A;&#x6D4B;&#x8BD5;&#x7684;&#x5E94;&#x7528;&#x4EE3;&#x7801;&#x653E;&#x5230; <code>test/fixtures</code> &#x4E0B;&#xFF0C;&#x6240;&#x4EE5;&#x81EA;&#x52A8;&#x8865;&#x5168;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F20;&#x5165;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#x3002;</li>
+<li>&#x5FC5;&#x987B;&#x6307;&#x5B9A; <code>framework: true</code>&#xFF0C;&#x544A;&#x77E5;&#x5F53;&#x524D;&#x8DEF;&#x5F84;&#x4E3A;&#x6846;&#x67B6;&#x8DEF;&#x5F84;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F20;&#x5165;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#x3002;</li>
+<li>app &#x5E94;&#x7528;&#x9700;&#x8981;&#x5728; before &#x7B49;&#x5F85; ready&#xFF0C;&#x4E0D;&#x7136;&#x5728; testcase &#x91CC;&#x65E0;&#x6CD5;&#x83B7;&#x53D6;&#x90E8;&#x5206; API</li>
+<li>&#x6846;&#x67B6;&#x5728;&#x6D4B;&#x8BD5;&#x5B8C;&#x6BD5;&#x540E;&#x9700;&#x8981;&#x4F7F;&#x7528; <code>app.close()</code> &#x5173;&#x95ED;&#xFF0C;&#x4E0D;&#x7136;&#x4F1A;&#x6709;&#x9057;&#x7559;&#x95EE;&#x9898;&#xFF0C;&#x6BD4;&#x5982;&#x65E5;&#x5FD7;&#x5199;&#x6587;&#x4EF6;&#x672A;&#x5173;&#x95ED;&#x5BFC;&#x81F4; fd &#x4E0D;&#x591F;&#x3002;</li>
+</ul>
+<h3 id="&#x7F13;&#x5B58;">&#x7F13;&#x5B58;</h3>
+<p>&#x5728;&#x6D4B;&#x8BD5;&#x591A;&#x73AF;&#x5883;&#x573A;&#x666F;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x5230; cache &#x53C2;&#x6570;&#xFF0C;&#x56E0;&#x4E3A; <code>mm.app</code> &#x9ED8;&#x8BA4;&#x6709;&#x7F13;&#x5B58;&#xFF0C;&#x5F53;&#x7B2C;&#x4E00;&#x6B21;&#x52A0;&#x8F7D;&#x8FC7;&#x540E;&#x518D;&#x6B21;&#x52A0;&#x8F7D;&#x4F1A;&#x76F4;&#x63A5;&#x8BFB;&#x53D6;&#x7F13;&#x5B58;&#xFF0C;&#x90A3;&#x4E48;&#x8BBE;&#x7F6E;&#x7684;&#x73AF;&#x5883;&#x4E5F;&#x4E0D;&#x4F1A;&#x751F;&#x6548;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> mock = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;egg-mock&apos;</span>);
+describe(<span class="hljs-string">&apos;/test/index.test.js&apos;</span>, () =&gt; {
+  <span class="hljs-keyword">let</span> app;
+  afterEach(() =&gt; app.close());
+
+  it(<span class="hljs-string">&apos;should test on local&apos;</span>, () =&gt; {
+    mock.env(<span class="hljs-string">&apos;local&apos;</span>);
+    app = mock.app({
+      baseDir: <span class="hljs-string">&apos;apps/example&apos;</span>,
+      framework: <span class="hljs-literal">true</span>,
+      cache: <span class="hljs-literal">false</span>,
+    });
+    <span class="hljs-keyword">return</span> app.ready();
+  });
+  it(<span class="hljs-string">&apos;should test on prod&apos;</span>, () =&gt; {
+    mock.env(<span class="hljs-string">&apos;prod&apos;</span>);
+    app = mock.app({
+      baseDir: <span class="hljs-string">&apos;apps/example&apos;</span>,
+      framework: <span class="hljs-literal">true</span>,
+      cache: <span class="hljs-literal">false</span>,
+    });
+    <span class="hljs-keyword">return</span> app.ready();
+  });
+});
+</code></pre>
+<h3 id="&#x591A;&#x8FDB;&#x7A0B;&#x6D4B;&#x8BD5;">&#x591A;&#x8FDB;&#x7A0B;&#x6D4B;&#x8BD5;</h3>
+<p>&#x5F88;&#x5C11;&#x573A;&#x666F;&#x4F1A;&#x4F7F;&#x7528;&#x591A;&#x8FDB;&#x7A0B;&#x6D4B;&#x8BD5;&#xFF0C;&#x56E0;&#x4E3A;&#x591A;&#x8FDB;&#x7A0B;&#x65E0;&#x6CD5;&#x8FDB;&#x884C; API &#x7EA7;&#x522B;&#x7684; mock &#x5BFC;&#x81F4;&#x6D4B;&#x8BD5;&#x6210;&#x672C;&#x5F88;&#x9AD8;&#xFF0C;&#x800C;&#x8FDB;&#x7A0B;&#x5728;&#x6709;&#x8986;&#x76D6;&#x7387;&#x7684;&#x573A;&#x666F;&#x542F;&#x52A8;&#x5F88;&#x6162;&#xFF0C;&#x6D4B;&#x8BD5;&#x4F1A;&#x8D85;&#x65F6;&#x3002;&#x4F46;&#x591A;&#x8FDB;&#x7A0B;&#x6D4B;&#x8BD5;&#x662F;&#x9A8C;&#x8BC1;&#x591A;&#x8FDB;&#x7A0B;&#x6A21;&#x578B;&#x6700;&#x597D;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x6D4B;&#x8BD5; stdout &#x548C; stderr&#x3002;</p>
+<p>&#x591A;&#x8FDB;&#x7A0B;&#x6D4B;&#x8BD5;&#x548C; <code>mm.app</code> &#x53C2;&#x6570;&#x4E00;&#x81F4;&#xFF0C;&#x4F46; app &#x7684; API &#x5B8C;&#x5168;&#x4E0D;&#x540C;&#xFF0C;&#x4E0D;&#x8FC7; SuperTest &#x4F9D;&#x7136;&#x53EF;&#x7528;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> mock = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;egg-mock&apos;</span>);
+describe(<span class="hljs-string">&apos;/test/index.test.js&apos;</span>, () =&gt; {
+  <span class="hljs-keyword">let</span> app;
+  before(() =&gt; {
+    app = mock.cluster({
+      baseDir: <span class="hljs-string">&apos;apps/example&apos;</span>,
+      framework: <span class="hljs-literal">true</span>,
+    });
+    <span class="hljs-keyword">return</span> app.ready();
+  });
+  after(() =&gt; app.close());
+  afterEach(mock.restore);
+  it(<span class="hljs-string">&apos;should success&apos;</span>, () =&gt; {
+    <span class="hljs-keyword">return</span> app.httpRequest()
+    .get(<span class="hljs-string">&apos;/&apos;</span>)
+    .expect(<span class="hljs-number">200</span>);
+  });
+});
+</code></pre>
+<p>&#x591A;&#x8FDB;&#x7A0B;&#x6D4B;&#x8BD5;&#x8FD8;&#x53EF;&#x4EE5;&#x6D4B;&#x8BD5; stdout/stderr&#xFF0C;&#x56E0;&#x4E3A; <code>mm.cluster</code> &#x662F;&#x57FA;&#x4E8E; <a href="https://github.com/popomore/coffee" _target="blank">coffee</a> &#x6269;&#x5C55;&#x7684;&#xFF0C;&#x53EF;&#x8FDB;&#x884C;&#x8FDB;&#x7A0B;&#x6D4B;&#x8BD5;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> mock = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;egg-mock&apos;</span>);
+describe(<span class="hljs-string">&apos;/test/index.test.js&apos;</span>, () =&gt; {
+  <span class="hljs-keyword">let</span> app;
+  before(() =&gt; {
+    app = mock.cluster({
+      baseDir: <span class="hljs-string">&apos;apps/example&apos;</span>,
+      framework: <span class="hljs-literal">true</span>,
+    });
+    <span class="hljs-keyword">return</span> app.ready();
+  });
+  after(() =&gt; app.close());
+  it(<span class="hljs-string">&apos;should get `started`&apos;</span>, () =&gt; {
+    <span class="hljs-comment">// &#x5224;&#x65AD;&#x7EC8;&#x7AEF;&#x8F93;&#x51FA;</span>
+    app.expect(<span class="hljs-string">&apos;stdout&apos;</span>, <span class="hljs-regexp">/started/</span>);
+  });
+});
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="plugin.html" class="navigation navigation-prev " aria-label="Previous page: 插件开发">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="cluster-client.html" class="navigation navigation-next " aria-label="Next page: 多进程研发模式增强">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"框架开发","level":"1.6.3","depth":2,"next":{"title":"多进程研发模式增强","level":"1.6.4","depth":2,"path":"advanced/cluster-client.md","ref":"advanced/cluster-client.md","articles":[]},"previous":{"title":"插件开发","level":"1.6.2","depth":2,"path":"advanced/plugin.md","ref":"advanced/plugin.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-fontsettings","-search-pro","-advanced-emoji","-github","-splitter","-toggle-chapters"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search-pro":{"cutWordLib":"nodejieba","defineWord":["Gitbook"]},"github":{"url":"https://github.com/laomu1988/fe-books"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"laomu1988@qq.com","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"fe-books","language":"zh-hans","gitbook":"*"},"file":{"path":"advanced/framework.md","mtime":"2017-10-27T07:54:15.000Z","type":"markdown"},"gitbook":{"version":"3.1.0","time":"2017-10-27T07:54:17.244Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+<script>
+	// 百度统计
+	var _hmt = _hmt || [];
+	(function () {
+		var hm = document.createElement("script");
+		hm.src = "//hm.baidu.com/hm.js?171566b3d4f03c9c68c8f2c7a42d4b0e";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+<script src="/fe-books/server/index.js"></script>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

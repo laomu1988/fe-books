@@ -1,0 +1,1383 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <title>多进程研发模式增强 · fe-books</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.0">
+        <meta name="author" content="laomu1988@qq.com">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="view-plugin.html" />
+    
+    
+    <link rel="prev" href="framework.html" />
+    
+
+<link rel="stylesheet" href="/fe-books/server/index.css"/>
+
+    </head>
+    <body>
+        
+<script src="/fe-books/server/menu.js"></script>
+
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    目录结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    新手指南
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../intro/">
+            
+                <a href="../intro/">
+            
+                    
+                    Egg.js 是什么?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../intro/egg-and-koa.html">
+            
+                <a href="../intro/egg-and-koa.html">
+            
+                    
+                    Egg 与 Koa
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../intro/quickstart.html">
+            
+                <a href="../intro/quickstart.html">
+            
+                    
+                    快速入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    基础功能
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../basics/structure.html">
+            
+                <a href="../basics/structure.html">
+            
+                    
+                    目录结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../basics/objects.html">
+            
+                <a href="../basics/objects.html">
+            
+                    
+                    框架内置基础对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../basics/env.html">
+            
+                <a href="../basics/env.html">
+            
+                    
+                    运行环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../basics/config.html">
+            
+                <a href="../basics/config.html">
+            
+                    
+                    Config 配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../basics/middleware.html">
+            
+                <a href="../basics/middleware.html">
+            
+                    
+                    Middleware 中间件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../basics/router.html">
+            
+                <a href="../basics/router.html">
+            
+                    
+                    Router 路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../basics/controller.html">
+            
+                <a href="../basics/controller.html">
+            
+                    
+                    什么是 Controller
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../basics/service.html">
+            
+                <a href="../basics/service.html">
+            
+                    
+                    Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../basics/schedule.html">
+            
+                <a href="../basics/schedule.html">
+            
+                    
+                    定时任务Schedule
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../basics/extend.html">
+            
+                <a href="../basics/extend.html">
+            
+                    
+                    框架扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../basics/app-start.html">
+            
+                <a href="../basics/app-start.html">
+            
+                    
+                    启动自定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    核心功能
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../core/development.html">
+            
+                <a href="../core/development.html">
+            
+                    
+                    本地开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../core/unittest.html">
+            
+                <a href="../core/unittest.html">
+            
+                    
+                    单元测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../core/deployment.html">
+            
+                <a href="../core/deployment.html">
+            
+                    
+                    应用部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../core/logger.html">
+            
+                <a href="../core/logger.html">
+            
+                    
+                    日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../core/httpclient.html">
+            
+                <a href="../core/httpclient.html">
+            
+                    
+                    HttpClient
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../core/cookie-and-session.html">
+            
+                <a href="../core/cookie-and-session.html">
+            
+                    
+                    Cookie and Session
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../core/cluster-and-ipc.html">
+            
+                <a href="../core/cluster-and-ipc.html">
+            
+                    
+                    多进程模型和进程间通讯
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../core/view.html">
+            
+                <a href="../core/view.html">
+            
+                    
+                    View 模板渲染
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../core/error-handling.html">
+            
+                <a href="../core/error-handling.html">
+            
+                    
+                    异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../core/security.html">
+            
+                <a href="../core/security.html">
+            
+                    
+                    安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="../core/i18n.html">
+            
+                <a href="../core/i18n.html">
+            
+                    
+                    i18n国际化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    教程
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../tutorials/progressive.html">
+            
+                <a href="../tutorials/progressive.html">
+            
+                    
+                    渐进式开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../tutorials/mysql.html">
+            
+                <a href="../tutorials/mysql.html">
+            
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../tutorials/restful.html">
+            
+                <a href="../tutorials/restful.html">
+            
+                    
+                    RESTful API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../tutorials/async-function.html">
+            
+                <a href="../tutorials/async-function.html">
+            
+                    
+                    Async Function
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../core/passport.md">
+            
+                <span>
+            
+                    
+                    # Passport
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    进阶
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="loader.html">
+            
+                <a href="loader.html">
+            
+                    
+                    Loader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="plugin.html">
+            
+                <a href="plugin.html">
+            
+                    
+                    插件开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="framework.html">
+            
+                <a href="framework.html">
+            
+                    
+                    框架开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.4" data-path="cluster-client.html">
+            
+                <a href="cluster-client.html">
+            
+                    
+                    多进程研发模式增强
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="view-plugin.html">
+            
+                <a href="view-plugin.html">
+            
+                    
+                    View 插件开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    社区
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../plugins/">
+            
+                <a href="../plugins/">
+            
+                    
+                    内置插件列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../contributing.md">
+            
+                <span>
+            
+                    
+                    如何贡献
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../resource.html">
+            
+                <a href="../resource.html">
+            
+                    
+                    资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../member_guide.md">
+            
+                <span>
+            
+                    
+                    成员指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../faq.html">
+            
+                <a href="../faq.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >多进程研发模式增强</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="title-&#x591A;&#x8FDB;&#x7A0B;&#x7814;&#x53D1;&#x6A21;&#x5F0F;&#x589E;&#x5F3A;">title: &#x591A;&#x8FDB;&#x7A0B;&#x7814;&#x53D1;&#x6A21;&#x5F0F;&#x589E;&#x5F3A;</h2>
+<p>&#x5728;&#x524D;&#x9762;&#x7684;<a href="../core/cluster-and-ipc.html">&#x591A;&#x8FDB;&#x7A0B;&#x6A21;&#x578B;&#x7AE0;&#x8282;</a>&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x8BE6;&#x7EC6;&#x8BB2;&#x8FF0;&#x4E86;&#x6846;&#x67B6;&#x7684;&#x591A;&#x8FDB;&#x7A0B;&#x6A21;&#x578B;&#xFF0C;&#x5176;&#x4E2D;&#x9002;&#x5408;&#x4F7F;&#x7528; Agent &#x8FDB;&#x7A0B;&#x7684;&#x6709;&#x4E00;&#x7C7B;&#x5E38;&#x89C1;&#x7684;&#x573A;&#x666F;&#xFF1A;&#x4E00;&#x4E9B;&#x4E2D;&#x95F4;&#x4EF6;&#x5BA2;&#x6237;&#x7AEF;&#x9700;&#x8981;&#x548C;&#x670D;&#x52A1;&#x5668;&#x5EFA;&#x7ACB;&#x957F;&#x8FDE;&#x63A5;&#xFF0C;&#x7406;&#x8BBA;&#x4E0A;&#x4E00;&#x53F0;&#x670D;&#x52A1;&#x5668;&#x6700;&#x597D;&#x53EA;&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;&#x957F;&#x8FDE;&#x63A5;&#xFF0C;&#x4F46;&#x591A;&#x8FDB;&#x7A0B;&#x6A21;&#x578B;&#x4F1A;&#x5BFC;&#x81F4; n &#x500D;&#xFF08;n = Worker &#x8FDB;&#x7A0B;&#x6570;&#xFF09;&#x8FDE;&#x63A5;&#x88AB;&#x521B;&#x5EFA;&#x3002;</p>
+<pre><code class="lang-bash">+--------+   +--------+
+| Client |   | Client |   ... n
++--------+   +--------+
+    |  \     /   |
+    |    \ /     |        n * m &#x4E2A;&#x94FE;&#x63A5;
+    |    / \     |
+    |  /     \   |
++--------+   +--------+
+| Server |   | Server |   ... m
++--------+   +--------+
+</code></pre>
+<p>&#x4E3A;&#x4E86;&#x5C3D;&#x53EF;&#x80FD;&#x7684;&#x590D;&#x7528;&#x957F;&#x8FDE;&#x63A5;&#xFF08;&#x56E0;&#x4E3A;&#x5B83;&#x4EEC;&#x5BF9;&#x4E8E;&#x670D;&#x52A1;&#x7AEF;&#x6765;&#x8BF4;&#x662F;&#x975E;&#x5E38;&#x5B9D;&#x8D35;&#x7684;&#x8D44;&#x6E90;&#xFF09;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x628A;&#x5B83;&#x653E;&#x5230; Agent &#x8FDB;&#x7A0B;&#x91CC;&#x7EF4;&#x62A4;&#xFF0C;&#x7136;&#x540E;&#x901A;&#x8FC7; messenger &#x5C06;&#x6570;&#x636E;&#x4F20;&#x9012;&#x7ED9;&#x5404;&#x4E2A; Worker&#x3002;&#x8FD9;&#x79CD;&#x505A;&#x6CD5;&#x662F;&#x53EF;&#x884C;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x5F80;&#x5F80;&#x9700;&#x8981;&#x5199;&#x5927;&#x91CF;&#x4EE3;&#x7801;&#x53BB;&#x5C01;&#x88C5;&#x63A5;&#x53E3;&#x548C;&#x5B9E;&#x73B0;&#x6570;&#x636E;&#x7684;&#x4F20;&#x9012;&#xFF0C;&#x975E;&#x5E38;&#x9EBB;&#x70E6;&#x3002;</p>
+<p>&#x53E6;&#x5916;&#xFF0C;&#x901A;&#x8FC7; messenger &#x4F20;&#x9012;&#x6570;&#x636E;&#x6548;&#x7387;&#x662F;&#x6BD4;&#x8F83;&#x4F4E;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x4F1A;&#x901A;&#x8FC7; Master &#x6765;&#x505A;&#x4E2D;&#x8F6C;&#xFF1B;&#x4E07;&#x4E00; IPC &#x901A;&#x9053;&#x51FA;&#x73B0;&#x95EE;&#x9898;&#x8FD8;&#x53EF;&#x80FD;&#x5C06; Master &#x8FDB;&#x7A0B;&#x641E;&#x6302;&#x3002;</p>
+<p>&#x90A3;&#x4E48;&#x6709;&#x6CA1;&#x6709;&#x66F4;&#x597D;&#x7684;&#x65B9;&#x6CD5;&#x5462;&#xFF1F;&#x7B54;&#x6848;&#x662F;&#x80AF;&#x5B9A;&#x7684;&#xFF0C;&#x6211;&#x4EEC;&#x63D0;&#x4F9B;&#x4E00;&#x79CD;&#x65B0;&#x7684;&#x6A21;&#x5F0F;&#x6765;&#x964D;&#x4F4E;&#x8FD9;&#x7C7B;&#x5BA2;&#x6237;&#x7AEF;&#x5C01;&#x88C5;&#x7684;&#x590D;&#x6742;&#x5EA6;&#x3002;</p>
+<h2 id="&#x6838;&#x5FC3;&#x601D;&#x60F3;">&#x6838;&#x5FC3;&#x601D;&#x60F3;</h2>
+<ul>
+<li>&#x53D7;&#x5230; <a href="http://www.cs.wustl.edu/~schmidt/PDF/lf.pdf" _target="blank">Leader/Follower</a> &#x6A21;&#x5F0F;&#x7684;&#x542F;&#x53D1;</li>
+<li>&#x5BA2;&#x6237;&#x7AEF;&#x4F1A;&#x88AB;&#x533A;&#x5206;&#x4E3A;&#x4E24;&#x79CD;&#x89D2;&#x8272;&#xFF1A;<ul>
+<li>Leader: &#x8D1F;&#x8D23;&#x548C;&#x8FDC;&#x7A0B;&#x670D;&#x52A1;&#x7AEF;&#x7EF4;&#x6301;&#x8FDE;&#x63A5;&#xFF0C;&#x5BF9;&#x4E8E;&#x540C;&#x4E00;&#x7C7B;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x53EA;&#x6709;&#x4E00;&#x4E2A; Leader</li>
+<li>Follower: &#x4F1A;&#x5C06;&#x5177;&#x4F53;&#x7684;&#x64CD;&#x4F5C;&#x59D4;&#x6258;&#x7ED9; Leader&#xFF0C;&#x5E38;&#x89C1;&#x7684;&#x662F;&#x8BA2;&#x9605;&#x6A21;&#x578B;&#xFF08;&#x8BA9; Leader &#x548C;&#x8FDC;&#x7A0B;&#x670D;&#x52A1;&#x7AEF;&#x4EA4;&#x4E92;&#xFF0C;&#x5E76;&#x7B49;&#x5F85;&#x5176;&#x8FD4;&#x56DE;&#xFF09;&#x3002;</li>
+</ul>
+</li>
+<li>&#x5982;&#x4F55;&#x786E;&#x5B9A;&#x8C01;&#x662F; Leader&#xFF0C;&#x8C01;&#x662F; Follower &#x5462;&#xFF1F;&#x6709;&#x4E24;&#x79CD;&#x6A21;&#x5F0F;&#xFF1A;<ul>
+<li>&#x81EA;&#x7531;&#x7ADE;&#x4E89;&#x6A21;&#x5F0F;&#xFF1A;&#x5BA2;&#x6237;&#x7AEF;&#x542F;&#x52A8;&#x7684;&#x65F6;&#x5019;&#x901A;&#x8FC7;&#x672C;&#x5730;&#x7AEF;&#x53E3;&#x7684;&#x4E89;&#x593A;&#x6765;&#x786E;&#x5B9A; Leader&#x3002;&#x4F8B;&#x5982;&#xFF1A;&#x5927;&#x5BB6;&#x90FD;&#x5C1D;&#x8BD5;&#x76D1;&#x542C; 7777 &#x7AEF;&#x53E3;&#xFF0C;&#x6700;&#x540E;&#x53EA;&#x4F1A;&#x6709;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#x62A2;&#x5360;&#x5230;&#xFF0C;&#x90A3;&#x5B83;&#x5C31;&#x53D8;&#x6210; Leader&#xFF0C;&#x5176;&#x4F59;&#x7684;&#x90FD;&#x662F; Follower&#x3002;</li>
+<li>&#x5F3A;&#x5236;&#x6307;&#x5B9A;&#x6A21;&#x5F0F;&#xFF1A;&#x6846;&#x67B6;&#x6307;&#x5B9A;&#x67D0;&#x4E00;&#x4E2A; Leader&#xFF0C;&#x5176;&#x4F59;&#x7684;&#x5C31;&#x662F; Follower</li>
+</ul>
+</li>
+<li>&#x6846;&#x67B6;&#x91CC;&#x9762;&#x6211;&#x4EEC;&#x91C7;&#x7528;&#x7684;&#x662F;&#x5F3A;&#x5236;&#x6307;&#x5B9A;&#x6A21;&#x5F0F;&#xFF0C;Leader &#x53EA;&#x80FD;&#x5728; Agent &#x91CC;&#x9762;&#x521B;&#x5EFA;&#xFF0C;&#x8FD9;&#x4E5F;&#x7B26;&#x5408;&#x6211;&#x4EEC;&#x5BF9; Agent &#x7684;&#x5B9A;&#x4F4D;</li>
+<li>&#x6846;&#x67B6;&#x542F;&#x52A8;&#x7684;&#x65F6;&#x5019; Master &#x4F1A;&#x968F;&#x673A;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x53EF;&#x7528;&#x7684;&#x7AEF;&#x53E3;&#x4F5C;&#x4E3A; Cluster Client &#x76D1;&#x542C;&#x7684;&#x901A;&#x8BAF;&#x7AEF;&#x53E3;&#xFF0C;&#x5E76;&#x5C06;&#x5B83;&#x901A;&#x8FC7;&#x53C2;&#x6570;&#x4F20;&#x9012;&#x7ED9; Agent &#x548C; App Worker</li>
+<li>Leader &#x548C; Follower &#x4E4B;&#x95F4;&#x901A;&#x8FC7; socket &#x76F4;&#x8FDE;&#xFF08;&#x901A;&#x8FC7;&#x901A;&#x8BAF;&#x7AEF;&#x53E3;&#xFF09;&#xFF0C;&#x4E0D;&#x518D;&#x9700;&#x8981; Master &#x4E2D;&#x8F6C;</li>
+</ul>
+<p>&#x65B0;&#x7684;&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x542F;&#x52A8;&#x6D41;&#x7A0B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-js">             +-------+
+             | start |
+             +---+---+
+                 |
+        +--------+---------+
+      __| port competition |__
+win /   +------------------+  \ lose
+   /                           \
++--------+     tcp conn     +----------+
+| Leader |<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">----------------</span>&gt;</span>| Follower |
++--------+                  +----------+
+    |
++--------+
+| Client |
++--------+
+    |  \
+    |    \
+    |      \
+    |        \
++--------+   +--------+
+| Server |   | Server |   ...
++--------+   +--------+
+</span></code></pre>
+<h2 id="&#x5BA2;&#x6237;&#x7AEF;&#x63A5;&#x53E3;&#x7C7B;&#x578B;&#x62BD;&#x8C61;">&#x5BA2;&#x6237;&#x7AEF;&#x63A5;&#x53E3;&#x7C7B;&#x578B;&#x62BD;&#x8C61;</h2>
+<p>&#x6211;&#x4EEC;&#x5C06;&#x5BA2;&#x6237;&#x7AEF;&#x63A5;&#x53E3;&#x62BD;&#x8C61;&#x4E3A;&#x4E0B;&#x9762;&#x4E24;&#x5927;&#x7C7B;&#xFF0C;&#x8FD9;&#x4E5F;&#x662F;&#x5BF9;&#x5BA2;&#x6237;&#x7AEF;&#x63A5;&#x53E3;&#x7684;&#x4E00;&#x4E2A;&#x89C4;&#x8303;&#xFF0C;&#x5BF9;&#x4E8E;&#x7B26;&#x5408;&#x89C4;&#x8303;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x81EA;&#x52A8;&#x5C06;&#x5176;&#x5305;&#x88C5;&#x4E3A; Leader/Follower &#x6A21;&#x5F0F;</p>
+<ul>
+<li>&#x8BA2;&#x9605;&#x3001;&#x53D1;&#x5E03;&#x7C7B;&#xFF08;subscribe / publish&#xFF09;<ul>
+<li><code>subscribe(info, listener)</code> &#x63A5;&#x53E3;&#x5305;&#x542B;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x662F;&#x8BA2;&#x9605;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x662F;&#x8BA2;&#x9605;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;</li>
+<li><code>publish(info)</code> &#x63A5;&#x53E3;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x5C31;&#x662F;&#x8BA2;&#x9605;&#x7684;&#x4FE1;&#x606F;</li>
+</ul>
+</li>
+<li>&#x8C03;&#x7528;&#x7C7B; (invoke)&#xFF0C;&#x652F;&#x6301; callback, promise &#x548C; generator function &#x4E09;&#x79CD;&#x98CE;&#x683C;&#x7684;&#x63A5;&#x53E3;&#xFF0C;&#x4F46;&#x662F;&#x63A8;&#x8350;&#x4F7F;&#x7528; generator function&#x3002;</li>
+</ul>
+<p>&#x5BA2;&#x6237;&#x7AEF;&#x793A;&#x4F8B;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> Base = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;sdk-base&apos;</span>);
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Client</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Base</span> </span>{
+  <span class="hljs-keyword">constructor</span>(options) {
+    <span class="hljs-keyword">super</span>(options);
+    <span class="hljs-comment">// &#x5728;&#x521D;&#x59CB;&#x5316;&#x6210;&#x529F;&#x4EE5;&#x540E;&#x8BB0;&#x5F97; ready</span>
+    <span class="hljs-keyword">this</span>.ready(<span class="hljs-literal">true</span>);
+  }
+
+  <span class="hljs-comment">/**
+   * &#x8BA2;&#x9605;
+   *
+   * @param {Object} info - &#x8BA2;&#x9605;&#x7684;&#x4FE1;&#x606F;&#xFF08;&#x4E00;&#x4E2A; JSON &#x5BF9;&#x8C61;&#xFF0C;&#x6CE8;&#x610F;&#x5C3D;&#x91CF;&#x4E0D;&#x8981;&#x5305;&#x542B; Function, Buffer, Date &#x8FD9;&#x7C7B;&#x5C5E;&#x6027;&#xFF09;
+   * @param {Function} listener - &#x76D1;&#x542C;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x5C31;&#x662F;&#x76D1;&#x542C;&#x5230;&#x7684;&#x7ED3;&#x679C;&#x5BF9;&#x8C61;
+   */</span>
+  subscribe(info, listener) {
+    <span class="hljs-comment">// ...</span>
+  }
+
+  <span class="hljs-comment">/**
+   * &#x53D1;&#x5E03;
+   *
+   * @param {Object} info - &#x53D1;&#x5E03;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x548C;&#x4E0A;&#x9762; subscribe &#x7684; info &#x7C7B;&#x4F3C;
+   */</span>
+  publish(info) {
+    <span class="hljs-comment">// ...</span>
+  }
+
+  <span class="hljs-comment">/**
+   * &#x83B7;&#x53D6;&#x6570;&#x636E; (invoke)
+   *
+   * @param {String} id - id
+   * @return {Object} result
+   */</span>
+  * getData(id) {
+    <span class="hljs-comment">// ...</span>
+  }
+}
+</code></pre>
+<h2 id="&#x5F02;&#x5E38;&#x5904;&#x7406;">&#x5F02;&#x5E38;&#x5904;&#x7406;</h2>
+<ul>
+<li>Leader &#x5982;&#x679C;&#x201C;&#x6B7B;&#x6389;&#x201D;&#x4F1A;&#x89E6;&#x53D1;&#x65B0;&#x4E00;&#x8F6E;&#x7684;&#x7AEF;&#x53E3;&#x4E89;&#x593A;&#xFF0C;&#x4E89;&#x593A;&#x5230;&#x7AEF;&#x53E3;&#x7684;&#x90A3;&#x4E2A;&#x5B9E;&#x4F8B;&#x88AB;&#x63A8;&#x9009;&#x4E3A;&#x65B0;&#x7684; Leader</li>
+<li>&#x4E3A;&#x4FDD;&#x8BC1; Leader &#x548C; Follower &#x4E4B;&#x95F4;&#x7684;&#x901A;&#x9053;&#x5065;&#x5EB7;&#xFF0C;&#x9700;&#x8981;&#x5F15;&#x5165;&#x5B9A;&#x65F6;&#x5FC3;&#x8DF3;&#x68C0;&#x67E5;&#x673A;&#x5236;&#xFF0C;&#x5982;&#x679C; Follower &#x5728;&#x56FA;&#x5B9A;&#x65F6;&#x95F4;&#x5185;&#x6CA1;&#x6709;&#x53D1;&#x9001;&#x5FC3;&#x8DF3;&#x5305;&#xFF0C;&#x90A3;&#x4E48; Leader &#x4F1A;&#x5C06; Follower &#x4E3B;&#x52A8;&#x65AD;&#x5F00;&#xFF0C;&#x4ECE;&#x800C;&#x89E6;&#x53D1; Follower &#x7684;&#x91CD;&#x65B0;&#x521D;&#x59CB;&#x5316;</li>
+</ul>
+<h2 id="&#x534F;&#x8BAE;&#x548C;&#x8C03;&#x7528;&#x65F6;&#x5E8F;">&#x534F;&#x8BAE;&#x548C;&#x8C03;&#x7528;&#x65F6;&#x5E8F;</h2>
+<p>Leader &#x548C; Follower &#x901A;&#x8FC7;&#x4E0B;&#x9762;&#x7684;&#x534F;&#x8BAE;&#x8FDB;&#x884C;&#x6570;&#x636E;&#x4EA4;&#x6362;&#xFF1A;</p>
+<pre><code class="lang-js"> <span class="hljs-number">0</span>       <span class="hljs-number">1</span>       <span class="hljs-number">2</span>               <span class="hljs-number">4</span>                                                              <span class="hljs-number">12</span>
+ +-------+-------+---------------+---------------------------------------------------------------+
+ |version|req/res|    reserved   |                          request id                           |
+ +-------------------------------+-------------------------------+-------------------------------+
+ |           timeout             |   connection object length    |   application object length   |
+ +-------------------------------+---------------------------------------------------------------+
+ |         conn object (<span class="hljs-built_in">JSON</span> format)  ...                    |            app object             |
+ +-----------------------------------------------------------+                                   |
+ |                                          ...                                                  |
+ +-----------------------------------------------------------------------------------------------+
+</code></pre>
+<ol>
+<li>&#x5728;&#x901A;&#x8BAF;&#x7AEF;&#x53E3;&#x4E0A; Leader &#x542F;&#x52A8;&#x4E00;&#x4E2A; Local Server&#xFF0C;&#x6240;&#x6709;&#x7684; Leader/Follower &#x901A;&#x8BAF;&#x90FD;&#x7ECF;&#x8FC7; Local Server</li>
+<li>Follower &#x8FDE;&#x63A5;&#x4E0A; Local Server &#x540E;&#xFF0C;&#x9996;&#x5148;&#x53D1;&#x9001;&#x4E00;&#x4E2A; register channel &#x7684; packet&#xFF08;&#x5F15;&#x5165; channel &#x7684;&#x6982;&#x5FF5;&#x662F;&#x4E3A;&#x4E86;&#x533A;&#x522B;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#xFF09;</li>
+<li>Local Server &#x4F1A;&#x5C06; Follower &#x5206;&#x914D;&#x7ED9;&#x6307;&#x5B9A;&#x7684; Leader&#xFF08;&#x6839;&#x636E;&#x5BA2;&#x6237;&#x7AEF;&#x7C7B;&#x578B;&#x8FDB;&#x884C;&#x914D;&#x5BF9;&#xFF09;</li>
+<li>Follower &#x5411; Leader &#x53D1;&#x9001;&#x8BA2;&#x9605;&#x3001;&#x53D1;&#x5E03;&#x8BF7;&#x6C42;&#xFF0C;</li>
+<li>Leader &#x5728;&#x8BA2;&#x9605;&#x6570;&#x636E;&#x53D8;&#x66F4;&#x65F6;&#x901A;&#x8FC7; subscribe result packet &#x901A;&#x77E5; Follower</li>
+<li>Follower &#x5411; Leader &#x53D1;&#x9001;&#x8C03;&#x7528;&#x8BF7;&#x6C42;&#xFF0C;Leader &#x6536;&#x5230;&#x540E;&#x6267;&#x884C;&#x76F8;&#x5E94;&#x64CD;&#x4F5C;&#x540E;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;</li>
+</ol>
+<pre><code class="lang-js"> +----------+             +---------------+          +---------+
+ | Follower |             |  Local Server |          |  Leader |
+ +----------+             +---------------+          +---------+
+      |     register channel     |       assign to        |
+      + -----------------------&gt; |  --------------------&gt; |
+      |                          |                        |
+      |                                subscribe          |
+      + ------------------------------------------------&gt; |
+      |       subscribe result                            |
+      | <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">------------------------------------------------</span> +
+      |                                                   |
+      |                                 <span class="hljs-attr">invoke</span>            |
+      + <span class="hljs-attr">------------------------------------------------</span>&gt;</span> |
+      |          invoke result                            |
+      | <span class="hljs-tag">&lt;<span class="hljs-name">------------------------------------------------</span> +
+      |                                                   |
+</span></span></code></pre>
+<h2 id="&#x5177;&#x4F53;&#x7684;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;">&#x5177;&#x4F53;&#x7684;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;</h2>
+<p>&#x4E0B;&#x9762;&#x6211;&#x7528;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x4ECB;&#x7ECD;&#x5728;&#x6846;&#x67B6;&#x91CC;&#x9762;&#x5982;&#x4F55;&#x8BA9;&#x4E00;&#x4E2A;&#x5BA2;&#x6237;&#x7AEF;&#x652F;&#x6301; Leader/Follower &#x6A21;&#x5F0F;</p>
+<ul>
+<li>&#x7B2C;&#x4E00;&#x6B65;&#xFF0C;&#x6211;&#x4EEC;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x6700;&#x597D;&#x662F;&#x7B26;&#x5408;&#x4E0A;&#x9762;&#x63D0;&#x5230;&#x8FC7;&#x7684;&#x63A5;&#x53E3;&#x7EA6;&#x5B9A;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-meta">&apos;use strict&apos;</span>;
+
+<span class="hljs-keyword">const</span> URL = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;url&apos;</span>);
+<span class="hljs-keyword">const</span> Base = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;sdk-base&apos;</span>);
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">RegistryClient</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Base</span> </span>{
+  <span class="hljs-keyword">constructor</span>(options) {
+    <span class="hljs-keyword">super</span>({
+      <span class="hljs-comment">// &#x6307;&#x5B9A;&#x5F02;&#x6B65;&#x542F;&#x52A8;&#x7684;&#x65B9;&#x6CD5;</span>
+      initMethod: <span class="hljs-string">&apos;init&apos;</span>,
+    });
+    <span class="hljs-keyword">this</span>._options = options;
+    <span class="hljs-keyword">this</span>._registered = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>();
+  }
+
+  <span class="hljs-comment">/**
+   * &#x542F;&#x52A8;&#x903B;&#x8F91;
+   */</span>
+  * init() {
+    <span class="hljs-keyword">this</span>.ready(<span class="hljs-literal">true</span>);
+  }
+
+  <span class="hljs-comment">/**
+   * &#x83B7;&#x53D6;&#x914D;&#x7F6E;
+   * @param {String} dataId - the dataId
+   * @return {Object} &#x914D;&#x7F6E;
+   */</span>
+  * getConfig(dataId) {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._registered.get(dataId);
+  }
+
+  <span class="hljs-comment">/**
+   * &#x8BA2;&#x9605;
+   * @param {Object} reg
+   *   - {String} dataId - the dataId
+   * @param {Function}  listener - the listener
+   */</span>
+  subscribe(reg, listener) {
+    <span class="hljs-keyword">const</span> key = reg.dataId;
+    <span class="hljs-keyword">this</span>.on(key, listener);
+
+    <span class="hljs-keyword">const</span> data = <span class="hljs-keyword">this</span>._registered.get(key);
+    <span class="hljs-keyword">if</span> (data) {
+      process.nextTick(() =&gt; listener(data));
+    }
+  }
+
+  <span class="hljs-comment">/**
+   * &#x53D1;&#x5E03;
+   * @param {Object} reg
+   *   - {String} dataId - the dataId
+   *   - {String} publishData - the publish data
+   */</span>
+  publish(reg) {
+    <span class="hljs-keyword">const</span> key = reg.dataId;
+    <span class="hljs-keyword">let</span> changed = <span class="hljs-literal">false</span>;
+
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>._registered.has(key)) {
+      <span class="hljs-keyword">const</span> arr = <span class="hljs-keyword">this</span>._registered.get(key);
+      <span class="hljs-keyword">if</span> (arr.indexOf(reg.publishData) === <span class="hljs-number">-1</span>) {
+        changed = <span class="hljs-literal">true</span>;
+        arr.push(reg.publishData);
+      }
+    } <span class="hljs-keyword">else</span> {
+      changed = <span class="hljs-literal">true</span>;
+      <span class="hljs-keyword">this</span>._registered.set(key, [reg.publishData]);
+    }
+    <span class="hljs-keyword">if</span> (changed) {
+      <span class="hljs-keyword">this</span>.emit(key, <span class="hljs-keyword">this</span>._registered.get(key).map(url =&gt; URL.parse(url, <span class="hljs-literal">true</span>)));
+    }
+  }
+}
+
+<span class="hljs-built_in">module</span>.exports = RegistryClient;
+</code></pre>
+<ul>
+<li>&#x7B2C;&#x4E8C;&#x6B65;&#xFF0C;&#x5728; <code>agent.js</code> &#x4E2D;&#x4F7F;&#x7528; <code>agent.cluster</code> &#x63A5;&#x53E3;&#x5BF9; RegistryClient &#x8FDB;&#x884C;&#x5C01;&#x88C5;</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-meta">&apos;use strict&apos;</span>;
+
+<span class="hljs-keyword">const</span> RegistryClient = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;registry_client&apos;</span>);
+
+<span class="hljs-built_in">module</span>.exports = agent =&gt; {
+  <span class="hljs-comment">// &#x5BF9; RegistryClient &#x8FDB;&#x884C;&#x5C01;&#x88C5;&#x548C;&#x5B9E;&#x4F8B;&#x5316;</span>
+  agent.registryClient = agent.cluster(RegistryClient)
+    <span class="hljs-comment">// create &#x65B9;&#x6CD5;&#x7684;&#x53C2;&#x6570;&#x5C31;&#x662F; RegistryClient &#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;</span>
+    .create({});
+
+  agent.beforeStart(<span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">yield</span> agent.registryClient.ready();
+    agent.coreLogger.info(<span class="hljs-string">&apos;registry client is ready&apos;</span>);
+  });
+};
+</code></pre>
+<ul>
+<li>&#x7B2C;&#x4E09;&#x6B65;&#xFF0C;&#x5728; <code>app.js</code> &#x4E2D;&#x4F7F;&#x7528; <code>app.cluster</code> &#x63A5;&#x53E3;&#x5BF9; RegistryClient &#x8FDB;&#x884C;&#x5C01;&#x88C5;</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-meta">&apos;use strict&apos;</span>;
+
+<span class="hljs-keyword">const</span> RegistryClient = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;registry_client&apos;</span>);
+
+<span class="hljs-built_in">module</span>.exports = app =&gt; {
+  app.registryClient = app.cluster(RegistryClient).create({});
+  app.beforeStart(<span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">yield</span> app.registryClient.ready();
+    app.coreLogger.info(<span class="hljs-string">&apos;registry client is ready&apos;</span>);
+
+    <span class="hljs-comment">// &#x8C03;&#x7528; subscribe &#x8FDB;&#x884C;&#x8BA2;&#x9605;</span>
+    app.registryClient.subscribe({
+      dataId: <span class="hljs-string">&apos;demo.DemoService&apos;</span>,
+    }, val =&gt; {
+      <span class="hljs-comment">// ...</span>
+    });
+
+    <span class="hljs-comment">// &#x8C03;&#x7528; publish &#x53D1;&#x5E03;&#x6570;&#x636E;</span>
+    app.registryClient.publish({
+      dataId: <span class="hljs-string">&apos;demo.DemoService&apos;</span>,
+      publishData: <span class="hljs-string">&apos;xxx&apos;</span>,
+    });
+
+    <span class="hljs-comment">// &#x8C03;&#x7528; getConfig &#x63A5;&#x53E3;</span>
+    <span class="hljs-keyword">const</span> res = <span class="hljs-keyword">yield</span> app.registryClient.getConfig(<span class="hljs-string">&apos;demo.DemoService&apos;</span>);
+    <span class="hljs-built_in">console</span>.log(res);
+  });
+};
+</code></pre>
+<p>&#x662F;&#x4E0D;&#x662F;&#x5F88;&#x7B80;&#x5355;&#xFF1F;</p>
+<p>&#x5F53;&#x7136;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x4E0D;&#x662F;&#x90A3;&#x4E48;&#x300E;&#x6807;&#x51C6;&#x300F;&#xFF0C;&#x90A3;&#x4F60;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x7528;&#x5230;&#x5176;&#x4ED6;&#x4E00;&#x4E9B; API&#xFF0C;&#x6BD4;&#x5982;&#xFF0C;&#x4F60;&#x7684;&#x8BA2;&#x9605;&#x51FD;&#x6570;&#x4E0D;&#x53EB; subscribe&#xFF0C;&#x53EB; sub</p>
+<pre><code class="lang-js"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MockClient</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Base</span> </span>{
+  <span class="hljs-keyword">constructor</span>(options) {
+    <span class="hljs-keyword">super</span>({
+      initMethod: <span class="hljs-string">&apos;init&apos;</span>,
+    });
+    <span class="hljs-keyword">this</span>._options = options;
+    <span class="hljs-keyword">this</span>._registered = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>();
+  }
+
+  * init() {
+    <span class="hljs-keyword">this</span>.ready(<span class="hljs-literal">true</span>);
+  }
+
+  sub(info, listener) {
+    <span class="hljs-keyword">const</span> key = reg.dataId;
+    <span class="hljs-keyword">this</span>.on(key, listener);
+
+    <span class="hljs-keyword">const</span> data = <span class="hljs-keyword">this</span>._registered.get(key);
+    <span class="hljs-keyword">if</span> (data) {
+      process.nextTick(() =&gt; listener(data));
+    }
+  }
+
+  ...
+}
+</code></pre>
+<p>&#x4F60;&#x9700;&#x8981;&#x7528; delegate API &#x624B;&#x52A8;&#x8BBE;&#x7F6E;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// agent.js</span>
+<span class="hljs-built_in">module</span>.exports = agent =&gt; {
+  agent.mockClient = agent.cluster(MockClient)
+    <span class="hljs-comment">// &#x5C06; sub &#x4EE3;&#x7406;&#x5230; subscribe &#x903B;&#x8F91;&#x4E0A;</span>
+    .delegate(<span class="hljs-string">&apos;sub&apos;</span>, <span class="hljs-string">&apos;subscribe&apos;</span>)
+    .create();
+
+  agent.beforeStart(<span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">yield</span> agent.mockClient.ready();
+  });
+};
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-comment">// app.js</span>
+<span class="hljs-built_in">module</span>.exports = app =&gt; {
+  app.mockClient = app.cluster(MockClient)
+    <span class="hljs-comment">// &#x5C06; sub &#x4EE3;&#x7406;&#x5230; subscribe &#x903B;&#x8F91;&#x4E0A;</span>
+    .delegate(<span class="hljs-string">&apos;sub&apos;</span>, <span class="hljs-string">&apos;subscribe&apos;</span>)
+    .create();
+
+  app.beforeStart(<span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">yield</span> app.mockClient.ready();
+
+    app.sub({ id: <span class="hljs-string">&apos;test-id&apos;</span> }, val =&gt; {
+      <span class="hljs-comment">// put your code here</span>
+    });
+  });
+};
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x7406;&#x89E3;&#xFF0C;&#x901A;&#x8FC7; cluster-client &#x53EF;&#x4EE5;&#x8BA9;&#x6211;&#x4EEC;&#x5728;&#x4E0D;&#x7406;&#x89E3;&#x591A;&#x8FDB;&#x7A0B;&#x6A21;&#x578B;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x5F00;&#x53D1;&#x300E;&#x7EAF;&#x7CB9;&#x300F;&#x7684; RegistryClient&#xFF0C;&#x53EA;&#x8D1F;&#x8D23;&#x548C;&#x670D;&#x52A1;&#x7AEF;&#x8FDB;&#x884C;&#x4EA4;&#x4E92;&#xFF0C;&#x7136;&#x540E;&#x4F7F;&#x7528; cluster-client &#x8FDB;&#x884C;&#x7B80;&#x5355;&#x7684; wrap &#x5C31;&#x53EF;&#x4EE5;&#x5F97;&#x5230;&#x4E00;&#x4E2A;&#x652F;&#x6301;&#x591A;&#x8FDB;&#x7A0B;&#x6A21;&#x578B;&#x7684; ClusterClient&#x3002;&#x8FD9;&#x91CC;&#x7684; RegistryClient &#x5B9E;&#x9645;&#x4E0A;&#x662F;&#x4E00;&#x4E2A;&#x4E13;&#x95E8;&#x8D1F;&#x8D23;&#x548C;&#x8FDC;&#x7A0B;&#x670D;&#x52A1;&#x901A;&#x4FE1;&#x8FDB;&#x884C;&#x6570;&#x636E;&#x901A;&#x4FE1;&#x7684; DataClient&#x3002;</p>
+<p>&#x5927;&#x5BB6;&#x53EF;&#x80FD;&#x5DF2;&#x7ECF;&#x53D1;&#x73B0;&#xFF0C;ClusterClient &#x540C;&#x65F6;&#x5E26;&#x6765;&#x4E86;&#x4E00;&#x4E9B;&#x7EA6;&#x675F;&#xFF0C;&#x5982;&#x679C;&#x60F3;&#x5728;&#x5404;&#x8FDB;&#x7A0B;&#x66B4;&#x9732;&#x540C;&#x6837;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x90A3;&#x4E48; RegistryClient &#x4E0A;&#x53EA;&#x80FD;&#x652F;&#x6301; sub/pub &#x6A21;&#x5F0F;&#x4EE5;&#x53CA;&#x5F02;&#x6B65;&#x7684; API &#x8C03;&#x7528;&#x3002;&#x56E0;&#x4E3A;&#x5728;&#x591A;&#x8FDB;&#x7A0B;&#x6A21;&#x578B;&#x4E2D;&#x6240;&#x6709;&#x7684;&#x4EA4;&#x4E92;&#x90FD;&#x5FC5;&#x987B;&#x7ECF;&#x8FC7; socket &#x901A;&#x4FE1;&#xFF0C;&#x52BF;&#x5FC5;&#x5E26;&#x6765;&#x4E86;&#x8FD9;&#x4E00;&#x7EA6;&#x675F;&#x3002;</p>
+<p>&#x5047;&#x8BBE;&#x6211;&#x4EEC;&#x8981;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x540C;&#x6B65;&#x7684; get &#x65B9;&#x6CD5;&#xFF0C;subscribe &#x8FC7;&#x7684;&#x6570;&#x636E;&#x76F4;&#x63A5;&#x653E;&#x5165;&#x5185;&#x5B58;&#xFF0C;&#x4F7F;&#x7528; get &#x65B9;&#x6CD5;&#x65F6;&#x76F4;&#x63A5;&#x8FD4;&#x56DE;&#x3002;&#x8981;&#x600E;&#x4E48;&#x5B9E;&#x73B0;&#x5462;&#xFF1F;&#x800C;&#x771F;&#x5B9E;&#x60C5;&#x51B5;&#x53EF;&#x80FD;&#x6BD4;&#x4E4B;&#x66F4;&#x590D;&#x6742;&#x3002;</p>
+<p>&#x5728;&#x8FD9;&#x91CC;&#xFF0C;&#x6211;&#x4EEC;&#x5F15;&#x5165;&#x4E00;&#x4E2A; APIClient &#x7684;&#x6700;&#x4F73;&#x5B9E;&#x8DF5;&#x3002;&#x5BF9;&#x4E8E;&#x6709;&#x8BFB;&#x53D6;&#x7F13;&#x5B58;&#x6570;&#x636E;&#x7B49;&#x540C;&#x6B65; API &#x9700;&#x6C42;&#x7684;&#x6A21;&#x5757;&#xFF0C;&#x5728; RegistryClient &#x57FA;&#x7840;&#x4E0A;&#x518D;&#x5C01;&#x88C5;&#x4E00;&#x4E2A; APIClient &#x6765;&#x5B9E;&#x73B0;&#x8FD9;&#x4E9B;&#x4E0E;&#x8FDC;&#x7A0B;&#x670D;&#x52A1;&#x7AEF;&#x4EA4;&#x4E92;&#x65E0;&#x5173;&#x7684; API&#xFF0C;&#x66B4;&#x9732;&#x7ED9;&#x7528;&#x6237;&#x4F7F;&#x7528;&#x5230;&#x7684;&#x662F;&#x8FD9;&#x4E2A; APIClient &#x7684;&#x5B9E;&#x4F8B;&#x3002;</p>
+<p>&#x5728; APIClient &#x5185;&#x90E8;&#x5B9E;&#x73B0;&#x4E0A;&#xFF1A;</p>
+<ul>
+<li>&#x5F02;&#x6B65;&#x6570;&#x636E;&#x83B7;&#x53D6;&#xFF0C;&#x901A;&#x8FC7;&#x8C03;&#x7528;&#x57FA;&#x4E8E; ClusterClient &#x7684; RegistryClient &#x7684; API &#x5B9E;&#x73B0;&#x3002;</li>
+<li>&#x540C;&#x6B65;&#x8C03;&#x7528;&#x7B49;&#x4E0E;&#x670D;&#x52A1;&#x7AEF;&#x65E0;&#x5173;&#x7684;&#x63A5;&#x53E3;&#x5728; APIClient &#x4E0A;&#x5B9E;&#x73B0;&#x3002;&#x7531;&#x4E8E; ClusterClient &#x7684; API &#x5DF2;&#x7ECF;&#x62B9;&#x5E73;&#x4E86;&#x591A;&#x8FDB;&#x7A0B;&#x5DEE;&#x5F02;&#xFF0C;&#x6240;&#x4EE5;&#x5728;&#x5F00;&#x53D1; APIClient &#x8C03;&#x7528;&#x5230; RegistryClient &#x65F6;&#x4E5F;&#x65E0;&#x9700;&#x5173;&#x5FC3;&#x591A;&#x8FDB;&#x7A0B;&#x6A21;&#x578B;&#x3002;</li>
+</ul>
+<p>&#x4F8B;&#x5982;&#x589E;&#x52A0;&#x5E26;&#x7F13;&#x5B58;&#x7684; get &#x540C;&#x6B65;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> cluster = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;cluster-client&apos;</span>);
+<span class="hljs-keyword">const</span> RegistryClient = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./registry_client&apos;</span>);
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">APIClient</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Base</span> </span>{
+  <span class="hljs-keyword">constructor</span>(options) {
+    <span class="hljs-keyword">super</span>(options);
+
+    <span class="hljs-comment">// options.cluster &#x7528;&#x4E8E;&#x7ED9; Egg &#x7684;&#x63D2;&#x4EF6;&#x4F20;&#x9012; app.cluster &#x8FDB;&#x6765;</span>
+    <span class="hljs-keyword">this</span>._client = (options.cluster || cluster)(RegistryClient).create(options);
+    <span class="hljs-keyword">this</span>._client.ready(() =&gt; <span class="hljs-keyword">this</span>.ready(<span class="hljs-literal">true</span>));
+
+    <span class="hljs-keyword">this</span>._cache = {};
+
+    <span class="hljs-comment">// subMap:</span>
+    <span class="hljs-comment">// {</span>
+    <span class="hljs-comment">//   foo: reg1,</span>
+    <span class="hljs-comment">//   bar: reg2,</span>
+    <span class="hljs-comment">// }</span>
+    <span class="hljs-keyword">const</span> subMap = options.subMap;
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> key <span class="hljs-keyword">in</span> subMap) {
+      <span class="hljs-keyword">this</span>.subscribe(subMap[key], value =&gt; {
+        <span class="hljs-keyword">this</span>._cache[key] = value;
+      });
+    }
+  }
+
+  subscribe(reg, listener) {
+    <span class="hljs-keyword">this</span>._client.subscribe(reg, listener);
+  }
+
+  publish(reg) {
+    <span class="hljs-keyword">this</span>._client.publish(reg);
+  }
+
+  get(key) {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._cache[key];
+  }
+}
+</code></pre>
+<p>&#x6700;&#x7EC8;&#x6A21;&#x5757;&#x5411;&#x5916;&#x66B4;&#x9732;&#x7684;&#x662F;&#x8FD9;&#x4E2A; APIClient&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// index.js</span>
+<span class="hljs-built_in">module</span>.exports = APIClient;
+</code></pre>
+<p>&#x90A3;&#x4E48;&#x5728;&#x63D2;&#x4EF6;&#x4E2D;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x8FD9;&#x4E48;&#x4F7F;&#x7528;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// app.js || agent.js</span>
+<span class="hljs-keyword">const</span> APIClient = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;some-client&apos;</span>); <span class="hljs-comment">// &#x4E0A;&#x9762;&#x90A3;&#x4E2A;&#x6A21;&#x5757;</span>
+<span class="hljs-built_in">module</span>.exports = app =&gt; {
+  <span class="hljs-keyword">const</span> config = app.config.apiClient;
+  app.apiClient = <span class="hljs-keyword">new</span> APIClient(<span class="hljs-built_in">Object</span>.assign({}, config, { cluster: app.cluster });
+  app.beforeStart(<span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">yield</span> app.apiClient.ready();
+  });
+};
+
+<span class="hljs-comment">// config.${env}.js</span>
+exports.apiClient = {
+  subMap: {
+    foo: {
+      id: <span class="hljs-string">&apos;&apos;</span>,
+    },
+    <span class="hljs-comment">// bar...</span>
+  }
+};
+</code></pre>
+<p>&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#x4F60;&#x5C01;&#x88C5; <code>APIClient</code>&#xFF0C;&#x5728; <a href="https://www.npmjs.com/package/cluster-client" _target="blank">cluster-client</a> &#x6A21;&#x5757;&#x4E2D;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A; <code>APIClientBase</code> &#x57FA;&#x7C7B;&#xFF0C;&#x90A3;&#x4E48;&#x4E0A;&#x9762;&#x7684; <code>APIClient</code> &#x53EF;&#x4EE5;&#x6539;&#x5199;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> APIClientBase = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;cluster-client&apos;</span>).APIClientBase;
+<span class="hljs-keyword">const</span> RegistryClient = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./registry_client&apos;</span>);
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">APIClient</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">APIClientBase</span> </span>{
+  <span class="hljs-comment">// &#x8FD4;&#x56DE;&#x539F;&#x59CB;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x7C7B;</span>
+  get DataClient() {
+    <span class="hljs-keyword">return</span> RegistryClient;
+  }
+
+  <span class="hljs-comment">// &#x7528;&#x4E8E;&#x8BBE;&#x7F6E; cluster-client &#x76F8;&#x5173;&#x53C2;&#x6570;&#xFF0C;&#x7B49;&#x540C;&#x4E8E; cluster &#x65B9;&#x6CD5;&#x7684;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;</span>
+  get clusterOptions() {
+    <span class="hljs-keyword">return</span> {
+      responseTimeout: <span class="hljs-number">120</span> * <span class="hljs-number">1000</span>,
+    };
+  }
+
+  subscribe(reg, listener) {
+    <span class="hljs-keyword">this</span>._client.subscribe(reg, listener);
+  }
+
+  publish(reg) {
+    <span class="hljs-keyword">this</span>._client.publish(reg);
+  }
+
+  get(key) {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._cache[key];
+  }
+}
+</code></pre>
+<p>&#x603B;&#x7ED3;&#x4E00;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-bash">+------------------------------------------------+
+| APIClient                                      |
+|       +----------------------------------------|
+|       | ClusterClient                          |
+|       |      +---------------------------------|
+|       |      | RegistryClient                  |
++------------------------------------------------+
+</code></pre>
+<ul>
+<li>RegistryClient - &#x8D1F;&#x8D23;&#x548C;&#x8FDC;&#x7AEF;&#x670D;&#x52A1;&#x901A;&#x8BAF;&#xFF0C;&#x5B9E;&#x73B0;&#x6570;&#x636E;&#x7684;&#x5B58;&#x53D6;&#xFF0C;&#x53EA;&#x652F;&#x6301;&#x5F02;&#x6B65; API&#xFF0C;&#x4E0D;&#x5173;&#x5FC3;&#x591A;&#x8FDB;&#x7A0B;&#x6A21;&#x578B;&#x3002;</li>
+<li>ClusterClient - &#x901A;&#x8FC7; cluster-client &#x6A21;&#x5757;&#x8FDB;&#x884C;&#x7B80;&#x5355; wrap &#x5F97;&#x5230;&#x7684; client &#x5B9E;&#x4F8B;&#xFF0C;&#x8D1F;&#x8D23;&#x81EA;&#x52A8;&#x62B9;&#x5E73;&#x591A;&#x8FDB;&#x7A0B;&#x6A21;&#x578B;&#x7684;&#x5DEE;&#x5F02;&#x3002;</li>
+<li>APIClient - &#x5185;&#x90E8;&#x8C03;&#x7528; ClusterClient &#x505A;&#x6570;&#x636E;&#x540C;&#x6B65;&#xFF0C;&#x65E0;&#x9700;&#x5173;&#x5FC3;&#x591A;&#x8FDB;&#x7A0B;&#x6A21;&#x578B;&#xFF0C;&#x7528;&#x6237;&#x6700;&#x7EC8;&#x4F7F;&#x7528;&#x7684;&#x6A21;&#x5757;&#x3002;API &#x90FD;&#x901A;&#x8FC7;&#x6B64;&#x5904;&#x66B4;&#x9732;&#xFF0C;&#x652F;&#x6301;&#x540C;&#x6B65;&#x548C;&#x5F02;&#x6B65;&#x3002;</li>
+</ul>
+<p>&#x6709;&#x5174;&#x8DA3;&#x7684;&#x540C;&#x5B66;&#x53EF;&#x4EE5;&#x770B;&#x4E00;&#x4E0B;<a href="https://github.com/eggjs/egg/issues/322" _target="blank">&#x589E;&#x5F3A;&#x591A;&#x8FDB;&#x7A0B;&#x7814;&#x53D1;&#x6A21;&#x5F0F;</a> &#x8BA8;&#x8BBA;&#x8FC7;&#x7A0B;&#x3002;</p>
+<h2 id="&#x5728;-egg-&#x91CC;&#x9762;-cluster-client-&#x76F8;&#x5173;&#x7684;&#x914D;&#x7F6E;&#x9879;">&#x5728; Egg &#x91CC;&#x9762; cluster-client &#x76F8;&#x5173;&#x7684;&#x914D;&#x7F6E;&#x9879;</h2>
+<pre><code class="lang-js"><span class="hljs-comment">/**
+ * @property {Number} responseTimeout - response timeout, default is 60000
+ * @property {Transcode} [transcode]
+ *   - {Function} encode - custom serialize method
+ *   - {Function} decode - custom deserialize method
+ */</span>
+config.clusterClient = {
+  responseTimeout: <span class="hljs-number">60000</span>,
+};
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>&#x914D;&#x7F6E;&#x9879;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>responseTimeout</td>
+<td>number</td>
+<td>60000 &#xFF08;&#x4E00;&#x5206;&#x949F;&#xFF09;</td>
+<td>&#x5168;&#x5C40;&#x7684;&#x8FDB;&#x7A0B;&#x95F4;&#x901A;&#x8BAF;&#x7684;&#x8D85;&#x65F6;&#x65F6;&#x957F;&#xFF0C;&#x4E0D;&#x80FD;&#x8BBE;&#x7F6E;&#x7684;&#x592A;&#x77ED;&#xFF0C;&#x56E0;&#x4E3A;&#x4EE3;&#x7406;&#x7684;&#x63A5;&#x53E3;&#x672C;&#x8EAB;&#x4E5F;&#x6709;&#x8D85;&#x65F6;&#x8BBE;&#x7F6E;</td>
+</tr>
+<tr>
+<td>transcode</td>
+<td>function</td>
+<td>N/A</td>
+<td>&#x8FDB;&#x7A0B;&#x95F4;&#x901A;&#x8BAF;&#x7684;&#x5E8F;&#x5217;&#x5316;&#x65B9;&#x5F0F;&#xFF0C;&#x9ED8;&#x8BA4;&#x91C7;&#x7528; <a href="https://www.npmjs.com/package/serialize-json" _target="blank">serialize-json</a>&#xFF08;&#x5EFA;&#x8BAE;&#x4E0D;&#x8981;&#x81EA;&#x884C;&#x8BBE;&#x7F6E;&#xFF09;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x4E0A;&#x9762;&#x662F;&#x5168;&#x5C40;&#x7684;&#x914D;&#x7F6E;&#x65B9;&#x5F0F;&#x3002;&#x5982;&#x679C;&#xFF0C;&#x4F60;&#x60F3;&#x5BF9;&#x4E00;&#x4E2A;&#x5BA2;&#x6237;&#x7AEF;&#x5355;&#x72EC;&#x505A;&#x8BBE;&#x7F6E;</p>
+<ul>
+<li>&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>app/agent.cluster(ClientClass, options)</code> &#x7684;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570; <code>options</code> &#x8FDB;&#x884C;&#x8986;&#x76D6;</li>
+</ul>
+<pre><code class="lang-js">app.registryClient = app.cluster(RegistryClient, {
+  responseTimeout: <span class="hljs-number">120</span> * <span class="hljs-number">1000</span>, <span class="hljs-comment">// &#x8FD9;&#x91CC;&#x4F20;&#x5165;&#x7684;&#x662F;&#x548C; cluster-client &#x76F8;&#x5173;&#x7684;&#x53C2;&#x6570;</span>
+}).create({
+  <span class="hljs-comment">// &#x8FD9;&#x91CC;&#x4F20;&#x5165;&#x7684;&#x662F; RegistryClient &#x9700;&#x8981;&#x7684;&#x53C2;&#x6570;</span>
+});
+</code></pre>
+<ul>
+<li>&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8986;&#x76D6; <code>APIClientBase</code> &#x7684; <code>clusterOptions</code> &#x8FD9;&#x4E2A; <code>getter</code> &#x5C5E;&#x6027;</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> APIClientBase = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;cluster-client&apos;</span>).APIClientBase;
+<span class="hljs-keyword">const</span> RegistryClient = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./registry_client&apos;</span>);
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">APIClient</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">APIClientBase</span> </span>{
+  get DataClient() {
+    <span class="hljs-keyword">return</span> RegistryClient;
+  }
+
+  get clusterOptions() {
+    <span class="hljs-keyword">return</span> {
+      responseTimeout: <span class="hljs-number">120</span> * <span class="hljs-number">1000</span>,
+    };
+  }
+
+  <span class="hljs-comment">// ...</span>
+}
+
+<span class="hljs-built_in">module</span>.exports = APIClient;
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="framework.html" class="navigation navigation-prev " aria-label="Previous page: 框架开发">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="view-plugin.html" class="navigation navigation-next " aria-label="Next page: View 插件开发">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"多进程研发模式增强","level":"1.6.4","depth":2,"next":{"title":"View 插件开发","level":"1.6.5","depth":2,"path":"advanced/view-plugin.md","ref":"advanced/view-plugin.md","articles":[]},"previous":{"title":"框架开发","level":"1.6.3","depth":2,"path":"advanced/framework.md","ref":"advanced/framework.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-fontsettings","-search-pro","-advanced-emoji","-github","-splitter","-toggle-chapters"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search-pro":{"cutWordLib":"nodejieba","defineWord":["Gitbook"]},"github":{"url":"https://github.com/laomu1988/fe-books"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"laomu1988@qq.com","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"fe-books","language":"zh-hans","gitbook":"*"},"file":{"path":"advanced/cluster-client.md","mtime":"2017-10-27T07:54:15.000Z","type":"markdown"},"gitbook":{"version":"3.1.0","time":"2017-10-27T07:54:17.244Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+<script>
+	// 百度统计
+	var _hmt = _hmt || [];
+	(function () {
+		var hm = document.createElement("script");
+		hm.src = "//hm.baidu.com/hm.js?171566b3d4f03c9c68c8f2c7a42d4b0e";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+<script src="/fe-books/server/index.js"></script>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

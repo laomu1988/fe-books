@@ -24,6 +24,7 @@
             menus: [
                 {name: 'koa'},
                 {name: 'koa2学习笔记',link: '/fe-books/koa2-note/'},
+                {name: 'egg'},
             ]
         },
         {

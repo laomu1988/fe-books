@@ -1,0 +1,1026 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <title>Cookie and Session · fe-books</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.0">
+        <meta name="author" content="laomu1988@qq.com">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="cluster-and-ipc.html" />
+    
+    
+    <link rel="prev" href="httpclient.html" />
+    
+
+<link rel="stylesheet" href="/fe-books/server/index.css"/>
+
+    </head>
+    <body>
+        
+<script src="/fe-books/server/menu.js"></script>
+
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    目录结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    新手指南
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../intro/">
+            
+                <a href="../intro/">
+            
+                    
+                    Egg.js 是什么?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../intro/egg-and-koa.html">
+            
+                <a href="../intro/egg-and-koa.html">
+            
+                    
+                    Egg 与 Koa
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../intro/quickstart.html">
+            
+                <a href="../intro/quickstart.html">
+            
+                    
+                    快速入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    基础功能
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../basics/structure.html">
+            
+                <a href="../basics/structure.html">
+            
+                    
+                    目录结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../basics/objects.html">
+            
+                <a href="../basics/objects.html">
+            
+                    
+                    框架内置基础对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../basics/env.html">
+            
+                <a href="../basics/env.html">
+            
+                    
+                    运行环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../basics/config.html">
+            
+                <a href="../basics/config.html">
+            
+                    
+                    Config 配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../basics/middleware.html">
+            
+                <a href="../basics/middleware.html">
+            
+                    
+                    Middleware 中间件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../basics/router.html">
+            
+                <a href="../basics/router.html">
+            
+                    
+                    Router 路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../basics/controller.html">
+            
+                <a href="../basics/controller.html">
+            
+                    
+                    什么是 Controller
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../basics/service.html">
+            
+                <a href="../basics/service.html">
+            
+                    
+                    Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../basics/schedule.html">
+            
+                <a href="../basics/schedule.html">
+            
+                    
+                    定时任务Schedule
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../basics/extend.html">
+            
+                <a href="../basics/extend.html">
+            
+                    
+                    框架扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../basics/app-start.html">
+            
+                <a href="../basics/app-start.html">
+            
+                    
+                    启动自定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    核心功能
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="development.html">
+            
+                <a href="development.html">
+            
+                    
+                    本地开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="unittest.html">
+            
+                <a href="unittest.html">
+            
+                    
+                    单元测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="deployment.html">
+            
+                <a href="deployment.html">
+            
+                    
+                    应用部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="logger.html">
+            
+                <a href="logger.html">
+            
+                    
+                    日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="httpclient.html">
+            
+                <a href="httpclient.html">
+            
+                    
+                    HttpClient
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.6" data-path="cookie-and-session.html">
+            
+                <a href="cookie-and-session.html">
+            
+                    
+                    Cookie and Session
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="cluster-and-ipc.html">
+            
+                <a href="cluster-and-ipc.html">
+            
+                    
+                    多进程模型和进程间通讯
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="view.html">
+            
+                <a href="view.html">
+            
+                    
+                    View 模板渲染
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="error-handling.html">
+            
+                <a href="error-handling.html">
+            
+                    
+                    异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="security.html">
+            
+                <a href="security.html">
+            
+                    
+                    安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="i18n.html">
+            
+                <a href="i18n.html">
+            
+                    
+                    i18n国际化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    教程
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../tutorials/progressive.html">
+            
+                <a href="../tutorials/progressive.html">
+            
+                    
+                    渐进式开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../tutorials/mysql.html">
+            
+                <a href="../tutorials/mysql.html">
+            
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../tutorials/restful.html">
+            
+                <a href="../tutorials/restful.html">
+            
+                    
+                    RESTful API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../tutorials/async-function.html">
+            
+                <a href="../tutorials/async-function.html">
+            
+                    
+                    Async Function
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="passport.md">
+            
+                <span>
+            
+                    
+                    # Passport
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    进阶
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../advanced/loader.html">
+            
+                <a href="../advanced/loader.html">
+            
+                    
+                    Loader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../advanced/plugin.html">
+            
+                <a href="../advanced/plugin.html">
+            
+                    
+                    插件开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../advanced/framework.html">
+            
+                <a href="../advanced/framework.html">
+            
+                    
+                    框架开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../advanced/cluster-client.html">
+            
+                <a href="../advanced/cluster-client.html">
+            
+                    
+                    多进程研发模式增强
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../advanced/view-plugin.html">
+            
+                <a href="../advanced/view-plugin.html">
+            
+                    
+                    View 插件开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    社区
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../plugins/">
+            
+                <a href="../plugins/">
+            
+                    
+                    内置插件列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../contributing.md">
+            
+                <span>
+            
+                    
+                    如何贡献
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../resource.html">
+            
+                <a href="../resource.html">
+            
+                    
+                    资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../member_guide.md">
+            
+                <span>
+            
+                    
+                    成员指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../faq.html">
+            
+                <a href="../faq.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Cookie and Session</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="title-cookie-&#x4E0E;-session">title: Cookie &#x4E0E; Session</h2>
+<h2 id="cookie">Cookie</h2>
+<p>HTTP &#x8BF7;&#x6C42;&#x90FD;&#x662F;&#x65E0;&#x72B6;&#x6001;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x6211;&#x4EEC;&#x7684; Web &#x5E94;&#x7528;&#x901A;&#x5E38;&#x90FD;&#x9700;&#x8981;&#x77E5;&#x9053;&#x53D1;&#x8D77;&#x8BF7;&#x6C42;&#x7684;&#x4EBA;&#x662F;&#x8C01;&#x3002;&#x4E3A;&#x4E86;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;HTTP &#x534F;&#x8BAE;&#x8BBE;&#x8BA1;&#x4E86;&#x4E00;&#x4E2A;&#x7279;&#x6B8A;&#x7684;&#x8BF7;&#x6C42;&#x5934;&#xFF1A;<a href="https://en.wikipedia.org/wiki/HTTP_cookie" _target="blank">Cookie</a>&#x3002;&#x670D;&#x52A1;&#x7AEF;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x54CD;&#x5E94;&#x5934;&#xFF08;set-cookie&#xFF09;&#x5C06;&#x5C11;&#x91CF;&#x6570;&#x636E;&#x54CD;&#x5E94;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x4F1A;&#x9075;&#x5FAA;&#x534F;&#x8BAE;&#x5C06;&#x6570;&#x636E;&#x4FDD;&#x5B58;&#xFF0C;&#x5E76;&#x5728;&#x4E0B;&#x6B21;&#x8BF7;&#x6C42;&#x540C;&#x4E00;&#x4E2A;&#x670D;&#x52A1;&#x7684;&#x65F6;&#x5019;&#x5E26;&#x4E0A;&#xFF08;&#x6D4F;&#x89C8;&#x5668;&#x4E5F;&#x4F1A;&#x9075;&#x5FAA;&#x534F;&#x8BAE;&#xFF0C;&#x53EA;&#x5728;&#x8BBF;&#x95EE;&#x7B26;&#x5408; Cookie &#x6307;&#x5B9A;&#x89C4;&#x5219;&#x7684;&#x7F51;&#x7AD9;&#x65F6;&#x5E26;&#x4E0A;&#x5BF9;&#x5E94;&#x7684; Cookie &#x6765;&#x4FDD;&#x8BC1;&#x5B89;&#x5168;&#x6027;&#xFF09;&#x3002;</p>
+<p>&#x901A;&#x8FC7; <code>context.cookies</code>&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728; controller &#x4E2D;&#x4FBF;&#x6377;&#x3001;&#x5B89;&#x5168;&#x7684;&#x8BBE;&#x7F6E;&#x548C;&#x8BFB;&#x53D6; Cookie&#x3002;</p>
+<pre><code class="lang-js">exports.add = <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params">ctx</span>) </span>{
+  <span class="hljs-keyword">let</span> count = ctx.cookies.get(<span class="hljs-string">&apos;count&apos;</span>);
+  count = count ? <span class="hljs-built_in">Number</span>(count) : <span class="hljs-number">0</span>;
+  ctx.cookies.set(<span class="hljs-string">&apos;count&apos;</span>, ++count);
+  ctx.body = count;
+};
+
+exports.remove = <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params">ctx</span>) </span>{
+  ctx.cookies.set(<span class="hljs-string">&apos;count&apos;</span>, <span class="hljs-literal">null</span>);
+  ctx.status = <span class="hljs-number">204</span>;
+};
+</code></pre>
+<h4 id="contextcookiessetkey-value-options"><code>context.cookies.set(key, value, options)</code></h4>
+<p>&#x8BBE;&#x7F6E; Cookie &#x5176;&#x5B9E;&#x662F;&#x901A;&#x8FC7;&#x5728; HTTP &#x54CD;&#x5E94;&#x4E2D;&#x8BBE;&#x7F6E; set-cookie &#x5934;&#x5B8C;&#x6210;&#x7684;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A; set-cookie &#x90FD;&#x4F1A;&#x8BA9;&#x6D4F;&#x89C8;&#x5668;&#x5728; Cookie &#x4E2D;&#x5B58;&#x4E00;&#x4E2A;&#x952E;&#x503C;&#x5BF9;&#x3002;&#x5728;&#x8BBE;&#x7F6E; Cookie &#x503C;&#x7684;&#x540C;&#x65F6;&#xFF0C;&#x534F;&#x8BAE;&#x8FD8;&#x652F;&#x6301;&#x8BB8;&#x591A;&#x53C2;&#x6570;&#x6765;&#x914D;&#x7F6E;&#x8FD9;&#x4E2A; Cookie &#x7684;&#x4F20;&#x8F93;&#x3001;&#x5B58;&#x50A8;&#x548C;&#x6743;&#x9650;&#x3002;</p>
+<ul>
+<li>maxAge (Number): &#x8BBE;&#x7F6E;&#x8FD9;&#x4E2A;&#x952E;&#x503C;&#x5BF9;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x6700;&#x957F;&#x4FDD;&#x5B58;&#x65F6;&#x95F4;&#x3002;&#x662F;&#x4E00;&#x4E2A;&#x4ECE;&#x670D;&#x52A1;&#x5668;&#x5F53;&#x524D;&#x65F6;&#x523B;&#x5F00;&#x59CB;&#x7684;&#x6BEB;&#x79D2;&#x6570;&#x3002;</li>
+<li>expires (Date): &#x8BBE;&#x7F6E;&#x8FD9;&#x4E2A;&#x952E;&#x503C;&#x5BF9;&#x7684;&#x5931;&#x6548;&#x65F6;&#x95F4;&#xFF0C;&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E86; maxAge&#xFF0C;expires &#x5C06;&#x4F1A;&#x88AB;&#x8986;&#x76D6;&#x3002;&#x5982;&#x679C; maxAge &#x548C; expires &#x90FD;&#x6CA1;&#x8BBE;&#x7F6E;&#xFF0C;Cookie &#x5C06;&#x4F1A;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x4F1A;&#x8BDD;&#x5931;&#x6548;&#xFF08;&#x4E00;&#x822C;&#x662F;&#x5173;&#x95ED;&#x6D4F;&#x89C8;&#x5668;&#x65F6;&#xFF09;&#x7684;&#x65F6;&#x5019;&#x5931;&#x6548;&#x3002;</li>
+<li>path (String): &#x8BBE;&#x7F6E;&#x952E;&#x503C;&#x5BF9;&#x751F;&#x6548;&#x7684; URL &#x8DEF;&#x5F84;&#xFF0C;&#x9ED8;&#x8BA4;&#x8BBE;&#x7F6E;&#x5728;&#x6839;&#x8DEF;&#x5F84;&#x4E0A;&#xFF08;<code>/</code>&#xFF09;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x5F53;&#x524D;&#x57DF;&#x540D;&#x4E0B;&#x7684;&#x6240;&#x6709; URL &#x90FD;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x8FD9;&#x4E2A; Cookie&#x3002;</li>
+<li>domain (String): &#x8BBE;&#x7F6E;&#x952E;&#x503C;&#x5BF9;&#x751F;&#x6548;&#x7684;&#x57DF;&#x540D;&#xFF0C;&#x9ED8;&#x8BA4;&#x6CA1;&#x6709;&#x914D;&#x7F6E;&#xFF0C;&#x53EF;&#x4EE5;&#x914D;&#x7F6E;&#x6210;&#x53EA;&#x5728;&#x6307;&#x5B9A;&#x57DF;&#x540D;&#x624D;&#x80FD;&#x8BBF;&#x95EE;&#x3002;</li>
+<li>httpOnly (Boolean): &#x8BBE;&#x7F6E;&#x952E;&#x503C;&#x5BF9;&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x88AB; js &#x8BBF;&#x95EE;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; true&#xFF0C;&#x4E0D;&#x5141;&#x8BB8;&#x88AB; js &#x8BBF;&#x95EE;&#x3002;</li>
+<li>secure (Boolean): &#x8BBE;&#x7F6E;&#x952E;&#x503C;&#x5BF9;<a href="http://stackoverflow.com/questions/13729749/how-does-cookie-secure-flag-work" _target="blank">&#x53EA;&#x5728; HTTPS &#x8FDE;&#x63A5;&#x4E0A;&#x4F20;&#x8F93;</a>&#xFF0C;&#x6846;&#x67B6;&#x4F1A;&#x5E2E;&#x6211;&#x4EEC;&#x5224;&#x65AD;&#x5F53;&#x524D;&#x662F;&#x5426;&#x5728; HTTPS &#x8FDE;&#x63A5;&#x4E0A;&#x81EA;&#x52A8;&#x8BBE;&#x7F6E; secure &#x7684;&#x503C;&#x3002;</li>
+</ul>
+<p>&#x9664;&#x4E86;&#x8FD9;&#x4E9B;&#x5C5E;&#x6027;&#x4E4B;&#x5916;&#xFF0C;&#x6846;&#x67B6;&#x53E6;&#x5916;&#x6269;&#x5C55;&#x4E86; 3 &#x4E2A;&#x53C2;&#x6570;&#x7684;&#x652F;&#x6301;&#xFF1A;</p>
+<ul>
+<li>overwrite(Boolean)&#xFF1A;&#x8BBE;&#x7F6E; key &#x76F8;&#x540C;&#x7684;&#x952E;&#x503C;&#x5BF9;&#x5982;&#x4F55;&#x5904;&#x7406;&#xFF0C;&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E3A; true&#xFF0C;&#x5219;&#x540E;&#x8BBE;&#x7F6E;&#x7684;&#x503C;&#x4F1A;&#x8986;&#x76D6;&#x524D;&#x9762;&#x8BBE;&#x7F6E;&#x7684;&#xFF0C;&#x5426;&#x5219;&#x5C06;&#x4F1A;&#x53D1;&#x9001;&#x4E24;&#x4E2A; set-cookie &#x54CD;&#x5E94;&#x5934;&#x3002;</li>
+<li>signed&#xFF08;Boolean&#xFF09;&#xFF1A;&#x8BBE;&#x7F6E;&#x662F;&#x5426;&#x5BF9; Cookie &#x8FDB;&#x884C;&#x7B7E;&#x540D;&#xFF0C;&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E3A; true&#xFF0C;&#x5219;&#x8BBE;&#x7F6E;&#x952E;&#x503C;&#x5BF9;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x540C;&#x65F6;&#x5BF9;&#x8FD9;&#x4E2A;&#x952E;&#x503C;&#x5BF9;&#x7684;&#x503C;&#x8FDB;&#x884C;&#x7B7E;&#x540D;&#xFF0C;&#x540E;&#x9762;&#x53D6;&#x7684;&#x65F6;&#x5019;&#x505A;&#x6821;&#x9A8C;&#xFF0C;&#x53EF;&#x4EE5;&#x9632;&#x6B62;&#x524D;&#x7AEF;&#x5BF9;&#x8FD9;&#x4E2A;&#x503C;&#x8FDB;&#x884C;&#x7BE1;&#x6539;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A; true&#x3002;</li>
+<li>encrypt&#xFF08;Boolean&#xFF09;&#xFF1A;&#x8BBE;&#x7F6E;&#x662F;&#x5426;&#x5BF9; Cookie &#x8FDB;&#x884C;&#x52A0;&#x5BC6;&#xFF0C;&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E3A; true&#xFF0C;&#x5219;&#x5728;&#x53D1;&#x9001; Cookie &#x524D;&#x4F1A;&#x5BF9;&#x8FD9;&#x4E2A;&#x952E;&#x503C;&#x5BF9;&#x7684;&#x503C;&#x8FDB;&#x884C;&#x52A0;&#x5BC6;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x65E0;&#x6CD5;&#x8BFB;&#x53D6;&#x5230; Cookie &#x7684;&#x660E;&#x6587;&#x503C;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A; false&#x3002;</li>
+</ul>
+<p>&#x5728;&#x8BBE;&#x7F6E; Cookie &#x65F6;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x601D;&#x8003;&#x6E05;&#x695A;&#x8FD9;&#x4E2A; Cookie &#x7684;&#x4F5C;&#x7528;&#xFF0C;&#x5B83;&#x9700;&#x8981;&#x88AB;&#x6D4F;&#x89C8;&#x5668;&#x4FDD;&#x5B58;&#x591A;&#x4E45;&#xFF1F;&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x88AB; js &#x83B7;&#x53D6;&#x5230;&#xFF1F;&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x88AB;&#x524D;&#x7AEF;&#x4FEE;&#x6539;&#xFF1F;</p>
+<p><strong>&#x9ED8;&#x8BA4;&#x7684;&#x914D;&#x7F6E;&#x4E0B;&#xFF0C;Cookie &#x662F;&#x52A0;&#x7B7E;&#x4E0D;&#x52A0;&#x5BC6;&#x7684;&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x660E;&#x6587;&#xFF0C;js &#x4E0D;&#x80FD;&#x8BBF;&#x95EE;&#xFF0C;&#x4E0D;&#x80FD;&#x88AB;&#x5BA2;&#x6237;&#x7AEF;&#xFF08;&#x624B;&#x5DE5;&#xFF09;&#x7BE1;&#x6539;&#x3002;</strong></p>
+<ul>
+<li>&#x5982;&#x679C;&#x60F3;&#x8981; Cookie &#x5728;&#x6D4F;&#x89C8;&#x5668;&#x7AEF;&#x53EF;&#x4EE5;&#x88AB; js &#x8BBF;&#x95EE;&#x5E76;&#x4FEE;&#x6539;:</li>
+</ul>
+<pre><code class="lang-js">ctx.cookies.set(key, value, {
+  httpOnly: <span class="hljs-literal">false</span>,
+  signed: <span class="hljs-literal">false</span>,
+});
+</code></pre>
+<ul>
+<li>&#x5982;&#x679C;&#x60F3;&#x8981; Cookie &#x5728;&#x6D4F;&#x89C8;&#x5668;&#x7AEF;&#x4E0D;&#x80FD;&#x88AB;&#x4FEE;&#x6539;&#xFF0C;&#x4E0D;&#x80FD;&#x770B;&#x5230;&#x660E;&#x6587;&#xFF1A;</li>
+</ul>
+<pre><code class="lang-js">ctx.cookies.set(key, value, {
+  httpOnly: <span class="hljs-literal">true</span>, <span class="hljs-comment">// &#x9ED8;&#x8BA4;&#x5C31;&#x662F; true</span>
+  encrypt: <span class="hljs-literal">true</span>, <span class="hljs-comment">// &#x52A0;&#x5BC6;&#x4F20;&#x8F93;</span>
+});
+</code></pre>
+<p>&#x6CE8;&#x610F;&#xFF1A;</p>
+<ol>
+<li>&#x7531;&#x4E8E;<a href="http://stackoverflow.com/questions/7567154/can-i-use-unicode-characters-in-http-headers" _target="blank">&#x6D4F;&#x89C8;&#x5668;&#x548C;&#x5176;&#x4ED6;&#x5BA2;&#x6237;&#x7AEF;&#x5B9E;&#x73B0;&#x7684;&#x4E0D;&#x786E;&#x5B9A;&#x6027;</a>&#xFF0C;&#x4E3A;&#x4E86;&#x4FDD;&#x8BC1; Cookie &#x53EF;&#x4EE5;&#x5199;&#x5165;&#x6210;&#x529F;&#xFF0C;&#x5EFA;&#x8BAE; value &#x901A;&#x8FC7; base64 &#x7F16;&#x7801;&#x6216;&#x8005;&#x5176;&#x4ED6;&#x5F62;&#x5F0F; encode &#x4E4B;&#x540E;&#x518D;&#x5199;&#x5165;&#x3002;</li>
+<li>&#x7531;&#x4E8E;<a href="http://stackoverflow.com/questions/640938/what-is-the-maximum-size-of-a-web-browsers-cookies-key" _target="blank">&#x6D4F;&#x89C8;&#x5668;&#x5BF9; Cookie &#x6709;&#x957F;&#x5EA6;&#x9650;&#x5236;&#x9650;&#x5236;</a>&#xFF0C;&#x6240;&#x4EE5;&#x5C3D;&#x91CF;&#x4E0D;&#x8981;&#x8BBE;&#x7F6E;&#x592A;&#x957F;&#x7684; Cookie&#x3002;&#x4E00;&#x822C;&#x6765;&#x8BF4;&#x4E0D;&#x8981;&#x8D85;&#x8FC7; 4093 bytes&#x3002;&#x5F53;&#x8BBE;&#x7F6E;&#x7684; Cookie value &#x5927;&#x4E8E;&#x8FD9;&#x4E2A;&#x503C;&#x65F6;&#xFF0C;&#x6846;&#x67B6;&#x4F1A;&#x6253;&#x5370;&#x4E00;&#x6761;&#x8B66;&#x544A;&#x65E5;&#x5FD7;&#x3002;</li>
+</ol>
+<h4 id="contextcookiesgetkey-options"><code>context.cookies.get(key, options)</code></h4>
+<p>&#x7531;&#x4E8E; HTTP &#x8BF7;&#x6C42;&#x4E2D;&#x7684; Cookie &#x662F;&#x5728;&#x4E00;&#x4E2A; header &#x4E2D;&#x4F20;&#x8F93;&#x8FC7;&#x6765;&#x7684;&#xFF0C;&#x901A;&#x8FC7;&#x6846;&#x67B6;&#x63D0;&#x4F9B;&#x7684;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x5FEB;&#x901F;&#x7684;&#x4ECE;&#x6574;&#x6BB5; Cookie &#x4E2D;&#x83B7;&#x53D6;&#x5BF9;&#x5E94;&#x7684;&#x952E;&#x503C;&#x5BF9;&#x7684;&#x503C;&#x3002;&#x4E0A;&#x9762;&#x5728;&#x8BBE;&#x7F6E; Cookie &#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E; <code>options.signed</code> &#x548C; <code>options.encrypt</code> &#x6765;&#x5BF9; Cookie &#x8FDB;&#x884C;&#x7B7E;&#x540D;&#x6216;&#x52A0;&#x5BC6;&#xFF0C;&#x56E0;&#x6B64;&#x5BF9;&#x5E94;&#x7684;&#x5728;&#x83B7;&#x53D6; Cookie &#x7684;&#x65F6;&#x5019;&#x4E5F;&#x8981;&#x4F20;&#x76F8;&#x5339;&#x914D;&#x7684;&#x9009;&#x9879;&#x3002;</p>
+<ul>
+<li>&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x7684;&#x65F6;&#x5019;&#x6307;&#x5B9A;&#x4E3A; signed&#xFF0C;&#x83B7;&#x53D6;&#x65F6;&#x672A;&#x6307;&#x5B9A;&#xFF0C;&#x5219;&#x4E0D;&#x4F1A;&#x5728;&#x83B7;&#x53D6;&#x65F6;&#x5BF9;&#x53D6;&#x5230;&#x7684;&#x503C;&#x505A;&#x9A8C;&#x7B7E;&#xFF0C;&#x5BFC;&#x81F4;&#x53EF;&#x80FD;&#x88AB;&#x5BA2;&#x6237;&#x7AEF;&#x7BE1;&#x6539;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x7684;&#x65F6;&#x5019;&#x6307;&#x5B9A;&#x4E3A; encrypt&#xFF0C;&#x83B7;&#x53D6;&#x65F6;&#x672A;&#x6307;&#x5B9A;&#xFF0C;&#x5219;&#x65E0;&#x6CD5;&#x83B7;&#x53D6;&#x5230;&#x771F;&#x5B9E;&#x7684;&#x503C;&#xFF0C;&#x800C;&#x662F;&#x52A0;&#x5BC6;&#x8FC7;&#x540E;&#x7684;&#x5BC6;&#x6587;&#x3002;</li>
+</ul>
+<h3 id="cookie-&#x79D8;&#x94A5;">Cookie &#x79D8;&#x94A5;</h3>
+<p>&#x7531;&#x4E8E;&#x6211;&#x4EEC;&#x5728; Cookie &#x4E2D;&#x9700;&#x8981;&#x7528;&#x5230;&#x52A0;&#x89E3;&#x5BC6;&#x548C;&#x9A8C;&#x7B7E;&#xFF0C;&#x6240;&#x4EE5;&#x9700;&#x8981;&#x914D;&#x7F6E;&#x4E00;&#x4E2A;&#x79D8;&#x94A5;&#x4F9B;&#x52A0;&#x5BC6;&#x4F7F;&#x7528;&#x3002;&#x5728; <code>config/config.default.js</code> &#x4E2D;</p>
+<pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = {
+  keys: <span class="hljs-string">&apos;key1,key2&apos;</span>,
+};
+</code></pre>
+<p>keys &#x914D;&#x7F6E;&#x6210;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x53EF;&#x4EE5;&#x6309;&#x7167;&#x9017;&#x53F7;&#x5206;&#x9694;&#x914D;&#x7F6E;&#x591A;&#x4E2A; key&#x3002;Cookie &#x5728;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x914D;&#x7F6E;&#x8FDB;&#x884C;&#x52A0;&#x89E3;&#x5BC6;&#x65F6;&#xFF1A;</p>
+<ul>
+<li>&#x52A0;&#x5BC6;&#x548C;&#x52A0;&#x7B7E;&#x65F6;&#x53EA;&#x4F1A;&#x4F7F;&#x7528;&#x7B2C;&#x4E00;&#x4E2A;&#x79D8;&#x94A5;&#x3002;</li>
+<li>&#x89E3;&#x5BC6;&#x548C;&#x9A8C;&#x7B7E;&#x65F6;&#x4F1A;&#x904D;&#x5386; keys &#x8FDB;&#x884C;&#x89E3;&#x5BC6;&#x3002;</li>
+</ul>
+<p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x66F4;&#x65B0; Cookie &#x7684;&#x79D8;&#x94A5;&#xFF0C;&#x4F46;&#x662F;&#x53C8;&#x4E0D;&#x5E0C;&#x671B;&#x4E4B;&#x524D;&#x8BBE;&#x7F6E;&#x5230;&#x7528;&#x6237;&#x6D4F;&#x89C8;&#x5668;&#x4E0A;&#x7684; Cookie &#x5931;&#x6548;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x65B0;&#x7684;&#x79D8;&#x94A5;&#x914D;&#x7F6E;&#x5230; keys &#x6700;&#x524D;&#x9762;&#xFF0C;&#x7B49;&#x8FC7;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x4E4B;&#x540E;&#x518D;&#x5220;&#x53BB;&#x4E0D;&#x9700;&#x8981;&#x7684;&#x79D8;&#x94A5;&#x5373;&#x53EF;&#x3002;</p>
+<h2 id="session">Session</h2>
+<p>Cookie &#x5728; Web &#x5E94;&#x7528;&#x4E2D;&#x7ECF;&#x5E38;&#x627F;&#x62C5;&#x6807;&#x8BC6;&#x8BF7;&#x6C42;&#x65B9;&#x8EAB;&#x4EFD;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x6240;&#x4EE5; Web &#x5E94;&#x7528;&#x5728; Cookie &#x7684;&#x57FA;&#x7840;&#x4E0A;&#x5C01;&#x88C5;&#x4E86; Session &#x7684;&#x6982;&#x5FF5;&#xFF0C;&#x4E13;&#x95E8;&#x7528;&#x505A;&#x7528;&#x6237;&#x8EAB;&#x4EFD;&#x8BC6;&#x522B;&#x3002;</p>
+<p>&#x6846;&#x67B6;&#x5185;&#x7F6E;&#x4E86; <a href="https://github.com/eggjs/egg-session" _target="blank">Session</a> &#x63D2;&#x4EF6;&#xFF0C;&#x7ED9;&#x6211;&#x4EEC;&#x63D0;&#x4F9B;&#x4E86; <code>context.session</code> &#x6765;&#x8BBF;&#x95EE;&#x6216;&#x8005;&#x4FEE;&#x6539;&#x5F53;&#x524D;&#x7528;&#x6237; Session &#x3002;</p>
+<pre><code class="lang-js">exports.fetchPosts = <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params">ctx</span>) </span>{
+  <span class="hljs-comment">// &#x83B7;&#x53D6; Session &#x4E0A;&#x7684;&#x5185;&#x5BB9;</span>
+  <span class="hljs-keyword">const</span> userId = ctx.session.userId;
+  <span class="hljs-keyword">const</span> posts = <span class="hljs-keyword">yield</span> ctx.service.post.fetch(userId);
+  <span class="hljs-comment">// &#x4FEE;&#x6539; Session &#x7684;&#x503C;</span>
+  ctx.session.visited = ctx.session.visited ? ctx.session.visited++ : <span class="hljs-number">1</span>;
+  ctx.body = {
+    success: <span class="hljs-literal">true</span>,
+    posts,
+  };
+};
+</code></pre>
+<p>Session &#x7684;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#x975E;&#x5E38;&#x76F4;&#x89C2;&#xFF0C;&#x76F4;&#x63A5;&#x8BFB;&#x53D6;&#x5B83;&#x6216;&#x8005;&#x4FEE;&#x6539;&#x5B83;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#xFF0C;&#x5982;&#x679C;&#x8981;&#x5220;&#x9664;&#x5B83;&#xFF0C;&#x76F4;&#x63A5;&#x5C06;&#x5B83;&#x8D4B;&#x503C;&#x4E3A; null&#xFF1A;</p>
+<pre><code class="lang-js">exports.deleteSession = <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params">ctx</span>) </span>{
+  ctx.session = <span class="hljs-literal">null</span>;
+};
+</code></pre>
+<p>Session &#x7684;&#x5B9E;&#x73B0;&#x662F;&#x57FA;&#x4E8E; Cookie &#x7684;&#xFF0C;&#x9ED8;&#x8BA4;&#x914D;&#x7F6E;&#x4E0B;&#xFF0C;&#x7528;&#x6237; Session &#x7684;&#x5185;&#x5BB9;&#x52A0;&#x5BC6;&#x540E;&#x76F4;&#x63A5;&#x5B58;&#x50A8;&#x5728; Cookie &#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;&#x4E2D;&#xFF0C;&#x7528;&#x6237;&#x6BCF;&#x6B21;&#x8BF7;&#x6C42;&#x6211;&#x4EEC;&#x7F51;&#x7AD9;&#x7684;&#x65F6;&#x5019;&#x90FD;&#x4F1A;&#x5E26;&#x4E0A;&#x8FD9;&#x4E2A; Cookie&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x670D;&#x52A1;&#x7AEF;&#x89E3;&#x5BC6;&#x540E;&#x4F7F;&#x7528;&#x3002;Session &#x7684;&#x9ED8;&#x8BA4;&#x914D;&#x7F6E;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-js">exports.session = {
+  key: <span class="hljs-string">&apos;EGG_SESS&apos;</span>,
+  maxAge: <span class="hljs-number">24</span> * <span class="hljs-number">3600</span> * <span class="hljs-number">1000</span>, <span class="hljs-comment">// 1 &#x5929;</span>
+  httpOnly: <span class="hljs-literal">true</span>,
+  encrypt: <span class="hljs-literal">true</span>,
+};
+</code></pre>
+<p>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x8FD9;&#x4E9B;&#x53C2;&#x6570;&#x9664;&#x4E86; <code>key</code> &#x90FD;&#x662F; Cookie &#x7684;&#x53C2;&#x6570;&#xFF0C;<code>key</code> &#x4EE3;&#x8868;&#x4E86;&#x5B58;&#x50A8; Session &#x7684; Cookie &#x952E;&#x503C;&#x5BF9;&#x7684; key &#x662F;&#x4EC0;&#x4E48;&#x3002;&#x5728;&#x9ED8;&#x8BA4;&#x7684;&#x914D;&#x7F6E;&#x4E0B;&#xFF0C;&#x5B58;&#x653E; Session &#x7684; Cookie &#x5C06;&#x4F1A;&#x52A0;&#x5BC6;&#x5B58;&#x50A8;&#x3001;&#x4E0D;&#x53EF;&#x88AB;&#x524D;&#x7AEF; js &#x8BBF;&#x95EE;&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x4FDD;&#x8BC1;&#x7528;&#x6237;&#x7684; Session &#x662F;&#x5B89;&#x5168;&#x7684;&#x3002;</p>
+<h3 id="&#x6269;&#x5C55;&#x5B58;&#x50A8;">&#x6269;&#x5C55;&#x5B58;&#x50A8;</h3>
+<p>Session &#x9ED8;&#x8BA4;&#x5B58;&#x653E;&#x5728; Cookie &#x4E2D;&#xFF0C;&#x4F46;&#x662F;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x7684; Session &#x5BF9;&#x8C61;&#x8FC7;&#x4E8E;&#x5E9E;&#x5927;&#xFF0C;&#x5C31;&#x4F1A;&#x5E26;&#x6765;&#x4E00;&#x4E9B;&#x989D;&#x5916;&#x7684;&#x95EE;&#x9898;&#xFF1A;</p>
+<ul>
+<li>&#x524D;&#x9762;&#x63D0;&#x5230;&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x901A;&#x5E38;&#x90FD;&#x6709;&#x9650;&#x5236;&#x6700;&#x5927;&#x7684; Cookie &#x957F;&#x5EA6;&#xFF0C;&#x5F53;&#x8BBE;&#x7F6E;&#x7684; Session &#x8FC7;&#x5927;&#x65F6;&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x53EF;&#x80FD;&#x62D2;&#x7EDD;&#x4FDD;&#x5B58;&#x3002;</li>
+<li>Cookie &#x5728;&#x6BCF;&#x6B21;&#x8BF7;&#x6C42;&#x65F6;&#x90FD;&#x4F1A;&#x5E26;&#x4E0A;&#xFF0C;&#x5F53; Session &#x8FC7;&#x5927;&#x65F6;&#xFF0C;&#x6BCF;&#x6B21;&#x8BF7;&#x6C42;&#x90FD;&#x8981;&#x989D;&#x5916;&#x5E26;&#x4E0A;&#x5E9E;&#x5927;&#x7684; Cookie &#x4FE1;&#x606F;&#x3002;</li>
+</ul>
+<p>&#x6846;&#x67B6;&#x63D0;&#x4F9B;&#x4E86;&#x5C06; Session &#x5B58;&#x50A8;&#x5230;&#x9664;&#x4E86; Cookie &#x4E4B;&#x5916;&#x7684;&#x5176;&#x4ED6;&#x5B58;&#x50A8;&#x7684;&#x6269;&#x5C55;&#x65B9;&#x6848;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x8981;&#x8BBE;&#x7F6E; <code>app.sessionStore</code> &#x5373;&#x53EF;&#x5C06; Session &#x5B58;&#x50A8;&#x5230;&#x6307;&#x5B9A;&#x7684;&#x5B58;&#x50A8;&#x4E2D;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// app.js</span>
+<span class="hljs-built_in">module</span>.exports = app =&gt; {
+  app.sessionStore = {
+    * get (key) {
+      <span class="hljs-comment">// return value;</span>
+    },
+    * set (key, value, maxAge) {
+      <span class="hljs-comment">// set key to store</span>
+    },
+    * destroy (key) {
+      <span class="hljs-comment">// destroy key</span>
+    },
+  };
+};
+</code></pre>
+<p>sessionStore &#x7684;&#x5B9E;&#x73B0;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x5C01;&#x88C5;&#x5230;&#x63D2;&#x4EF6;&#x4E2D;&#xFF0C;&#x4F8B;&#x5982; <a href="https://github.com/eggjs/egg-session-redis" _target="blank">egg-session-redis</a> &#x5C31;&#x63D0;&#x4F9B;&#x4E86;&#x5C06; Session &#x5B58;&#x50A8;&#x5230; redis &#x4E2D;&#x7684;&#x80FD;&#x529B;&#xFF0C;&#x5728;&#x5E94;&#x7528;&#x5C42;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x8981;&#x5F15;&#x5165; <a href="https://github.com/eggjs/egg-redis" _target="blank">egg-redis</a> &#x548C; <a href="https://github.com/eggjs/egg-session-redis" _target="blank">egg-session-redis</a> &#x63D2;&#x4EF6;&#x5373;&#x53EF;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// plugin.js</span>
+exports.redis = {
+  enable: <span class="hljs-literal">true</span>,
+  package: <span class="hljs-string">&apos;egg-redis&apos;</span>,
+};
+exports.sessionRedis = {
+  enable: <span class="hljs-literal">true</span>,
+  package: <span class="hljs-string">&apos;egg-session-redis&apos;</span>,
+};
+</code></pre>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;&#x4E00;&#x65E6;&#x9009;&#x62E9;&#x4E86;&#x5C06; Session &#x5B58;&#x5165;&#x5230;&#x5916;&#x90E8;&#x5B58;&#x50A8;&#x4E2D;&#xFF0C;&#x5C31;&#x610F;&#x5473;&#x7740;&#x7CFB;&#x7EDF;&#x5C06;&#x5F3A;&#x4F9D;&#x8D56;&#x4E8E;&#x8FD9;&#x4E2A;&#x5916;&#x90E8;&#x5B58;&#x50A8;&#xFF0C;&#x5F53;&#x5B83;&#x6302;&#x4E86;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x5B8C;&#x5168;&#x65E0;&#x6CD5;&#x4F7F;&#x7528; Session &#x76F8;&#x5173;&#x7684;&#x529F;&#x80FD;&#x4E86;&#x3002;&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x66F4;&#x63A8;&#x8350;&#x5927;&#x5BB6;&#x53EA;&#x5C06;&#x5FC5;&#x8981;&#x7684;&#x4FE1;&#x606F;&#x5B58;&#x50A8;&#x5728; Session &#x4E2D;&#xFF0C;&#x4FDD;&#x6301; Session &#x7684;&#x7CBE;&#x7B80;&#x5E76;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x7684; Cookie &#x5B58;&#x50A8;&#xFF0C;&#x7528;&#x6237;&#x7EA7;&#x522B;&#x7684;&#x7F13;&#x5B58;&#x4E0D;&#x8981;&#x5B58;&#x50A8;&#x5728; Session &#x4E2D;&#x3002;</strong></p>
+<h3 id="session-&#x5B9E;&#x8DF5;">Session &#x5B9E;&#x8DF5;</h3>
+<h4 id="&#x4FEE;&#x6539;&#x7528;&#x6237;-session-&#x5931;&#x6548;&#x65F6;&#x95F4;">&#x4FEE;&#x6539;&#x7528;&#x6237; Session &#x5931;&#x6548;&#x65F6;&#x95F4;</h4>
+<p>&#x867D;&#x7136;&#x5728; Session &#x7684;&#x914D;&#x7F6E;&#x4E2D;&#x6709;&#x4E00;&#x9879;&#x662F; maxAge&#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x53EA;&#x80FD;&#x5168;&#x5C40;&#x8BBE;&#x7F6E; Session &#x7684;&#x6709;&#x6548;&#x671F;&#xFF0C;&#x6211;&#x4EEC;&#x7ECF;&#x5E38;&#x53EF;&#x4EE5;&#x5728;&#x4E00;&#x4E9B;&#x7F51;&#x7AD9;&#x7684;&#x767B;&#x9646;&#x9875;&#x4E0A;&#x770B;&#x5230;&#x6709; <strong>&#x8BB0;&#x4F4F;&#x6211;</strong> &#x7684;&#x9009;&#x9879;&#x6846;&#xFF0C;&#x52FE;&#x9009;&#x4E4B;&#x540E;&#x53EF;&#x4EE5;&#x8BA9;&#x767B;&#x9646;&#x7528;&#x6237;&#x7684; Session &#x6709;&#x6548;&#x671F;&#x66F4;&#x957F;&#x3002;&#x8FD9;&#x79CD;&#x9488;&#x5BF9;&#x7279;&#x5B9A;&#x7528;&#x6237;&#x7684; Session &#x6709;&#x6548;&#x65F6;&#x95F4;&#x8BBE;&#x7F6E;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>context.session.maxAge=</code> &#x6765;&#x5B9E;&#x73B0;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> ms = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;ms&apos;</span>);
+<span class="hljs-comment">// login &#x7684; controller</span>
+exports.login = <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params">ctx</span>) </span>{
+  <span class="hljs-keyword">const</span> { username, password, rememberMe } = ctx.request.body;
+  <span class="hljs-keyword">const</span> user = <span class="hljs-keyword">yield</span> ctx.loginAndGetUser(username, password);
+
+  <span class="hljs-comment">// &#x8BBE;&#x7F6E; Session</span>
+  <span class="hljs-keyword">this</span>.session.user = user;
+  <span class="hljs-comment">// &#x5982;&#x679C;&#x7528;&#x6237;&#x52FE;&#x9009;&#x4E86; `&#x8BB0;&#x4F4F;&#x6211;`&#xFF0C;&#x8BBE;&#x7F6E; 30 &#x5929;&#x7684;&#x8FC7;&#x671F;&#x65F6;&#x95F4;</span>
+  <span class="hljs-keyword">if</span> (rememberMe) <span class="hljs-keyword">this</span>.session.maxAge = ms(<span class="hljs-string">&apos;30d&apos;</span>);
+};
+</code></pre>
+<h4 id="&#x5EF6;&#x957F;&#x7528;&#x6237;-session-&#x6709;&#x6548;&#x671F;">&#x5EF6;&#x957F;&#x7528;&#x6237; Session &#x6709;&#x6548;&#x671F;</h4>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5F53;&#x7528;&#x6237;&#x8BF7;&#x6C42;&#x6CA1;&#x6709;&#x5BFC;&#x81F4; Session &#x88AB;&#x4FEE;&#x6539;&#x65F6;&#xFF0C;&#x6846;&#x67B6;&#x90FD;&#x4E0D;&#x4F1A;&#x5EF6;&#x957F; Session &#x7684;&#x6709;&#x6548;&#x671F;&#xFF0C;&#x4F46;&#x662F;&#x5728;&#x6709;&#x4E9B;&#x573A;&#x666F;&#x4E0B;&#xFF0C;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x7528;&#x6237;&#x6BCF;&#x6B21;&#x8BBF;&#x95EE;&#x90FD;&#x5237;&#x65B0; Session &#x7684;&#x6709;&#x6548;&#x65F6;&#x95F4;&#xFF0C;&#x8FD9;&#x6837;&#x7528;&#x6237;&#x53EA;&#x6709;&#x5728;&#x957F;&#x671F;&#x672A;&#x8BBF;&#x95EE;&#x6211;&#x4EEC;&#x7684;&#x7F51;&#x7AD9;&#x7684;&#x65F6;&#x5019;&#x624D;&#x4F1A;&#x88AB;&#x767B;&#x51FA;&#x3002;&#x8FD9;&#x4E2A;&#x529F;&#x80FD;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>context.session.save()</code> &#x6765;&#x5B9E;&#x73B0;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x589E;&#x52A0;&#x4E00;&#x4E2A;&#x4E2D;&#x95F4;&#x4EF6;&#xFF0C;&#x8BA9;&#x5B83;&#x5728; Session &#x6709;&#x503C;&#x7684;&#x65F6;&#x5019;&#x5F3A;&#x5236;&#x4FDD;&#x5B58;&#x4E00;&#x6B21;&#xFF0C;&#x4EE5;&#x8FBE;&#x5230;&#x5EF6;&#x957F; Session &#x6709;&#x6548;&#x671F;&#x7684;&#x76EE;&#x7684;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// app/middleware/save_session.js</span>
+<span class="hljs-built_in">module</span>.exports = () =&gt; {
+  <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params">next</span>) </span>{
+    <span class="hljs-keyword">yield</span> next;
+    <span class="hljs-comment">// &#x5982;&#x679C; Session &#x662F;&#x7A7A;&#x7684;&#xFF0C;&#x5219;&#x4E0D;&#x4FDD;&#x5B58;</span>
+    <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">this</span>.session.populated) <span class="hljs-keyword">return</span>;
+    <span class="hljs-keyword">this</span>.session.save();
+  };
+};
+
+<span class="hljs-comment">// config/config.default.js</span>
+<span class="hljs-comment">// &#x5728;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x5F15;&#x5165;&#x4E2D;&#x95F4;&#x4EF6;</span>
+exports.middleware = [ <span class="hljs-string">&apos;saveSession&apos;</span> ];
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="httpclient.html" class="navigation navigation-prev " aria-label="Previous page: HttpClient">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="cluster-and-ipc.html" class="navigation navigation-next " aria-label="Next page: 多进程模型和进程间通讯">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Cookie and Session","level":"1.4.6","depth":2,"next":{"title":"多进程模型和进程间通讯","level":"1.4.7","depth":2,"path":"core/cluster-and-ipc.md","ref":"core/cluster-and-ipc.md","articles":[]},"previous":{"title":"HttpClient","level":"1.4.5","depth":2,"path":"core/httpclient.md","ref":"core/httpclient.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-fontsettings","-search-pro","-advanced-emoji","-github","-splitter","-toggle-chapters"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search-pro":{"cutWordLib":"nodejieba","defineWord":["Gitbook"]},"github":{"url":"https://github.com/laomu1988/fe-books"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"laomu1988@qq.com","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"fe-books","language":"zh-hans","gitbook":"*"},"file":{"path":"core/cookie-and-session.md","mtime":"2017-10-27T07:54:15.000Z","type":"markdown"},"gitbook":{"version":"3.1.0","time":"2017-10-27T07:54:17.244Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+<script>
+	// 百度统计
+	var _hmt = _hmt || [];
+	(function () {
+		var hm = document.createElement("script");
+		hm.src = "//hm.baidu.com/hm.js?171566b3d4f03c9c68c8f2c7a42d4b0e";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+<script src="/fe-books/server/index.js"></script>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

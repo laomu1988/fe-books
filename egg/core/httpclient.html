@@ -1,0 +1,1443 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <title>HttpClient · fe-books</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.0">
+        <meta name="author" content="laomu1988@qq.com">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="cookie-and-session.html" />
+    
+    
+    <link rel="prev" href="logger.html" />
+    
+
+<link rel="stylesheet" href="/fe-books/server/index.css"/>
+
+    </head>
+    <body>
+        
+<script src="/fe-books/server/menu.js"></script>
+
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    目录结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    新手指南
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../intro/">
+            
+                <a href="../intro/">
+            
+                    
+                    Egg.js 是什么?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../intro/egg-and-koa.html">
+            
+                <a href="../intro/egg-and-koa.html">
+            
+                    
+                    Egg 与 Koa
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../intro/quickstart.html">
+            
+                <a href="../intro/quickstart.html">
+            
+                    
+                    快速入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    基础功能
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../basics/structure.html">
+            
+                <a href="../basics/structure.html">
+            
+                    
+                    目录结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../basics/objects.html">
+            
+                <a href="../basics/objects.html">
+            
+                    
+                    框架内置基础对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../basics/env.html">
+            
+                <a href="../basics/env.html">
+            
+                    
+                    运行环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../basics/config.html">
+            
+                <a href="../basics/config.html">
+            
+                    
+                    Config 配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../basics/middleware.html">
+            
+                <a href="../basics/middleware.html">
+            
+                    
+                    Middleware 中间件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../basics/router.html">
+            
+                <a href="../basics/router.html">
+            
+                    
+                    Router 路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../basics/controller.html">
+            
+                <a href="../basics/controller.html">
+            
+                    
+                    什么是 Controller
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../basics/service.html">
+            
+                <a href="../basics/service.html">
+            
+                    
+                    Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../basics/schedule.html">
+            
+                <a href="../basics/schedule.html">
+            
+                    
+                    定时任务Schedule
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../basics/extend.html">
+            
+                <a href="../basics/extend.html">
+            
+                    
+                    框架扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../basics/app-start.html">
+            
+                <a href="../basics/app-start.html">
+            
+                    
+                    启动自定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    核心功能
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="development.html">
+            
+                <a href="development.html">
+            
+                    
+                    本地开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="unittest.html">
+            
+                <a href="unittest.html">
+            
+                    
+                    单元测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="deployment.html">
+            
+                <a href="deployment.html">
+            
+                    
+                    应用部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="logger.html">
+            
+                <a href="logger.html">
+            
+                    
+                    日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.5" data-path="httpclient.html">
+            
+                <a href="httpclient.html">
+            
+                    
+                    HttpClient
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="cookie-and-session.html">
+            
+                <a href="cookie-and-session.html">
+            
+                    
+                    Cookie and Session
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="cluster-and-ipc.html">
+            
+                <a href="cluster-and-ipc.html">
+            
+                    
+                    多进程模型和进程间通讯
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="view.html">
+            
+                <a href="view.html">
+            
+                    
+                    View 模板渲染
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="error-handling.html">
+            
+                <a href="error-handling.html">
+            
+                    
+                    异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="security.html">
+            
+                <a href="security.html">
+            
+                    
+                    安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="i18n.html">
+            
+                <a href="i18n.html">
+            
+                    
+                    i18n国际化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    教程
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../tutorials/progressive.html">
+            
+                <a href="../tutorials/progressive.html">
+            
+                    
+                    渐进式开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../tutorials/mysql.html">
+            
+                <a href="../tutorials/mysql.html">
+            
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../tutorials/restful.html">
+            
+                <a href="../tutorials/restful.html">
+            
+                    
+                    RESTful API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../tutorials/async-function.html">
+            
+                <a href="../tutorials/async-function.html">
+            
+                    
+                    Async Function
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="passport.md">
+            
+                <span>
+            
+                    
+                    # Passport
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    进阶
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../advanced/loader.html">
+            
+                <a href="../advanced/loader.html">
+            
+                    
+                    Loader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../advanced/plugin.html">
+            
+                <a href="../advanced/plugin.html">
+            
+                    
+                    插件开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../advanced/framework.html">
+            
+                <a href="../advanced/framework.html">
+            
+                    
+                    框架开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../advanced/cluster-client.html">
+            
+                <a href="../advanced/cluster-client.html">
+            
+                    
+                    多进程研发模式增强
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../advanced/view-plugin.html">
+            
+                <a href="../advanced/view-plugin.html">
+            
+                    
+                    View 插件开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    社区
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../plugins/">
+            
+                <a href="../plugins/">
+            
+                    
+                    内置插件列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../contributing.md">
+            
+                <span>
+            
+                    
+                    如何贡献
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../resource.html">
+            
+                <a href="../resource.html">
+            
+                    
+                    资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../member_guide.md">
+            
+                <span>
+            
+                    
+                    成员指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../faq.html">
+            
+                <a href="../faq.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >HttpClient</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="title-httpclient">title: HttpClient</h2>
+<p>&#x4E92;&#x8054;&#x7F51;&#x65F6;&#x4EE3;&#xFF0C;&#x65E0;&#x6570;&#x670D;&#x52A1;&#x662F;&#x57FA;&#x4E8E; HTTP &#x534F;&#x8BAE;&#x8FDB;&#x884C;&#x901A;&#x4FE1;&#x7684;&#xFF0C;Web &#x5E94;&#x7528;&#x8C03;&#x7528;&#x540E;&#x7AEF; HTTP &#x670D;&#x52A1;&#x662F;&#x4E00;&#x79CD;&#x975E;&#x5E38;&#x5E38;&#x89C1;&#x7684;&#x5E94;&#x7528;&#x573A;&#x666F;&#x3002;</p>
+<p>&#x4E3A;&#x6B64;&#x6846;&#x67B6;&#x57FA;&#x4E8E; <a href="https://github.com/node-modules/urllib" _target="blank">urllib</a> &#x5185;&#x7F6E;&#x5B9E;&#x73B0;&#x4E86;&#x4E00;&#x4E2A; <a href="https://github.com/eggjs/egg/blob/master/lib/core/httpclient.js" _target="blank">HttpClient</a>&#xFF0C;&#x5E94;&#x7528;&#x53EF;&#x4EE5;&#x975E;&#x5E38;&#x4FBF;&#x6377;&#x5730;&#x5B8C;&#x6210;&#x4EFB;&#x4F55; HTTP &#x8BF7;&#x6C42;&#x3002;</p>
+<h2 id="&#x901A;&#x8FC7;-app-&#x4F7F;&#x7528;-httpclient">&#x901A;&#x8FC7; app &#x4F7F;&#x7528; HttpClient</h2>
+<p>&#x6846;&#x67B6;&#x5728;&#x5E94;&#x7528;&#x521D;&#x59CB;&#x5316;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F1A;&#x81EA;&#x52A8;&#x5C06; <a href="https://github.com/eggjs/egg/blob/master/lib/core/httpclient.js" _target="blank">HttpClient</a> &#x521D;&#x59CB;&#x5316;&#x5230; <code>app.httpclient</code>&#x3002;
+&#x540C;&#x65F6;&#x589E;&#x52A0;&#x4E86;&#x4E00;&#x4E2A; <code>app.curl(url, options)</code> &#x65B9;&#x6CD5;&#xFF0C;&#x5B83;&#x7B49;&#x4EF7;&#x4E8E; <code>app.httpclient.request(url, options)</code>&#x3002;</p>
+<p>&#x8FD9;&#x6837;&#x5C31;&#x53EF;&#x4EE5;&#x975E;&#x5E38;&#x65B9;&#x4FBF;&#x5730;&#x4F7F;&#x7528; <code>app.curl</code> &#x65B9;&#x6CD5;&#x5B8C;&#x6210;&#x4E00;&#x6B21; HTTP &#x8BF7;&#x6C42;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// app.js</span>
+<span class="hljs-built_in">module</span>.exports = app =&gt; {
+  app.beforeStart(<span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-comment">// &#x793A;&#x4F8B;&#xFF1A;&#x542F;&#x52A8;&#x7684;&#x65F6;&#x5019;&#x53BB;&#x8BFB;&#x53D6; https://registry.npm.taobao.org/egg/latest &#x7684;&#x7248;&#x672C;&#x4FE1;&#x606F;</span>
+    <span class="hljs-keyword">const</span> result = <span class="hljs-keyword">yield</span> app.curl(<span class="hljs-string">&apos;https://registry.npm.taobao.org/egg/latest&apos;</span>, {
+      dataType: <span class="hljs-string">&apos;json&apos;</span>,
+    });
+    app.logger.info(<span class="hljs-string">&apos;Egg latest version: %s&apos;</span>, result.data.version);
+  });
+};
+</code></pre>
+<h2 id="&#x901A;&#x8FC7;-context-&#x4F7F;&#x7528;-httpclient">&#x901A;&#x8FC7; Context &#x4F7F;&#x7528; HttpClient</h2>
+<p>&#x6846;&#x67B6;&#x5728; Context &#x4E2D;&#x540C;&#x6837;&#x63D0;&#x4F9B;&#x4E86; <code>ctx.curl(url, options)</code> &#x548C; <code>ctx.httpclient</code>&#xFF0C;&#x4FDD;&#x6301;&#x8DDF; app &#x4E0B;&#x7684;&#x4F7F;&#x7528;&#x4F53;&#x9A8C;&#x4E00;&#x81F4;&#x3002;
+&#x8FD9;&#x6837;&#x5C31;&#x53EF;&#x4EE5;&#x5728;&#x6709; Context &#x7684;&#x5730;&#x65B9;&#xFF08;&#x5982;&#x5728; controller &#x4E2D;&#xFF09;&#x975E;&#x5E38;&#x65B9;&#x4FBF;&#x5730;&#x4F7F;&#x7528; <code>ctx.curl()</code> &#x65B9;&#x6CD5;&#x5B8C;&#x6210;&#x4E00;&#x6B21; HTTP &#x8BF7;&#x6C42;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// app/controller/home.js</span>
+<span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-keyword">function</span>* <span class="hljs-title">home</span>(<span class="hljs-params">ctx</span>) </span>{
+  <span class="hljs-comment">// &#x793A;&#x4F8B;&#xFF1A;&#x8BF7;&#x6C42;&#x4E00;&#x4E2A; npm &#x6A21;&#x5757;&#x4FE1;&#x606F;</span>
+  <span class="hljs-keyword">const</span> result = <span class="hljs-keyword">yield</span> ctx.curl(<span class="hljs-string">&apos;https://registry.npm.taobao.org/egg/latest&apos;</span>, {
+    <span class="hljs-comment">// &#x81EA;&#x52A8;&#x89E3;&#x6790; JSON response</span>
+    dataType: <span class="hljs-string">&apos;json&apos;</span>,
+    <span class="hljs-comment">// 3 &#x79D2;&#x8D85;&#x65F6;</span>
+    timeout: <span class="hljs-number">3000</span>,
+  });
+
+  ctx.body = {
+    status: result.status,
+    headers: result.headers,
+    package: result.data,
+  };
+};
+</code></pre>
+<h2 id="&#x57FA;&#x672C;-http-&#x8BF7;&#x6C42;">&#x57FA;&#x672C; HTTP &#x8BF7;&#x6C42;</h2>
+<p>HTTP &#x5DF2;&#x7ECF;&#x88AB;&#x5E7F;&#x6CDB;&#x5927;&#x91CF;&#x4F7F;&#x7528;&#xFF0C;&#x5C3D;&#x7BA1; HTTP &#x6709;&#x591A;&#x79CD;&#x8BF7;&#x6C42;&#x65B9;&#x5F0F;&#xFF0C;&#x4F46;&#x662F;&#x4E07;&#x53D8;&#x4E0D;&#x79BB;&#x5176;&#x5B97;&#xFF0C;&#x6211;&#x4EEC;&#x5148;&#x4EE5;&#x57FA;&#x672C;&#x7684;4&#x4E2A;&#x8BF7;&#x6C42;&#x65B9;&#x6CD5;&#x4E3A;&#x4F8B;&#x5B50;&#xFF0C;
+&#x9010;&#x6B65;&#x8BB2;&#x89E3;&#x4E00;&#x4E0B;&#x66F4;&#x591A;&#x7684;&#x590D;&#x6742;&#x5E94;&#x7528;&#x573A;&#x666F;&#x3002;</p>
+<p>&#x4EE5;&#x4E0B;&#x4F8B;&#x5B50;&#x90FD;&#x4F1A;&#x5728; controller &#x4EE3;&#x7801;&#x4E2D;&#x5BF9; <a href="https://httpbin.org" _target="blank">https://httpbin.org</a> &#x53D1;&#x8D77;&#x8BF7;&#x6C42;&#x6765;&#x5B8C;&#x6210;&#x3002;</p>
+<h3 id="get">GET</h3>
+<p>&#x8BFB;&#x53D6;&#x6570;&#x636E;&#x51E0;&#x4E4E;&#x90FD;&#x662F;&#x4F7F;&#x7528; GET &#x8BF7;&#x6C42;&#xFF0C;&#x5B83;&#x662F; HTTP &#x4E16;&#x754C;&#x6700;&#x5E38;&#x89C1;&#x7684;&#x4E00;&#x79CD;&#xFF0C;&#x4E5F;&#x662F;&#x6700;&#x5E7F;&#x6CDB;&#x7684;&#x4E00;&#x79CD;&#xFF0C;&#x5B83;&#x7684;&#x8BF7;&#x6C42;&#x53C2;&#x6570;&#x4E5F;&#x662F;&#x6700;&#x5BB9;&#x6613;&#x6784;&#x9020;&#x7684;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// app/controller/get.js</span>
+<span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-keyword">function</span>* <span class="hljs-title">get</span>(<span class="hljs-params">ctx</span>) </span>{
+  <span class="hljs-keyword">const</span> result = <span class="hljs-keyword">yield</span> ctx.curl(<span class="hljs-string">&apos;https://httpbin.org/get?foo=bar&apos;</span>);
+  ctx.status = result.status;
+  ctx.set(result.headers);
+  ctx.body = result.data;
+};
+</code></pre>
+<ul>
+<li>GET &#x8BF7;&#x6C42;&#x53EF;&#x4EE5;&#x4E0D;&#x7528;&#x8BBE;&#x7F6E; <code>options.method</code> &#x53C2;&#x6570;&#xFF0C;HttpClient &#x7684;&#x9ED8;&#x8BA4; method &#x4F1A;&#x8BBE;&#x7F6E;&#x4E3A; <code>GET</code>&#x3002;</li>
+<li>&#x8FD4;&#x56DE;&#x503C; <code>result</code> &#x4F1A;&#x5305;&#x542B; 3 &#x4E2A;&#x5C5E;&#x6027;&#xFF1A;<code>status</code>, <code>headers</code> &#x548C; <code>data</code><ul>
+<li><code>status</code>: &#x54CD;&#x5E94;&#x72B6;&#x6001;&#x7801;&#xFF0C;&#x5982; <code>200</code>, <code>302</code>, <code>404</code>, <code>500</code> &#x7B49;&#x7B49;</li>
+<li><code>headers</code>: &#x54CD;&#x5E94;&#x5934;&#xFF0C;&#x7C7B;&#x4F3C; <code>{ &apos;content-type&apos;: &apos;text/html&apos;, ... }</code></li>
+<li><code>data</code>: &#x54CD;&#x5E94; body&#xFF0C;&#x9ED8;&#x8BA4; HttpClient &#x4E0D;&#x4F1A;&#x505A;&#x4EFB;&#x4F55;&#x5904;&#x7406;&#xFF0C;&#x4F1A;&#x76F4;&#x63A5;&#x8FD4;&#x56DE; Buffer &#x7C7B;&#x578B;&#x6570;&#x636E;&#x3002;
+&#x4E00;&#x65E6;&#x8BBE;&#x7F6E;&#x4E86; <code>options.dataType</code>&#xFF0C;HttpClient &#x5C06;&#x4F1A;&#x6839;&#x636E;&#x6B64;&#x53C2;&#x6570;&#x5BF9; <code>data</code> &#x8FDB;&#x884C;&#x76F8;&#x5E94;&#x7684;&#x5904;&#x7406;&#x3002;</li>
+</ul>
+</li>
+</ul>
+<p>&#x5B8C;&#x6574;&#x7684;&#x8BF7;&#x6C42;&#x53C2;&#x6570; <code>options</code> &#x548C;&#x8FD4;&#x56DE;&#x503C; <code>result</code> &#x7684;&#x8BF4;&#x660E;&#x8BF7;&#x770B;&#x4E0B;&#x6587;&#x7684; <a href="#options-&#x53C2;&#x6570;&#x8BE6;&#x89E3;">options &#x53C2;&#x6570;&#x8BE6;&#x89E3;</a> &#x7AE0;&#x8282;&#x3002;</p>
+<h3 id="post">POST</h3>
+<p>&#x521B;&#x5EFA;&#x6570;&#x636E;&#x7684;&#x573A;&#x666F;&#x4E00;&#x822C;&#x6765;&#x8BF4;&#x90FD;&#x4F1A;&#x4F7F;&#x7528; POST &#x8BF7;&#x6C42;&#xFF0C;&#x5B83;&#x76F8;&#x5BF9;&#x4E8E; GET &#x6765;&#x8BF4;&#x591A;&#x4E86;&#x8BF7;&#x6C42; body &#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x3002;</p>
+<p>&#x4EE5;&#x53D1;&#x9001; JSON body &#x7684;&#x573A;&#x666F;&#x4E3E;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// app/controller/post.js</span>
+<span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-keyword">function</span>* <span class="hljs-title">post</span>(<span class="hljs-params">ctx</span>) </span>{
+  <span class="hljs-keyword">const</span> result = <span class="hljs-keyword">yield</span> ctx.curl(<span class="hljs-string">&apos;https://httpbin.org/post&apos;</span>, {
+    <span class="hljs-comment">// &#x5FC5;&#x987B;&#x6307;&#x5B9A; method</span>
+    method: <span class="hljs-string">&apos;POST&apos;</span>,
+    <span class="hljs-comment">// &#x901A;&#x8FC7; contentType &#x544A;&#x8BC9; HttpClient &#x4EE5; JSON &#x683C;&#x5F0F;&#x53D1;&#x9001;</span>
+    contentType: <span class="hljs-string">&apos;json&apos;</span>,
+    data: {
+      hello: <span class="hljs-string">&apos;world&apos;</span>,
+      now: <span class="hljs-built_in">Date</span>.now(),
+    },
+    <span class="hljs-comment">// &#x660E;&#x786E;&#x544A;&#x8BC9; HttpClient &#x4EE5; JSON &#x683C;&#x5F0F;&#x5904;&#x7406;&#x8FD4;&#x56DE;&#x7684;&#x54CD;&#x5E94; body</span>
+    dataType: <span class="hljs-string">&apos;json&apos;</span>,
+  });
+  ctx.body = result.data;
+};
+</code></pre>
+<p>&#x4E0B;&#x6587;&#x8FD8;&#x4F1A;&#x8BE6;&#x7EC6;&#x8BB2;&#x89E3;&#x4EE5; POST &#x5B9E;&#x73B0; Form &#x8868;&#x5355;&#x63D0;&#x4EA4;&#x548C;&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x7684;&#x529F;&#x80FD;&#x3002;</p>
+<h3 id="put">PUT</h3>
+<p>PUT &#x4E0E; POST &#x7C7B;&#x4F3C;&#xFF0C;&#x5B83;&#x66F4;&#x52A0;&#x9002;&#x5408;&#x66F4;&#x65B0;&#x6570;&#x636E;&#x548C;&#x66FF;&#x6362;&#x6570;&#x636E;&#x7684;&#x8BED;&#x4E49;&#x3002;
+&#x9664;&#x4E86; method &#x53C2;&#x6570;&#x9700;&#x8981;&#x8BBE;&#x7F6E;&#x4E3A; <code>PUT</code>&#xFF0C;&#x5176;&#x4ED6;&#x53C2;&#x6570;&#x51E0;&#x4E4E;&#x8DDF; POST &#x4E00;&#x6A21;&#x4E00;&#x6837;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// app/controller/put.js</span>
+<span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-keyword">function</span>* <span class="hljs-title">put</span>(<span class="hljs-params">ctx</span>) </span>{
+  <span class="hljs-keyword">const</span> result = <span class="hljs-keyword">yield</span> ctx.curl(<span class="hljs-string">&apos;https://httpbin.org/put&apos;</span>, {
+    <span class="hljs-comment">// &#x5FC5;&#x987B;&#x6307;&#x5B9A; method</span>
+    method: <span class="hljs-string">&apos;PUT&apos;</span>,
+    <span class="hljs-comment">// &#x901A;&#x8FC7; contentType &#x544A;&#x8BC9; HttpClient &#x4EE5; JSON &#x683C;&#x5F0F;&#x53D1;&#x9001;</span>
+    contentType: <span class="hljs-string">&apos;json&apos;</span>,
+    data: {
+      update: <span class="hljs-string">&apos;foo bar&apos;</span>,
+    },
+    <span class="hljs-comment">// &#x660E;&#x786E;&#x544A;&#x8BC9; HttpClient &#x4EE5; JSON &#x683C;&#x5F0F;&#x5904;&#x7406;&#x54CD;&#x5E94; body</span>
+    dataType: <span class="hljs-string">&apos;json&apos;</span>,
+  });
+  ctx.body = result.data;
+};
+</code></pre>
+<h3 id="delete">DELETE</h3>
+<p>&#x5220;&#x9664;&#x6570;&#x636E;&#x4F1A;&#x9009;&#x62E9; DELETE &#x8BF7;&#x6C42;&#xFF0C;&#x5B83;&#x901A;&#x5E38;&#x53EF;&#x4EE5;&#x4E0D;&#x9700;&#x8981;&#x52A0;&#x8BF7;&#x6C42; body&#xFF0C;&#x4F46;&#x662F; HttpClient &#x4E0D;&#x4F1A;&#x9650;&#x5236;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// app/controller/delete.js</span>
+<span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-keyword">function</span>* <span class="hljs-title">del</span>(<span class="hljs-params">ctx</span>) </span>{
+  <span class="hljs-keyword">const</span> result = <span class="hljs-keyword">yield</span> ctx.curl(<span class="hljs-string">&apos;https://httpbin.org/delete&apos;</span>, {
+    <span class="hljs-comment">// &#x5FC5;&#x987B;&#x6307;&#x5B9A; method</span>
+    method: <span class="hljs-string">&apos;DELETE&apos;</span>,
+    <span class="hljs-comment">// &#x660E;&#x786E;&#x544A;&#x8BC9; HttpClient &#x4EE5; JSON &#x683C;&#x5F0F;&#x5904;&#x7406;&#x54CD;&#x5E94; body</span>
+    dataType: <span class="hljs-string">&apos;json&apos;</span>,
+  });
+  ctx.body = result.data;
+};
+</code></pre>
+<h2 id="&#x9AD8;&#x7EA7;-http-&#x8BF7;&#x6C42;">&#x9AD8;&#x7EA7; HTTP &#x8BF7;&#x6C42;</h2>
+<p>&#x5728;&#x771F;&#x5B9E;&#x7684;&#x5E94;&#x7528;&#x573A;&#x666F;&#x4E0B;&#xFF0C;&#x8FD8;&#x662F;&#x4F1A;&#x5305;&#x542B;&#x4E00;&#x4E9B;&#x8F83;&#x4E3A;&#x590D;&#x6742;&#x7684; HTTP &#x8BF7;&#x6C42;&#x3002;</p>
+<h3 id="form-&#x8868;&#x5355;&#x63D0;&#x4EA4;">Form &#x8868;&#x5355;&#x63D0;&#x4EA4;</h3>
+<p>&#x9762;&#x5411;&#x6D4F;&#x89C8;&#x5668;&#x8BBE;&#x8BA1;&#x7684; Form &#x8868;&#x5355;&#xFF08;&#x4E0D;&#x5305;&#x542B;&#x6587;&#x4EF6;&#xFF09;&#x63D0;&#x4EA4;&#x63A5;&#x53E3;&#xFF0C;&#x901A;&#x5E38;&#x90FD;&#x8981;&#x6C42;&#x4EE5; <code>content-type: application/x-www-form-urlencoded</code>
+&#x7684;&#x683C;&#x5F0F;&#x63D0;&#x4EA4;&#x8BF7;&#x6C42;&#x6570;&#x636E;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// app/controller/form.js</span>
+<span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-keyword">function</span>* <span class="hljs-title">form</span>(<span class="hljs-params">ctx</span>) </span>{
+  <span class="hljs-keyword">const</span> result = <span class="hljs-keyword">yield</span> ctx.curl(<span class="hljs-string">&apos;https://httpbin.org/post&apos;</span>, {
+    <span class="hljs-comment">// &#x5FC5;&#x987B;&#x6307;&#x5B9A; method&#xFF0C;&#x652F;&#x6301; POST&#xFF0C;PUT &#x548C; DELETE</span>
+    method: <span class="hljs-string">&apos;POST&apos;</span>,
+    <span class="hljs-comment">// &#x4E0D;&#x9700;&#x8981;&#x8BBE;&#x7F6E; contentType&#xFF0C;HttpClient &#x4F1A;&#x9ED8;&#x8BA4;&#x4EE5; application/x-www-form-urlencoded &#x683C;&#x5F0F;&#x53D1;&#x9001;&#x8BF7;&#x6C42;</span>
+    data: {
+      now: <span class="hljs-built_in">Date</span>.now(),
+      foo: <span class="hljs-string">&apos;bar&apos;</span>,
+    },
+    <span class="hljs-comment">// &#x660E;&#x786E;&#x544A;&#x8BC9; HttpClient &#x4EE5; JSON &#x683C;&#x5F0F;&#x5904;&#x7406;&#x54CD;&#x5E94; body</span>
+    dataType: <span class="hljs-string">&apos;json&apos;</span>,
+  });
+  ctx.body = result.data.form;
+  <span class="hljs-comment">// &#x54CD;&#x5E94;&#x6700;&#x7EC8;&#x4F1A;&#x662F;&#x7C7B;&#x4F3C;&#x4EE5;&#x4E0B;&#x7684;&#x7ED3;&#x679C;&#xFF1A;</span>
+  <span class="hljs-comment">// {</span>
+  <span class="hljs-comment">//   &quot;foo&quot;: &quot;bar&quot;,</span>
+  <span class="hljs-comment">//   &quot;now&quot;: &quot;1483864184348&quot;</span>
+  <span class="hljs-comment">// }</span>
+};
+</code></pre>
+<h3 id="&#x4EE5;-multipart-&#x65B9;&#x5F0F;&#x4E0A;&#x4F20;&#x6587;&#x4EF6;">&#x4EE5; Multipart &#x65B9;&#x5F0F;&#x4E0A;&#x4F20;&#x6587;&#x4EF6;</h3>
+<p>&#x5F53;&#x4E00;&#x4E2A; Form &#x8868;&#x5355;&#x63D0;&#x4EA4;&#x5305;&#x542B;&#x6587;&#x4EF6;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x8BF7;&#x6C42;&#x6570;&#x636E;&#x683C;&#x5F0F;&#x5C31;&#x5FC5;&#x987B;&#x4EE5; <a href="http://tools.ietf.org/html/rfc2388" _target="blank">multipart/form-data</a>
+&#x8FDB;&#x884C;&#x63D0;&#x4EA4;&#x4E86;&#x3002;
+&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x9700;&#x8981;&#x5F15;&#x5165; <a href="https://github.com/node-modules/formstream" _target="blank">formstream</a> &#x8FD9;&#x4E2A;&#x7B2C;&#x4E09;&#x65B9;&#x6A21;&#x5757;&#x6765;&#x5E2E;&#x52A9;&#x6211;&#x4EEC;&#x751F;&#x6210;&#x53EF;&#x4EE5;&#x88AB; HttpClient &#x6D88;&#x8D39;&#x7684; <code>form</code> &#x5BF9;&#x8C61;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// app/controller/multipart.js</span>
+<span class="hljs-keyword">const</span> FormStream = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;formstream&apos;</span>);
+<span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-keyword">function</span>* <span class="hljs-title">multipart</span>(<span class="hljs-params">ctx</span>) </span>{
+  <span class="hljs-keyword">const</span> form = <span class="hljs-keyword">new</span> FormStream();
+  <span class="hljs-comment">// &#x8BBE;&#x7F6E;&#x666E;&#x901A;&#x7684; key value</span>
+  form.field(<span class="hljs-string">&apos;foo&apos;</span>, <span class="hljs-string">&apos;bar&apos;</span>);
+  <span class="hljs-comment">// &#x4E0A;&#x4F20;&#x5F53;&#x524D;&#x6587;&#x4EF6;&#x672C;&#x8EAB;&#x7528;&#x4E8E;&#x6D4B;&#x8BD5;</span>
+  form.file(<span class="hljs-string">&apos;file&apos;</span>, __filename);
+
+  <span class="hljs-keyword">const</span> result = <span class="hljs-keyword">yield</span> ctx.curl(<span class="hljs-string">&apos;https://httpbin.org/post&apos;</span>, {
+    <span class="hljs-comment">// &#x5FC5;&#x987B;&#x6307;&#x5B9A; method&#xFF0C;&#x652F;&#x6301; POST&#xFF0C;PUT</span>
+    method: <span class="hljs-string">&apos;POST&apos;</span>,
+    <span class="hljs-comment">// &#x751F;&#x6210;&#x7B26;&#x5408; multipart/form-data &#x8981;&#x6C42;&#x7684;&#x8BF7;&#x6C42; headers</span>
+    headers: form.headers(),
+    <span class="hljs-comment">// &#x4EE5; stream &#x6A21;&#x5F0F;&#x63D0;&#x4EA4;</span>
+    stream: form,
+    <span class="hljs-comment">// &#x660E;&#x786E;&#x544A;&#x8BC9; HttpClient &#x4EE5; JSON &#x683C;&#x5F0F;&#x5904;&#x7406;&#x54CD;&#x5E94; body</span>
+    dataType: <span class="hljs-string">&apos;json&apos;</span>,
+  });
+  ctx.body = result.data.files;
+  <span class="hljs-comment">// &#x54CD;&#x5E94;&#x6700;&#x7EC8;&#x4F1A;&#x662F;&#x7C7B;&#x4F3C;&#x4EE5;&#x4E0B;&#x7684;&#x7ED3;&#x679C;&#xFF1A;</span>
+  <span class="hljs-comment">// {</span>
+  <span class="hljs-comment">//   &quot;file&quot;: &quot;&apos;use strict&apos;;\n\nconst For....&quot;</span>
+  <span class="hljs-comment">// }</span>
+};
+</code></pre>
+<p>&#x5F53;&#x7136;&#xFF0C;&#x4F60;&#x8FD8;&#x53EF;&#x4EE5;&#x7EE7;&#x7EED;&#x901A;&#x8FC7; <code>form.file()</code> &#x6DFB;&#x52A0;&#x66F4;&#x591A;&#x6587;&#x4EF6;&#x4EE5;&#x5B9E;&#x73B0;&#x4E00;&#x6B21;&#x6027;&#x4E0A;&#x4F20;&#x591A;&#x4E2A;&#x6587;&#x4EF6;&#x7684;&#x9700;&#x6C42;&#x3002;</p>
+<pre><code class="lang-js">form.file(<span class="hljs-string">&apos;file1&apos;</span>, file1);
+form.file(<span class="hljs-string">&apos;file2&apos;</span>, file2);
+</code></pre>
+<h3 id="&#x4EE5;-stream-&#x65B9;&#x5F0F;&#x4E0A;&#x4F20;&#x6587;&#x4EF6;">&#x4EE5; Stream &#x65B9;&#x5F0F;&#x4E0A;&#x4F20;&#x6587;&#x4EF6;</h3>
+<p>&#x5176;&#x5B9E;&#xFF0C;&#x5728; Node.js &#x7684;&#x4E16;&#x754C;&#x91CC;&#x9762;&#xFF0C;Stream &#x624D;&#x662F;&#x4E3B;&#x6D41;&#x3002;
+&#x5982;&#x679C;&#x670D;&#x52A1;&#x7AEF;&#x652F;&#x6301;&#x6D41;&#x5F0F;&#x4E0A;&#x4F20;&#xFF0C;&#x6700;&#x53CB;&#x597D;&#x7684;&#x65B9;&#x5F0F;&#x8FD8;&#x662F;&#x76F4;&#x63A5;&#x53D1;&#x9001; Stream&#x3002;
+Stream &#x5B9E;&#x9645;&#x4F1A;&#x4EE5; <code>Transfer-Encoding: chunked</code> &#x4F20;&#x8F93;&#x7F16;&#x7801;&#x683C;&#x5F0F;&#x53D1;&#x9001;&#xFF0C;&#x8FD9;&#x4E2A;&#x8F6C;&#x6362;&#x662F; <a href="https://nodejs.org/api/http.html" _target="blank">HTTP</a> &#x6A21;&#x5757;&#x81EA;&#x52A8;&#x5B9E;&#x73B0;&#x7684;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// app/controller/stream.js</span>
+<span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;fs&apos;</span>);
+<span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-keyword">function</span>* <span class="hljs-title">stream</span>(<span class="hljs-params">ctx</span>) </span>{
+  <span class="hljs-comment">// &#x4E0A;&#x4F20;&#x5F53;&#x524D;&#x6587;&#x4EF6;&#x672C;&#x8EAB;&#x7528;&#x4E8E;&#x6D4B;&#x8BD5;</span>
+  <span class="hljs-keyword">const</span> fileStream = fs.createReadStream(__filename);
+  <span class="hljs-comment">// httpbin.org &#x4E0D;&#x652F;&#x6301; stream &#x6A21;&#x5F0F;&#xFF0C;&#x4F7F;&#x7528;&#x672C;&#x5730; stream &#x63A5;&#x53E3;&#x4EE3;&#x66FF;</span>
+  <span class="hljs-keyword">const</span> url = <span class="hljs-string">`<span class="hljs-subst">${ctx.protocol}</span>://<span class="hljs-subst">${ctx.host}</span>/stream`</span>;
+  <span class="hljs-keyword">const</span> result = <span class="hljs-keyword">yield</span> ctx.curl(url, {
+    <span class="hljs-comment">// &#x5FC5;&#x987B;&#x6307;&#x5B9A; method&#xFF0C;&#x652F;&#x6301; POST&#xFF0C;PUT</span>
+    method: <span class="hljs-string">&apos;POST&apos;</span>,
+    <span class="hljs-comment">// &#x4EE5; stream &#x6A21;&#x5F0F;&#x63D0;&#x4EA4;</span>
+    stream: fileStream,
+  });
+  ctx.status = result.status;
+  ctx.set(result.headers);
+  ctx.body = result.data;
+  <span class="hljs-comment">// &#x54CD;&#x5E94;&#x6700;&#x7EC8;&#x4F1A;&#x662F;&#x7C7B;&#x4F3C;&#x4EE5;&#x4E0B;&#x7684;&#x7ED3;&#x679C;&#xFF1A;</span>
+  <span class="hljs-comment">// {&quot;streamSize&quot;:574}</span>
+};
+</code></pre>
+<h2 id="options-&#x53C2;&#x6570;&#x8BE6;&#x89E3;">options &#x53C2;&#x6570;&#x8BE6;&#x89E3;</h2>
+<p>&#x7531;&#x4E8E; HTTP &#x8BF7;&#x6C42;&#x7684;&#x590D;&#x6742;&#x6027;&#xFF0C;&#x5BFC;&#x81F4; <code>httpclient.request(url, options)</code> &#x7684; options &#x53C2;&#x6570;&#x4F1A;&#x975E;&#x5E38;&#x591A;&#x3002;
+&#x63A5;&#x4E0B;&#x6765;&#x5C06;&#x4F1A;&#x4EE5;&#x53C2;&#x6570;&#x8BF4;&#x660E;&#x548C;&#x4EE3;&#x7801;&#x914D;&#x5408;&#x4E00;&#x8D77;&#x8BB2;&#x89E3;&#x6BCF;&#x4E2A;&#x53EF;&#x9009;&#x53C2;&#x6570;&#x7684;&#x5B9E;&#x9645;&#x7528;&#x9014;&#x3002;</p>
+<h3 id="httpclient-&#x9ED8;&#x8BA4;&#x5168;&#x5C40;&#x914D;&#x7F6E;">HttpClient &#x9ED8;&#x8BA4;&#x5168;&#x5C40;&#x914D;&#x7F6E;</h3>
+<pre><code class="lang-js"><span class="hljs-comment">// config/config.default.js</span>
+exports.httpclient = {
+  <span class="hljs-comment">// &#x662F;&#x5426;&#x5F00;&#x542F;&#x672C;&#x5730; DNS &#x7F13;&#x5B58;&#xFF0C;&#x9ED8;&#x8BA4;&#x5173;&#x95ED;&#xFF0C;&#x5F00;&#x542F;&#x540E;&#x6709;&#x4E24;&#x4E2A;&#x7279;&#x6027;</span>
+  <span class="hljs-comment">// 1. &#x6240;&#x6709;&#x7684; DNS &#x67E5;&#x8BE2;&#x90FD;&#x4F1A;&#x9ED8;&#x8BA4;&#x4F18;&#x5148;&#x4F7F;&#x7528;&#x7F13;&#x5B58;&#x7684;&#xFF0C;&#x5373;&#x4F7F; DNS &#x67E5;&#x8BE2;&#x9519;&#x8BEF;&#x4E5F;&#x4E0D;&#x5F71;&#x54CD;&#x5E94;&#x7528;</span>
+  <span class="hljs-comment">// 2. &#x5BF9;&#x540C;&#x4E00;&#x4E2A;&#x57DF;&#x540D;&#xFF0C;&#x5728; dnsCacheLookupInterval &#x7684;&#x95F4;&#x9694;&#x5185;&#xFF08;&#x9ED8;&#x8BA4; 10s&#xFF09;&#x53EA;&#x4F1A;&#x67E5;&#x8BE2;&#x4E00;&#x6B21;</span>
+  enableDNSCache: <span class="hljs-literal">false</span>,
+  <span class="hljs-comment">// &#x5BF9;&#x540C;&#x4E00;&#x4E2A;&#x57DF;&#x540D;&#x8FDB;&#x884C; DNS &#x67E5;&#x8BE2;&#x7684;&#x6700;&#x5C0F;&#x95F4;&#x9694;&#x65F6;&#x95F4;</span>
+  dnsCacheLookupInterval: <span class="hljs-number">10000</span>,
+  <span class="hljs-comment">// DNS &#x540C;&#x65F6;&#x7F13;&#x5B58;&#x7684;&#x6700;&#x5927;&#x57DF;&#x540D;&#x6570;&#x91CF;&#xFF0C;&#x9ED8;&#x8BA4; 1000</span>
+  dnsCacheMaxLength: <span class="hljs-number">1000</span>,
+
+  request: {
+    <span class="hljs-comment">// &#x9ED8;&#x8BA4; request &#x8D85;&#x65F6;&#x65F6;&#x95F4;</span>
+    timeout: <span class="hljs-number">3000</span>,
+  },
+
+  httpAgent: {
+    <span class="hljs-comment">// &#x9ED8;&#x8BA4;&#x5F00;&#x542F; http KeepAlive &#x529F;&#x80FD;</span>
+    keepAlive: <span class="hljs-literal">true</span>,
+    <span class="hljs-comment">// &#x7A7A;&#x95F2;&#x7684; KeepAlive socket &#x6700;&#x957F;&#x53EF;&#x4EE5;&#x5B58;&#x6D3B; 4 &#x79D2;</span>
+    freeSocketKeepAliveTimeout: <span class="hljs-number">4000</span>,
+    <span class="hljs-comment">// &#x5F53; socket &#x8D85;&#x8FC7; 30 &#x79D2;&#x90FD;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x6D3B;&#x52A8;&#xFF0C;&#x5C31;&#x4F1A;&#x88AB;&#x5F53;&#x4F5C;&#x8D85;&#x65F6;&#x5904;&#x7406;&#x6389;</span>
+    timeout: <span class="hljs-number">30000</span>,
+    <span class="hljs-comment">// &#x5141;&#x8BB8;&#x521B;&#x5EFA;&#x7684;&#x6700;&#x5927; socket &#x6570;</span>
+    maxSockets: <span class="hljs-built_in">Number</span>.MAX_SAFE_INTEGER,
+    <span class="hljs-comment">// &#x6700;&#x5927;&#x7A7A;&#x95F2; socket &#x6570;</span>
+    maxFreeSockets: <span class="hljs-number">256</span>,
+  },
+
+  httpsAgent: {
+    <span class="hljs-comment">// &#x9ED8;&#x8BA4;&#x5F00;&#x542F; https KeepAlive &#x529F;&#x80FD;</span>
+    keepAlive: <span class="hljs-literal">true</span>,
+    <span class="hljs-comment">// &#x7A7A;&#x95F2;&#x7684; KeepAlive socket &#x6700;&#x957F;&#x53EF;&#x4EE5;&#x5B58;&#x6D3B; 4 &#x79D2;</span>
+    freeSocketKeepAliveTimeout: <span class="hljs-number">4000</span>,
+    <span class="hljs-comment">// &#x5F53; socket &#x8D85;&#x8FC7; 30 &#x79D2;&#x90FD;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x6D3B;&#x52A8;&#xFF0C;&#x5C31;&#x4F1A;&#x88AB;&#x5F53;&#x4F5C;&#x8D85;&#x65F6;&#x5904;&#x7406;&#x6389;</span>
+    timeout: <span class="hljs-number">30000</span>,
+    <span class="hljs-comment">// &#x5141;&#x8BB8;&#x521B;&#x5EFA;&#x7684;&#x6700;&#x5927; socket &#x6570;</span>
+    maxSockets: <span class="hljs-built_in">Number</span>.MAX_SAFE_INTEGER,
+    <span class="hljs-comment">// &#x6700;&#x5927;&#x7A7A;&#x95F2; socket &#x6570;</span>
+    maxFreeSockets: <span class="hljs-number">256</span>,
+  },
+};
+</code></pre>
+<p>&#x5E94;&#x7528;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>config/config.default.js</code> &#x8986;&#x76D6;&#x6B64;&#x914D;&#x7F6E;&#x3002;</p>
+<h3 id="data-object"><code>data: Object</code></h3>
+<p>&#x9700;&#x8981;&#x53D1;&#x9001;&#x7684;&#x8BF7;&#x6C42;&#x6570;&#x636E;&#xFF0C;&#x6839;&#x636E; <code>method</code> &#x81EA;&#x52A8;&#x9009;&#x62E9;&#x6B63;&#x786E;&#x7684;&#x6570;&#x636E;&#x5904;&#x7406;&#x65B9;&#x5F0F;&#x3002;</p>
+<ul>
+<li>GET&#xFF0C;HEAD&#xFF1A;&#x901A;&#x8FC7; <code>querystring.stringify(data)</code> &#x5904;&#x7406;&#x540E;&#x62FC;&#x63A5;&#x5230; url &#x7684; query &#x53C2;&#x6570;&#x4E0A;&#x3002;</li>
+<li>POST&#xFF0C;PUT &#x548C; DELETE &#x7B49;&#xFF1A;&#x9700;&#x8981;&#x6839;&#x636E; <code>contentType</code> &#x505A;&#x8FDB;&#x4E00;&#x6B65;&#x5224;&#x65AD;&#x5904;&#x7406;&#x3002;<ul>
+<li><code>contentType = json</code>&#xFF1A;&#x901A;&#x8FC7; <code>JSON.stringify(data)</code> &#x5904;&#x7406;&#xFF0C;&#x5E76;&#x8BBE;&#x7F6E;&#x4E3A; body &#x53D1;&#x9001;&#x3002;</li>
+<li>&#x5176;&#x4ED6;&#xFF1A;&#x901A;&#x8FC7; <code>querystring.stringify(data)</code> &#x5904;&#x7406;&#xFF0C;&#x5E76;&#x8BBE;&#x7F6E;&#x4E3A; body &#x53D1;&#x9001;&#x3002;</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-comment">// GET + data</span>
+ctx.curl(url, {
+  data: { foo: <span class="hljs-string">&apos;bar&apos;</span> },
+});
+
+<span class="hljs-comment">// POST + data</span>
+ctx.curl(url, {
+  method: <span class="hljs-string">&apos;POST&apos;</span>,
+  data: { foo: <span class="hljs-string">&apos;bar&apos;</span> },
+});
+
+<span class="hljs-comment">// POST + JSON + data</span>
+ctx.curl(url, {
+  method: <span class="hljs-string">&apos;POST&apos;</span>,
+  contentType: <span class="hljs-string">&apos;json&apos;</span>,
+  data: { foo: <span class="hljs-string">&apos;bar&apos;</span> },
+});
+</code></pre>
+<h3 id="dataasquerystring-boolean"><code>dataAsQueryString: Boolean</code></h3>
+<p>&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E86; <code>dataAsQueryString=true</code>&#xFF0C;&#x90A3;&#x4E48;&#x5373;&#x4F7F;&#x5728; POST &#x60C5;&#x51B5;&#x4E0B;&#xFF0C;
+&#x4E5F;&#x4F1A;&#x5F3A;&#x5236;&#x5C06; <code>options.data</code> &#x4EE5; <code>querystring.stringify</code> &#x5904;&#x7406;&#x4E4B;&#x540E;&#x62FC;&#x63A5;&#x5230; <code>url</code> &#x7684; query &#x53C2;&#x6570;&#x4E0A;&#x3002;</p>
+<p>&#x53EF;&#x4EE5;&#x5F88;&#x597D;&#x5730;&#x89E3;&#x51B3;&#x4EE5; <code>stream</code> &#x53D1;&#x9001;&#x6570;&#x636E;&#xFF0C;&#x4E14;&#x989D;&#x5916;&#x7684;&#x8BF7;&#x6C42;&#x53C2;&#x6570;&#x4EE5; <code>url</code> query &#x5F62;&#x5F0F;&#x4F20;&#x9012;&#x7684;&#x5E94;&#x7528;&#x573A;&#x666F;&#xFF1A;</p>
+<pre><code class="lang-js">ctx.curl(url, {
+  method: <span class="hljs-string">&apos;POST&apos;</span>,
+  dataAsQueryString: <span class="hljs-literal">true</span>,
+  data: {
+    <span class="hljs-comment">// &#x4E00;&#x822C;&#x6765;&#x8BF4;&#x90FD;&#x662F; access token &#x4E4B;&#x7C7B;&#x7684;&#x6743;&#x9650;&#x9A8C;&#x8BC1;&#x53C2;&#x6570;</span>
+    accessToken: <span class="hljs-string">&apos;some access token value&apos;</span>,
+  },
+  stream: myFileStream,
+});
+</code></pre>
+<h3 id="content-stringbuffer"><code>content: String|Buffer</code></h3>
+<p>&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x6B63;&#x6587;&#xFF0C;&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E86;&#x6B64;&#x53C2;&#x6570;&#xFF0C;&#x90A3;&#x4E48;&#x4F1A;&#x76F4;&#x63A5;&#x5FFD;&#x7565; <code>data</code> &#x53C2;&#x6570;&#x3002;</p>
+<pre><code class="lang-js">ctx.curl(url, {
+  method: <span class="hljs-string">&apos;POST&apos;</span>,
+  <span class="hljs-comment">// &#x76F4;&#x63A5;&#x53D1;&#x9001;&#x539F;&#x59CB; xml &#x6570;&#x636E;&#xFF0C;&#x4E0D;&#x9700;&#x8981; HttpClient &#x505A;&#x7279;&#x6B8A;&#x5904;&#x7406;</span>
+  content: <span class="hljs-string">&apos;&lt;xml&gt;&lt;hello&gt;world&lt;/hello&gt;&lt;/xml&gt;&apos;</span>,
+  headers: {
+    <span class="hljs-string">&apos;content-type&apos;</span>: <span class="hljs-string">&apos;text/html&apos;</span>,
+  },
+});
+</code></pre>
+<h3 id="stream-readstream"><code>stream: ReadStream</code></h3>
+<p>&#x8BBE;&#x7F6E;&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x6B63;&#x6587;&#x7684;&#x53EF;&#x8BFB;&#x6570;&#x636E;&#x6D41;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F; <code>null</code>&#x3002;
+&#x4E00;&#x65E6;&#x8BBE;&#x7F6E;&#x4E86;&#x6B64;&#x53C2;&#x6570;&#xFF0C;HttpClient &#x5C06;&#x4F1A;&#x5FFD;&#x7565; <code>data</code> &#x548C; <code>content</code>&#x3002;</p>
+<pre><code class="lang-js">ctx.curl(url, {
+  method: <span class="hljs-string">&apos;POST&apos;</span>,
+  stream: fs.createReadStream(<span class="hljs-string">&apos;/path/to/read&apos;</span>),
+});
+</code></pre>
+<h3 id="writestream-writestream"><code>writeStream: WriteStream</code></h3>
+<p>&#x8BBE;&#x7F6E;&#x63A5;&#x53D7;&#x54CD;&#x5E94;&#x6570;&#x636E;&#x7684;&#x53EF;&#x5199;&#x6570;&#x636E;&#x6D41;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F; <code>null</code>&#x3002;
+&#x4E00;&#x65E6;&#x8BBE;&#x7F6E;&#x6B64;&#x53C2;&#x6570;&#xFF0C;&#x90A3;&#x4E48;&#x8FD4;&#x56DE;&#x503C; <code>result.data</code> &#x5C06;&#x4F1A;&#x88AB;&#x8BBE;&#x7F6E;&#x4E3A; <code>null</code>&#xFF0C;
+&#x56E0;&#x4E3A;&#x6570;&#x636E;&#x5DF2;&#x7ECF;&#x5168;&#x90E8;&#x5199;&#x5165;&#x5230; <code>writeStream</code> &#x4E2D;&#x4E86;&#x3002;</p>
+<pre><code class="lang-js">ctx.curl(url, {
+  writeStream: fs.createWriteStream(<span class="hljs-string">&apos;/path/to/store&apos;</span>),
+});
+</code></pre>
+<h3 id="consumewritestream-boolean"><code>consumeWriteStream: Boolean</code></h3>
+<p>&#x662F;&#x5426;&#x7B49;&#x5F85; <code>writeStream</code> &#x5B8C;&#x5168;&#x5199;&#x5B8C;&#x624D;&#x7B97;&#x54CD;&#x5E94;&#x5168;&#x90E8;&#x63A5;&#x6536;&#x5B8C;&#x6BD5;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F; <code>true</code>&#x3002;
+&#x6B64;&#x53C2;&#x6570;&#x4E0D;&#x5EFA;&#x8BAE;&#x4FEE;&#x6539;&#x9ED8;&#x8BA4;&#x503C;&#xFF0C;&#x9664;&#x975E;&#x6211;&#x4EEC;&#x660E;&#x786E;&#x77E5;&#x9053;&#x5B83;&#x7684;&#x526F;&#x4F5C;&#x7528;&#x662F;&#x53EF;&#x63A5;&#x53D7;&#x7684;&#xFF0C;
+&#x5426;&#x5219;&#x5F88;&#x53EF;&#x80FD;&#x4F1A;&#x5BFC;&#x81F4; <code>writeStream</code> &#x6570;&#x636E;&#x4E0D;&#x5B8C;&#x6574;&#x3002;</p>
+<h3 id="method-string"><code>method: String</code></h3>
+<p>&#x8BBE;&#x7F6E;&#x8BF7;&#x6C42;&#x65B9;&#x6CD5;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F; <code>GET</code>&#x3002;
+&#x652F;&#x6301; <code>GET&#x3001;POST&#x3001;PUT&#x3001;DELETE&#x3001;PATCH</code> &#x7B49;<a href="https://nodejs.org/api/http.html#http_http_methods" _target="blank">&#x6240;&#x6709; HTTP &#x65B9;&#x6CD5;</a>&#x3002;</p>
+<h3 id="contenttype-string"><code>contentType: String</code></h3>
+<p>&#x8BBE;&#x7F6E;&#x8BF7;&#x6C42;&#x6570;&#x636E;&#x683C;&#x5F0F;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F; <code>undefined</code>&#xFF0C;HttpClient &#x4F1A;&#x81EA;&#x52A8;&#x6839;&#x636E; <code>data</code> &#x548C; <code>content</code> &#x53C2;&#x6570;&#x81EA;&#x52A8;&#x8BBE;&#x7F6E;&#x3002;
+<code>data</code> &#x662F; object &#x7684;&#x65F6;&#x5019;&#x9ED8;&#x8BA4;&#x8BBE;&#x7F6E;&#x7684;&#x662F; <code>form</code>&#x3002;&#x652F;&#x6301; <code>json</code> &#x683C;&#x5F0F;&#x3002;</p>
+<p>&#x5982;&#x9700;&#x8981;&#x4EE5; JSON &#x683C;&#x5F0F;&#x53D1;&#x9001; <code>data</code>&#xFF1A;</p>
+<pre><code class="lang-js">ctx.curl(url, {
+  method: <span class="hljs-string">&apos;POST&apos;</span>,
+  data: {
+    foo: <span class="hljs-string">&apos;bar&apos;</span>,
+    now: <span class="hljs-built_in">Date</span>.now(),
+  },
+  contentType: <span class="hljs-string">&apos;json&apos;</span>,
+});
+</code></pre>
+<h3 id="datatype-string"><code>dataType: String</code></h3>
+<p>&#x8BBE;&#x7F6E;&#x54CD;&#x5E94;&#x6570;&#x636E;&#x683C;&#x5F0F;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E0D;&#x5BF9;&#x54CD;&#x5E94;&#x6570;&#x636E;&#x505A;&#x4EFB;&#x4F55;&#x5904;&#x7406;&#xFF0C;&#x76F4;&#x63A5;&#x8FD4;&#x56DE;&#x539F;&#x59CB;&#x7684; buffer &#x683C;&#x5F0F;&#x6570;&#x636E;&#x3002;
+&#x652F;&#x6301; <code>text</code> &#x548C; <code>json</code> &#x4E24;&#x79CD;&#x683C;&#x5F0F;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;&#x8BBE;&#x7F6E;&#x6210; <code>json</code> &#x65F6;&#xFF0C;&#x5982;&#x679C;&#x54CD;&#x5E94;&#x6570;&#x636E;&#x89E3;&#x6790;&#x5931;&#x8D25;&#x4F1A;&#x629B; <code>JSONResponseFormatError</code> &#x5F02;&#x5E38;&#x3002;</strong></p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> jsonResult = <span class="hljs-keyword">yield</span> ctx.curl(url, {
+  dataType: <span class="hljs-string">&apos;json&apos;</span>,
+});
+<span class="hljs-built_in">console</span>.log(jsonResult.data);
+
+<span class="hljs-keyword">const</span> htmlResult = <span class="hljs-keyword">yield</span> ctx.curl(url, {
+  dataType: <span class="hljs-string">&apos;text&apos;</span>,
+});
+<span class="hljs-built_in">console</span>.log(htmlResult.data);
+</code></pre>
+<h3 id="fixjsonctlchars-boolean"><code>fixJSONCtlChars: Boolean</code></h3>
+<p>&#x662F;&#x5426;&#x81EA;&#x52A8;&#x8FC7;&#x6EE4;&#x54CD;&#x5E94;&#x6570;&#x636E;&#x4E2D;&#x7684;&#x7279;&#x6B8A;&#x63A7;&#x5236;&#x5B57;&#x7B26; (U+0000 ~ U+001F)&#xFF0C;&#x9ED8;&#x8BA4;&#x662F; <code>false</code>&#x3002;
+&#x901A;&#x5E38;&#x4E00;&#x4E9B; CGI &#x7CFB;&#x7EDF;&#x8FD4;&#x56DE;&#x7684; JSON &#x6570;&#x636E;&#x4F1A;&#x5305;&#x542B;&#x8FD9;&#x4E9B;&#x7279;&#x6B8A;&#x63A7;&#x5236;&#x5B57;&#x7B26;&#xFF0C;&#x901A;&#x8FC7;&#x6B64;&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x81EA;&#x52A8;&#x8FC7;&#x6EE4;&#x6389;&#x5B83;&#x4EEC;&#x3002;</p>
+<pre><code class="lang-js">ctx.curl(url, {
+  fixJSONCtlChars: <span class="hljs-literal">true</span>,
+  dataType: <span class="hljs-string">&apos;json&apos;</span>,
+});
+</code></pre>
+<h3 id="headers-object"><code>headers: Object</code></h3>
+<p>&#x81EA;&#x5B9A;&#x4E49;&#x8BF7;&#x6C42;&#x5934;&#x3002;</p>
+<pre><code class="lang-js">ctx.curl(url, {
+  headers: {
+    <span class="hljs-string">&apos;x-foo&apos;</span>: <span class="hljs-string">&apos;bar&apos;</span>,
+  },
+});
+</code></pre>
+<h3 id="timeout-numberarray"><code>timeout: Number|Array</code></h3>
+<p>&#x8BF7;&#x6C42;&#x8D85;&#x65F6;&#x65F6;&#x95F4;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F; <code>[ 5000, 5000 ]</code>&#xFF0C;&#x5373;&#x521B;&#x5EFA;&#x8FDE;&#x63A5;&#x8D85;&#x65F6;&#x662F; 5 &#x79D2;&#xFF0C;&#x63A5;&#x6536;&#x54CD;&#x5E94;&#x8D85;&#x65F6;&#x662F; 5 &#x79D2;&#x3002;</p>
+<pre><code class="lang-js">ctx.curl(url, {
+  <span class="hljs-comment">// &#x521B;&#x5EFA;&#x8FDE;&#x63A5;&#x8D85;&#x65F6; 3 &#x79D2;&#xFF0C;&#x63A5;&#x6536;&#x54CD;&#x5E94;&#x8D85;&#x65F6; 3 &#x79D2;</span>
+  timeout: <span class="hljs-number">3000</span>,
+});
+
+ctx.curl(url, {
+  <span class="hljs-comment">// &#x521B;&#x5EFA;&#x8FDE;&#x63A5;&#x8D85;&#x65F6; 1 &#x79D2;&#xFF0C;&#x63A5;&#x6536;&#x54CD;&#x5E94;&#x8D85;&#x65F6; 30 &#x79D2;&#xFF0C;&#x7528;&#x4E8E;&#x54CD;&#x5E94;&#x6BD4;&#x8F83;&#x5927;&#x7684;&#x573A;&#x666F;</span>
+  timeout: [ <span class="hljs-number">1000</span>, <span class="hljs-number">30000</span> ],
+});
+</code></pre>
+<h3 id="agent-httpagent"><code>agent: HttpAgent</code></h3>
+<p>&#x5141;&#x8BB8;&#x901A;&#x8FC7;&#x6B64;&#x53C2;&#x6570;&#x8986;&#x76D6;&#x9ED8;&#x8BA4;&#x7684; HttpAgent&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x4E0D;&#x60F3;&#x5F00;&#x542F; KeepAlive&#xFF0C;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x6B64;&#x53C2;&#x6570;&#x4E3A; <code>false</code>&#x3002;</p>
+<pre><code class="lang-js">ctx.curl(url, {
+  agent: <span class="hljs-literal">false</span>,
+});
+</code></pre>
+<h3 id="httpsagent-httpsagent"><code>httpsAgent: HttpsAgent</code></h3>
+<p>&#x5141;&#x8BB8;&#x901A;&#x8FC7;&#x6B64;&#x53C2;&#x6570;&#x8986;&#x76D6;&#x9ED8;&#x8BA4;&#x7684; HttpsAgent&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x4E0D;&#x60F3;&#x5F00;&#x542F; KeepAlive&#xFF0C;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x6B64;&#x53C2;&#x6570;&#x4E3A; <code>false</code>&#x3002;</p>
+<pre><code class="lang-js">ctx.curl(url, {
+  httpsAgent: <span class="hljs-literal">false</span>,
+});
+</code></pre>
+<h3 id="auth-string"><code>auth: String</code></h3>
+<p>&#x7B80;&#x5355;&#x767B;&#x5F55;&#x6388;&#x6743;&#xFF08;Basic Authentication&#xFF09;&#x53C2;&#x6570;&#xFF0C;&#x5C06;&#x4EE5;&#x660E;&#x6587;&#x65B9;&#x5F0F;&#x5C06;&#x767B;&#x5F55;&#x4FE1;&#x606F;&#x4EE5; <code>Authorization</code> &#x8BF7;&#x6C42;&#x5934;&#x53D1;&#x9001;&#x51FA;&#x53BB;&#x3002;</p>
+<pre><code class="lang-js">ctx.curl(url, {
+  <span class="hljs-comment">// &#x53C2;&#x6570;&#x5FC5;&#x987B;&#x6309;&#x7167; `user:password` &#x683C;&#x5F0F;&#x8BBE;&#x7F6E;</span>
+  auth: <span class="hljs-string">&apos;foo:bar&apos;</span>,
+});
+</code></pre>
+<h3 id="digestauth-string"><code>digestAuth: String</code></h3>
+<p>&#x6458;&#x8981;&#x767B;&#x5F55;&#x6388;&#x6743;&#xFF08;Digest Authentication&#xFF09;&#x53C2;&#x6570;&#xFF0C;&#x8BBE;&#x7F6E;&#x6B64;&#x53C2;&#x6570;&#x4F1A;&#x81EA;&#x52A8;&#x5BF9; 401 &#x54CD;&#x5E94;&#x5C1D;&#x8BD5;&#x751F;&#x6210; <code>Authorization</code> &#x8BF7;&#x6C42;&#x5934;&#xFF0C;
+&#x5C1D;&#x8BD5;&#x4EE5;&#x6388;&#x6743;&#x65B9;&#x5F0F;&#x8BF7;&#x6C42;&#x4E00;&#x6B21;&#x3002;</p>
+<pre><code class="lang-js">ctx.curl(url, {
+  <span class="hljs-comment">// &#x53C2;&#x6570;&#x5FC5;&#x987B;&#x6309;&#x7167; `user:password` &#x683C;&#x5F0F;&#x8BBE;&#x7F6E;</span>
+  digestAuth: <span class="hljs-string">&apos;foo:bar&apos;</span>,
+});
+</code></pre>
+<h3 id="followredirect-boolean"><code>followRedirect: Boolean</code></h3>
+<p>&#x662F;&#x5426;&#x81EA;&#x52A8;&#x8DDF;&#x8FDB; 3xx &#x7684;&#x8DF3;&#x8F6C;&#x54CD;&#x5E94;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F; <code>false</code>&#x3002;</p>
+<pre><code class="lang-js">ctx.curl(url, {
+  followRedirect: <span class="hljs-literal">true</span>,
+});
+</code></pre>
+<h3 id="maxredirects-number"><code>maxRedirects: Number</code></h3>
+<p>&#x8BBE;&#x7F6E;&#x6700;&#x5927;&#x81EA;&#x52A8;&#x8DF3;&#x8F6C;&#x6B21;&#x6570;&#xFF0C;&#x907F;&#x514D;&#x5FAA;&#x73AF;&#x8DF3;&#x8F6C;&#x65E0;&#x6CD5;&#x7EC8;&#x6B62;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F; 10 &#x6B21;&#x3002;
+&#x6B64;&#x53C2;&#x6570;&#x4E0D;&#x5B9C;&#x8BBE;&#x7F6E;&#x8FC7;&#x5927;&#xFF0C;&#x5B83;&#x53EA;&#x5728; <code>followRedirect=true</code> &#x60C5;&#x51B5;&#x4E0B;&#x624D;&#x4F1A;&#x751F;&#x6548;&#x3002;</p>
+<pre><code class="lang-js">ctx.curl(url, {
+  followRedirect: <span class="hljs-literal">true</span>,
+  <span class="hljs-comment">// &#x6700;&#x5927;&#x53EA;&#x5141;&#x8BB8;&#x81EA;&#x52A8;&#x8DF3;&#x8F6C; 5 &#x6B21;&#x3002;</span>
+  maxRedirects: <span class="hljs-number">5</span>,
+});
+</code></pre>
+<h3 id="formatredirecturl-functionfrom-to"><code>formatRedirectUrl: Function(from, to)</code></h3>
+<p>&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x901A;&#x8FC7; <code>formatRedirectUrl</code> &#x81EA;&#x5B9A;&#x4E49;&#x5B9E;&#x73B0; 302&#x3001;301 &#x7B49;&#x8DF3;&#x8F6C; url &#x62FC;&#x63A5;&#xFF0C; &#x9ED8;&#x8BA4;&#x662F; <code>url.resolve(from, to)</code>&#x3002;</p>
+<pre><code class="lang-js">ctx.curl(url, {
+  formatRedirectUrl: (<span class="hljs-keyword">from</span>, to) =&gt; {
+    <span class="hljs-comment">// &#x4F8B;&#x5982;&#x53EF;&#x5728;&#x8FD9;&#x91CC;&#x4FEE;&#x6B63;&#x8DF3;&#x8F6C;&#x4E0D;&#x6B63;&#x786E;&#x7684; url</span>
+    <span class="hljs-keyword">if</span> (to === <span class="hljs-string">&apos;//foo/&apos;</span>) {
+      to = <span class="hljs-string">&apos;/foo&apos;</span>;
+    }
+    <span class="hljs-keyword">return</span> url.resolve(<span class="hljs-keyword">from</span>, to);
+  },
+});
+</code></pre>
+<h3 id="beforerequest-functionoptions"><code>beforeRequest: Function(options)</code></h3>
+<p>HttpClient &#x5728;&#x8BF7;&#x6C42;&#x6B63;&#x5F0F;&#x53D1;&#x9001;&#x4E4B;&#x524D;&#xFF0C;&#x4F1A;&#x5C1D;&#x8BD5;&#x8C03;&#x7528; <code>beforeRequest</code> &#x94A9;&#x5B50;&#xFF0C;&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x5728;&#x8FD9;&#x91CC;&#x5BF9;&#x8BF7;&#x6C42;&#x53C2;&#x6570;&#x505A;&#x6700;&#x540E;&#x4E00;&#x6B21;&#x4FEE;&#x6539;&#x3002;</p>
+<pre><code class="lang-js">ctx.curl(url, {
+  beforeRequest: options =&gt; {
+    <span class="hljs-comment">// &#x4F8B;&#x5982;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x5168;&#x5C40;&#x8BF7;&#x6C42; id&#xFF0C;&#x65B9;&#x4FBF;&#x65E5;&#x5FD7;&#x8DDF;&#x8E2A;</span>
+    options.headers[<span class="hljs-string">&apos;x-request-id&apos;</span>] = uuid.v1();
+  },
+});
+</code></pre>
+<h3 id="streaming-boolean"><code>streaming: Boolean</code></h3>
+<p>&#x662F;&#x5426;&#x76F4;&#x63A5;&#x8FD4;&#x56DE;&#x54CD;&#x5E94;&#x6D41;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; <code>false</code>&#x3002;
+&#x5F00;&#x542F; streaming &#x4E4B;&#x540E;&#xFF0C;HttpClient &#x4F1A;&#x5728;&#x62FF;&#x5230;&#x54CD;&#x5E94;&#x5BF9;&#x8C61; res &#x4E4B;&#x540E;&#x9A6C;&#x4E0A;&#x8FD4;&#x56DE;&#xFF0C;
+&#x6B64;&#x65F6; <code>result.headers</code> &#x548C; <code>result.status</code> &#x5DF2;&#x7ECF;&#x53EF;&#x4EE5;&#x8BFB;&#x53D6;&#x5230;&#xFF0C;&#x53EA;&#x662F;&#x6CA1;&#x6709;&#x8BFB;&#x53D6; data &#x6570;&#x636E;&#x800C;&#x5DF2;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> result = <span class="hljs-keyword">yield</span> ctx.curl(url, {
+  streaming: <span class="hljs-literal">true</span>,
+});
+
+<span class="hljs-built_in">console</span>.log(result.status, result.data);
+<span class="hljs-comment">// result.res &#x662F;&#x4E00;&#x4E2A; ReadStream &#x5BF9;&#x8C61;</span>
+ctx.body = result.res;
+</code></pre>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;&#x5982;&#x679C; res &#x4E0D;&#x662F;&#x76F4;&#x63A5;&#x4F20;&#x9012;&#x7ED9; body&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x5FC5;&#x987B;&#x6D88;&#x8D39;&#x8FD9;&#x4E2A; stream&#xFF0C;&#x5E76;&#x4E14;&#x8981;&#x505A;&#x597D; error &#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x3002;</strong></p>
+<h3 id="gzip-boolean"><code>gzip: Boolean</code></h3>
+<p>&#x662F;&#x5426;&#x652F;&#x6301; gzip &#x54CD;&#x5E94;&#x683C;&#x5F0F;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; <code>false</code>&#x3002;
+&#x5F00;&#x542F; gzip &#x4E4B;&#x540E;&#xFF0C;HttpClient &#x5C06;&#x81EA;&#x52A8;&#x8BBE;&#x7F6E; <code>Accept-Encoding: gzip</code> &#x8BF7;&#x6C42;&#x5934;&#xFF0C;
+&#x5E76;&#x4E14;&#x4F1A;&#x81EA;&#x52A8;&#x89E3;&#x538B;&#x5E26; <code>Content-Encoding: gzip</code> &#x54CD;&#x5E94;&#x5934;&#x7684;&#x6570;&#x636E;&#x3002;</p>
+<pre><code class="lang-js">ctx.curl(url, {
+  gzip: <span class="hljs-literal">true</span>,
+});
+</code></pre>
+<h3 id="timing-boolean"><code>timing: Boolean</code></h3>
+<p>&#x662F;&#x5426;&#x5F00;&#x542F;&#x8BF7;&#x6C42;&#x5404;&#x9636;&#x6BB5;&#x7684;&#x65F6;&#x95F4;&#x6D4B;&#x91CF;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; <code>false</code>&#x3002;
+&#x5F00;&#x542F; timing &#x4E4B;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>result.res.timing</code> &#x62FF;&#x5230;&#x8FD9;&#x6B21; HTTP &#x8BF7;&#x6C42;&#x5404;&#x9636;&#x6BB5;&#x7684;&#x65F6;&#x95F4;&#x6D4B;&#x91CF;&#x503C;&#xFF08;&#x5355;&#x4F4D;&#x662F;&#x6BEB;&#x79D2;&#xFF09;&#xFF0C;
+&#x901A;&#x8FC7;&#x8FD9;&#x4E9B;&#x6D4B;&#x91CF;&#x503C;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x975E;&#x5E38;&#x65B9;&#x4FBF;&#x5730;&#x5B9A;&#x4F4D;&#x5230;&#x8FD9;&#x6B21;&#x8BF7;&#x6C42;&#x6700;&#x6162;&#x7684;&#x73AF;&#x5883;&#x53D1;&#x751F;&#x5728;&#x90A3;&#x4E2A;&#x9636;&#x6BB5;&#xFF0C;&#x6548;&#x679C;&#x5982;&#x540C; Chrome network timing &#x7684;&#x4F5C;&#x7528;&#x3002;</p>
+<p>timing &#x5404;&#x9636;&#x6BB5;&#x6D4B;&#x91CF;&#x503C;&#x89E3;&#x6790;&#xFF1A;</p>
+<ul>
+<li>queuing&#xFF1A;&#x5206;&#x914D; socket &#x8017;&#x65F6;</li>
+<li>dnslookup&#xFF1A;DNS &#x67E5;&#x8BE2;&#x8017;&#x65F6;</li>
+<li>connected&#xFF1A;socket &#x4E09;&#x6B21;&#x63E1;&#x624B;&#x8FDE;&#x63A5;&#x6210;&#x529F;&#x8017;&#x65F6;</li>
+<li>requestSent&#xFF1A;&#x8BF7;&#x6C42;&#x6570;&#x636E;&#x5B8C;&#x6574;&#x53D1;&#x9001;&#x5B8C;&#x6BD5;&#x8017;&#x65F6;</li>
+<li>waiting&#xFF1A;&#x6536;&#x5230;&#x7B2C;&#x4E00;&#x4E2A;&#x5B57;&#x8282;&#x7684;&#x54CD;&#x5E94;&#x6570;&#x636E;&#x8017;&#x65F6;</li>
+<li>contentDownload&#xFF1A;&#x5168;&#x90E8;&#x54CD;&#x5E94;&#x6570;&#x636E;&#x63A5;&#x6536;&#x5B8C;&#x6BD5;&#x8017;&#x65F6;</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> result = <span class="hljs-keyword">yield</span> ctx.curl(url, {
+  timing: <span class="hljs-literal">true</span>,
+});
+<span class="hljs-built_in">console</span>.log(result.res.timing);
+<span class="hljs-comment">// {</span>
+<span class="hljs-comment">//   &quot;queuing&quot;:29,</span>
+<span class="hljs-comment">//   &quot;dnslookup&quot;:37,</span>
+<span class="hljs-comment">//   &quot;connected&quot;:370,</span>
+<span class="hljs-comment">//   &quot;requestSent&quot;:1001,</span>
+<span class="hljs-comment">//   &quot;waiting&quot;:1833,</span>
+<span class="hljs-comment">//   &quot;contentDownload&quot;:3416</span>
+<span class="hljs-comment">// }</span>
+</code></pre>
+<h3 id="ca&#xFF0C;rejectunauthorized&#xFF0C;pfx&#xFF0C;key&#xFF0C;cert&#xFF0C;passphrase&#xFF0C;ciphers&#xFF0C;secureprotocol"><code>ca&#xFF0C;rejectUnauthorized&#xFF0C;pfx&#xFF0C;key&#xFF0C;cert&#xFF0C;passphrase&#xFF0C;ciphers&#xFF0C;secureProtocol</code></h3>
+<p>&#x8FD9;&#x51E0;&#x4E2A;&#x90FD;&#x662F;&#x900F;&#x4F20;&#x7ED9; <a href="https://nodejs.org/api/https.html" _target="blank">HTTPS</a> &#x6A21;&#x5757;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x5177;&#x4F53;&#x8BF7;&#x67E5;&#x770B; <a href="https://nodejs.org/api/https.html#https_https_request_options_callback" _target="blank"><code>https.request(options, callback)</code></a>&#x3002;</p>
+<h2 id="&#x8C03;&#x8BD5;&#x8F85;&#x52A9;">&#x8C03;&#x8BD5;&#x8F85;&#x52A9;</h2>
+<p>&#x6846;&#x67B6;&#x8FD8;&#x63D0;&#x4F9B;&#x4E86; <a href="https://github.com/eggjs/egg-development-proxyagent" _target="blank">egg-development-proxyagent</a> &#x63D2;&#x4EF6;&#x6765;&#x65B9;&#x4FBF;&#x5F00;&#x53D1;&#x8005;&#x8C03;&#x8BD5;&#x3002;</p>
+<p>&#x5148;&#x5B89;&#x88C5;&#x548C;&#x5F00;&#x542F;&#x63D2;&#x4EF6;&#xFF1A;</p>
+<pre><code class="lang-bash">$ npm i egg-development-proxyagent --save-dev
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-comment">// config/plugin.local.js</span>
+exports.proxyagent = {
+  enable: <span class="hljs-literal">true</span>,
+  package: <span class="hljs-string">&apos;egg-development-proxyagent&apos;</span>,
+}
+</code></pre>
+<p>&#x5F00;&#x542F;&#x6293;&#x5305;&#x5DE5;&#x5177;&#xFF0C;&#x53EF;&#x4EE5;&#x7528; <a href="https://www.charlesproxy.com/" _target="blank">charles</a> &#x6216; <a href="http://www.telerik.com/fiddler" _target="blank">fiddler</a>&#xFF0C;&#x6B64;&#x5904;&#x6211;&#x4EEC;&#x7528; <a href="https://github.com/alibaba/anyproxy" _target="blank">anyproxy</a> &#x6765;&#x6F14;&#x793A;&#x4E0B;&#x3002;</p>
+<pre><code class="lang-bash">$ npm install anyproxy -g
+$ anyproxy --port 8888
+</code></pre>
+<p>&#x4F7F;&#x7528;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x542F;&#x52A8;&#x5E94;&#x7528;&#xFF1A;</p>
+<pre><code class="lang-bash">$ http_proxy=http://127.0.0.1:8888 npm run dev
+</code></pre>
+<p>&#x7136;&#x540E;&#x5C31;&#x53EF;&#x4EE5;&#x6B63;&#x5E38;&#x64CD;&#x4F5C;&#x4E86;&#xFF0C;&#x6240;&#x6709;&#x7ECF;&#x8FC7; HttpClient &#x7684;&#x8BF7;&#x6C42;&#xFF0C;&#x90FD;&#x53EF;&#x4EE5;&#x5728; <a href="http://localhost:8002" _target="blank">http://localhost:8002</a> &#x8FD9;&#x4E2A;&#x63A7;&#x5236;&#x53F0;&#x4E2D;&#x67E5;&#x770B;&#x5230;&#x3002;</p>
+<p><img src="https://cloud.githubusercontent.com/assets/227713/21976937/06a63694-dc0f-11e6-98b5-e9e279c4867c.png" alt="anyproxy"></p>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;&#x8BE5;&#x63D2;&#x4EF6;&#x9ED8;&#x8BA4;&#x53EA;&#x5728; local &#x73AF;&#x5883;&#x4E0B;&#x542F;&#x52A8;&#x3002;</strong></p>
+<h2 id="&#x5E38;&#x89C1;&#x9519;&#x8BEF;">&#x5E38;&#x89C1;&#x9519;&#x8BEF;</h2>
+<h3 id="&#x521B;&#x5EFA;&#x8FDE;&#x63A5;&#x8D85;&#x65F6;">&#x521B;&#x5EFA;&#x8FDE;&#x63A5;&#x8D85;&#x65F6;</h3>
+<ul>
+<li>&#x5F02;&#x5E38;&#x540D;&#x79F0;&#xFF1A;<code>ConnectionTimeoutError</code></li>
+<li>&#x51FA;&#x73B0;&#x573A;&#x666F;&#xFF1A;&#x901A;&#x5E38;&#x662F; DNS &#x67E5;&#x8BE2;&#x6BD4;&#x8F83;&#x6162;&#xFF0C;&#x6216;&#x8005;&#x5BA2;&#x6237;&#x7AEF;&#x4E0E;&#x670D;&#x52A1;&#x7AEF;&#x4E4B;&#x95F4;&#x7684;&#x7F51;&#x7EDC;&#x901F;&#x5EA6;&#x6BD4;&#x8F83;&#x6162;&#x5BFC;&#x81F4;&#x7684;&#x3002;</li>
+<li>&#x6392;&#x67E5;&#x5EFA;&#x8BAE;&#xFF1A;&#x8BF7;&#x9002;&#x5F53;&#x589E;&#x5927; <code>timeout</code> &#x53C2;&#x6570;&#x3002;</li>
+</ul>
+<h3 id="&#x670D;&#x52A1;&#x54CD;&#x5E94;&#x8D85;&#x65F6;">&#x670D;&#x52A1;&#x54CD;&#x5E94;&#x8D85;&#x65F6;</h3>
+<ul>
+<li>&#x5F02;&#x5E38;&#x540D;&#x79F0;&#xFF1A;<code>ResponseTimeoutError</code></li>
+<li>&#x51FA;&#x73B0;&#x573A;&#x666F;&#xFF1A;&#x901A;&#x5E38;&#x662F;&#x5BA2;&#x6237;&#x7AEF;&#x4E0E;&#x670D;&#x52A1;&#x7AEF;&#x4E4B;&#x95F4;&#x7F51;&#x7EDC;&#x901F;&#x5EA6;&#x6BD4;&#x8F83;&#x6162;&#xFF0C;&#x5E76;&#x4E14;&#x54CD;&#x5E94;&#x6570;&#x636E;&#x6BD4;&#x8F83;&#x5927;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x4F1A;&#x53D1;&#x751F;&#x3002;</li>
+<li>&#x6392;&#x67E5;&#x5EFA;&#x8BAE;&#xFF1A;&#x8BF7;&#x9002;&#x5F53;&#x589E;&#x5927; <code>timeout</code> &#x53C2;&#x6570;&#x3002;</li>
+</ul>
+<h3 id="&#x670D;&#x52A1;&#x4E3B;&#x52A8;&#x65AD;&#x5F00;&#x8FDE;&#x63A5;">&#x670D;&#x52A1;&#x4E3B;&#x52A8;&#x65AD;&#x5F00;&#x8FDE;&#x63A5;</h3>
+<ul>
+<li>&#x5F02;&#x5E38;&#x540D;&#x79F0;&#xFF1A;<code>ResponseError, code: ECONNRESET</code></li>
+<li>&#x51FA;&#x73B0;&#x573A;&#x666F;&#xFF1A;&#x901A;&#x5E38;&#x662F;&#x670D;&#x52A1;&#x7AEF;&#x4E3B;&#x52A8;&#x65AD;&#x5F00; socket &#x8FDE;&#x63A5;&#xFF0C;&#x5BFC;&#x81F4; HTTP &#x8BF7;&#x6C42;&#x94FE;&#x8DEF;&#x5F02;&#x5E38;&#x3002;</li>
+<li>&#x6392;&#x67E5;&#x5EFA;&#x8BAE;&#xFF1A;&#x8BF7;&#x68C0;&#x67E5;&#x5F53;&#x65F6;&#x670D;&#x52A1;&#x7AEF;&#x662F;&#x5426;&#x53D1;&#x751F;&#x7F51;&#x7EDC;&#x5F02;&#x5E38;&#x3002;</li>
+</ul>
+<h3 id="&#x670D;&#x52A1;&#x4E0D;&#x53EF;&#x8FBE;">&#x670D;&#x52A1;&#x4E0D;&#x53EF;&#x8FBE;</h3>
+<ul>
+<li>&#x5F02;&#x5E38;&#x540D;&#x79F0;&#xFF1A;<code>RequestError, code: ECONNREFUSED, status: -1</code></li>
+<li>&#x51FA;&#x73B0;&#x573A;&#x666F;&#xFF1A;&#x901A;&#x5E38;&#x662F;&#x56E0;&#x4E3A;&#x8BF7;&#x6C42;&#x7684; url &#x6240;&#x5C5E; IP &#x6216;&#x8005;&#x7AEF;&#x53E3;&#x65E0;&#x6CD5;&#x8FDE;&#x63A5;&#x6210;&#x529F;&#x3002;</li>
+<li>&#x6392;&#x67E5;&#x5EFA;&#x8BAE;&#xFF1A;&#x8BF7;&#x786E;&#x4FDD; IP &#x6216;&#x8005;&#x7AEF;&#x53E3;&#x8BBE;&#x7F6E;&#x6B63;&#x786E;&#x3002;</li>
+</ul>
+<h3 id="&#x57DF;&#x540D;&#x4E0D;&#x5B58;&#x5728;">&#x57DF;&#x540D;&#x4E0D;&#x5B58;&#x5728;</h3>
+<ul>
+<li>&#x5F02;&#x5E38;&#x540D;&#x79F0;&#xFF1A;<code>RequestError, code: ENOTFOUND, status: -1</code></li>
+<li>&#x51FA;&#x73B0;&#x573A;&#x666F;&#xFF1A;&#x901A;&#x5E38;&#x662F;&#x56E0;&#x4E3A;&#x8BF7;&#x6C42;&#x7684; url &#x6240;&#x5728;&#x7684;&#x57DF;&#x540D;&#x65E0;&#x6CD5;&#x901A;&#x8FC7; DNS &#x89E3;&#x6790;&#x6210;&#x529F;&#x3002;</li>
+<li>&#x6392;&#x67E5;&#x5EFA;&#x8BAE;&#xFF1A;&#x8BF7;&#x786E;&#x4FDD;&#x57DF;&#x540D;&#x5B58;&#x5728;&#xFF0C;&#x4E5F;&#x9700;&#x8981;&#x6392;&#x67E5;&#x4E00;&#x4E0B; DNS &#x670D;&#x52A1;&#x662F;&#x5426;&#x914D;&#x7F6E;&#x6B63;&#x786E;&#x3002;</li>
+</ul>
+<h3 id="json-&#x54CD;&#x5E94;&#x6570;&#x636E;&#x683C;&#x5F0F;&#x9519;&#x8BEF;">JSON &#x54CD;&#x5E94;&#x6570;&#x636E;&#x683C;&#x5F0F;&#x9519;&#x8BEF;</h3>
+<ul>
+<li>&#x5F02;&#x5E38;&#x540D;&#x79F0;&#xFF1A;<code>JSONResponseFormatError</code></li>
+<li>&#x51FA;&#x73B0;&#x573A;&#x666F;&#xFF1A;&#x8BBE;&#x7F6E;&#x4E86; <code>dataType=json</code> &#x5E76;&#x4E14;&#x54CD;&#x5E94;&#x6570;&#x636E;&#x4E0D;&#x7B26;&#x5408; JSON &#x683C;&#x5F0F;&#xFF0C;&#x5C31;&#x4F1A;&#x629B;&#x51FA;&#x6B64;&#x5F02;&#x5E38;&#x3002;</li>
+<li>&#x6392;&#x67E5;&#x5EFA;&#x8BAE;&#xFF1A;&#x786E;&#x4FDD;&#x670D;&#x52A1;&#x7AEF;&#x65E0;&#x8BBA;&#x5728;&#x4EC0;&#x4E48;&#x60C5;&#x51B5;&#x4E0B;&#x90FD;&#x8981;&#x6B63;&#x786E;&#x8FD4;&#x56DE; JSON &#x683C;&#x5F0F;&#x7684;&#x6570;&#x636E;&#x3002;</li>
+</ul>
+<h2 id="&#x5168;&#x5C40;-request-&#x548C;-response-&#x4E8B;&#x4EF6;">&#x5168;&#x5C40; <code>request</code> &#x548C; <code>response</code> &#x4E8B;&#x4EF6;</h2>
+<p>&#x5728;&#x4F01;&#x4E1A;&#x5E94;&#x7528;&#x573A;&#x666F;&#xFF0C;&#x5E38;&#x5E38;&#x4F1A;&#x6709;&#x7EDF;&#x4E00; tracer &#x65E5;&#x5FD7;&#x7684;&#x9700;&#x6C42;&#x3002;
+&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#x5728; app &#x5C42;&#x9762;&#x7EDF;&#x4E00;&#x76D1;&#x542C; HttpClient &#x7684;&#x8BF7;&#x6C42;&#x548C;&#x54CD;&#x5E94;&#xFF0C;&#x6211;&#x4EEC;&#x7EA6;&#x5B9A;&#x4E86;&#x5168;&#x5C40; <code>request</code> &#x548C; <code>response</code> &#x4E8B;&#x4EF6;&#x6765;&#x66B4;&#x9732;&#x8FD9;&#x4E24;&#x4E2A;&#x65F6;&#x673A;&#x3002;</p>
+<pre><code class="lang-bash">    init options
+        |
+        V
+    emit `request` event
+        |
+        V
+    send request and receive response
+        |
+        V
+    emit `response` event
+        |
+        V
+       end
+</code></pre>
+<h3 id="request-&#x4E8B;&#x4EF6;&#xFF1A;&#x53D1;&#x751F;&#x5728;&#x7F51;&#x7EDC;&#x64CD;&#x4F5C;&#x53D1;&#x751F;&#x4E4B;&#x524D;"><code>request</code> &#x4E8B;&#x4EF6;&#xFF1A;&#x53D1;&#x751F;&#x5728;&#x7F51;&#x7EDC;&#x64CD;&#x4F5C;&#x53D1;&#x751F;&#x4E4B;&#x524D;</h3>
+<p>&#x8BF7;&#x6C42;&#x53D1;&#x9001;&#x4E4B;&#x524D;&#xFF0C;&#x4F1A;&#x89E6;&#x53D1;&#x4E00;&#x4E2A; <code>request</code> &#x4E8B;&#x4EF6;&#xFF0C;&#x5141;&#x8BB8;&#x5BF9;&#x8BF7;&#x6C42;&#x505A;&#x62E6;&#x622A;&#x3002;</p>
+<pre><code class="lang-js">app.httpclient.on(<span class="hljs-string">&apos;request&apos;</span>, req =&gt; {
+  req.url <span class="hljs-comment">//&#x8BF7;&#x6C42; url</span>
+  req.ctx <span class="hljs-comment">//&#x662F;&#x53D1;&#x8D77;&#x8FD9;&#x6B21;&#x8BF7;&#x6C42;&#x7684;&#x5F53;&#x524D;&#x4E0A;&#x4E0B;&#x6587;</span>
+
+  <span class="hljs-comment">// &#x53EF;&#x4EE5;&#x5728;&#x8FD9;&#x91CC;&#x8BBE;&#x7F6E;&#x4E00;&#x4E9B; trace headers&#xFF0C;&#x65B9;&#x4FBF;&#x5168;&#x94FE;&#x8DEF;&#x8DDF;&#x8E2A;</span>
+});
+</code></pre>
+<h3 id="response-&#x4E8B;&#x4EF6;&#xFF1A;&#x53D1;&#x751F;&#x5728;&#x7F51;&#x7EDC;&#x64CD;&#x4F5C;&#x7ED3;&#x675F;&#x4E4B;&#x540E;"><code>response</code> &#x4E8B;&#x4EF6;&#xFF1A;&#x53D1;&#x751F;&#x5728;&#x7F51;&#x7EDC;&#x64CD;&#x4F5C;&#x7ED3;&#x675F;&#x4E4B;&#x540E;</h3>
+<p>&#x8BF7;&#x6C42;&#x7ED3;&#x675F;&#x4E4B;&#x540E;&#x4F1A;&#x89E6;&#x53D1;&#x4E00;&#x4E2A; <code>response</code> &#x4E8B;&#x4EF6;&#xFF0C;&#x8FD9;&#x6837;&#x5916;&#x90E8;&#x5C31;&#x53EF;&#x4EE5;&#x8BA2;&#x9605;&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x6253;&#x5370;&#x65E5;&#x5FD7;&#x3002;</p>
+<pre><code class="lang-js">app.httpclient.on(<span class="hljs-string">&apos;response&apos;</span>, result =&gt; {
+  result.res.status
+  result.ctx <span class="hljs-comment">//&#x662F;&#x53D1;&#x8D77;&#x8FD9;&#x6B21;&#x8BF7;&#x6C42;&#x7684;&#x5F53;&#x524D;&#x4E0A;&#x4E0B;&#x6587;</span>
+  result.req <span class="hljs-comment">//&#x5BF9;&#x5E94;&#x7684; req &#x5BF9;&#x8C61;&#xFF0C;&#x5373; request &#x4E8B;&#x4EF6;&#x91CC;&#x9762;&#x90A3;&#x4E2A; req</span>
+});
+</code></pre>
+<h2 id="&#x793A;&#x4F8B;&#x4EE3;&#x7801;">&#x793A;&#x4F8B;&#x4EE3;&#x7801;</h2>
+<p>&#x5B8C;&#x6574;&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x53EF;&#x4EE5;&#x5728; <a href="https://github.com/eggjs/examples/blob/master/httpclient" _target="blank">eggjs/exmaples/httpclient</a> &#x627E;&#x5230;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="logger.html" class="navigation navigation-prev " aria-label="Previous page: 日志">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="cookie-and-session.html" class="navigation navigation-next " aria-label="Next page: Cookie and Session">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"HttpClient","level":"1.4.5","depth":2,"next":{"title":"Cookie and Session","level":"1.4.6","depth":2,"path":"core/cookie-and-session.md","ref":"core/cookie-and-session.md","articles":[]},"previous":{"title":"日志","level":"1.4.4","depth":2,"path":"core/logger.md","ref":"core/logger.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-fontsettings","-search-pro","-advanced-emoji","-github","-splitter","-toggle-chapters"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search-pro":{"cutWordLib":"nodejieba","defineWord":["Gitbook"]},"github":{"url":"https://github.com/laomu1988/fe-books"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"laomu1988@qq.com","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"fe-books","language":"zh-hans","gitbook":"*"},"file":{"path":"core/httpclient.md","mtime":"2017-10-27T07:54:15.000Z","type":"markdown"},"gitbook":{"version":"3.1.0","time":"2017-10-27T07:54:17.244Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+<script>
+	// 百度统计
+	var _hmt = _hmt || [];
+	(function () {
+		var hm = document.createElement("script");
+		hm.src = "//hm.baidu.com/hm.js?171566b3d4f03c9c68c8f2c7a42d4b0e";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+<script src="/fe-books/server/index.js"></script>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

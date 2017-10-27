@@ -1,0 +1,1019 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <title>异常处理 · fe-books</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.0">
+        <meta name="author" content="laomu1988@qq.com">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="security.html" />
+    
+    
+    <link rel="prev" href="view.html" />
+    
+
+<link rel="stylesheet" href="/fe-books/server/index.css"/>
+
+    </head>
+    <body>
+        
+<script src="/fe-books/server/menu.js"></script>
+
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    目录结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    新手指南
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../intro/">
+            
+                <a href="../intro/">
+            
+                    
+                    Egg.js 是什么?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../intro/egg-and-koa.html">
+            
+                <a href="../intro/egg-and-koa.html">
+            
+                    
+                    Egg 与 Koa
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../intro/quickstart.html">
+            
+                <a href="../intro/quickstart.html">
+            
+                    
+                    快速入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    基础功能
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../basics/structure.html">
+            
+                <a href="../basics/structure.html">
+            
+                    
+                    目录结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../basics/objects.html">
+            
+                <a href="../basics/objects.html">
+            
+                    
+                    框架内置基础对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../basics/env.html">
+            
+                <a href="../basics/env.html">
+            
+                    
+                    运行环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../basics/config.html">
+            
+                <a href="../basics/config.html">
+            
+                    
+                    Config 配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../basics/middleware.html">
+            
+                <a href="../basics/middleware.html">
+            
+                    
+                    Middleware 中间件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../basics/router.html">
+            
+                <a href="../basics/router.html">
+            
+                    
+                    Router 路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../basics/controller.html">
+            
+                <a href="../basics/controller.html">
+            
+                    
+                    什么是 Controller
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../basics/service.html">
+            
+                <a href="../basics/service.html">
+            
+                    
+                    Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../basics/schedule.html">
+            
+                <a href="../basics/schedule.html">
+            
+                    
+                    定时任务Schedule
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../basics/extend.html">
+            
+                <a href="../basics/extend.html">
+            
+                    
+                    框架扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../basics/app-start.html">
+            
+                <a href="../basics/app-start.html">
+            
+                    
+                    启动自定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    核心功能
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="development.html">
+            
+                <a href="development.html">
+            
+                    
+                    本地开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="unittest.html">
+            
+                <a href="unittest.html">
+            
+                    
+                    单元测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="deployment.html">
+            
+                <a href="deployment.html">
+            
+                    
+                    应用部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="logger.html">
+            
+                <a href="logger.html">
+            
+                    
+                    日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="httpclient.html">
+            
+                <a href="httpclient.html">
+            
+                    
+                    HttpClient
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="cookie-and-session.html">
+            
+                <a href="cookie-and-session.html">
+            
+                    
+                    Cookie and Session
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="cluster-and-ipc.html">
+            
+                <a href="cluster-and-ipc.html">
+            
+                    
+                    多进程模型和进程间通讯
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="view.html">
+            
+                <a href="view.html">
+            
+                    
+                    View 模板渲染
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.9" data-path="error-handling.html">
+            
+                <a href="error-handling.html">
+            
+                    
+                    异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="security.html">
+            
+                <a href="security.html">
+            
+                    
+                    安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="i18n.html">
+            
+                <a href="i18n.html">
+            
+                    
+                    i18n国际化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    教程
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../tutorials/progressive.html">
+            
+                <a href="../tutorials/progressive.html">
+            
+                    
+                    渐进式开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../tutorials/mysql.html">
+            
+                <a href="../tutorials/mysql.html">
+            
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../tutorials/restful.html">
+            
+                <a href="../tutorials/restful.html">
+            
+                    
+                    RESTful API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../tutorials/async-function.html">
+            
+                <a href="../tutorials/async-function.html">
+            
+                    
+                    Async Function
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="passport.md">
+            
+                <span>
+            
+                    
+                    # Passport
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    进阶
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../advanced/loader.html">
+            
+                <a href="../advanced/loader.html">
+            
+                    
+                    Loader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../advanced/plugin.html">
+            
+                <a href="../advanced/plugin.html">
+            
+                    
+                    插件开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../advanced/framework.html">
+            
+                <a href="../advanced/framework.html">
+            
+                    
+                    框架开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../advanced/cluster-client.html">
+            
+                <a href="../advanced/cluster-client.html">
+            
+                    
+                    多进程研发模式增强
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../advanced/view-plugin.html">
+            
+                <a href="../advanced/view-plugin.html">
+            
+                    
+                    View 插件开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    社区
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../plugins/">
+            
+                <a href="../plugins/">
+            
+                    
+                    内置插件列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../contributing.md">
+            
+                <span>
+            
+                    
+                    如何贡献
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../resource.html">
+            
+                <a href="../resource.html">
+            
+                    
+                    资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../member_guide.md">
+            
+                <span>
+            
+                    
+                    成员指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../faq.html">
+            
+                <a href="../faq.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >异常处理</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="title-&#x5F02;&#x5E38;&#x5904;&#x7406;">title: &#x5F02;&#x5E38;&#x5904;&#x7406;</h2>
+<h2 id="&#x5F02;&#x5E38;&#x6355;&#x83B7;">&#x5F02;&#x5E38;&#x6355;&#x83B7;</h2>
+<p>&#x5F97;&#x76CA;&#x4E8E;&#x6846;&#x67B6;&#x5E95;&#x5C42;&#x91C7;&#x7528;&#x7684; co &#x5E93;&#x5C06;&#x5F02;&#x6B65;&#x7F16;&#x7801;&#x53D8;&#x6210;&#x4E86;&#x540C;&#x6B65;&#x6A21;&#x578B;&#xFF0C;&#x540C;&#x65F6;&#x9519;&#x8BEF;&#x4E5F;&#x5B8C;&#x5168;&#x53EF;&#x4EE5;&#x7528; <code>try catch</code> &#x6765;&#x6355;&#x83B7;&#x3002;&#x5728;&#x7F16;&#x5199;&#x5E94;&#x7528;&#x4EE3;&#x7801;&#x65F6;&#xFF0C;&#x6240;&#x6709;&#x5730;&#x65B9;&#x90FD;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x7528; <code>try catch</code> &#x6765;&#x6355;&#x83B7;&#x5F02;&#x5E38;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// app/service/test.js</span>
+<span class="hljs-keyword">try</span> {
+  <span class="hljs-keyword">const</span> res = <span class="hljs-keyword">yield</span> <span class="hljs-keyword">this</span>.ctx.curl(<span class="hljs-string">&apos;http://eggjs.com/api/echo&apos;</span>, { dataType: <span class="hljs-string">&apos;json&apos;</span> });
+  <span class="hljs-keyword">if</span> (res.status !== <span class="hljs-number">200</span>) <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">&apos;response status is not 200&apos;</span>);
+  <span class="hljs-keyword">return</span> res.data;
+} <span class="hljs-keyword">catch</span> (err) {
+  <span class="hljs-keyword">this</span>.logger.error(err);
+  <span class="hljs-keyword">return</span> {};
+}
+</code></pre>
+<p>&#x6309;&#x7167;&#x6B63;&#x5E38;&#x4EE3;&#x7801;&#x5199;&#x6CD5;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x5F02;&#x5E38;&#x90FD;&#x53EF;&#x4EE5;&#x7528;&#x8FD9;&#x4E2A;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x6355;&#x83B7;&#x5E76;&#x5904;&#x7406;&#xFF0C;&#x4F46;&#x662F;&#x4E00;&#x5B9A;&#x8981;&#x6CE8;&#x610F;&#x4E00;&#x4E9B;&#x7279;&#x6B8A;&#x7684;&#x5199;&#x6CD5;&#x53EF;&#x80FD;&#x5E26;&#x6765;&#x7684;&#x95EE;&#x9898;&#x3002;&#x6253;&#x4E00;&#x4E2A;&#x4E0D;&#x592A;&#x6B63;&#x5F0F;&#x7684;&#x6BD4;&#x65B9;&#xFF0C;&#x6211;&#x4EEC;&#x7684;&#x4EE3;&#x7801;&#x5168;&#x90E8;&#x90FD;&#x5728;&#x4E00;&#x4E2A;&#x5F02;&#x6B65;&#x8C03;&#x7528;&#x94FE;&#x4E0A;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x90FD;&#x901A;&#x8FC7; yield &#x4E32;&#x63A5;&#x8D77;&#x6765;&#x4E86;&#xFF0C;&#x4F46;&#x662F;&#x53EA;&#x8981;&#x6709;&#x4E00;&#x4E2A;&#x5730;&#x65B9;&#x8DF3;&#x51FA;&#x4E86;&#x5F02;&#x6B65;&#x8C03;&#x7528;&#x94FE;&#xFF0C;&#x5F02;&#x5E38;&#x5C31;&#x6355;&#x83B7;&#x4E0D;&#x5230;&#x4E86;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// app/controller/jump.js</span>
+exports.buy = <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params">ctx</span>) </span>{
+  <span class="hljs-keyword">const</span> request = {};
+  <span class="hljs-keyword">const</span> config = <span class="hljs-keyword">yield</span> ctx.service.trade.buy(request);
+  <span class="hljs-comment">// &#x4E0B;&#x5355;&#x540E;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x4E00;&#x6B21;&#x6838;&#x5BF9;&#xFF0C;&#x4E14;&#x4E0D;&#x963B;&#x585E;&#x5F53;&#x524D;&#x8BF7;&#x6C42;</span>
+  setImmediate(() =&gt; {
+    ctx.service.trade.check(request).catch(err =&gt; ctx.logger.error(err));
+  });
+}
+</code></pre>
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x573A;&#x666F;&#x4E2D;&#xFF0C;&#x5982;&#x679C; <code>service.trade.check</code> &#x65B9;&#x6CD5;&#x4E2D;&#x4EE3;&#x7801;&#x6709;&#x95EE;&#x9898;&#xFF0C;&#x5BFC;&#x81F4;&#x6267;&#x884C;&#x65F6;&#x629B;&#x51FA;&#x4E86;&#x5F02;&#x5E38;&#xFF0C;&#x5C3D;&#x7BA1;&#x6846;&#x67B6;&#x4F1A;&#x5728;&#x6700;&#x5916;&#x5C42;&#x901A;&#x8FC7; <code>try catch</code> &#x7EDF;&#x4E00;&#x6355;&#x83B7;&#x9519;&#x8BEF;&#xFF0C;&#x4F46;&#x662F;&#x7531;&#x4E8E; <code>setImmediate</code> &#x4E2D;&#x7684;&#x4EE3;&#x7801;&#x300E;&#x8DF3;&#x51FA;&#x300F;&#x4E86;&#x5F02;&#x6B65;&#x94FE;&#xFF0C;&#x5B83;&#x91CC;&#x9762;&#x7684;&#x9519;&#x8BEF;&#x5C31;&#x65E0;&#x6CD5;&#x88AB;&#x6355;&#x6349;&#x5230;&#x4E86;&#x3002;&#x56E0;&#x6B64;&#x5728;&#x7F16;&#x5199;&#x7C7B;&#x4F3C;&#x4EE3;&#x7801;&#x7684;&#x65F6;&#x5019;&#x4E00;&#x5B9A;&#x8981;&#x6CE8;&#x610F;&#x3002;</p>
+<p>&#x5F53;&#x7136;&#xFF0C;&#x6846;&#x67B6;&#x4E5F;&#x8003;&#x8651;&#x5230;&#x4E86;&#x8FD9;&#x7C7B;&#x573A;&#x666F;&#xFF0C;&#x63D0;&#x4F9B;&#x4E86; <code>ctx.runInBackground(scope)</code> &#x8F85;&#x52A9;&#x65B9;&#x6CD5;&#xFF0C;&#x901A;&#x8FC7;&#x5B83;&#x53C8;&#x5305;&#x88C5;&#x4E86;&#x4E00;&#x4E2A;&#x5F02;&#x6B65;&#x94FE;&#xFF0C;&#x6240;&#x6709;&#x5728;&#x8FD9;&#x4E2A; scope &#x91CC;&#x9762;&#x7684;&#x9519;&#x8BEF;&#x90FD;&#x4F1A;&#x7EDF;&#x4E00;&#x6355;&#x83B7;&#x3002;</p>
+<pre><code class="lang-js">exports.buy = <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params">ctx</span>) </span>{
+  <span class="hljs-keyword">const</span> request = {};
+  <span class="hljs-keyword">const</span> config = <span class="hljs-keyword">yield</span> ctx.service.trade.buy(request);
+  <span class="hljs-comment">// &#x4E0B;&#x5355;&#x540E;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x4E00;&#x6B21;&#x6838;&#x5BF9;&#xFF0C;&#x4E14;&#x4E0D;&#x963B;&#x585E;&#x5F53;&#x524D;&#x8BF7;&#x6C42;</span>
+  ctx.runInBackground(<span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-comment">// &#x8FD9;&#x91CC;&#x9762;&#x7684;&#x5F02;&#x5E38;&#x90FD;&#x4F1A;&#x7EDF;&#x7EDF;&#x88AB; Backgroud &#x6355;&#x83B7;&#x6389;&#xFF0C;&#x5E76;&#x6253;&#x5370;&#x9519;&#x8BEF;&#x65E5;&#x5FD7;</span>
+    <span class="hljs-keyword">yield</span> ctx.service.trade.check(request);
+  });
+}
+</code></pre>
+<p><strong>&#x4E3A;&#x4E86;&#x4FDD;&#x8BC1;&#x5F02;&#x5E38;&#x53EF;&#x8FFD;&#x8E2A;&#xFF0C;&#x5FC5;&#x987B;&#x4FDD;&#x8BC1;&#x6240;&#x6709;&#x629B;&#x51FA;&#x7684;&#x5F02;&#x5E38;&#x90FD;&#x662F; Error &#x7C7B;&#x578B;&#xFF0C;&#x56E0;&#x4E3A;&#x53EA;&#x6709; Error &#x7C7B;&#x578B;&#x624D;&#x4F1A;&#x5E26;&#x4E0A;&#x5806;&#x6808;&#x4FE1;&#x606F;&#xFF0C;&#x5B9A;&#x4F4D;&#x5230;&#x95EE;&#x9898;&#x3002;</strong></p>
+<h2 id="&#x6846;&#x67B6;&#x5C42;&#x7EDF;&#x4E00;&#x5F02;&#x5E38;&#x5904;&#x7406;">&#x6846;&#x67B6;&#x5C42;&#x7EDF;&#x4E00;&#x5F02;&#x5E38;&#x5904;&#x7406;</h2>
+<p>&#x6846;&#x67B6;&#x901A;&#x8FC7; <a href="https://github.com/eggjs/egg-onerror" _target="blank">onerror</a> &#x63D2;&#x4EF6;&#x63D0;&#x4F9B;&#x4E86;&#x7EDF;&#x4E00;&#x7684;&#x9519;&#x8BEF;&#x5904;&#x7406;&#x673A;&#x5236;&#x3002;&#x5BF9;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x7684;&#x6240;&#x6709;&#x5904;&#x7406;&#x65B9;&#x6CD5;&#xFF08;Middleware&#x3001;Controller&#x3001;Service&#xFF09;&#x4E2D;&#x629B;&#x51FA;&#x7684;&#x4EFB;&#x4F55;&#x5F02;&#x5E38;&#x90FD;&#x4F1A;&#x88AB;&#x5B83;&#x6355;&#x83B7;&#xFF0C;&#x5E76;&#x81EA;&#x52A8;&#x6839;&#x636E;&#x8BF7;&#x6C42;&#x60F3;&#x8981;&#x83B7;&#x53D6;&#x7684;&#x7C7B;&#x578B;&#x8FD4;&#x56DE;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x9519;&#x8BEF;&#xFF08;&#x57FA;&#x4E8E; <a href="https://tools.ietf.org/html/rfc7231#section-5.3.2" _target="blank">Content Negotiation</a>&#xFF09;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x8BF7;&#x6C42;&#x9700;&#x6C42;&#x7684;&#x683C;&#x5F0F;</th>
+<th>&#x73AF;&#x5883;</th>
+<th>errorPageUrl &#x662F;&#x5426;&#x914D;&#x7F6E;</th>
+<th>&#x8FD4;&#x56DE;&#x5185;&#x5BB9;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTML &amp; TEXT</td>
+<td>local &amp; unittest</td>
+<td>-</td>
+<td>onerror &#x81EA;&#x5E26;&#x7684;&#x9519;&#x8BEF;&#x9875;&#x9762;&#xFF0C;&#x5C55;&#x793A;&#x8BE6;&#x7EC6;&#x7684;&#x9519;&#x8BEF;&#x4FE1;&#x606F;</td>
+</tr>
+<tr>
+<td>HTML &amp; TEXT</td>
+<td>&#x5176;&#x4ED6;</td>
+<td>&#x662F;</td>
+<td>&#x91CD;&#x5B9A;&#x5411;&#x5230; errorPageUrl</td>
+</tr>
+<tr>
+<td>HTML &amp; TEXT</td>
+<td>&#x5176;&#x4ED6;</td>
+<td>&#x5426;</td>
+<td>onerror &#x81EA;&#x5E26;&#x7684;&#x6CA1;&#x6709;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#x7684;&#x7B80;&#x5355;&#x9519;&#x8BEF;&#x9875;&#xFF08;&#x4E0D;&#x63A8;&#x8350;&#xFF09;</td>
+</tr>
+<tr>
+<td>JSON</td>
+<td>local &amp; unittest</td>
+<td>-</td>
+<td>JSON &#x5BF9;&#x8C61;&#xFF0C;&#x5E26;&#x8BE6;&#x7EC6;&#x7684;&#x9519;&#x8BEF;&#x4FE1;&#x606F;</td>
+</tr>
+<tr>
+<td>JSON</td>
+<td>&#x5176;&#x4ED6;</td>
+<td>-</td>
+<td>json &#x5BF9;&#x8C61;&#xFF0C;&#x4E0D;&#x5E26;&#x8BE6;&#x7EC6;&#x7684;&#x9519;&#x8BEF;&#x4FE1;&#x606F;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="errorpageurl">errorPageUrl</h3>
+<p>onerror &#x63D2;&#x4EF6;&#x7684;&#x914D;&#x7F6E;&#x4E2D;&#x652F;&#x6301; errorPageUrl &#x5C5E;&#x6027;&#xFF0C;&#x5F53;&#x914D;&#x7F6E;&#x4E86; errorPageUrl &#x65F6;&#xFF0C;&#x4E00;&#x65E6;&#x7528;&#x6237;&#x8BF7;&#x6C42;&#x7EBF;&#x4E0A;&#x5E94;&#x7528;&#x7684; HTML &#x9875;&#x9762;&#x5F02;&#x5E38;&#xFF0C;&#x5C31;&#x4F1A;&#x91CD;&#x5B9A;&#x5411;&#x5230;&#x8FD9;&#x4E2A;&#x5730;&#x5740;&#x3002;</p>
+<p>&#x5728; <code>config/config.default.js</code> &#x4E2D;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// config/config.default.js</span>
+<span class="hljs-built_in">module</span>.exports = {
+  onerror: {
+    <span class="hljs-comment">// &#x7EBF;&#x4E0A;&#x9875;&#x9762;&#x53D1;&#x751F;&#x5F02;&#x5E38;&#x65F6;&#xFF0C;&#x91CD;&#x5B9A;&#x5411;&#x5230;&#x8FD9;&#x4E2A;&#x9875;&#x9762;&#x4E0A;</span>
+    errorPageUrl: <span class="hljs-string">&apos;/50x.html&apos;</span>,
+  },
+};
+</code></pre>
+<h2 id="&#x81EA;&#x5B9A;&#x4E49;&#x7EDF;&#x4E00;&#x5F02;&#x5E38;&#x5904;&#x7406;">&#x81EA;&#x5B9A;&#x4E49;&#x7EDF;&#x4E00;&#x5F02;&#x5E38;&#x5904;&#x7406;</h2>
+<p>&#x5C3D;&#x7BA1;&#x6846;&#x67B6;&#x63D0;&#x4F9B;&#x4E86;&#x9ED8;&#x8BA4;&#x7684;&#x7EDF;&#x4E00;&#x5F02;&#x5E38;&#x5904;&#x7406;&#x673A;&#x5236;&#xFF0C;&#x4F46;&#x662F;&#x5E94;&#x7528;&#x5F00;&#x53D1;&#x4E2D;&#x7ECF;&#x5E38;&#x9700;&#x8981;&#x5BF9;&#x5F02;&#x5E38;&#x65F6;&#x7684;&#x54CD;&#x5E94;&#x505A;&#x81EA;&#x5B9A;&#x4E49;&#xFF0C;&#x7279;&#x522B;&#x662F;&#x5728;&#x505A;&#x4E00;&#x4E9B;&#x63A5;&#x53E3;&#x5F00;&#x53D1;&#x7684;&#x65F6;&#x5019;&#x3002;&#x8FD9;&#x65F6;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x81EA;&#x5B9A;&#x4E49;<a href="../basics/middleware.html">&#x4E2D;&#x95F4;&#x4EF6;</a>&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x81EA;&#x884C;&#x5B9A;&#x4E49;&#x7EDF;&#x4E00;&#x7684;&#x5F02;&#x5E38;&#x5904;&#x7406;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728; <code>app/middleware</code> &#x4E2D;&#x65B0;&#x589E;&#x4E00;&#x4E2A; <code>error_handler.js</code> &#x7684;&#x6587;&#x4EF6;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// app/middleware/error_handler.js</span>
+<span class="hljs-built_in">module</span>.exports = () =&gt; {
+  <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span>* <span class="hljs-title">errorHandler</span>(<span class="hljs-params">next</span>) </span>{
+    <span class="hljs-keyword">try</span> {
+      <span class="hljs-keyword">yield</span> next;
+    } <span class="hljs-keyword">catch</span> (err) {
+      <span class="hljs-comment">// &#x6CE8;&#x610F;&#xFF1A;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x9519;&#x8BEF;&#x7EDF;&#x4E00;&#x5904;&#x7406;&#x51FD;&#x6570;&#x6355;&#x6349;&#x5230;&#x9519;&#x8BEF;&#x540E;&#x4E5F;&#x8981; `app.emit(&apos;error&apos;, err, this)`</span>
+      <span class="hljs-comment">// &#x6846;&#x67B6;&#x4F1A;&#x7EDF;&#x4E00;&#x76D1;&#x542C;&#xFF0C;&#x5E76;&#x6253;&#x5370;&#x5BF9;&#x5E94;&#x7684;&#x9519;&#x8BEF;&#x65E5;&#x5FD7;</span>
+      <span class="hljs-keyword">this</span>.app.emit(<span class="hljs-string">&apos;error&apos;</span>, err, <span class="hljs-keyword">this</span>);
+      <span class="hljs-comment">// &#x81EA;&#x5B9A;&#x4E49;&#x9519;&#x8BEF;&#x65F6;&#x5F02;&#x5E38;&#x8FD4;&#x56DE;&#x7684;&#x683C;&#x5F0F;</span>
+      <span class="hljs-keyword">this</span>.body = {
+        success: <span class="hljs-literal">false</span>,
+        message: <span class="hljs-keyword">this</span>.app.config.env === <span class="hljs-string">&apos;prod&apos;</span> ? <span class="hljs-string">&apos;Internal Server Error&apos;</span> : err.message,
+      };
+    }
+  };
+};
+</code></pre>
+<p>&#x7136;&#x540E;&#x5728; <code>config/config.default.js</code> &#x4E2D;&#x5F15;&#x5165;&#x8FD9;&#x4E2A;&#x4E2D;&#x95F4;&#x4EF6;</p>
+<pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = {
+  middleware: [ <span class="hljs-string">&apos;errorHandler&apos;</span> ],
+  errorHandler: {
+    <span class="hljs-comment">// &#x975E; `/api/` &#x8DEF;&#x5F84;&#x4E0D;&#x5728;&#x8FD9;&#x91CC;&#x505A;&#x9519;&#x8BEF;&#x5904;&#x7406;&#xFF0C;&#x7559;&#x7ED9;&#x9ED8;&#x8BA4;&#x7684; onerror &#x63D2;&#x4EF6;&#x7EDF;&#x4E00;&#x5904;&#x7406;</span>
+    match: <span class="hljs-string">&apos;/api&apos;</span>,
+  },
+};
+</code></pre>
+<h2 id="404">404</h2>
+<p>&#x6846;&#x67B6;&#x5E76;&#x4E0D;&#x4F1A;&#x5C06;&#x670D;&#x52A1;&#x7AEF;&#x8FD4;&#x56DE;&#x7684; 404 &#x72B6;&#x6001;&#x5F53;&#x505A;&#x5F02;&#x5E38;&#x6765;&#x5904;&#x7406;&#xFF0C;&#x4F46;&#x662F;&#x6846;&#x67B6;&#x63D0;&#x4F9B;&#x4E86;&#x5F53;&#x54CD;&#x5E94;&#x4E3A; 404 &#x4E14;&#x6CA1;&#x6709;&#x8FD4;&#x56DE; body &#x65F6;&#x7684;&#x9ED8;&#x8BA4;&#x54CD;&#x5E94;&#x3002;</p>
+<ul>
+<li><p>&#x5F53;&#x8BF7;&#x6C42;&#x88AB;&#x6846;&#x67B6;&#x5224;&#x5B9A;&#x4E3A;&#x9700;&#x8981; JSON &#x683C;&#x5F0F;&#x7684;&#x54CD;&#x5E94;&#x65F6;&#xFF0C;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x6BB5; JSON&#xFF1A;</p>
+<pre><code class="lang-json">{ <span class="hljs-string">&quot;message&quot;</span>: <span class="hljs-string">&quot;Not Found&quot;</span> }
+</code></pre>
+</li>
+<li><p>&#x5F53;&#x8BF7;&#x6C42;&#x88AB;&#x6846;&#x67B6;&#x5224;&#x5B9A;&#x4E3A;&#x9700;&#x8981; HTML &#x683C;&#x5F0F;&#x7684;&#x54CD;&#x5E94;&#x65F6;&#xFF0C;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x6BB5; HTML&#xFF1A;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>404 Not Found<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+</code></pre>
+</li>
+</ul>
+<p>&#x6846;&#x67B6;&#x652F;&#x6301;&#x901A;&#x8FC7;&#x914D;&#x7F6E;&#xFF0C;&#x5C06;&#x9ED8;&#x8BA4;&#x7684; HTML &#x8BF7;&#x6C42;&#x7684; 404 &#x54CD;&#x5E94;&#x91CD;&#x5B9A;&#x5411;&#x5230;&#x6307;&#x5B9A;&#x7684;&#x9875;&#x9762;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// config/config.default.js</span>
+<span class="hljs-built_in">module</span>.exports = {
+  notfound: {
+    pageUrl: <span class="hljs-string">&apos;/404.html&apos;</span>,
+  },
+};
+</code></pre>
+<h3 id="&#x81EA;&#x5B9A;&#x4E49;-404-&#x54CD;&#x5E94;">&#x81EA;&#x5B9A;&#x4E49; 404 &#x54CD;&#x5E94;</h3>
+<p>&#x5728;&#x4E00;&#x4E9B;&#x573A;&#x666F;&#x4E0B;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x81EA;&#x5B9A;&#x4E49;&#x670D;&#x52A1;&#x5668; 404 &#x65F6;&#x7684;&#x54CD;&#x5E94;&#xFF0C;&#x548C;&#x81EA;&#x5B9A;&#x4E49;&#x5F02;&#x5E38;&#x5904;&#x7406;&#x4E00;&#x6837;&#xFF0C;&#x6211;&#x4EEC;&#x4E5F;&#x53EA;&#x9700;&#x8981;&#x52A0;&#x5165;&#x4E00;&#x4E2A;&#x4E2D;&#x95F4;&#x4EF6;&#x5373;&#x53EF;&#x5BF9; 404 &#x505A;&#x7EDF;&#x4E00;&#x5904;&#x7406;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// app/middleware/notfound_handler.js</span>
+<span class="hljs-built_in">module</span>.exports = () =&gt; {
+  <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params">next</span>) </span>{
+    <span class="hljs-keyword">yield</span> next;
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.status === <span class="hljs-number">404</span> &amp;&amp; !<span class="hljs-keyword">this</span>.body) {
+      <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.acceptJSON) <span class="hljs-keyword">this</span>.body = { error: <span class="hljs-string">&apos;Not Found&apos;</span> };
+      <span class="hljs-keyword">else</span> <span class="hljs-keyword">this</span>.body = <span class="hljs-string">&apos;&lt;h1&gt;Page Not Found&lt;/h1&gt;&apos;</span>;
+    }
+  };
+};
+</code></pre>
+<p>&#x5728;&#x914D;&#x7F6E;&#x4E2D;&#x5F15;&#x5165;&#x4E2D;&#x95F4;&#x4EF6;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// config/config.default.js</span>
+<span class="hljs-built_in">module</span>.exports = {
+  middleware: [ <span class="hljs-string">&apos;notfoundHander&apos;</span> ],
+};
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="view.html" class="navigation navigation-prev " aria-label="Previous page: View 模板渲染">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="security.html" class="navigation navigation-next " aria-label="Next page: 安全">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"异常处理","level":"1.4.9","depth":2,"next":{"title":"安全","level":"1.4.10","depth":2,"path":"core/security.md","ref":"core/security.md","articles":[]},"previous":{"title":"View 模板渲染","level":"1.4.8","depth":2,"path":"core/view.md","ref":"core/view.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-fontsettings","-search-pro","-advanced-emoji","-github","-splitter","-toggle-chapters"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search-pro":{"cutWordLib":"nodejieba","defineWord":["Gitbook"]},"github":{"url":"https://github.com/laomu1988/fe-books"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"laomu1988@qq.com","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"fe-books","language":"zh-hans","gitbook":"*"},"file":{"path":"core/error-handling.md","mtime":"2017-10-27T07:54:15.000Z","type":"markdown"},"gitbook":{"version":"3.1.0","time":"2017-10-27T07:54:17.244Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+<script>
+	// 百度统计
+	var _hmt = _hmt || [];
+	(function () {
+		var hm = document.createElement("script");
+		hm.src = "//hm.baidu.com/hm.js?171566b3d4f03c9c68c8f2c7a42d4b0e";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+<script src="/fe-books/server/index.js"></script>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+
