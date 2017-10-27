@@ -10,3 +10,6 @@
 [submodule "github/vuex"]
 	path = github/vuex
 	url = https://github.com/vuejs/vuex.git
+[submodule "github/egg"]
+	path = github/egg
+	url = https://github.com/eggjs/egg.git
